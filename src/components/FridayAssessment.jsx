@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import { CURRICULUM } from '../lib/lessonData.js'
 
 // ── Strip HTML tags ───────────────────────────────────────────────────────────
@@ -17,11 +17,12 @@ function shuffle(arr) {
 // ── Build a multiple-choice question with shuffled distractors ────────────────
 // correctAnswer and distractors are plain strings; returns { q, options, correct, day }
 function mcq(question, correctAnswer, distractors, day) {
-  const pool = shuffle([correctAnswer, ...distractors.slice(0, 3)])
+  // Options are fixed order here; shuffling happens once in buildQuestions
+  const options = [correctAnswer, ...distractors.slice(0, 3)]
   return {
     q: question,
-    options: pool,
-    correct: pool.indexOf(correctAnswer),
+    options,
+    correct: 0, // correctAnswer is always first before shuffle
     day,
   }
 }
@@ -338,12 +339,18 @@ function buildQuestions(term, week) {
   const weekData = CURRICULUM[term]?.[week]
   if (!weekData) return fallbackQuestions
 
-  const questions = [
+  const raw = [
     ...mondayQuestions(weekData.Monday),
     ...tuesdayQuestions(weekData.Tuesday),
     ...wednesdayQuestions(weekData.Wednesday),
     ...thursdayQuestions(weekData.Thursday),
   ].filter(Boolean)
+
+  // Shuffle options once here — correct index is 0 coming out of mcq()
+  const questions = raw.map(q => {
+    const shuffled = shuffle(q.options)
+    return { ...q, options: shuffled, correct: shuffled.indexOf(q.options[0]) }
+  })
 
   // Pad with fallbacks if needed
   while (questions.length < 8) questions.push(...fallbackQuestions.slice(0, 8 - questions.length))
@@ -494,7 +501,7 @@ function Scoreboard({ scores, activeTeam, questionNum, totalQ }) {
 
 // ── Quiz phase ────────────────────────────────────────────────────────────────
 function QuizPhase({ term, week, onFinish }) {
-  const questions = buildQuestions(term, week)
+  const questions = useMemo(() => buildQuestions(term, week), [term, week])
   const [qIdx, setQIdx] = useState(0)
   const [scores, setScores] = useState([0, 0])
   const [activeTeam, setActiveTeam] = useState(0)
