@@ -189,6 +189,244 @@ const HARDCODED_QUIZZES = {
     },
   ],
 
+  '1-4': [
+    {
+      q: '"The collar belonging to the cat" — how do you write this with a possessive apostrophe?',
+      options: ["cat's collar", "cats' collar", "cats's collar", "cat collar's"],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"The collars belonging to the cats" — where does the apostrophe go?',
+      options: ["cat's collars", "cats' collars", "cats's collars", "cat's' collars"],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Maya left Maya\'s bag on Maya\'s seat when Maya went outside." What is the problem?',
+      options: [
+        '"Maya\'s" should not have an apostrophe — it is plural',
+        'The noun "Maya" is repeated clumsily and needs pronouns to replace it',
+        '"Maya" should be replaced with "she" everywhere, including the first word',
+        'The possessive "Maya\'s" is the wrong form and should be "Mayas"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Which pronoun correctly replaces the second "Tom and Sarah" in: "Tom and Sarah set up Tom and Sarah\'s stall"?',
+      options: ['his', 'their', 'its', 'her'],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'What is the JOB of a topic sentence in a paragraph?',
+      options: [
+        'To summarise the whole essay in one dramatic sentence',
+        'To list all the evidence that will follow in bullet points',
+        'To introduce the main idea so every sentence that follows supports it',
+        'To ask a question that the rest of the paragraph then answers',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Which is the strongest topic sentence for a paragraph about rainforests?',
+      options: [
+        'Rainforests exist in many countries around the world.',
+        'I am going to write about rainforests in this paragraph.',
+        'The rainforest is home to an astonishing variety of wildlife.',
+        'There are lots of interesting things about rainforests to discuss.',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The team picked up their trophy." Our lesson said this is tricky — why?',
+      options: [
+        '"Trophy" is plural so it needs a plural pronoun like "those"',
+        '"Team" is a singular noun, so "its" is technically more precise than "their"',
+        '"Their" should be "they" because the trophy belongs to the trophy',
+        '"The team" must be replaced by player names before any pronoun works',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"Each of the birds had lost ___ feathers in the storm." Which pronoun fits?',
+      options: ['their', 'its', 'our', 'his'],
+      correct: 0,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-5': [
+    {
+      q: '"Come back." vs "Come back!" — what is the key difference between these two sentences?',
+      options: [
+        'One is correct and one has a spelling error',
+        '"Come back." is a calm instruction; "Come back!" adds urgency and strong emotion',
+        '"Come back!" is more formal and would be used in a letter',
+        'They mean exactly the same thing — the mark is just a style choice',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Watch out for the wave behind you" — which end mark is best and why?',
+      options: [
+        'A full stop — it is a simple instruction with no special feeling',
+        'A question mark — we are not sure if there is actually a wave',
+        'An exclamation mark — it is urgent and could save someone from danger',
+        'No mark needed — the meaning is clear without one',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"dangerous → more dangerous → most dangerous" — why do we use "more/most" instead of "-er/-est"?',
+      options: [
+        'Because "dangerous" is a proper noun and proper nouns use "more/most"',
+        'Because "dangerous" has three syllables, making "-er/-est" sound awkward',
+        'Because "dangerous" already ends in "-ous" so it cannot take a suffix',
+        'Because "more/most" is always used for adjectives that describe feelings',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'What are the correct comparative and superlative forms of "good"?',
+      options: ['gooder / goodest', 'more good / most good', 'better / best', 'weller / wellest'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Why do skilled writers mix short and long sentences together?',
+      options: [
+        'To make their work look longer on the page and harder to read',
+        'Because short sentences are always better and long ones should be avoided',
+        'To create rhythm — short sentences punch, long ones build pace and atmosphere',
+        'Because teachers mark down writing that uses the same sentence length throughout',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'In the lighthouse passage, we wanted to add dramatic impact. Which addition works best?',
+      options: [
+        'Adding three more long sentences to build even more atmosphere',
+        'Cutting it to one very long sentence covering all the same details',
+        'Inserting short sharp sentences like "It survived." to create punch',
+        'Replacing all full stops with exclamation marks for excitement',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'In the Te Papa passage we edited, "the students saw a giant squid a huge whale skeleton and many taonga" is missing what?',
+      options: [
+        'A capital letter on "giant" because it is the first item in a list',
+        'Speech marks around the list because someone is speaking',
+        'Commas between the list items to separate them clearly',
+        'The word "and" before every single item in the list',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: 'Why is it better to check ONE rule at a time when peer-editing, rather than everything at once?',
+      options: [
+        'Because checking everything at once always takes less time',
+        'Because focusing on one rule means you are less likely to miss errors',
+        'Because only one type of error can exist in any single piece of writing',
+        'Because partners are not allowed to mark more than one type of mistake',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-6': [
+    {
+      q: '"Prediction" breaks into "pre" + "dict" + "ion". What does this tell you the word means?',
+      options: [
+        'The process of writing before you read',
+        'The process of saying something before it happens',
+        'The state of not being able to understand words',
+        'The action of carrying information across a distance',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Using the root "port" (carry), what does "portable" most likely mean?',
+      options: [
+        'Belonging to a port or harbour',
+        'Very difficult to move or transport',
+        'Able to be carried from place to place',
+        'Something that carries water from one place to another',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The explorer walked cautiously forward yesterday." What question does "cautiously" answer?',
+      options: ['Where?', 'When?', 'How?', 'Why?'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Which of these is an adverb of TIME?',
+      options: ['silently', 'outside', 'yesterday', 'extremely'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The dog barked." We added WHO, WHERE, and WHEN detail. Which expanded version is best?',
+      options: [
+        'The dog barked a lot and it was very loud and it scared everyone nearby',
+        'The dog, a stray with matted fur, barked frantically outside the locked gate at midnight',
+        'The dog barked because dogs bark when they are scared or excited by things',
+        'The barking dog was barking outside where dogs often go to bark',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'When should you add a WHO, WHERE, or WHEN phrase to a sentence?',
+      options: [
+        'Always — every sentence must have all three types of detail',
+        'Never — extra phrases make sentences too complicated for readers',
+        'When the reader needs that detail to picture the scene clearly',
+        'Only in the final sentence of each paragraph as a summary',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Due to the fact that it was raining, we decided to stay inside the house." What is the tightened version?',
+      options: [
+        'It rained and so we stayed inside the house as a result of the rain',
+        'Because it was raining, we stayed inside',
+        'The rain fell, and due to this we made the decision to remain indoors',
+        'In the event that rain occurred, staying inside was decided upon',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Which phrase from our lesson is a classic example of wordiness that can be cut to one word?',
+      options: [
+        '"ran quickly" → just use a stronger verb like "sprinted"',
+        '"in order to" → just use "to"',
+        '"very happy" → just use "happy"',
+        '"the dog" → just use "it"',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
   '1-3': [
     {
       q: '"The water was cold" vs "The water was glacial." Why is "glacial" stronger?',
