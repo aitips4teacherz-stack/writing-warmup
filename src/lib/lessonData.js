@@ -1263,7 +1263,513 @@ export const CURRICULUM = {
 
   // TERMS 2, 3, 4 follow same structure — abbreviated here to keep file manageable
   // Full data is loaded from Supabase in production; this serves as fallback/demo
-  2: { 1: { Monday: lesson('Tier 2 vocabulary: words for movement & action','Choose precise verbs',{title:'I Do',instruction:'Watch me swap plain movement verbs for precise ones.',example:'"The man went down the street." → "The man <u>strode</u> down the street."',demonstration:'Went → strode, shuffled, sprinted, lurched. Each verb tells us HOW as well as that movement happened.',tip:'Precise verbs eliminate the need for adverbs: "ran quickly" → "sprinted."'},{title:'We Do',instruction:'Upgrade the underlined verbs with more precise movement words.',sentences:['The bird <u>went</u> through the air.','She <u>moved</u> across the dance floor.','He <u>went</u> into the room.'],prompt:'What does the precise verb tell us that "went" does not?'},{title:'You Do',instruction:'Replace each plain verb with the most precise one you can think of.',tasks:['The snake <u>went</u> through the grass.','The toddler <u>moved</u> towards the door.','She <u>went</u> across the rooftops.','✦ Bonus: Write 4 sentences each using a different "movement" verb. No two the same.']}), Tuesday: lesson('Nouns: collective & abstract nouns','Extend noun knowledge',{title:'I Do',instruction:'Collective nouns name a group. Abstract nouns name ideas, feelings, or concepts you cannot touch.',example:'Collective: a <u>flock</u> of birds | Abstract: <u>courage</u>, <u>freedom</u>, <u>justice</u>',demonstration:'Flock, swarm, pride, pod — these are collective. Justice, hope, anger — these are abstract. You can\'t hold justice in your hand, but it\'s a noun because it names a concept.',tip:'If you can\'t touch it or see it, but it\'s a thing — it\'s probably abstract.'},{title:'We Do',instruction:'Sort these nouns into collective, abstract, or concrete.',sentences:['a herd of cattle','curiosity','a bouquet of flowers','loyalty','a school of fish'],prompt:'How do you know? Could you take a photo of it? Touch it?'},{title:'You Do',instruction:'Label each noun: collective (C), abstract (A), or concrete (Co).',tasks:['a murder of crows —','envy —','a packet of biscuits —','a pride of lions —','determination —','✦ Bonus: Write a sentence for each type using a noun from today\'s lesson.']}), Wednesday: lesson('Simple sentences: revisit with action-verb focus','Reinforce simple sentence structure',{title:'I Do',instruction:'Revisiting simple sentences — but this time the focus is on choosing a powerful action verb.',example:'Weak: "The volcano did an explosion." → Strong: "The volcano <u>erupted</u>."',demonstration:'Do + noun is often the weak version. Replace with a direct action verb: made a decision → decided. Gave a performance → performed. Did an investigation → investigated.',tip:'"Did", "made", "gave", "had" + noun = usually replaceable with one strong verb.'},{title:'We Do',instruction:'Replace the weak "do + noun" construction with one strong verb.',sentences:['She made a complaint about the noise.','They did a celebration when they won.','He gave a performance that amazed the crowd.'],prompt:'What single verb can replace each phrase?'},{title:'You Do',instruction:'Rewrite each sentence using one strong action verb.',tasks:['She made a decision to leave early.','The team gave a demonstration of the new skill.','They did an investigation into the disappearance.','✦ Bonus: Write 5 simple sentences using 5 different powerful action verbs.']}), Thursday: lesson('Proofreading: capitals for proper nouns in text','Edit with fresh context',{title:'I Do',instruction:'In this term\'s editing focus, we look specifically at proper noun capitals in longer, more complex text.',example:'"last tuesday, ms brown took class 5b to the otago museum in dunedin."',demonstration:'Fixed: "Last Tuesday, Ms Brown took Class 5B to the Otago Museum in Dunedin." Every specific name, title, day, place, and class identifier needs a capital.',tip:'Scan specifically for: days, months, place names, people\'s names/titles, specific event names.'},{title:'We Do',instruction:'Find and fix all the proper noun capitalisation errors.',sentences:['on anzac day, uncle mike and aunt sarah drove to hamilton for the dawn parade at memorial park.'],prompt:'List every word that needs a capital. How many did you find?'},{title:'You Do',instruction:'Rewrite this passage with all proper noun capitals correctly placed.',tasks:['my cousin riya is visiting from tauranga next friday. she goes to otumoetai college and is in year 10. on saturday we\'re going to visit the national aquarium of new zealand in napier. riya wants to see the tuatara display and the kiwi house afterwards we might have lunch at the hawke\'s bay farmers market.','✦ Bonus: Write a paragraph about a real or imaginary trip. Include at least 6 proper nouns — all correctly capitalised.']}) }, },
+  2: {
+    1: { Monday: lesson('Tier 2 vocabulary: words for movement & action','Choose precise verbs',{title:'I Do',instruction:'Watch me swap plain movement verbs for precise ones.',example:'"The man went down the street." → "The man <u>strode</u> down the street."',demonstration:'Went → strode, shuffled, sprinted, lurched. Each verb tells us HOW as well as that movement happened.',tip:'Precise verbs eliminate the need for adverbs: "ran quickly" → "sprinted."'},{title:'We Do',instruction:'Upgrade the underlined verbs with more precise movement words.',sentences:['The bird <u>went</u> through the air.','She <u>moved</u> across the dance floor.','He <u>went</u> into the room.'],prompt:'What does the precise verb tell us that "went" does not?'},{title:'You Do',instruction:'Replace each plain verb with the most precise one you can think of.',tasks:['The snake <u>went</u> through the grass.','The toddler <u>moved</u> towards the door.','She <u>went</u> across the rooftops.','✦ Bonus: Write 4 sentences each using a different "movement" verb. No two the same.']}), Tuesday: lesson('Nouns: collective & abstract nouns','Extend noun knowledge',{title:'I Do',instruction:'Collective nouns name a group. Abstract nouns name ideas, feelings, or concepts you cannot touch.',example:'Collective: a <u>flock</u> of birds | Abstract: <u>courage</u>, <u>freedom</u>, <u>justice</u>',demonstration:'Flock, swarm, pride, pod — these are collective. Justice, hope, anger — these are abstract. You can\'t hold justice in your hand, but it\'s a noun because it names a concept.',tip:'If you can\'t touch it or see it, but it\'s a thing — it\'s probably abstract.'},{title:'We Do',instruction:'Sort these nouns into collective, abstract, or concrete.',sentences:['a herd of cattle','curiosity','a bouquet of flowers','loyalty','a school of fish'],prompt:'How do you know? Could you take a photo of it? Touch it?'},{title:'You Do',instruction:'Label each noun: collective (C), abstract (A), or concrete (Co).',tasks:['a murder of crows —','envy —','a packet of biscuits —','a pride of lions —','determination —','✦ Bonus: Write a sentence for each type using a noun from today\'s lesson.']}), Wednesday: lesson('Simple sentences: revisit with action-verb focus','Reinforce simple sentence structure',{title:'I Do',instruction:'Revisiting simple sentences — but this time the focus is on choosing a powerful action verb.',example:'Weak: "The volcano did an explosion." → Strong: "The volcano <u>erupted</u>."',demonstration:'Do + noun is often the weak version. Replace with a direct action verb: made a decision → decided. Gave a performance → performed. Did an investigation → investigated.',tip:'"Did", "made", "gave", "had" + noun = usually replaceable with one strong verb.'},{title:'We Do',instruction:'Replace the weak "do + noun" construction with one strong verb.',sentences:['She made a complaint about the noise.','They did a celebration when they won.','He gave a performance that amazed the crowd.'],prompt:'What single verb can replace each phrase?'},{title:'You Do',instruction:'Rewrite each sentence using one strong action verb.',tasks:['She made a decision to leave early.','The team gave a demonstration of the new skill.','They did an investigation into the disappearance.','✦ Bonus: Write 5 simple sentences using 5 different powerful action verbs.']}), Thursday: lesson('Proofreading: capitals for proper nouns in text','Edit with fresh context',{title:'I Do',instruction:'In this term\'s editing focus, we look specifically at proper noun capitals in longer, more complex text.',example:'"last tuesday, ms brown took class 5b to the otago museum in dunedin."',demonstration:'Fixed: "Last Tuesday, Ms Brown took Class 5B to the Otago Museum in Dunedin." Every specific name, title, day, place, and class identifier needs a capital.',tip:'Scan specifically for: days, months, place names, people\'s names/titles, specific event names.'},{title:'We Do',instruction:'Find and fix all the proper noun capitalisation errors.',sentences:['on anzac day, uncle mike and aunt sarah drove to hamilton for the dawn parade at memorial park.'],prompt:'List every word that needs a capital. How many did you find?'},{title:'You Do',instruction:'Rewrite this passage with all proper noun capitals correctly placed.',tasks:['my cousin riya is visiting from tauranga next friday. she goes to otumoetai college and is in year 10. on saturday we\'re going to visit the national aquarium of new zealand in napier. riya wants to see the tuatara display and the kiwi house afterwards we might have lunch at the hawke\'s bay farmers market.','✦ Bonus: Write a paragraph about a real or imaginary trip. Include at least 6 proper nouns — all correctly capitalised.']}) },
+
+    2: {
+      Monday: lesson(
+        'Commas after fronted adverbials',
+        'Punctuate sentence openers',
+        {
+          title: 'I Do — The Opener Comma',
+          instruction: 'When a sentence starts with an adverbial phrase or clause (a fronted adverbial), we put a comma after it before the main clause begins. Watch me show you where the comma goes.',
+          example: '"<u>After the long match,</u> the players collapsed on the grass." "<u>During the school holidays,</u> we visited Rotorua."',
+          demonstration: '"After the long match" is the fronted adverbial — it sets the scene. The comma after "match" separates it from the main clause "the players collapsed." Without the comma, the reader rushes past the opener without pausing.',
+          tip: 'Test: read aloud. If you naturally pause after the opening phrase before the subject arrives — that pause is your comma.',
+        },
+        {
+          title: 'We Do — Add the Comma',
+          instruction: 'These sentences have fronted adverbials but are missing the comma. Let\'s find the opener and add the comma together.',
+          sentences: [
+            'Before the sun had risen the fishing boats left the harbour.',
+            'On the last day of term the students performed their assembly item.',
+            'Despite the heavy rain the game continued without a break.',
+          ],
+          prompt: 'Where does the opener end and the main clause begin? That\'s where the comma goes.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add the missing comma in each sentence, then write a sentence of your own with a fronted adverbial.',
+          tasks: [
+            'Throughout the summer holidays Aroha trained every single morning.',
+            'High above the clouds the small plane flew steadily north.',
+            'By the time we arrived at the marae the hākari had already begun.',
+            '✦ Bonus: Write 4 sentences that each start with a different fronted adverbial. Make sure every comma is in the right place.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Verb tense: simple future (\'will\' / \'going to\')',
+        'Use future tense accurately',
+        {
+          title: 'I Do — Talking About What\'s Coming',
+          instruction: 'The simple future tense talks about things that haven\'t happened yet. In English we use "will" for spontaneous decisions and predictions, and "going to" for plans we\'ve already made. Watch the difference.',
+          example: '"I <u>will</u> help you carry that." (decided right now) | "We <u>are going to</u> visit Whānau Bay on Saturday." (already planned)',
+          demonstration: '"Will" = decided in the moment or a prediction: "It will snow tonight." "Going to" = a plan or something you can already see evidence of: "Look at those clouds — it\'s going to rain." Both are future but the nuance differs.',
+          tip: 'Already planned it? Use "going to." Just decided or making a prediction? Use "will."',
+        },
+        {
+          title: 'We Do — Will or Going To?',
+          instruction: 'Choose "will" or "going to" for each sentence and explain your choice.',
+          sentences: [
+            'Mum already bought the tickets — we ___ see the kapa haka performance on Friday.',
+            'The phone is ringing. "Don\'t worry, I ___ get it!"',
+            'According to the forecast, it ___ be a hot summer.',
+          ],
+          prompt: 'Is it already planned, or decided right now? Does it matter which you use here?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Complete each sentence with the correct future tense form and a logical ending.',
+          tasks: [
+            'We have already booked the bach — we ___ (go) to the Coromandel next week.',
+            'Nobody planned this but the window just broke — I ___ (call) the caretaker.',
+            'Look at those dark clouds — it ___ (pour) any minute.',
+            '✦ Bonus: Write a short paragraph (4–5 sentences) about your plans for the weekend. Use both "will" and "going to" at least once each.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Expanding sentences: adding \'when\' and \'because\' clauses',
+        'Develop complex sentences',
+        {
+          title: 'I Do — Give the Reader More',
+          instruction: 'A simple sentence tells us what happened. Adding a "when" or "because" clause tells us WHEN it happened or WHY — turning a thin sentence into a complex one. Watch me expand.',
+          example: '"The crowd cheered." → "<u>When the final whistle blew,</u> the crowd cheered." → "The crowd cheered <u>because the All Blacks had scored.</u>"',
+          demonstration: '"When" adds a time relationship — something triggered the action. "Because" adds a cause — it explains the reason. You can add either clause at the front or the back. Front = comma after the clause. Back = no comma needed.',
+          tip: 'Ask two questions about any simple sentence: WHEN did this happen? WHY did this happen? The answer becomes your expansion clause.',
+        },
+        {
+          title: 'We Do — Expand Together',
+          instruction: 'Expand each simple sentence twice — once with a "when" clause and once with a "because" clause.',
+          sentences: [
+            'The dog barked.',
+            'She put on her kākahu.',
+            'The whole school fell silent.',
+          ],
+          prompt: 'Does the meaning change depending on which clause you add? Which version is most interesting?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Expand each sentence by adding the clause type shown in brackets.',
+          tasks: [
+            'The lights went out. (add a "when" clause at the front)',
+            'Hemi ran all the way to school. (add a "because" clause at the back)',
+            'The rescue helicopter landed on the beach. (add both — one at the front, one at the back)',
+            '✦ Bonus: Write 5 complex sentences about a sports event or performance. Use "when" in at least two and "because" in at least two.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: fixing comma splices',
+        'Revise comma errors',
+        {
+          title: 'I Do — The Comma Splice',
+          instruction: 'A comma splice happens when two complete sentences are joined with only a comma — which isn\'t strong enough to hold them together. Watch me identify and fix them.',
+          example: '"The tide came in, we had to move our towels." ✗ (comma splice)',
+          demonstration: 'Both sides are complete sentences. A comma alone can\'t join them. Fix options: (1) Full stop: "The tide came in. We had to move our towels." (2) Conjunction: "The tide came in, so we had to move our towels." (3) Semicolon: "The tide came in; we had to move our towels."',
+          tip: 'Test each side of the comma. If BOTH sides can stand alone as sentences, a comma alone is wrong — you need a full stop, semicolon, or conjunction.',
+        },
+        {
+          title: 'We Do — Spot and Fix',
+          instruction: 'Some of these sentences have comma splices, some are correct. Identify which are wrong and fix them.',
+          sentences: [
+            'It was raining heavily, the match was cancelled.',
+            'She studied all night, but she still felt unprepared.',
+            'The kiwi is nocturnal, it comes out to feed after dark.',
+          ],
+          prompt: 'Can both sides stand alone? If yes, the comma splice needs fixing. What\'s the best fix for each?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Fix each comma splice using the method shown in brackets.',
+          tasks: [
+            'The presentation went well, the audience clapped loudly. (use a conjunction)',
+            'We planted the seeds in autumn, they sprouted in spring. (use a semicolon)',
+            'Tane finished the race first, he was exhausted but thrilled. (use a full stop)',
+            '✦ Bonus: Write a paragraph of 5 sentences about a recent event. Swap with a partner — can they find any comma splices you accidentally included?',
+          ],
+        }
+      ),
+    },
+
+    3: {
+      Monday: lesson(
+        'Antonyms & shades of meaning',
+        'Understand word relationships',
+        {
+          title: 'I Do — Opposites and the Spectrum Between',
+          instruction: 'An antonym is a word that means the opposite of another word. But meaning isn\'t just black and white — there\'s often a whole spectrum between two opposites. Watch me map the shades.',
+          example: '"cold ←→ hot" but also: freezing → icy → cold → cool → warm → hot → scorching → boiling',
+          demonstration: '"Cold" and "hot" are antonyms. But between them are many shades. Choosing the right shade of meaning is what separates precise writing from vague writing. "The water was warm" is very different from "The water was scalding."',
+          tip: 'Think of meaning as a sliding scale, not a switch. The most powerful word sits at exactly the right point on that scale for your sentence.',
+        },
+        {
+          title: 'We Do — Map the Spectrum',
+          instruction: 'For each pair of antonyms, fill in at least three words that sit between them on the meaning spectrum.',
+          sentences: [
+            'tiny ←→ enormous: ___, ___, ___',
+            'happy ←→ miserable: ___, ___, ___',
+            'quiet ←→ deafening: ___, ___, ___',
+          ],
+          prompt: 'What context would make you choose each word? Where on the scale does your sentence need to sit?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Replace the underlined word with one that sits at the right point on the meaning spectrum for the context.',
+          tasks: [
+            'The explorer was <u>cold</u> as she crossed the Antarctic plateau. (needs extreme)',
+            'He spoke in a <u>quiet</u> voice so as not to wake the baby. (needs gentle/soft)',
+            'The smell from the rubbish bin was <u>bad</u>. (needs intense and specific)',
+            '✦ Bonus: Write a paragraph describing a storm. Use words from the extreme ends of at least three different meaning spectrums.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Subject-verb agreement: tricky cases (everyone, each)',
+        'Apply agreement rules accurately',
+        {
+          title: 'I Do — The Tricky Ones',
+          instruction: 'Most subject-verb agreement is straightforward. But some words look plural and feel plural yet are grammatically singular. Watch me work through the trickiest ones.',
+          example: '"<u>Everyone</u> in the two classes <u>was</u> invited." (not "were") | "<u>Each</u> of the players <u>has</u> a number." (not "have")',
+          demonstration: '"Everyone," "everybody," "someone," "nobody," "each," "either," "neither" — all singular, even when they refer to many people. The trick: mentally replace with "every single person" — then the singular verb feels natural.',
+          tip: 'Everyone/each/either/neither/nobody = singular. Replace with "every single one" in your head — the right verb follows naturally.',
+        },
+        {
+          title: 'We Do — Choose the Right Verb',
+          instruction: 'Choose the correct verb form for each sentence.',
+          sentences: [
+            'Everyone in the kapa haka group ___ (know/knows) the words.',
+            'Each of the entries ___ (was/were) judged on three criteria.',
+            'Neither of the referees ___ (was/were) happy with the decision.',
+          ],
+          prompt: 'Replace the subject with "every single one" — which verb sounds right now?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Correct the subject-verb agreement error in each sentence.',
+          tasks: [
+            'Everyone in the syndicate have submitted their work.',
+            'Each of the kūmara plants were carefully watered.',
+            'Neither of the answers are correct.',
+            'Somebody have left their bag on the mat.',
+            '✦ Bonus: Write 5 sentences, each using one of these subjects: everyone, each, neither, somebody, anyone. Make sure agreement is correct in every one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Compound sentences: new contexts & conjunctions',
+        'Extend compound sentence use',
+        {
+          title: 'I Do — FANBOYS in Fresh Contexts',
+          instruction: 'We know FANBOYS conjunctions (for, and, nor, but, or, yet, so). This week we use them in new writing contexts — reports, recounts, and arguments — to see how the same conjunction does different jobs depending on context.',
+          example: 'Recount: "We arrived at Tāmaki Makaurau, <u>and</u> the whole whānau was waiting." | Argument: "The policy is popular, <u>yet</u> the evidence does not support it."',
+          demonstration: '"And" adds. "But/yet" contrasts. "So" shows result. "Or" gives alternatives. "For" gives reason (formal). "Nor" adds a negative. The conjunction you choose shapes the relationship between the two ideas.',
+          tip: 'Before picking a conjunction, decide: am I adding, contrasting, showing a result, or giving a reason? That decides which FANBOYS fits.',
+        },
+        {
+          title: 'We Do — Choose the Right FANBOYS',
+          instruction: 'Join each pair of sentences with the best FANBOYS conjunction. Add a comma before the conjunction.',
+          sentences: [
+            'The hīkoi had been going for three days. The marchers showed no sign of stopping.',
+            'You can present your findings as a poster. You can create a short video.',
+            'The experiment failed the first time. The team learnt something valuable from it.',
+          ],
+          prompt: 'What is the relationship between the two ideas? That decides the conjunction.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a compound sentence for each context using the conjunction given.',
+          tasks: [
+            'Write about a kaitiakitanga project using "so".',
+            'Write about a time something went wrong using "yet".',
+            'Write a sentence giving someone two choices using "or".',
+            '✦ Bonus: Write a paragraph about an environmental issue. Use at least three different FANBOYS conjunctions. Underline each one.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: upgrading bland verbs in a passage',
+        'Improve verb precision',
+        {
+          title: 'I Do — Bland Verbs Drain Energy',
+          instruction: 'Some verbs are so vague they tell us almost nothing: went, got, said, did, made, was. Watch me identify them in a passage and replace them with verbs that do real work.',
+          example: '"The children <u>went</u> to the beach. They <u>got</u> into the water. Dad <u>said</u> they should come out."',
+          demonstration: '"went" → "raced" | "got" → "plunged" | "said" → "bellowed". New version: "The children <u>raced</u> to the beach. They <u>plunged</u> into the water. Dad <u>bellowed</u> at them to come out." The scene comes alive.',
+          tip: 'Highlight every "went," "got," "said," "did," "made," "was" in a passage. Each one is an upgrade opportunity.',
+        },
+        {
+          title: 'We Do — Upgrade the Passage',
+          instruction: 'Replace every underlined bland verb with a more precise one. The new verb must match the context.',
+          sentences: [
+            'The kererū <u>went</u> from branch to branch, <u>getting</u> the ripest berries. It <u>made</u> a loud noise with its wings as it <u>went</u> away.',
+          ],
+          prompt: 'What is actually happening physically? What does a more precise verb tell the reader that "went" and "got" don\'t?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this whole passage, upgrading every bland verb you can find.',
+          tasks: [
+            'On field trip day, the class got on the bus early. They went to the wetland reserve near Ōtaki. The guide said something about the different birds. Some students went into the hide and got photos of a bittern. Everyone said it was great.',
+            '✦ Bonus: Count how many bland verbs you replaced. Write the before and after side by side. Which passage is more engaging and why?',
+          ],
+        }
+      ),
+    },
+
+    4: {
+      Monday: lesson(
+        'Apostrophes for contraction',
+        'Use contractions correctly',
+        {
+          title: 'I Do — The Apostrophe That Replaces Letters',
+          instruction: 'A contraction apostrophe shows where one or more letters have been removed when two words are joined together. Watch me build contractions and show exactly what the apostrophe replaces.',
+          example: '"do not" → "don\'t" (the apostrophe replaces the \'o\') | "they are" → "they\'re" | "I would" → "I\'d"',
+          demonstration: '"cannot" → "can\'t" — the apostrophe replaces "no". "would not" → "wouldn\'t" — replaces "o". "she is" → "she\'s" — replaces "i". The apostrophe sits exactly where the missing letter(s) were.',
+          tip: 'The apostrophe goes WHERE THE LETTERS WERE REMOVED — not just anywhere between the words.',
+        },
+        {
+          title: 'We Do — Contract and Expand',
+          instruction: 'Write the contraction for each pair of words, and expand each contraction back to the full form.',
+          sentences: [
+            'we will → ___  |  it\'s → ___',
+            'have not → ___  |  they\'d → ___',
+            'I am → ___  |  couldn\'t → ___',
+          ],
+          prompt: 'Exactly which letters did the apostrophe replace? Could you be confused between "it\'s" (it is) and "its" (belonging to it)?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Fix the apostrophe errors in these sentences — some are missing, some are in the wrong place.',
+          tasks: [
+            'Sh\'es not sure if theyre coming to the hangi tonight.',
+            'I wo\'nt be ready until the bus ha\'s already left.',
+            'Weve been waiting here for ages — it isnt fair.',
+            'They\'re dog isnt allowed inside but its a cold night.',
+            '✦ Bonus: Write a conversation (6 lines of dialogue) between two friends making plans. Use at least 6 different contractions correctly.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Relative pronouns: who, which, that',
+        'Use relative clauses accurately',
+        {
+          title: 'I Do — Clauses That Give Extra Information',
+          instruction: 'A relative clause is a type of subordinate clause that gives more information about a noun. It\'s introduced by a relative pronoun: "who" (for people), "which" (for things), "that" (for people or things in defining clauses). Watch me build them.',
+          example: '"The woman <u>who won the award</u> is our neighbour." | "The bridge<u>, which was built in 1902,</u> is being restored." | "The book <u>that she recommended</u> was brilliant."',
+          demonstration: '"who" → refers back to a person: "The boy who broke the window has apologised." "which" → refers back to a thing, adds non-essential info (use commas): "The river, which floods every winter, is rising again." "that" → defines which one (no commas): "The path that leads to the pā is steep."',
+          tip: '"Who" = people. "Which" = things + commas (extra info). "That" = defines which one, no commas.',
+        },
+        {
+          title: 'We Do — Choose the Right Relative Pronoun',
+          instruction: 'Complete each sentence with who, which, or that.',
+          sentences: [
+            'The rangatira ___ led the iwi was known for her wisdom.',
+            'The old pōhutukawa, ___ had stood for 300 years, was finally protected.',
+            'This is the exact track ___ leads to the summit.',
+          ],
+          prompt: 'Does the clause define which one, or add extra information? Does it refer to a person or a thing?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add a relative clause to each sentence using the pronoun given.',
+          tasks: [
+            'The scientist ___ (who) discovered the new species published her findings last month.',
+            'Rotorua, ___ (which) is famous for its geothermal activity, attracts tourists year-round.',
+            'She finally found the notebook ___ (that) she had been searching for all morning.',
+            '✦ Bonus: Write a paragraph about a local place or person of significance. Include at least three relative clauses — one with who, one with which (with commas), and one with that.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Topic sentences: revisit with persuasive purpose',
+        'Apply to persuasive writing',
+        {
+          title: 'I Do — Topic Sentences That Argue',
+          instruction: 'In Term 1 we wrote topic sentences for informational paragraphs. This week, topic sentences carry an opinion or argument — they tell the reader not just what the paragraph is about, but what position you\'re taking.',
+          example: 'Informational: "Recycling reduces waste sent to landfill." | Persuasive: "<u>Recycling is not enough — we must stop producing unnecessary plastic altogether.</u>"',
+          demonstration: 'The persuasive topic sentence does three jobs: (1) introduces the paragraph\'s main idea, (2) makes the writer\'s position clear, (3) makes the reader want to know the evidence. "Everyone deserves access to clean water" is both a topic sentence AND an argument.',
+          tip: 'A strong persuasive topic sentence takes a clear position. If someone could disagree with it — it\'s persuasive. If it\'s just a fact — it\'s informational.',
+        },
+        {
+          title: 'We Do — Upgrade to Persuasive',
+          instruction: 'Turn each informational topic sentence into a persuasive one by adding a position or claim.',
+          sentences: [
+            'Smartphones are used by many young people.',
+            'Schools have canteens that sell food to students.',
+            'Exercise has effects on health.',
+          ],
+          prompt: 'What position could a writer take on each topic? Add the opinion to make it genuinely persuasive.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a persuasive topic sentence for each argument prompt.',
+          tasks: [
+            'Topic: whether students should have homework.',
+            'Topic: whether animals should be kept in zoos.',
+            'Topic: whether Aotearoa should have a four-day school week.',
+            '✦ Bonus: Choose one topic and write the full paragraph that follows your topic sentence — include at least two pieces of evidence or reasoning.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: removing unnecessary apostrophes',
+        'Revise apostrophe errors',
+        {
+          title: 'I Do — The Apostrophe That Shouldn\'t Be There',
+          instruction: 'One of the most common writing errors is adding apostrophes to plural nouns. Plurals NEVER need apostrophes — only possessives and contractions do. Watch me find and remove the rogue apostrophes.',
+          example: '"The shop sold apple\'s, pear\'s and mango\'s." ✗ → "The shop sold apples, pears and mangos." ✓',
+          demonstration: '"apple\'s" — is this showing possession or a contraction? No — it\'s just the plural of apple. Remove it. The rule: if you\'re just making a word mean "more than one" — NO apostrophe. Ever.',
+          tip: 'Before adding an apostrophe, ask: (1) Is something being owned? (2) Are letters missing? If neither — remove the apostrophe.',
+        },
+        {
+          title: 'We Do — Find the Rogue Apostrophes',
+          instruction: 'Some of these sentences have unnecessary apostrophes. Find and remove them.',
+          sentences: [
+            'The student\'s completed their project\'s and handed them to the kaiako.',
+            'We saw kiwi\'s, tūī\'s and kererū\'s on the forest walk.',
+            'The team\'s won three trophy\'s this season.',
+          ],
+          prompt: 'Is the apostrophe showing possession or a missing letter? If neither — delete it.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence, correcting all apostrophe errors (some are missing where needed, some are present where they shouldn\'t be).',
+          tasks: [
+            'The children\'s bags were full of book\'s, pencil\'s and lunchboxe\'s.',
+            'Mias cat knocked over all the plant\'s on the windowsill.',
+            'The two schools debate teams both won their semi-final\'s.',
+            '✦ Bonus: Write a paragraph about a market or event you\'ve been to. Use plurals, possessives, and contractions — but not a single apostrophe error.',
+          ],
+        }
+      ),
+    },
+
+    5: {
+      Monday: lesson(
+        'Brackets & dashes for extra information',
+        'Use parenthetical punctuation',
+        {
+          title: 'I Do — Slipping in Extra Detail',
+          instruction: 'Brackets and dashes both let you add extra information into a sentence without interrupting its flow. Watch how I use them and when I choose one over the other.',
+          example: 'Brackets: "The tuatara (New Zealand\'s ancient living fossil) can live for over 100 years." | Dashes: "The tuatara — New Zealand\'s ancient living fossil — can live for over 100 years."',
+          demonstration: 'Both add the same parenthetical information. Brackets feel more like a footnote — the information is secondary. Dashes feel more dramatic — they draw attention to the extra detail. Both must be able to be removed from the sentence and leave it grammatically complete.',
+          tip: 'Remove the section between the brackets or dashes. If the sentence still makes sense — your punctuation is correct.',
+        },
+        {
+          title: 'We Do — Add the Extra Detail',
+          instruction: 'Insert the given extra information using either brackets or dashes. Then try the other option — does one feel better?',
+          sentences: [
+            'The wētāpunga [largest wētā species in the world] is found on offshore islands.',
+            'Lake Taupō [formed by a massive volcanic eruption about 1,800 years ago] is a taonga to Ngāti Tūwharetoa.',
+            'The school production [three weeks of rehearsals had led to this moment] was a huge success.',
+          ],
+          prompt: 'Does the extra information feel like a quiet aside or a dramatic emphasis? That helps you choose brackets vs dashes.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add parenthetical information to each sentence using brackets or dashes as indicated.',
+          tasks: [
+            'The huia [use brackets: an extinct taonga bird of Aotearoa] was considered sacred by Māori.',
+            'My neighbour [use dashes: she\'s a marine biologist] studies dolphin communication.',
+            'The competition [use brackets: held every two years since 1987] attracted over 500 entries.',
+            '✦ Bonus: Write a paragraph about a topic you know well. Include two pieces of parenthetical information — one using brackets, one using dashes.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Comparative & superlative adjectives in sentences',
+        'Apply comparison language',
+        {
+          title: 'I Do — Comparing with Adjectives',
+          instruction: 'We revisit comparatives and superlatives — but this time in the context of writing whole sentences, not just forming the words. Watch how I use comparison language to build interesting, precise sentences.',
+          example: '"The second mountain was <u>steeper</u> than the first." | "That was the <u>most challenging</u> tramp I have ever done."',
+          demonstration: 'Comparative (-er / more): compare TWO things. "The river is wider here than upstream." Superlative (-est / most): compare THREE or more, or one against all others. "This is the deepest lake in the South Island." Irregulars: good → better → best. bad → worse → worst.',
+          tip: 'Two things = comparative (-er/more). Three or more, or against everything else = superlative (-est/most).',
+        },
+        {
+          title: 'We Do — Build the Sentences',
+          instruction: 'Expand each prompt into a full sentence using the comparative or superlative form shown.',
+          sentences: [
+            'the kākāpō / heavy / all New Zealand parrots (superlative)',
+            'Wellington / windy / Auckland (comparative)',
+            'today\'s session / challenging / yesterday\'s (comparative)',
+          ],
+          prompt: 'Are we comparing two things or ranking against all others? Does the adjective use -er/-est or more/most?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a full sentence for each prompt using the correct comparative or superlative form.',
+          tasks: [
+            'Use the superlative of "significant" in a sentence about an event in NZ history.',
+            'Compare two animals using the comparative of "fast" or "fierce".',
+            'Use the superlative of "good" in a sentence about a book, film, or sports moment.',
+            '✦ Bonus: Write a paragraph comparing two places in Aotearoa you have visited or know about. Use at least four comparative or superlative adjectives.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Combining short sentences into one smooth sentence',
+        'Sentence combining',
+        {
+          title: 'I Do — From Choppy to Smooth',
+          instruction: 'Short sentences are powerful in the right place — but a whole paragraph of them sounds choppy. Watch me combine them into fewer, smoother sentences using a range of techniques.',
+          example: 'Choppy: "The kārearea is a falcon. It is native to New Zealand. It is the fastest bird in the country. It hunts other birds." → Smooth: "The kārearea, a falcon native to New Zealand, is the country\'s fastest bird and hunts other birds in mid-air."',
+          demonstration: 'Techniques used: (1) relative clause to embed "native to New Zealand", (2) appositive "a falcon" to identify it, (3) conjunction "and" to join the final two ideas. One sentence does the work of four.',
+          tip: 'Ask: which two sentences share a subject? Can one become a clause inside the other? Can two short ideas be joined with a conjunction?',
+        },
+        {
+          title: 'We Do — Combine Together',
+          instruction: 'Combine each group of short sentences into one or two smooth sentences.',
+          sentences: [
+            'The tītī is a seabird. It migrates every year. It travels to the Pacific. It returns to Rakiura to breed.',
+            'The pā was built on a hill. The hill was steep. It was easy to defend. It had a view of the harbour.',
+          ],
+          prompt: 'Which ideas can be embedded? Which can be joined? Aim for two sentences maximum from each group.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Combine each set of choppy sentences into one smooth, well-constructed sentence.',
+          tasks: [
+            'Rangi is in our class. He is a good swimmer. He won the regional championship. He trains five days a week.',
+            'The pōhutukawa blooms in December. It is called the New Zealand Christmas tree. Its flowers are red. They attract tūī.',
+            'The storm hit last night. It was very strong. Trees fell down. Power was cut for many homes.',
+            '✦ Bonus: Find a paragraph in your writing folder that has too many short sentences. Rewrite it combining sentences. Compare the two versions.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: peer edit for punctuation variety',
+        'Collaborative editing',
+        {
+          title: 'I Do — Reading Like an Editor',
+          instruction: 'Today we peer-edit with a specific focus: punctuation variety. A piece of writing that only uses full stops and commas is missing opportunities. Watch me read a passage and mark it up for punctuation variety.',
+          example: '"The trip was great. We saw lots of things. It was sunny. We had lunch by the river. It was nice. We went home tired."',
+          demonstration: 'Every sentence ends with a full stop. No semicolons, no dashes, no colons — no variety. Editing pass: "The trip was great; we saw more than we had expected. The sun blazed — perfect conditions for exploring. By the river, we ate lunch: sandwiches, fruit, and cold water. We went home tired but happy."',
+          tip: 'Editor\'s checklist for punctuation variety: At least one colon or semicolon? Any dashes? Any brackets? Could any full stop be an exclamation mark?',
+        },
+        {
+          title: 'We Do — Mark Up Together',
+          instruction: 'Read this passage and mark every place where punctuation could be more varied. Discuss your changes.',
+          sentences: [
+            'The science fair was held on Thursday. Every class had an entry. Our class made a working volcano. It erupted three times. The judges were impressed. We won first place. It was a good day.',
+          ],
+          prompt: 'Where could a semicolon replace a full stop? Where could a dash add drama? Is there a list that needs a colon?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Swap a piece of your own writing with a partner. Edit each other\'s work specifically for punctuation variety using the checklist below.',
+          tasks: [
+            '✦ Checklist: At least one semicolon used correctly.',
+            '✦ Checklist: At least one colon introducing a list or explanation.',
+            '✦ Checklist: At least one dash or pair of brackets for parenthetical information.',
+            '✦ Bonus: Rewrite your partner\'s weakest paragraph — the one with the least punctuation variety — as a model of what it could look like.',
+          ],
+        }
+      ),
+    },
+  },
+
   3: { 1: { Monday: lesson('Tier 2 vocabulary: words for feelings & emotion','Select emotive vocabulary',{title:'I Do',instruction:'Precise emotion vocabulary moves readers. Watch me build an "emotion word ladder" — from mild to intense.',example:'sad → unhappy → miserable → devastated → heartbroken',demonstration:'Each word is more intense. A character who is "unhappy" about losing a game feels different from one who is "devastated." Choosing the right level signals to the reader how much this matters.',tip:'Match the emotion word to the story\'s stakes. Small disappointment → "disappointed." Life-changing loss → "devastated."'},{title:'We Do',instruction:'Build emotion ladders for these feelings together.',sentences:['angry → ___ → ___ → ___ → ___','happy → ___ → ___ → ___ → ___'],prompt:'Which word would you use in a funny story? Which in a dramatic one?'},{title:'You Do',instruction:'Replace each plain emotion word with one from the correct intensity level.',tasks:['She was <u>sad</u> when her goldfish died. (use devastated or heartbroken)','He was <u>happy</u> when his name was called. (mild — use pleased or delighted)','The crowd was <u>angry</u> at the decision. (intense — use furious or outraged)','✦ Bonus: Write an "emotion ladder" for "scared" with 6 levels from mild to extreme.']}), Tuesday: lesson('Nouns revisited: count vs. non-count nouns','Deepen noun understanding',{title:'I Do',instruction:'Count nouns can be counted and have plurals. Non-count (mass) nouns cannot be counted and have no plural form.',example:'Count: one book, two books ✓ | Non-count: one sand, two sands ✗',demonstration:'"Sand" — you can\'t say "two sands." You say "some sand," "a grain of sand." Other non-count: water, music, advice, furniture, information. With count nouns you use "a/an" or numbers. With non-count you use "some," "much," "a lot of."',tip:'"Much" = non-count ("much water"). "Many" = count ("many cups"). If you\'re unsure, try adding a number — if it sounds wrong, it\'s non-count.'},{title:'We Do',instruction:'Sort these nouns and choose the correct determiner (some/a/an/many/much).',sentences:['___ furniture | ___ chairs | ___ advice | ___ suggestions | ___ lightning'],prompt:'Count or non-count? Which determiner fits?'},{title:'You Do',instruction:'Correct the non-count noun errors in these sentences.',tasks:['She gave me a lot of advices about the exam.','We need two furnitures for the new room.','Can I have some informations about the trip?','There were many thunders during the storm.','✦ Bonus: Write 6 sentences — 3 using count nouns correctly, 3 using non-count nouns correctly.']}), Wednesday: lesson('Simple sentences: revisit in narrative context','Apply in narrative writing',{title:'I Do',instruction:'In narrative, simple sentences aren\'t just exercises — they\'re dramatic tools. Watch how a string of short simple sentences creates suspense.',example:'"She stopped. She listened. The floorboard creaked. Someone was there."',demonstration:'Each sentence is complete. Each ends with a full stop — a tiny pause. That rhythm creates tension. Compare: "She stopped and listened because a floorboard creaked and someone was there." — all the information, but none of the tension.',tip:'In action or suspense moments, break your writing into short simple sentences. Let the reader feel every beat.'},{title:'We Do',instruction:'Rewrite this rushed description as a series of short simple sentences to build suspense.',sentences:['The old house was dark and silent and the child walked slowly up the creaking staircase and then she heard a sound coming from behind the closed door at the end of the hall.'],prompt:'Where are the moments of tension? Break them apart.'},{title:'You Do',instruction:'Write a 5-sentence suspense sequence using only simple sentences. Then label the effect each creates.',tasks:['Scene: a character is alone in a forest at night and hears something.','Must use: 5 simple sentences, each 5–8 words. No conjunctions.','✦ Bonus: Now rewrite the same scene using one long complex sentence. Compare the effect.']}), Thursday: lesson('Proofreading: dialogue punctuation (speech marks)','Edit dialogue conventions',{title:'I Do',instruction:'Dialogue (speech) has its own punctuation rules. Watch me show the five key rules with examples.',example:'"I think we\'re lost," she whispered.\n"Lost?" said Tom. "Are you sure?"\n"Yes," she replied. "Completely."',demonstration:'Rule 1: Speech marks around the spoken words. Rule 2: Comma (not full stop) before the closing speech mark if a speech tag follows. Rule 3: The speech tag (she whispered) is NOT capitalised after the comma. Rule 4: New speaker = new line. Rule 5: Punctuation inside the speech marks.',tip:'Ask: is the full stop job done by the comma? If there\'s a speech tag, the period becomes a comma inside the speech marks.'},{title:'We Do',instruction:'Fix the dialogue punctuation in these exchanges.',sentences:['"We should go" said Marcus "before it gets dark."','Anna replied "but I havent finished yet"','"Look out screamed the driver'],prompt:'Apply the 5 rules one at a time. What is wrong with each line?'},{title:'You Do',instruction:'Rewrite this dialogue with correct punctuation throughout.',tasks:['"where are we going asked lily\n"to the market said dad I need to get some things\n"can I have a sausage she asked\n"if you\'re good he replied\n✦ Bonus: Write a 6-line dialogue between two characters. Apply all 5 dialogue punctuation rules perfectly.']}) }, },
   4: { 1: { Monday: lesson('Tier 2 vocabulary: words for argument & opinion','Use persuasive vocabulary',{title:'I Do',instruction:'Persuasive writing uses specific vocabulary to signal opinion, certainty, and importance. Watch me identify and use these words.',example:'"It is <u>crucial</u> that schools provide healthy lunches. <u>Evidently</u>, poor nutrition affects learning. <u>Furthermore</u>, it <u>significantly</u> impacts behaviour."',demonstration:'Crucial (strong importance), evidently (signals evidence), furthermore (adds a point), significantly (makes impact sound large). These words don\'t just fill space — they do persuasive work.',tip:'"Very important" → "crucial." "Also" → "furthermore." "Shows" → "demonstrates." Upgrade to the persuasive register.'},{title:'We Do',instruction:'Replace the plain words with persuasive vocabulary.',sentences:['It is <u>important</u> that we recycle more.','This <u>shows</u> that the problem is <u>big</u>.','<u>Also</u>, the research <u>proves</u> it works.'],prompt:'Which persuasive word fits best? Does it change how convincing the sentence sounds?'},{title:'You Do',instruction:'Rewrite each sentence using persuasive vocabulary.',tasks:['The problem of food waste is <u>bad</u>.','This <u>shows</u> that something needs to change.','It is <u>important</u> that everyone does their part.','✦ Bonus: Write a 3-sentence persuasive opening about a school rule you\'d like to change. Use at least 4 persuasive words.']}), Tuesday: lesson('Nouns: gerunds as subjects ("Swimming is…")','Identify gerund nouns',{title:'I Do',instruction:'A gerund is a verb form ending in -ing that works as a noun. It can be the subject of a sentence. Watch me identify and use gerunds.',example:'"<u>Swimming</u> is excellent exercise. <u>Writing</u> clearly is a valuable skill."',demonstration:'"Swimming" — looks like a verb, acts as a noun. It\'s the subject of the sentence. "Writing" — same: it\'s what the sentence is ABOUT. You can test it: replace with a regular noun — "Sport is excellent exercise." Still works. That means swimming IS a noun here.',tip:'Gerund as subject: can I replace it with a noun like "sport" or "skill"? If yes — it\'s a gerund.'},{title:'We Do',instruction:'Identify the gerund in each sentence and confirm it\'s acting as a noun.',sentences:['Reading every day improves vocabulary.','Travelling to new places broadens your mind.','Winning isn\'t everything.'],prompt:'What is the subject of each sentence? Is it a gerund? What noun could replace it?'},{title:'You Do',instruction:'Use each gerund as the subject of a sentence.',tasks:['Running → ___','Cooking → ___','Learning → ___','Painting → ___','✦ Bonus: Write 3 sentences about things you enjoy, each using a gerund as the subject.']}), Wednesday: lesson('Simple sentences: direct & concise statements','Apply in persuasive writing',{title:'I Do',instruction:'In persuasive writing, simple sentences land like punches. They state a fact or claim directly. Watch how I use short, direct sentences to drive a point home.',example:'"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',demonstration:'Four short sentences. No padding. No apology. Each one is a single, clear claim. This directness signals confidence and conviction — both essential in persuasive writing.',tip:'In persuasive writing, vary: long sentences to explain and argue, short sentences to make your key claim land hard.'},{title:'We Do',instruction:'Convert these wordy arguments into direct, punchy simple sentences.',sentences:['Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them.','The situation in which animals are kept in small cages for entertainment is something that is not acceptable and should not be allowed.'],prompt:'What is the core claim? Strip it back to the fewest words that still make the point.'},{title:'You Do',instruction:'Write a direct, concise simple sentence for each argument.',tasks:['Argument: school should start later because teenagers need more sleep.','Argument: fast food advertising should not be shown during children\'s programmes.','Argument: every student should learn a second language.','✦ Bonus: Write a persuasive paragraph. Use 3 short punchy sentences and 2 longer explanation sentences alternately.']}), Thursday: lesson('Proofreading: checking for consistency in a report','Edit informational text',{title:'I Do',instruction:'Reports need consistency: consistent tense (usually present), consistent formal register, consistent formatting of lists and headings. Watch me edit an inconsistent report excerpt.',example:'"Dolphins are marine mammals. They lived in oceans worldwide (wrong tense). Dolphins eat fish, squid and they also had crustaceans (inconsistent list)."',demonstration:'Fixed: "Dolphins are marine mammals. They <u>live</u> in oceans worldwide. Dolphins eat fish, squid<u>,</u> and crustaceans." Tense fixed to present. List restructured to parallel form.',tip:'Reports: present tense for facts. Parallel lists: all nouns, or all verbs — not mixed.'},{title:'We Do',instruction:'Find and fix inconsistencies in this science report paragraph.',sentences:['The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf. Then a caterpillar hatched and it ate the leaf. The caterpillar forms a chrysalis and then eventually it became a butterfly and emerged.'],prompt:'Tense errors? List inconsistencies? Register shifts?'},{title:'You Do',instruction:'Rewrite this passage making it consistent in tense, register, and structure.',tasks:['Kauri trees are one of the largest tree species in the world. They grew very slowly and can lived for over 2,000 years. The kauri forests were very important to Māori people. Kauri gum, the resin from these trees, were used for many purposes including it was used as a fire starter, and for making varnish, and people also chewed it.','✦ Bonus: Write 5 sentences about an animal of your choice in a consistent report style. Present tense, formal register, parallel lists.']}) }, },
 }
