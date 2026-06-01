@@ -18,15 +18,16 @@ export default function FridayAssessment({ term, week }) {
   ]
 
   const prompt = assessmentPrompts[(week - 1) % assessmentPrompts.length]
+  const fridayColour = '#facc15'
 
   return (
     <div className="friday-card">
-      <div className="friday-card__header">
+      <div className="friday-card__header" style={{ borderLeft: `3px solid ${fridayColour}` }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <span style={{ fontSize: '2rem' }}>📝</span>
           <div>
-            <h2>Friday Writing Assessment</h2>
-            <p style={{ opacity: 0.85, fontSize: '0.85rem', marginTop: 2 }}>
+            <h2 style={{ color: fridayColour }}>Friday Writing Assessment</h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: 2, letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>
               Term {term} · Week {week} · Apply this week's skills independently
             </p>
           </div>
@@ -34,85 +35,81 @@ export default function FridayAssessment({ term, week }) {
       </div>
 
       <div className="friday-card__body">
-        <div style={{ marginBottom: '1.5rem' }}>
-          <div
-            style={{
-              fontSize: '0.7rem',
-              fontWeight: 700,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              color: 'var(--ink-soft)',
-              marginBottom: '0.5rem',
-            }}
-          >
+        {/* Writing task */}
+        <div style={{ marginBottom: '1.75rem' }}>
+          <div style={{
+            fontSize: '0.65rem',
+            fontWeight: 700,
+            letterSpacing: '0.14em',
+            textTransform: 'uppercase',
+            color: 'var(--text-muted)',
+            marginBottom: '0.6rem',
+          }}>
             Writing Task
           </div>
-          <div
-            style={{
-              background: 'var(--paper-warm)',
-              borderLeft: '4px solid #b91c1c',
-              borderRadius: '0 8px 8px 0',
-              padding: '1rem 1.25rem',
-              fontSize: '1.05rem',
-              lineHeight: 1.65,
-              fontFamily: 'var(--font-display)',
-            }}
-          >
+          <div style={{
+            background: 'var(--bg-surface)',
+            borderLeft: `3px solid ${fridayColour}`,
+            borderRadius: '0 8px 8px 0',
+            padding: '1.1rem 1.4rem',
+            fontSize: '1.2rem',
+            lineHeight: 1.65,
+            color: 'var(--text)',
+          }}>
             {prompt}
           </div>
         </div>
 
-        <div style={{ marginBottom: '1.5rem' }}>
-          <div
-            style={{
-              fontSize: '0.7rem',
-              fontWeight: 700,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              color: 'var(--ink-soft)',
-              marginBottom: '0.75rem',
-            }}
-          >
+        {/* Checklist */}
+        <div style={{ marginBottom: '1.75rem' }}>
+          <div style={{
+            fontSize: '0.65rem',
+            fontWeight: 700,
+            letterSpacing: '0.14em',
+            textTransform: 'uppercase',
+            color: 'var(--text-muted)',
+            marginBottom: '0.75rem',
+          }}>
             Self-Assessment Checklist
           </div>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {checklist.map((item, i) => (
-              <li
-                key={i}
-                style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  gap: '0.75rem',
-                  padding: '0.6rem 1rem',
-                  background: 'white',
-                  border: '1.5px solid var(--rule)',
-                  borderRadius: '6px',
-                  fontSize: '0.93rem',
-                }}
-              >
-                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>☐</span>
+              <li key={i} style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '0.75rem',
+                padding: '0.7rem 1rem',
+                background: 'var(--bg-surface)',
+                border: '1px solid var(--border)',
+                borderRadius: '6px',
+                fontSize: '1.05rem',
+                color: 'var(--text)',
+                lineHeight: 1.5,
+              }}>
+                <span style={{ fontSize: '1.1rem', flexShrink: 0, color: fridayColour }}>☐</span>
                 {item}
               </li>
             ))}
           </ul>
         </div>
 
-        <div
-          style={{
-            background: '#fef3c7',
-            border: '1.5px solid #fbbf24',
-            borderRadius: '10px',
-            padding: '1rem 1.25rem',
-            fontSize: '0.9rem',
-            display: 'flex',
-            gap: '0.75rem',
-            alignItems: 'flex-start',
-          }}
-        >
+        {/* Time guide */}
+        <div style={{
+          background: 'rgba(250,204,21,0.07)',
+          border: '1px solid rgba(250,204,21,0.25)',
+          borderRadius: '8px',
+          padding: '1rem 1.25rem',
+          fontSize: '1rem',
+          color: 'var(--text)',
+          display: 'flex',
+          gap: '0.75rem',
+          alignItems: 'flex-start',
+          lineHeight: 1.6,
+        }}>
           <span style={{ fontSize: '1.2rem', flexShrink: 0 }}>⏱️</span>
           <span>
-            <strong>Time guide:</strong> 5 minutes planning → 10 minutes writing → 5 minutes
-            self-edit using the checklist above. Swap with a partner for peer feedback if time allows.
+            <strong style={{ color: fridayColour }}>Time guide: </strong>
+            5 minutes planning → 10 minutes writing → 5 minutes self-edit using the checklist above. Swap with a partner for peer feedback if time allows.
           </span>
         </div>
       </div>
