@@ -1079,6 +1079,12 @@ export default function FridayAssessment({ term, week }) {
   const [phase, setPhase] = useState('intro') // intro | quiz | winner | writing
   const [finalScores, setFinalScores] = useState([0, 0])
 
+  // Reset to intro whenever term or week changes
+  useEffect(() => {
+    setPhase('intro')
+    setFinalScores([0, 0])
+  }, [term, week])
+
   const handleQuizFinish = useCallback((scores) => {
     setFinalScores(scores)
     setPhase('winner')
@@ -1137,7 +1143,7 @@ export default function FridayAssessment({ term, week }) {
       )}
 
       {phase === 'quiz' && (
-        <QuizPhase term={term} week={week} onFinish={handleQuizFinish} />
+        <QuizPhase key={`${term}-${week}`} term={term} week={week} onFinish={handleQuizFinish} />
       )}
 
       {phase === 'winner' && (

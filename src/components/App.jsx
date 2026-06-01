@@ -19,21 +19,22 @@ export default function App() {
   const [fridayKey, setFridayKey] = useState(0)
 
   const handleGo = useCallback(async () => {
-    setLoading(true)
     setError(null)
-    setActiveLesson(null)
 
+    if (day === 'Friday') {
+      setActiveMeta({ term, week, day })
+      setActiveLesson('friday')
+      setFridayKey(k => k + 1)
+      return
+    }
+
+    setLoading(true)
+    setActiveLesson(null)
     try {
-      if (day === 'Friday') {
-        setActiveMeta({ term, week, day })
-        setActiveLesson('friday')
-        setFridayKey(k => k + 1)
-      } else {
-        const lesson = await fetchLesson(term, week, day)
-        if (!lesson) throw new Error(`No lesson found for Term ${term}, Week ${week}, ${day}.`)
-        setActiveMeta({ term, week, day })
-        setActiveLesson(lesson)
-      }
+      const lesson = await fetchLesson(term, week, day)
+      if (!lesson) throw new Error(`No lesson found for Term ${term}, Week ${week}, ${day}.`)
+      setActiveMeta({ term, week, day })
+      setActiveLesson(lesson)
     } catch (e) {
       setError(e.message)
     } finally {
