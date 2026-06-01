@@ -887,3 +887,23 @@ body {
   .stage-progress { flex-direction: column; }
   .stage-progress__step { flex-direction: row; }
 }
+
+/* ── Clickable / expandable hover states ── */
+.sentence-list li,
+.task-list li,
+.example-box,
+.demo-box {
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+/* Parent Expandable div hover — injects via JS, but these cover the inner elements */
+[title="Click to show full screen"]:hover .example-box,
+[title="Click to show full screen"]:hover .demo-box {
+  border-color: var(--border-hi);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+[title="Click to show full screen"]:hover .sentence-list li,
+[title="Click to show full screen"]:hover .task-list li {
+  border-color: var(--border-hi);
+}
