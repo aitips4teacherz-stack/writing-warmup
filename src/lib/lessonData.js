@@ -12,11 +12,11 @@ export const DAILY_FOCUS = {
 }
 
 export const DAY_COLOURS = {
-  Monday: '#2563eb',
-  Tuesday: '#16a34a',
-  Wednesday: '#ea580c',
-  Thursday: '#7c3aed',
-  Friday: '#dc2626',
+  Monday: '#e63946',
+  Tuesday: '#f4a261',
+  Wednesday: '#2ec4b6',
+  Thursday: '#a855f7',
+  Friday: '#facc15',
 }
 
 export const TERM_COLOURS = ['#1B2A4A', '#2E5FA3', '#1A6B4A', '#7D3C98']

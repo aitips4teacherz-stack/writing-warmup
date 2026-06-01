@@ -7,7 +7,7 @@ const STAGE_META = [
     label: 'I Do',
     sub: 'Watch & Listen',
     color: '#1e40af',
-    bgGradient: 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%)',
+    bgGradient: 'rgba(59,130,246,0.15)',
     nextLabel: 'Start We Do',
     nextClass: 'we-do',
     approxMins: 5,
@@ -18,7 +18,7 @@ const STAGE_META = [
     label: 'We Do',
     sub: 'Practise Together',
     color: '#065f46',
-    bgGradient: 'linear-gradient(135deg, #064e3b 0%, #065f46 100%)',
+    bgGradient: 'rgba(16,185,129,0.15)',
     nextLabel: 'Start You Do',
     nextClass: 'you-do',
     approxMins: 7,
@@ -29,7 +29,7 @@ const STAGE_META = [
     label: 'You Do',
     sub: 'Independent Practice',
     color: '#7c2d12',
-    bgGradient: 'linear-gradient(135deg, #6b1f0a 0%, #9a3412 100%)',
+    bgGradient: 'rgba(249,115,22,0.15)',
     nextLabel: 'Finish Lesson',
     nextClass: 'you-do',
     approxMins: 8,
@@ -98,7 +98,7 @@ function StageTimer({ totalSeconds, onExpire }) {
   const pct = Math.max(0, (remaining / totalSeconds) * 100)
   const mins = Math.floor(remaining / 60)
   const secs = String(remaining % 60).padStart(2, '0')
-  const colour = pct > 40 ? '#1d4ed8' : pct > 15 ? '#f59e0b' : '#dc2626'
+  const colour = pct > 40 ? '#3b82f6' : pct > 15 ? '#facc15' : '#e63946'
 
   return (
     <div className="lesson-timer">

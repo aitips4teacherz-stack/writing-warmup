@@ -39,16 +39,16 @@ export default function App() {
     }
   }, [term, week, day])
 
-  const dayColour = DAY_COLOURS[day] || '#1d4ed8'
+  const dayColour = DAY_COLOURS[day] || '#a855f7'
 
   return (
     <div className="app-shell">
       {/* ── Header ── */}
       <header className="site-header">
         <div className="site-header__wordmark">
-          Writing <span>Warm-Up</span>
+          Writing <span>Warm-Up.</span>
         </div>
-        <div style={{ marginLeft: 'auto', fontSize: '0.8rem', color: 'rgba(255,255,255,0.55)' }}>
+        <div className="site-header__sub">
           NZ Curriculum · Years 5–6 · Phase 2
         </div>
       </header>
@@ -76,8 +76,8 @@ export default function App() {
 
         {error && (
           <div className="error-state">
-            <p style={{ color: '#dc2626', fontWeight: 600 }}>⚠ {error}</p>
-            <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+            <p style={{ color: '#e63946', fontWeight: 600 }}>⚠ {error}</p>
+            <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
               Check your Supabase connection or try a different lesson.
             </p>
           </div>
@@ -103,26 +103,15 @@ export default function App() {
             <StageDisplay
               lesson={activeLesson}
               dayColour={dayColour}
-              onComplete={() => {
-                // Could log progress to Supabase here in future
-              }}
+              onComplete={() => {}}
             />
           </>
         )}
       </main>
 
       {/* ── Footer ── */}
-      <footer
-        style={{
-          textAlign: 'center',
-          padding: '1.5rem',
-          fontSize: '0.78rem',
-          color: 'var(--ink-soft)',
-          borderTop: '1px solid var(--rule)',
-          marginTop: '2rem',
-        }}
-      >
-        Writing Warm-Up Programme · NZ Curriculum Years 5–6 · 40 weeks, 4 terms, spiral design
+      <footer className="site-footer">
+        Writing Warm-Up Programme · NZ Curriculum Years 5–6 · 40 weeks · 4 terms · Spiral design
       </footer>
     </div>
   )
