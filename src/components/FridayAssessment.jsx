@@ -32,6 +32,87 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '2-1': [
+    {
+      q: '"The man went down the street." → "The man strode down the street." What extra information does "strode" give us that "went" does not?',
+      options: [
+        'It tells us the man was in a hurry and running fast',
+        'It tells us HOW he moved — with long, confident steps',
+        'It tells us WHERE he was going at the end of the street',
+        'It tells us WHEN the movement happened during the day',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip was: "Precise verbs eliminate the need for adverbs." Which swap best shows this?',
+      options: [
+        '"walked slowly" → "walked very slowly"',
+        '"ran quickly" → "sprinted"',
+        '"spoke quietly" → "spoke in a quiet voice"',
+        '"moved fast" → "moved very fast indeed"',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"A flock of birds flew overhead." What TYPE of noun is "flock"?',
+      options: [
+        'Abstract noun — you cannot see or touch a flock',
+        'Proper noun — it names a specific group of birds',
+        'Collective noun — it names the group as a single unit',
+        'Common noun — it is just a regular everyday noun',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Which of these is an ABSTRACT noun?',
+      options: ['a murder of crows', 'determination', 'a school of fish', 'a bouquet of flowers'],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The team did a celebration when they won." Replace the weak phrase with ONE strong verb.',
+      options: [
+        '"The team did celebrate when they won."',
+        '"The team celebrated when they won."',
+        '"The team were celebrating their winning."',
+        '"The team made a celebration happen when they won."',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip was: "did/made/gave/had + noun = usually replaceable with one strong verb." Which sentence still has this weak pattern?',
+      options: [
+        '"She decided to leave early."',
+        '"The scientists investigated the discovery."',
+        '"He gave a performance that stunned the crowd."',
+        '"They competed in the regional final."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"last tuesday, ms brown took class 5b to the otago museum in dunedin." How many words need a capital letter?',
+      options: ['4', '6', '7', '8'],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: 'In Thursday\'s editing lesson, which CATEGORY of word do we scan for first when checking capitals in a passage?',
+      options: [
+        'Long words — they are usually more important and need capitals',
+        'Days, months, place names, people\'s names and titles, specific event names',
+        'The first word of every clause, even inside a longer sentence',
+        'Any noun — all nouns need capitals in formal writing',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
   '1-7': [
     {
       q: '"She needed three things: courage, patience, and luck." What does the colon do here?',
