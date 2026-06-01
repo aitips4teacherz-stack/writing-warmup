@@ -54,6 +54,15 @@ function FullscreenOverlay({ item, label, accentColor, dayColour, onClose }) {
 
   const isBonus = typeof item === 'string' && item.startsWith('✦')
 
+  // Estimate content length to pick an appropriate font size
+  const rawText = typeof item === 'string' ? item.replace(/<[^>]+>/g, '') : ''
+  const charCount = rawText.length
+  const fontSize = charCount > 400 ? '1.15rem'
+    : charCount > 200 ? '1.45rem'
+    : charCount > 100 ? '1.9rem'
+    : charCount > 50  ? 'clamp(2rem, 3.5vw, 3rem)'
+    : 'clamp(2.5rem, 4.5vw, 4.5rem)'
+
   return (
     <div
       onClick={onClose}
@@ -61,14 +70,16 @@ function FullscreenOverlay({ item, label, accentColor, dayColour, onClose }) {
         position: 'fixed',
         inset: 0,
         zIndex: 9999,
-        background: '#0a0812',
+        backgroundColor: '#0a0812',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '4rem 6rem',
+        padding: '3rem 4rem',
         cursor: 'pointer',
         animation: 'fsIn 200ms ease',
+        // Guarantee nothing bleeds through
+        isolation: 'isolate',
       }}
     >
       <style>{`
@@ -81,9 +92,9 @@ function FullscreenOverlay({ item, label, accentColor, dayColour, onClose }) {
       {/* Colour glow behind text */}
       <div style={{
         position: 'absolute',
-        width: '60%',
-        height: '40%',
-        background: `radial-gradient(ellipse, ${dayColour}22 0%, transparent 70%)`,
+        width: '70%',
+        height: '50%',
+        background: `radial-gradient(ellipse, ${dayColour}18 0%, transparent 70%)`,
         pointerEvents: 'none',
       }} />
 
@@ -95,25 +106,30 @@ function FullscreenOverlay({ item, label, accentColor, dayColour, onClose }) {
         letterSpacing: '0.18em',
         textTransform: 'uppercase',
         color: dayColour,
-        marginBottom: '2.5rem',
+        marginBottom: '2rem',
         opacity: 0.85,
+        flexShrink: 0,
       }}>
         {label}
       </div>
 
-      {/* Main text */}
+      {/* Main text — scrollable if somehow still too long */}
       <div
         onClick={e => e.stopPropagation()}
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 'clamp(2.2rem, 5vw, 4.5rem)',
+          fontSize,
           fontWeight: 600,
           color: '#f0eeff',
-          lineHeight: 1.35,
+          lineHeight: 1.55,
           textAlign: 'center',
-          maxWidth: '1100px',
+          width: '100%',
+          maxWidth: '1400px',
           position: 'relative',
           zIndex: 1,
+          overflowY: 'auto',
+          maxHeight: 'calc(100vh - 12rem)',
+          padding: '0 1rem',
         }}
         dangerouslySetInnerHTML={{ __html: styledHtml(item) }}
       />
