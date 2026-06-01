@@ -27,6 +27,250 @@ function mcq(question, correctAnswer, distractors, day) {
   }
 }
 
+// ── Hardcoded quiz banks ──────────────────────────────────────────────────────
+// Each question: { q, options: [A,B,C,D], correct: index, day }
+// All four options are similar in length/style so the answer can't be spotted visually.
+
+const HARDCODED_QUIZZES = {
+  '1-1': [
+    {
+      q: 'We upgraded "big" to "muscular" this week. WHY is "muscular" the better word?',
+      options: [
+        'It is longer, so it fills the sentence better',
+        'It tells us size AND strength — it paints a sharper picture',
+        'It starts with a capital letter, which makes it stand out',
+        'It rhymes with the next word in the sentence',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Which upgrade works best for the word "nice" in: "The nice sunset filled the sky"?',
+      options: ['Pleasant', 'Dazzling', 'Okay-ish', 'Very nice'],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'In "The girl visited Wellington with her family" — which word is a PROPER noun?',
+      options: ['girl', 'family', 'Wellington', 'visited'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"my friend aisha lives in christchurch" — how many words need a capital letter?',
+      options: ['One (just "my")', 'Two ("my" and "aisha")', 'Three ("my", "aisha", "christchurch")', 'None — it looks fine already'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'In "The goalkeeper saved the penalty" — what is the SUBJECT?',
+      options: ['saved', 'the penalty', 'The goalkeeper', 'the'],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'What happens to a sentence if you remove the verb?',
+      options: [
+        'It becomes a question instead',
+        'It still makes sense — you just lose some detail',
+        'It loses its action and stops making sense',
+        'It turns into a sentence fragment with extra nouns',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"birds began to sing in the trees it was going to be a perfect day" — what is missing?',
+      options: [
+        'A comma after "trees" and a capital "I" on "it"',
+        'Speech marks around "it was going to be a perfect day"',
+        'The word "and" between "trees" and "it"',
+        'A question mark at the very end',
+      ],
+      correct: 0,
+      day: 'Thursday',
+    },
+    {
+      q: 'What is the best trick for spotting where a sentence ends when proofreading?',
+      options: [
+        'Count exactly 10 words then add a full stop',
+        'Look for the longest word — that marks the end',
+        'Read aloud — you naturally pause at the end of each sentence',
+        'Add a full stop after every verb you can find',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-2': [
+    {
+      q: '"The market sold fresh tomatoes plump strawberries creamy cheese and warm bread." Where do the commas go?',
+      options: [
+        'After tomatoes, strawberries, cheese — and before "and"',
+        'After tomatoes, strawberries, and cheese — but NOT before "and"',
+        'Only after the last item before "and"',
+        'Before every single word in the list',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Why do we use commas in a list sentence?',
+      options: [
+        'To show the reader that a new paragraph is starting',
+        'To separate each item so the sentence does not become a jumbled mess',
+        'Because every sentence must have at least one comma in it',
+        'To replace the word "and" between every pair of items',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The hawk soared above the valley." Is "soared" an action verb or a state verb?',
+      options: [
+        'State verb — it describes how the hawk feels',
+        'Neither — it is an adjective describing the hawk',
+        'Action verb — you can picture the hawk physically doing it',
+        'State verb — it says something about the valley',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Which of these is a STATE verb?',
+      options: ['sprinted', 'chewed', 'belongs', 'splashed'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"A dog barked at the stranger." We expanded this with adjectives. Which version is best?',
+      options: [
+        'A very dog barked at the very stranger',
+        'A scruffy, brown dog barked at the hooded stranger',
+        'A dog who was scruffy barked at a stranger who wore a hood',
+        'A dog with scruffiness barked at a stranger with a hood',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'You want to add TWO adjectives before "dog" in the same noun phrase. What do you put between them?',
+      options: [
+        'Nothing — just write them one after the other',
+        'The word "and" between the two adjectives',
+        'A comma between the two adjectives',
+        'A full stop, then start the second adjective fresh',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Sophia loved drawing she spent every afternoon filling sketchbooks." What is wrong here?',
+      options: [
+        'The word "drawing" should be in speech marks',
+        'Two complete sentences have crashed together without a full stop',
+        'There are too many adjectives crowding the sentence',
+        '"Sophia" should not be capitalised mid-sentence',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'What is the best way to fix a run-on sentence?',
+      options: [
+        'Delete words until only one idea remains in the sentence',
+        'Add a comma after the first word of the sentence',
+        'Split it at a natural pause with a full stop, or join with and/but/so',
+        'Move the subject to the end so the sentence feels less crowded',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-3': [
+    {
+      q: '"The water was cold" vs "The water was glacial." Why is "glacial" stronger?',
+      options: [
+        'It is longer, so it takes up more space on the page',
+        'It is a proper noun, which always sounds more impressive',
+        'It is far more intense — it paints a sharper, colder picture',
+        'It rhymes with other words, making the sentence musical',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: 'The crowd was loud when the team scored. Which synonym BEST shows an enormous, wild crowd noise?',
+      options: ['noisy', 'audible', 'deafening', 'quite loud'],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The dogs barks at the cat." Why is this wrong?',
+      options: [
+        '"Dogs" needs a capital letter because it is specific',
+        '"Dogs" is plural, so the verb should be "bark" not "barks"',
+        '"Cat" should also be plural to match "dogs"',
+        'There should be a comma after "dogs"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The bunch of grapes ___ left on the bench." Which verb is correct?',
+      options: ['were', 'is', 'was', 'are'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She studied all weekend. She still felt nervous." Join them with the RIGHT conjunction.',
+      options: [
+        'She studied all weekend, and she still felt nervous',
+        'She studied all weekend, but she still felt nervous',
+        'She studied all weekend, so she still felt nervous',
+        'She studied all weekend, or she still felt nervous',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Where does the comma go in a compound sentence?',
+      options: [
+        'After the conjunction: "She ran so, she won"',
+        'Before the conjunction: "She ran, so she won"',
+        'At the very start: ", She ran so she won"',
+        'No comma is needed — conjunctions replace commas',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"It was a nice day and we went to a nice beach." How many vague words need upgrading?',
+      options: [
+        'One — only the first "nice" is vague',
+        'Two — both uses of "nice" need upgrading',
+        'Three — "nice" (×2) and "went" are all vague',
+        'None — "nice" and "went" are perfectly precise words',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: 'Which sentence has the BEST upgrade of "said"?',
+      options: [
+        '"Get out of my way," said Jake.',
+        '"Get out of my way," spoke Jake.',
+        '"Get out of my way," yelled Jake.',
+        '"Get out of my way," went Jake.',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+}
+
 // ── Per-day question builders (2 questions each) ──────────────────────────────
 
 function mondayQuestions(lesson, day = 'Monday') {
@@ -336,6 +580,15 @@ function thursdayQuestions(lesson, day = 'Thursday') {
 
 // ── Generate 8 quiz questions from the week's 4 lessons ──────────────────────
 function buildQuestions(term, week) {
+  // Use hardcoded quiz if available
+  const key = `${term}-${week}`
+  if (HARDCODED_QUIZZES[key]) {
+    return shuffle(HARDCODED_QUIZZES[key].map(q => {
+      const shuffled = shuffle([...q.options])
+      return { ...q, options: shuffled, correct: shuffled.indexOf(q.options[q.correct]) }
+    }))
+  }
+
   const weekData = CURRICULUM[term]?.[week]
   if (!weekData) return fallbackQuestions
 
