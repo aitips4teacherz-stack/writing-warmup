@@ -1,110 +1,351 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { CURRICULUM } from '../lib/lessonData.js'
 
+// ── Strip HTML tags ───────────────────────────────────────────────────────────
+const strip = (s) => s ? s.replace(/<[^>]+>/g, '') : ''
+
+// ── Shuffle array (Fisher-Yates) ──────────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+// ── Build a multiple-choice question with shuffled distractors ────────────────
+// correctAnswer and distractors are plain strings; returns { q, options, correct, day }
+function mcq(question, correctAnswer, distractors, day) {
+  const pool = shuffle([correctAnswer, ...distractors.slice(0, 3)])
+  return {
+    q: question,
+    options: pool,
+    correct: pool.indexOf(correctAnswer),
+    day,
+  }
+}
+
+// ── Per-day question builders (2 questions each) ──────────────────────────────
+
+function mondayQuestions(lesson, day = 'Monday') {
+  const topic = lesson.topic
+  const tip = strip(lesson.iDo?.tip || '')
+  const example = strip(lesson.iDo?.example || '')
+  const demo = strip(lesson.iDo?.demonstration || '')
+  const sentences = (lesson.weDo?.sentences || []).map(strip)
+
+  // Build questions that vary by what the lesson actually teaches
+  const qs = []
+
+  // Q1: What does this lesson teach? (from topic + iDo instruction)
+  const instruction = strip(lesson.iDo?.instruction || '')
+  if (instruction) {
+    // Extract a short description from the instruction text
+    const shortInstruction = instruction.length > 80 ? instruction.substring(0, 80) + '…' : instruction
+    qs.push(mcq(
+      `Monday's lesson on "${topic}" — which tip best describes what we practised?`,
+      tip || shortInstruction.substring(0, 60),
+      [
+        'Use longer sentences to improve writing',
+        'Always add a comma after the first word',
+        'Change every noun to a pronoun',
+      ],
+      day
+    ))
+  }
+
+  // Q2: Use the weDo example sentence if available
+  if (sentences.length > 0) {
+    const sent = sentences[0]
+    // Try to find an underlined word (originally marked with <u>) from the raw data
+    const rawSent = (lesson.weDo?.sentences || [])[0] || ''
+    const uMatch = rawSent.match(/<u>([^<]+)<\/u>/)
+    if (uMatch) {
+      const targetWord = uMatch[1]
+      qs.push(mcq(
+        `In Monday's exercise: "${sent}" — which word should be improved or focused on?`,
+        targetWord,
+        ['the', 'a', 'on', 'and', 'in', 'is'].filter(w => w !== targetWord).slice(0, 3),
+        day
+      ))
+    } else {
+      // Generic Q about the topic skill
+      qs.push(mcq(
+        `Which of these best describes what you practised in Monday's lesson on "${topic}"?`,
+        strip(lesson.iDo?.demonstration || '').substring(0, 55) || topic,
+        [
+          'Adding speech marks to dialogue',
+          'Counting syllables in words',
+          'Writing in first person only',
+        ],
+        day
+      ))
+    }
+  } else {
+    qs.push(mcq(
+      `What was the main focus of Monday's lesson on "${topic}"?`,
+      topic,
+      [
+        'Adding pictures to writing',
+        'Learning to read faster',
+        'Understanding character dialogue',
+      ],
+      day
+    ))
+  }
+
+  return qs
+}
+
+function tuesdayQuestions(lesson, day = 'Tuesday') {
+  const topic = lesson.topic
+  const tip = strip(lesson.iDo?.tip || '')
+  const sentences = (lesson.weDo?.sentences || []).map(strip)
+  const rawSentences = lesson.weDo?.sentences || []
+
+  const qs = []
+
+  // Q1: The tip from the lesson
+  if (tip) {
+    qs.push(mcq(
+      `Tuesday's lesson on "${topic}" — what tip did you learn to remember this skill?`,
+      tip,
+      [
+        'Always use a capital letter at the end of a sentence',
+        'Use commas to replace all full stops',
+        'Every noun must have an adjective',
+      ],
+      day
+    ))
+  } else {
+    qs.push(mcq(
+      `What was Tuesday's grammar lesson about?`,
+      topic,
+      [
+        'Adding adverbs to every sentence',
+        'Replacing verbs with nouns',
+        'Writing paragraphs with no punctuation',
+      ],
+      day
+    ))
+  }
+
+  // Q2: Use a weDo sentence if available
+  if (sentences.length > 0) {
+    // Look for underlined target word
+    const rawSent = rawSentences[Math.floor(Math.random() * rawSentences.length)] || rawSentences[0]
+    const uMatch = rawSent.match(/<u>([^<]+)<\/u>/)
+    const cleanSent = strip(rawSent)
+    if (uMatch) {
+      const targetWord = uMatch[1]
+      qs.push(mcq(
+        `In Tuesday's exercise: "${cleanSent}" — what is the key word to focus on?`,
+        targetWord,
+        ['the', 'a', 'and', 'to', 'in'].filter(w => w !== targetWord).slice(0, 3),
+        day
+      ))
+    } else {
+      qs.push(mcq(
+        `From Tuesday's exercise, which of these sentences relates to "${topic}"?`,
+        cleanSent.substring(0, 70),
+        [
+          'Add a full stop to every comma.',
+          'Always write in future tense.',
+          'Nouns should never begin a sentence.',
+        ],
+        day
+      ))
+    }
+  } else {
+    qs.push(mcq(
+      `Finish this sentence from Tuesday's lesson: "${topic} means…"`,
+      strip(lesson.iDo?.demonstration || '').substring(0, 55) || 'applying the grammar rule correctly',
+      [
+        'writing without any punctuation',
+        'only using short sentences',
+        'repeating the same word many times',
+      ],
+      day
+    ))
+  }
+
+  return qs
+}
+
+function wednesdayQuestions(lesson, day = 'Wednesday') {
+  const topic = lesson.topic
+  const tip = strip(lesson.iDo?.tip || '')
+  const example = strip(lesson.iDo?.example || '')
+  const sentences = (lesson.weDo?.sentences || []).map(strip)
+  const rawSentences = lesson.weDo?.sentences || []
+  const prompt = strip(lesson.weDo?.prompt || '')
+
+  const qs = []
+
+  // Q1: The sentence-building concept
+  if (tip) {
+    qs.push(mcq(
+      `Wednesday's lesson on "${topic}" — what tip helps you build better sentences?`,
+      tip,
+      [
+        'Always write sentences with exactly 10 words',
+        'Use a question mark after every sentence',
+        'Begin every sentence with "The"',
+      ],
+      day
+    ))
+  } else {
+    qs.push(mcq(
+      `What type of sentence skill did Wednesday's lesson on "${topic}" focus on?`,
+      topic,
+      [
+        'Writing only short sentences',
+        'Adding pictures to writing',
+        'Removing all adjectives',
+      ],
+      day
+    ))
+  }
+
+  // Q2: Use an example or weDo sentence
+  if (example) {
+    const shortEx = example.split('→')[0].trim()
+    if (shortEx.length > 5 && shortEx.length < 100) {
+      qs.push(mcq(
+        `In Wednesday's lesson, we worked on improving this sentence: "${shortEx}" — what were we practising?`,
+        topic,
+        [
+          'Adding speech marks',
+          'Converting to past tense only',
+          'Removing all adjectives from the sentence',
+        ],
+        day
+      ))
+    } else {
+      qs.push(mcq(
+        `Which best describes what you practised on Wednesday in "${topic}"?`,
+        strip(lesson.iDo?.demonstration || '').substring(0, 55) || topic,
+        [
+          'Writing in columns',
+          'Reading backwards for errors',
+          'Counting words per sentence only',
+        ],
+        day
+      ))
+    }
+  } else if (sentences.length > 0) {
+    qs.push(mcq(
+      `Wednesday's exercise: "${sentences[0].substring(0, 70)}" — what skill were you practising?`,
+      topic,
+      [
+        'Spelling every word in capitals',
+        'Removing verbs from the sentence',
+        'Adding punctuation to a question',
+      ],
+      day
+    ))
+  } else {
+    qs.push(mcq(
+      `What was the main sentence-building skill from Wednesday?`,
+      topic,
+      [
+        'Writing sentences with no nouns',
+        'Using only question sentences',
+        'Starting every sentence with a number',
+      ],
+      day
+    ))
+  }
+
+  return qs
+}
+
+function thursdayQuestions(lesson, day = 'Thursday') {
+  const topic = lesson.topic
+  const tip = strip(lesson.iDo?.tip || '')
+  const example = strip(lesson.iDo?.example || '')
+  const tasks = (lesson.youDo?.tasks || []).map(strip).filter(t => !t.startsWith('✦'))
+
+  const qs = []
+
+  // Q1: Editing tip or purpose
+  if (tip) {
+    qs.push(mcq(
+      `Thursday's editing lesson on "${topic}" — which tip helps you edit better?`,
+      tip,
+      [
+        'Delete sentences that seem too long',
+        'Replace all verbs with nouns',
+        'Add more adjectives to every noun',
+      ],
+      day
+    ))
+  } else {
+    qs.push(mcq(
+      `What editing skill did Thursday's lesson on "${topic}" focus on?`,
+      topic,
+      [
+        'Changing the font size',
+        'Re-ordering paragraphs randomly',
+        'Adding bullet points to prose',
+      ],
+      day
+    ))
+  }
+
+  // Q2: Use the iDo example to spot the error/focus
+  if (example && example.length < 200) {
+    qs.push(mcq(
+      `In Thursday's editing exercise, this text needed fixing: "${example.substring(0, 80)}…" — what type of error were we looking for?`,
+      topic,
+      [
+        'Missing speech marks only',
+        'Too many adjectives in the text',
+        'Incorrect bullet-point formatting',
+      ],
+      day
+    ))
+  } else if (tasks.length > 0) {
+    qs.push(mcq(
+      `In Thursday's editing task, we practised on: "${tasks[0].substring(0, 70)}" — what were we editing for?`,
+      topic,
+      [
+        'Adding more words to every sentence',
+        'Removing all capital letters',
+        'Replacing nouns with pronouns',
+      ],
+      day
+    ))
+  } else {
+    qs.push(mcq(
+      `Which skill were you applying when editing your work on Thursday?`,
+      topic,
+      [
+        'Adding pictures to your writing',
+        'Counting words per paragraph',
+        'Changing the title of the piece',
+      ],
+      day
+    ))
+  }
+
+  return qs
+}
+
 // ── Generate 8 quiz questions from the week's 4 lessons ──────────────────────
 function buildQuestions(term, week) {
   const weekData = CURRICULUM[term]?.[week]
   if (!weekData) return fallbackQuestions
 
-  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday']
-  const questions = []
+  const questions = [
+    ...mondayQuestions(weekData.Monday),
+    ...tuesdayQuestions(weekData.Tuesday),
+    ...wednesdayQuestions(weekData.Wednesday),
+    ...thursdayQuestions(weekData.Thursday),
+  ].filter(Boolean)
 
-  days.forEach(day => {
-    const lesson = weekData[day]
-    if (!lesson) return
-
-    // Strip HTML tags for clean text
-    const strip = (s) => s ? s.replace(/<[^>]+>/g, '') : ''
-
-    const topic = lesson.topic
-    const iDoInstruction = strip(lesson.iDo?.instruction || '')
-    const weDo = lesson.weDo
-    const youDo = lesson.youDo
-
-    // Q1 per day: topic-based concept question
-    if (day === 'Monday') {
-      questions.push({
-        q: `In Monday's lesson on "${topic}", what does upgrading a word mean?`,
-        options: [
-          'Making it longer',
-          'Replacing a plain word with a more vivid, precise one',
-          'Adding a capital letter',
-          'Putting it in bold',
-        ],
-        correct: 1,
-        day,
-      })
-      questions.push({
-        q: `Which of these is the BEST upgrade for the word "big"?`,
-        options: ['Large', 'Very big', 'Enormous', 'Bigger'],
-        correct: 2,
-        day,
-      })
-    }
-
-    if (day === 'Tuesday') {
-      questions.push({
-        q: `From Tuesday's lesson on "${topic}" — which word is a PROPER noun?`,
-        options: ['city', 'river', 'Auckland', 'teacher'],
-        correct: 2,
-        day,
-      })
-      questions.push({
-        q: `Proper nouns always start with a…`,
-        options: ['Full stop', 'Capital letter', 'Comma', 'Question mark'],
-        correct: 1,
-        day,
-      })
-    }
-
-    if (day === 'Wednesday') {
-      const sentences = weDo?.sentences || []
-      questions.push({
-        q: `In Wednesday's "${topic}" lesson, what are the three parts of a simple sentence?`,
-        options: [
-          'Noun, adjective, adverb',
-          'Subject, verb, object',
-          'Comma, colon, full stop',
-          'Question, answer, example',
-        ],
-        correct: 1,
-        day,
-      })
-      questions.push({
-        q: `In the sentence "The cat chased the mouse" — what is the VERB?`,
-        options: ['cat', 'mouse', 'chased', 'the'],
-        correct: 2,
-        day,
-      })
-    }
-
-    if (day === 'Thursday') {
-      questions.push({
-        q: `Thursday covered "${topic}" — what is the purpose of editing?`,
-        options: [
-          'To make the writing longer',
-          'To improve clarity, style, and correctness',
-          'To add more adjectives',
-          'To change the topic',
-        ],
-        correct: 1,
-        day,
-      })
-      questions.push({
-        q: `Which skill did Thursday's editing lesson focus on?`,
-        options: [
-          topic,
-          'Adding pictures',
-          'Changing fonts',
-          'Reading aloud only',
-        ],
-        correct: 0,
-        day,
-      })
-    }
-  })
-
-  // Trim or pad to exactly 8
+  // Pad with fallbacks if needed
   while (questions.length < 8) questions.push(...fallbackQuestions.slice(0, 8 - questions.length))
   return questions.slice(0, 8)
 }
@@ -608,23 +849,43 @@ function WinnerScreen({ scores, onContinue }) {
 
 // ── Writing task ──────────────────────────────────────────────────────────────
 function WritingTask({ term, week }) {
-  const assessmentPrompts = [
-    `Write a paragraph about something interesting you discovered this week. Use at least three skills from this week's lessons: strong vocabulary, correct punctuation, and varied sentences.`,
-    `Describe a place you love using vivid adjectives, at least one compound sentence, and one complex sentence. Aim for 5–7 sentences.`,
-    `Write a short argument: should students have more free time at school? Use persuasive vocabulary, at least one list with commas, and a clear topic sentence.`,
-    `Recount something that happened to you recently. Use consistent past tense, varied sentence lengths, and at least one fronted adverbial.`,
-  ]
+  const weekData = CURRICULUM[term]?.[week]
+  const topics = weekData
+    ? ['Monday','Tuesday','Wednesday','Thursday'].map(d => weekData[d]?.topic).filter(Boolean)
+    : []
 
+  // Build a week-specific writing prompt using the actual lesson topics
+  const getPrompt = () => {
+    if (!weekData || topics.length === 0) {
+      return `Write a paragraph applying the skills you practised this week. Focus on strong vocabulary, correct punctuation, and varied sentences.`
+    }
+    const [mon, tue, wed, thu] = [
+      weekData.Monday?.topic, weekData.Tuesday?.topic,
+      weekData.Wednesday?.topic, weekData.Thursday?.topic,
+    ]
+    const variant = ((term - 1) * 10 + (week - 1)) % 4
+    if (variant === 0) {
+      return `Write a descriptive paragraph about a place you know well. Use this week's skills: apply "${mon}" to choose vivid words, use "${wed}" for your sentences, and check for "${thu}" when you edit.`
+    } else if (variant === 1) {
+      return `Write a short recount of something that happened to you recently. Show off "${mon}" with strong word choices, apply "${tue}" correctly throughout, and use "${wed}" to vary your sentence structures.`
+    } else if (variant === 2) {
+      return `Write a persuasive paragraph on a topic you feel strongly about. Use what you know about "${mon}" for powerful vocabulary, "${wed}" for clear sentence structure, and "${thu}" to polish your final draft.`
+    } else {
+      return `Write a paragraph telling a short story (real or imagined). Practise "${mon}", demonstrate "${tue}" in your nouns or verbs, use "${wed}" for sentence variety, and apply "${thu}" in your editing step.`
+    }
+  }
+
+  // Build a week-specific checklist using the lesson topics
   const checklist = [
     'Capital letters at the start of every sentence',
     'Full stops, question marks, or exclamation marks at sentence ends',
-    'Commas used correctly in lists or complex sentences',
-    'Varied sentence lengths (mix of short and long)',
-    'Strong, precise vocabulary (no "nice," "good," "went")',
-    'At least one skill specifically practised this week',
+    topics[0] ? `Monday skill applied: ${topics[0]}` : 'Strong, precise vocabulary throughout',
+    topics[1] ? `Tuesday skill applied: ${topics[1]}` : 'Grammar used correctly',
+    topics[2] ? `Wednesday skill applied: ${topics[2]}` : 'Varied sentence lengths and structures',
+    topics[3] ? `Thursday skill applied: ${topics[3]}` : 'Edited carefully for errors',
   ]
 
-  const prompt = assessmentPrompts[(week - 1) % assessmentPrompts.length]
+  const prompt = getPrompt()
   const fridayColour = '#facc15'
 
   return (
