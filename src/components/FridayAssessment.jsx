@@ -32,6 +32,365 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '1-7': [
+    {
+      q: '"She needed three things: courage, patience, and luck." What does the colon do here?',
+      options: [
+        'It replaces a comma that would otherwise be too weak',
+        'It introduces the list that explains what the three things are',
+        'It shows a pause between two complete but unrelated sentences',
+        'It signals that a question is about to be answered',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The sun set behind the hills ___ the valley grew cold." Which punctuation mark fits the blank?',
+      options: [
+        'A colon — because a list follows',
+        'A comma — because both sides need to be separated',
+        'A semicolon — because both halves are complete related sentences',
+        'A full stop — because these ideas have nothing to do with each other',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The knight rode into the village. He looks around nervously." What is wrong with the second sentence?',
+      options: [
+        '"He" should be capitalised because knights are important characters',
+        '"looks" is present tense — it switches tense from the past tense "rode"',
+        'There should be a comma after "nervously" to end the sentence properly',
+        '"He" needs to be replaced with the knight\'s name to avoid confusion',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'In the market passage, "The market is busy... Stalls lined both sides..." — which tense is most common and which verb is the odd one out?',
+      options: [
+        'Present tense is most common; "lined" is the odd one out in past tense',
+        'Past tense is most common; "is" is the odd one out in present tense',
+        'Future tense is most common; "lined" needs to become "will line"',
+        'Both tenses are equally used, so the passage is already consistent',
+      ],
+      correct: 0,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The crowd cheered when the final whistle blew." Which part is the SUBORDINATE clause?',
+      options: [
+        '"The crowd cheered" — because it names the subject first',
+        '"the final whistle blew" — it could easily stand alone as its own sentence',
+        '"when the final whistle blew" — it depends on the main clause for meaning',
+        '"when the final whistle" — the conjunction plus the subject only',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"When the final whistle blew, the crowd cheered." Why is there a comma after "blew"?',
+      options: [
+        'Because "blew" is a verb and verbs always need a comma after them',
+        'Because the subordinate clause comes first, so a comma follows it',
+        'Because "the crowd cheered" is too short and needs extra punctuation',
+        'Because "when" is a conjunction and conjunctions always take a comma',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The explorer sets out at dawn. She walked for three hours before she reaches the ridge." Fix the tense errors — which version is correct?',
+      options: [
+        '"The explorer sets out at dawn. She walks for three hours before she reaches the ridge."',
+        '"The explorer set out at dawn. She walked for three hours before she reached the ridge."',
+        '"The explorer setted out at dawn. She walked for three hours before she reached the ridge."',
+        '"The explorer sets out at dawn. She walked for three hours before she will reach the ridge."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Which pair of verbs is the most common accidental tense switch to watch out for?',
+      options: [
+        '"run" and "runs" — because both look very similar',
+        '"was/is" and "said/says" — because writers slip between them without noticing',
+        '"walk" and "walked" — because the -ed ending is easy to forget',
+        '"have" and "had" — because both are used in every tense',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-8': [
+    {
+      q: '"___ going to need to bring ___ own gear." Which pair fills the blanks correctly?',
+      options: [
+        'Their / there',
+        'There / their',
+        'They\'re / their',
+        'Their / they\'re',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: 'What is the quickest way to check whether to use "they\'re" or "their"?',
+      options: [
+        'See if the word comes before a noun — if so, use "their"',
+        'Expand it: if "they are" fits in the sentence, use "they\'re"',
+        'Count the syllables — one syllable means "their", two means "they\'re"',
+        'Check if it comes at the start of a sentence — if so, use "they\'re"',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The cat slept on the warm windowsill throughout the afternoon." What does "on the warm windowsill" tell us?',
+      options: [
+        'When the cat slept',
+        'How the cat slept',
+        'Where the cat slept',
+        'Why the cat slept',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Which of these is a prepositional phrase?',
+      options: [
+        '"ran quickly"',
+        '"underneath the old bridge"',
+        '"she was tired"',
+        '"singing loudly"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She packed her bag quickly before sunrise." We turned this into a fronted adverbial sentence. Which version is correct?',
+      options: [
+        '"Before sunrise she packed her bag quickly."',
+        '"Before sunrise, she packed her bag quickly."',
+        '"Before, sunrise she packed her bag quickly."',
+        '"She, before sunrise, packed her bag quickly."',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Why do writers use fronted adverbials?',
+      options: [
+        'To make sentences shorter and easier to read',
+        'Because subjects are not allowed to start a sentence in formal writing',
+        'To vary sentence openings and emphasise the time, place, or manner first',
+        'To avoid using conjunctions, which can be confusing for readers',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The man walked to the door." We dressed this sentence up. Which addition is most effective?',
+      options: [
+        '"The man walked very slowly to the door."',
+        '"The elderly man shuffled to the creaking front door, pausing with his hand on the handle."',
+        '"The man walked to the door and then he stopped and looked around before going in."',
+        '"The man, who was a man, walked to the door that was there."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'When editing a bare sentence, which question helps you add the BEST detail?',
+      options: [
+        '"Can I make this sentence longer by adding more adjectives everywhere?"',
+        '"WHO exactly? WHAT kind? HOW exactly? WHICH one?" — then add only what the reader needs',
+        '"Can I replace every noun with a pronoun to make it flow better?"',
+        '"Should I split this into two shorter sentences instead?"',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-9': [
+    {
+      q: '"Pots clattered, oil sizzled and a smoke alarm began to shriek." What technique are "clattered", "sizzled" and "shriek" examples of?',
+      options: [
+        'Alliteration — words starting with the same letter for effect',
+        'Onomatopoeia — words that sound like the noise they describe',
+        'Personification — giving objects human actions and feelings',
+        'Simile — comparing the sounds to something familiar',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Which sentence BEST uses onomatopoeia to bring a thunderstorm to life?',
+      options: [
+        '"The storm was very loud and scary and everyone was frightened."',
+        '"Thunder crashed overhead and rain hammered the tin roof."',
+        '"It was a big storm with lots of noise and rain."',
+        '"The storm made sounds that could be heard from far away."',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"She ran fast, but she missed the bus." What TYPE of conjunction is "but"?',
+      options: [
+        'Subordinating — it creates a dependent clause that cannot stand alone',
+        'Coordinating — it joins two equal, independent clauses',
+        'Correlating — it works in pairs like "both...and"',
+        'Adverbial — it tells us when the action happened',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She missed the bus because she left too late." Could "because she left too late" stand alone as a sentence?',
+      options: [
+        'Yes — it is a complete thought with a subject and a verb',
+        'Yes — any clause with a verb in it can be its own sentence',
+        'No — it is a subordinate clause that depends on the main clause for meaning',
+        'No — it is too short to be a proper sentence in formal writing',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'In the disconnected coral reef sentences, what does "they" do in the cohesive version?',
+      options: [
+        'It introduces a new topic to move the paragraph forward',
+        'It refers back to "honey bees" to avoid repeating the noun',
+        'It signals a contrast between two different ideas',
+        'It replaces the conjunction "and" to make the sentence shorter',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Which connective would BEST signal a contrast between two ideas in a paragraph?',
+      options: ['In addition', 'Furthermore', 'However', 'As a result'],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The game was exciting. It was an exciting match with exciting moments right up to the exciting end." What is the problem?',
+      options: [
+        '"exciting" is a weak adjective that should be removed from all four places',
+        '"exciting" is repeated four times — it needs to be replaced with varied synonyms',
+        'The sentences are too short and need to be joined into one long sentence',
+        '"match" and "moments" should both be replaced since they sound similar',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'In the "team" passage, "team" appeared seven times. Which revision strategy did we use?',
+      options: [
+        'Deleting every second mention of "team" to cut the repetition by half',
+        'Replacing some with pronouns (they/their) and synonyms (the squad, the side)',
+        'Moving all the sentences around so "team" never appeared twice in a row',
+        'Adding stronger adjectives before each "team" to make the repetition feel intentional',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '1-10': [
+    {
+      q: 'In "it wasnt amara\'s first time winning" — TWO punctuation fixes are needed. What are they?',
+      options: [
+        'A capital "I" on "it" and a comma after "winning"',
+        'A capital "I" on "it" and an apostrophe in "wasnt" → "wasn\'t"',
+        'An apostrophe in "wasnt" and a full stop after "amara\'s"',
+        'A capital "A" on "amara\'s" and a comma after "time"',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'From our Term 1 review — a semicolon joins two sentences. Which sentence uses it correctly?',
+      options: [
+        '"She was tired; because she had run a marathon."',
+        '"The library was closed; we decided to go to the park instead."',
+        '"Although it was late; she kept reading."',
+        '"He ate his lunch; and then went outside to play."',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The exhausted climbers finally reached Base Camp." Identify the ADJECTIVE and the ADVERB.',
+      options: [
+        'Adjective: "climbers" / Adverb: "reached"',
+        'Adjective: "exhausted" / Adverb: "finally"',
+        'Adjective: "Base Camp" / Adverb: "exhausted"',
+        'Adjective: "finally" / Adverb: "exhausted"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Because the trail was icy, the rescue team moved slowly." What TYPE is "because" here?',
+      options: [
+        'A coordinating conjunction — it joins two equal clauses',
+        'A preposition — it shows the relationship between two nouns',
+        'A subordinating conjunction — it creates a dependent clause',
+        'An adverb — it modifies how the team moved',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Our Term 1 sentence toolkit had six types. Which sentence is an example of a FRONTED ADVERBIAL?',
+      options: [
+        '"The fierce storm broke and the river rose rapidly."',
+        '"The storm, which had been building for days, finally broke."',
+        '"Just before dawn, the storm broke over the city."',
+        '"Although residents had been warned, the storm was worse than expected."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Why might a writer choose "She won." over the longer version "After months of training, she finally won the regional championship"?',
+      options: [
+        'Because shorter sentences are always better and more professional',
+        'Because the short sentence creates powerful impact — brevity can be dramatic',
+        'Because the longer version has a grammatical error in it',
+        'Because readers prefer not to have too much information at once',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'In the botanical gardens passage we edited, "the carnivorous plants were good and everyone wanted to feed them" — what TWO things need fixing?',
+      options: [
+        '"good" is vague and needs upgrading; a capital is needed on "everyone"',
+        '"good" is vague and needs upgrading; the sentence also needs a capital at the start',
+        '"good" should be "well"; "carnivorous" should be simplified to "eating"',
+        '"everyone" should be replaced with a pronoun; "good" needs a comma after it',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Our 6-pass editing method works through one focus at a time. Which ORDER is correct?',
+      options: [
+        'Word choice → Capitals & full stops → Apostrophes → Commas → Repetition → Sentence variety',
+        'Capitals & full stops → Comma usage → Apostrophes → Word choice → Sentence variety → Repetition',
+        'Repetition → Word choice → Sentence variety → Commas → Apostrophes → Capitals',
+        'Apostrophes → Capitals → Word choice → Repetition → Commas → Sentence variety',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
   '1-1': [
     {
       q: 'We upgraded "big" to "muscular" this week. WHY is "muscular" the better word?',
