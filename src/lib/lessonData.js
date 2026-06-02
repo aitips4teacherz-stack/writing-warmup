@@ -2886,6 +2886,621 @@ export const CURRICULUM = {
       ),
     },
 
+    6: {
+      Monday: lesson(
+        'Figurative language: similes and metaphors',
+        'Use figurative language',
+        {
+          title: 'I Do — Comparison That Creates Pictures',
+          instruction: 'Similes compare using "like" or "as." Metaphors say something IS something else. Both let writers create vivid mental images that literal description can\'t match. Watch me use each deliberately in narrative.',
+          example: 'Simile: "The river moved <u>like a sleeping giant</u> — slow, heavy, and powerful." | Metaphor: "The river was a <u>sleeping giant</u> — slow, heavy, and powerful."',
+          demonstration: 'The simile signals comparison: the river is LIKE a giant. The metaphor is bolder — it collapses the distance and says the river IS a giant. Metaphors tend to feel more immediate and powerful. Similes feel more considered. Both are tools. Neither is better — choose based on the effect you want.',
+          tip: 'Simile = like or as (distance, comparison). Metaphor = is, was, became (direct, immediate). For maximum impact, choose metaphor. For a gentler comparison, use simile.',
+        },
+        {
+          title: 'We Do — Identify and Create',
+          instruction: 'Identify whether each example is a simile or metaphor, then write your own version using the same subject.',
+          sentences: [
+            '"The pohutukawa tree was an old warrior — scarred but undefeated."',
+            '"Her voice was like a tui calling across a still morning."',
+            '"The crowd became a single roaring wave when the final whistle blew."',
+          ],
+          prompt: 'What makes each comparison effective? What two things are being connected? Write your own version about the same subject.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a simile AND a metaphor for each subject.',
+          tasks: [
+            'A thunderstorm approaching over the Kaikōura ranges.',
+            'A kapa haka performance reaching its climax.',
+            'A character who is extremely determined.',
+            '✦ Bonus: Write a descriptive paragraph of 5 sentences about a NZ landscape. Include at least one simile and one metaphor. Underline them and label which is which.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Adverbs of degree: \'very\', \'quite\', \'extremely\'',
+        'Modify using degree adverbs',
+        {
+          title: 'I Do — How Much Is Enough?',
+          instruction: 'Adverbs of degree (very, quite, extremely, rather, fairly, completely) modify adjectives and other adverbs to show intensity. But used carelessly, they weaken writing. Watch me use them well and show when they should be cut.',
+          example: '"The kākāpō is <u>extremely</u> rare." ✓ | "It was <u>very</u> nice." ✗ → "It was magnificent." ✓',
+          demonstration: '"Extremely rare" earns its place — it emphasises a fact that matters. "Very nice" is a weak amplifier on a weak adjective. The fix: replace both words with one precise word. "Very tired" → "exhausted." "Very happy" → "elated." "Quite interesting" → "compelling." If your degree adverb is propping up a weak adjective, replace both.',
+          tip: 'If you\'re using "very" or "quite" before an adjective — ask: is there one word that says this better? If yes, use it.',
+        },
+        {
+          title: 'We Do — Keep or Cut?',
+          instruction: 'For each example, decide: is the degree adverb earning its place or propping up a weak adjective? Fix the ones that aren\'t working.',
+          sentences: [
+            '"The cliff face was completely vertical — there was no way to climb it."',
+            '"She was very sad about what had happened."',
+            '"The pounamu was quite beautiful in the afternoon light."',
+          ],
+          prompt: 'Is the degree adverb adding meaning, or just padding? What one precise word could replace the adverb + adjective combination?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence, cutting or replacing weak degree adverb + adjective combinations.',
+          tasks: [
+            '"The storm was very loud and extremely frightening."',
+            '"She felt quite nervous before the performance."',
+            '"The river was very deep and rather dangerous."',
+            '"It was a fairly important discovery that was very significant."',
+            '✦ Bonus: Take a paragraph from your writing folder. Highlight every degree adverb (very, quite, extremely, rather, fairly). For each one — either justify keeping it or replace the combination with a single precise word.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Descriptive sentences: using the five senses',
+        'Add sensory detail',
+        {
+          title: 'I Do — Writing That You Can Smell, Hear, and Feel',
+          instruction: 'Most student writing describes only what is SEEN. But readers experience the world through all five senses. When you bring in sound, smell, texture, and taste, a scene comes alive. Watch me build a setting using all five senses.',
+          example: '"The hangi was ready. The <u>steam</u> rose in white columns (sight). The <u>smell of earth and slow-cooked meat</u> drifted across the marae (smell). Somewhere behind her, a <u>kererū called once and fell silent</u> (sound). The ground <u>vibrated softly</u> with the haka still warming up (touch)."',
+          demonstration: 'Notice how each sense detail places the reader inside the scene. Sight alone is a photograph. Five senses is a memory. The key: each detail should do work — don\'t just list sensory details randomly, make each one contribute to the mood or the moment.',
+          tip: 'Sight is the default. Push yourself: what can the character HEAR? SMELL? FEEL through their skin? TASTE? Add one non-visual sense detail per paragraph.',
+        },
+        {
+          title: 'We Do — Add the Missing Senses',
+          instruction: 'This passage uses only sight. Add a sound, smell, and touch detail to make it more immersive.',
+          sentences: [
+            '"The beach was wide and flat. The waves were small. The sun was bright and the sand was pale. A few seabirds moved along the water\'s edge."',
+          ],
+          prompt: 'Where can you add a sound without interrupting the flow? Where does a smell fit naturally? What would the character feel under their feet or on their skin?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Expand each bare sentence into 2–3 sentences using a different sense for each expansion.',
+          tasks: [
+            '"She stepped into the bush." (add sound, smell, and touch details)',
+            '"The market was busy." (add sight, sound, and smell details)',
+            '"He sat by the river." (add sound, touch, and sight details)',
+            '✦ Bonus: Write a 5-sentence descriptive paragraph about a place in Aotearoa you know well. Use at least four of the five senses. Label each sense in the margin.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: cutting unnecessary adverbs (\'very\')',
+        'Revise for precise language',
+        {
+          title: 'I Do — The Adverb Audit',
+          instruction: 'We explored degree adverbs on Tuesday. Today we edit a full passage for them. Watch me work through a piece of writing and decide which adverbs to cut, which to keep, and which to replace with a stronger single word.',
+          example: '"She walked very slowly through the very quiet forest. It was quite dark and rather eerie. She felt very scared."',
+          demonstration: 'Audit: "very slowly" → "crept." "very quiet" → "hushed." "quite dark" → "shadowy" or just "dark." "rather eerie" → "unsettling." "very scared" → "terrified." New version: "She crept through the hushed forest. Shadowy and unsettling, it pressed in from all sides. She was terrified." Half the words. Twice the impact.',
+          tip: 'Go through a passage and circle every degree adverb. For each: (1) Can I delete it? (2) Can I replace adverb + adjective with one strong word? Do one or the other. Never leave "very + weak adjective."',
+        },
+        {
+          title: 'We Do — Audit Together',
+          instruction: 'Circle every degree adverb in this passage. For each one, decide: delete, or replace with a stronger word.',
+          sentences: [
+            '"The waka journey had been very long and quite exhausting. The crew were rather tired but also very proud. The water had been extremely choppy and the wind very cold. It had been a fairly difficult crossing — quite possibly the hardest any of them had done."',
+          ],
+          prompt: 'Which adverbs can go? Which adjectives need upgrading? What single word could replace each "adverb + weak adjective" pair?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this passage cutting or replacing every unnecessary degree adverb.',
+          tasks: [
+            '"The taonga was very old and quite fragile. The curator was very careful as she very slowly lifted it from its very dusty case. It was quite beautiful — rather extraordinary really — and everyone in the room was very quiet as they watched."',
+            '✦ Bonus: Self-edit a piece of your own narrative writing. Circle every degree adverb. Apply the audit: delete or upgrade every single one. Count how many you removed and record the before and after word counts.',
+          ],
+        }
+      ),
+    },
+
+    7: {
+      Monday: lesson(
+        'Semicolons to join related ideas',
+        'Use semicolons for effect',
+        {
+          title: 'I Do — The Semicolon\'s Unique Power',
+          instruction: 'A semicolon joins two complete, closely related sentences into one without needing a conjunction. The result is a tighter, more sophisticated connection than a full stop creates. Watch me use it deliberately.',
+          example: '"The tide was going out; the beach grew wider by the minute." | "She had trained for months; the race would be over in under four minutes."',
+          demonstration: 'Both sides of a semicolon must be complete sentences. The relationship between them should be so obvious that no conjunction is needed — the reader fills in the "and" or "so" or "but" themselves. This implied connection is what makes the semicolon feel sophisticated.',
+          tip: 'Test: replace the semicolon with a full stop. If both halves stand alone as sentences — the semicolon is correct. If the relationship between them is clear without a conjunction — it\'s the best choice.',
+        },
+        {
+          title: 'We Do — Semicolon or Full Stop?',
+          instruction: 'For each pair of sentences, decide whether a semicolon would create a stronger connection than a full stop. If yes — combine them.',
+          sentences: [
+            '"The pōhutukawa bloomed early this year. The summer had been unusually warm."',
+            '"She loved writing. Her brother preferred maths."',
+            '"The waka was ready. The crew took their positions."',
+          ],
+          prompt: 'Is the connection between the two ideas obvious enough that no conjunction is needed? Would a semicolon make that connection feel tighter than a full stop?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Combine each pair of sentences using a semicolon where appropriate.',
+          tasks: [
+            '"The kiwi only comes out at night. It has poor eyesight in daylight."',
+            '"The competition had been fierce. Only three teams remained."',
+            '"She opened the letter slowly. Her hands were shaking."',
+            '✦ Bonus: Write 5 sentences using semicolons. Each pair of joined clauses must have an implied relationship that is clear without a conjunction. Read them aloud — if the connection feels obvious, the semicolon is working.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Perfect tenses: present and past perfect',
+        'Use perfect tenses accurately',
+        {
+          title: 'I Do — Actions Connected to Now or Then',
+          instruction: 'Perfect tenses connect two time points. The present perfect connects a past action to the present moment. The past perfect connects an earlier past action to a later past moment. Watch me use each one precisely.',
+          example: 'Present perfect: "She <u>has lived</u> in Ōtautahi her whole life." (past action, still relevant now) | Past perfect: "By the time we arrived, the ceremony <u>had already begun</u>." (earlier past before a past moment)',
+          demonstration: 'Present perfect = have/has + past participle. It says: this happened in the past AND it matters now. "I have lost my key" — I still don\'t have it. Past perfect = had + past participle. It says: this happened BEFORE another past event. "She realised she had left her bag on the bus."',
+          tip: 'Present perfect = have/has + past participle (still relevant now). Past perfect = had + past participle (before another past moment).',
+        },
+        {
+          title: 'We Do — Choose the Right Perfect',
+          instruction: 'Choose present perfect or past perfect for each sentence.',
+          sentences: [
+            'By the time the rescue team arrived, the group ___ (shelter / had sheltered / has sheltered) in the cave for two days.',
+            'The kaitiaki ___ (has worked / had worked) to restore this wetland for over a decade. (still ongoing)',
+            'She couldn\'t find the pounamu — she ___ (has lost / had lost) it somewhere on the track.',
+          ],
+          prompt: 'Is this action still relevant now (present perfect) or did it happen before another past moment (past perfect)?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Complete each sentence using the correct perfect tense.',
+          tasks: [
+            'By the time the judges announced the result, the team ___ (wait) for over an hour.',
+            'The iwi ___ (protect) this land for generations. (still true now)',
+            'She realised she ___ (forget) her speech notes in the classroom.',
+            '✦ Bonus: Write a recount (5 sentences) of a real or imagined event. Use the past perfect at least twice to show events that happened before the main narrative. Underline each one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Complex sentences: \'because\', \'after\', \'before\'',
+        'Extend complex sentence use',
+        {
+          title: 'I Do — Cause, Sequence, and Time in Complex Sentences',
+          instruction: '"Because," "after," and "before" are subordinating conjunctions that tell us WHY something happened or WHEN it happened relative to something else. Watch me use each one to create different types of complex sentences.',
+          example: '"She trained every morning <u>because</u> she wanted to be ready." | "<u>Before</u> the pōwhiri began, the visitors gathered outside the gate." | "<u>After</u> the haka was performed, silence fell across the marae."',
+          demonstration: '"Because" = cause and effect. "Before" = sets up what comes first in time. "After" = shows what follows in time. When "before" and "after" come at the front, add a comma. When they come at the back, no comma needed: "She prepared the hangi before the guests arrived."',
+          tip: '"Because" = why. "Before/after" = when, relative to another event. Front of sentence = comma after clause. Back of sentence = no comma.',
+        },
+        {
+          title: 'We Do — Build Complex Sentences',
+          instruction: 'Expand each simple sentence into a complex sentence using the conjunction shown.',
+          sentences: [
+            '"The kapa haka group practised." → add a "because" clause explaining why.',
+            '"The storm hit." → add a "before" clause showing what happened just before.',
+            '"The crew rested." → add an "after" clause showing what triggered the rest.',
+          ],
+          prompt: 'Does your clause come at the front or back? Is the comma in the right place?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a complex sentence for each prompt.',
+          tasks: [
+            'Explain why a character made a difficult decision. Use "because."',
+            'Describe a moment of preparation before an important event. Use "before" at the front.',
+            'Describe what a character felt after something significant happened. Use "after" at the back.',
+            '✦ Bonus: Write a paragraph of 5 sentences about a significant moment in a story. Use because, before, and after at least once each. Underline each conjunction and check all commas.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: improving cohesion between sentences',
+        'Revise for flow',
+        {
+          title: 'I Do — Sentences That Connect, Not Just Follow',
+          instruction: 'Cohesion means each sentence reaches back to the previous one — through pronouns, connectives, or echoed words — so the paragraph flows rather than lurches. Watch me diagnose a disconnected paragraph and repair its cohesion.',
+          example: '"Kiri was nervous. The hall was full. The judges sat at a long table. The performance started at two o\'clock. She had practised for months."',
+          demonstration: 'Each sentence is correct, but they don\'t connect. Revision: "Kiri was nervous — the hall was fuller than she had expected. At a long table near the stage, three judges waited with clipboards. She had practised for months; now, at two o\'clock, it all came down to the next five minutes." Each sentence now reaches back: "fuller than she had expected" connects to nervousness. "Now, at two o\'clock" connects to the waiting.',
+          tip: 'Cohesion checklist: (1) Does this sentence refer back to the last one through a pronoun or echo? (2) Is there a connective or transition? (3) Does it flow naturally when read aloud?',
+        },
+        {
+          title: 'We Do — Repair the Cohesion',
+          instruction: 'Read this disconnected paragraph. Identify where cohesion breaks down and rewrite it so each sentence connects to the last.',
+          sentences: [
+            '"The waka was launched at dawn. The water was calm. The crew had trained for a year. Paddles entered the water. The sun came up. The journey had begun."',
+          ],
+          prompt: 'How can pronouns, connectives, or echoed words stitch these sentences together? Which sentences could be combined? Where does a transition word help?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this paragraph so every sentence connects clearly to the one before it.',
+          tasks: [
+            '"The pōwhiri was about to begin. Visitors waited outside. The tangata whenua prepared. Karanga rang out. Visitors moved forward. The groups met. Hongi was exchanged. Everyone entered the wharenui."',
+            '✦ Bonus: Write a 6-sentence narrative paragraph about an arrival or departure. Every sentence must connect to the previous one through at least one cohesive device (pronoun, connective, echoed word, or time marker). Label each device.',
+          ],
+        }
+      ),
+    },
+
+    8: {
+      Monday: lesson(
+        'Spelling: common suffixes (-tion, -ness, -ment)',
+        'Apply suffix spelling rules',
+        {
+          title: 'I Do — Suffixes That Build New Words',
+          instruction: 'A suffix is added to the end of a root word to create a new word. Knowing how suffixes work lets you spell and read hundreds of unfamiliar words. Watch me build words using common suffixes and show the spelling rules.',
+          example: '"-tion": act → action, create → creation, celebrate → celebration | "-ness": kind → kindness, dark → darkness, aware → awareness | "-ment": achieve → achievement, govern → government, excite → excitement',
+          demonstration: 'Watch for spelling changes: "create" drops the final e before "-tion" → creation. "happy" changes y to i before "-ness" → happiness. "achieve" keeps the e before "-ment" → achievement (because -ment starts with a consonant). These patterns are consistent — learn them once, apply them always.',
+          tip: 'Suffix rules: (1) drop silent e before vowel suffix (-tion, -ion). (2) Change y to i before suffix (happy → happiness). (3) Keep e before consonant suffix (-ment, -ness).',
+        },
+        {
+          title: 'We Do — Build and Check',
+          instruction: 'Add the suffix to each root word. Check for spelling changes.',
+          sentences: [
+            '"celebrate" + -tion = ___  |  "dark" + -ness = ___',
+            '"manage" + -ment = ___  |  "lazy" + -ness = ___',
+            '"educate" + -tion = ___  |  "achieve" + -ment = ___',
+          ],
+          prompt: 'Does the root word end in e or y? Apply the rule. Does the suffix start with a vowel or consonant?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add the correct suffix to each word and use it in a sentence.',
+          tasks: [
+            '"protect" + -tion → use in a sentence about native species.',
+            '"aware" + -ness → use in a sentence about environmental responsibility.',
+            '"develop" + -ment → use in a sentence about a community project.',
+            '"determine" + -tion → use in a sentence about a character in a story.',
+            '✦ Bonus: Find 10 words in a text you are reading that use -tion, -ness, or -ment. Write the root word and identify any spelling change that occurred.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Prepositional phrases for description in setting',
+        'Enrich setting description',
+        {
+          title: 'I Do — Prepositions That Build a World',
+          instruction: 'In narrative writing, prepositional phrases do more than locate characters — they build atmosphere and texture in a setting. Watch me use prepositional phrases deliberately to create a sense of place.',
+          example: '"<u>Beneath the canopy of ancient rimu,</u> the forest floor was deep in shadow. <u>At the far edge of the clearing,</u> a stream ran over smooth stones. <u>Between the roots of the largest tree,</u> something moved."',
+          demonstration: 'Each prepositional phrase does two jobs: it locates us precisely AND it contributes to atmosphere. "Beneath the canopy" suggests enclosure. "At the far edge" creates distance. "Between the roots" creates unease. The preposition itself carries mood.',
+          tip: 'Think of prepositional phrases in setting as camera moves — each one shifts the reader\'s viewpoint. Choose prepositions that carry the mood you want: beneath/above/between/beyond/within all feel different.',
+        },
+        {
+          title: 'We Do — Build the Setting',
+          instruction: 'Add a prepositional phrase to each sentence to strengthen the sense of place.',
+          sentences: [
+            '"The kōwhai tree grew." → add a prepositional phrase showing where, with atmosphere.',
+            '"Voices drifted." → add a prepositional phrase showing where they came from.',
+            '"She found the pounamu." → add a prepositional phrase showing the exact location.',
+          ],
+          prompt: 'Does your prepositional phrase add atmosphere as well as location? Which preposition creates the most interesting effect?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write 3 sentences for each setting, each beginning with a different prepositional phrase.',
+          tasks: [
+            'Setting: a beach at dusk. Begin each sentence with a prepositional phrase.',
+            'Setting: inside an old wharenui. Begin each sentence with a prepositional phrase.',
+            'Setting: a stormy hillside. Begin each sentence with a prepositional phrase.',
+            '✦ Bonus: Write a 5-sentence descriptive paragraph about a NZ setting. Every sentence must begin with a prepositional phrase. Vary the prepositions — don\'t start two sentences with the same one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Fronted adverbials for place & atmosphere',
+        'Vary sentence openings in narrative',
+        {
+          title: 'I Do — Openers That Set the Scene',
+          instruction: 'Fronted adverbials of place and atmosphere are particularly powerful in narrative — they pull the reader into a setting before the action begins. Watch me use them to create immersive scene-setting.',
+          example: '"<u>High above the valley,</u> the kārearea surveyed its territory." | "<u>Deep within the shadows of the old pā,</u> something waited." | "<u>Somewhere in the darkness,</u> a branch snapped."',
+          demonstration: '"High above the valley" places us — and creates a sense of height and distance. "Deep within the shadows" creates enclosure and unease before we even know what\'s there. "Somewhere in the darkness" creates suspense through vagueness — we don\'t know exactly where. Each fronted adverbial sets mood before the main clause.',
+          tip: 'Place fronted adverbials: above/below/deep within/beyond/at the far edge/somewhere in — each carries a different atmosphere. Choose deliberately.',
+        },
+        {
+          title: 'We Do — Create the Atmosphere',
+          instruction: 'Add a fronted adverbial of place to each sentence. Then discuss how the adverbial shifts the atmosphere.',
+          sentences: [
+            '"___, the water was perfectly still." (add an atmospheric place opener)',
+            '"___, a figure appeared in the doorway." (add an opener that creates unease)',
+            '"___, the celebration was in full swing." (add an opener that creates warmth)',
+          ],
+          prompt: 'Does your fronted adverbial create the right atmosphere for the sentence? Which preposition or phrase creates the strongest effect?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence for each mood using a fronted adverbial of place.',
+          tasks: [
+            'Write a sentence that creates mystery. Begin with a fronted adverbial of place.',
+            'Write a sentence that creates warmth and safety. Begin with a fronted adverbial of place.',
+            'Write a sentence that creates danger or threat. Begin with a fronted adverbial of place.',
+            '✦ Bonus: Write an opening paragraph for a narrative (5 sentences). Use a fronted adverbial of place in at least three sentences. Each one should contribute to the same overall atmosphere.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: strengthening narrative openings',
+        'Revise opening sentences',
+        {
+          title: 'I Do — The First Sentence Has One Job',
+          instruction: 'A narrative opening must make the reader want to continue. Watch me diagnose weak openings and replace them with ones that create immediate intrigue.',
+          example: 'Weak: "One day a girl went for a walk in the bush." | Strong: "The path ended without warning — just a wall of ferns and, somewhere beyond them, a sound that shouldn\'t have been there."',
+          demonstration: 'The weak opening gives information but no tension, no hook, nothing that demands the reader continue. The strong opening creates: a visual (wall of ferns), a mystery (sound that shouldn\'t be there), and a question (what is it?). Three elements in one sentence. That\'s what a strong opening does.',
+          tip: 'Strong opening checklist: (1) Does it create a question? (2) Does it start in the middle of something — action, feeling, or mystery? (3) Does it avoid "One day…," "It was a…," "This story is about…"?',
+        },
+        {
+          title: 'We Do — Diagnose and Strengthen',
+          instruction: 'Rate each opening (weak/okay/strong) and explain why. Rewrite the weak ones.',
+          sentences: [
+            '"My story is about a boy who discovers something strange at the beach."',
+            '"The box had been buried under the ngaio tree for longer than anyone could remember."',
+            '"It was a sunny day and Tia decided to explore the old part of town."',
+          ],
+          prompt: 'Does it create intrigue? Does it start in the middle of something? Does it make you want to continue? What specific change would make the weak ones stronger?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each weak opening as a strong one using the techniques discussed.',
+          tasks: [
+            '"Once upon a time there was a girl who lived near the sea."',
+            '"This is a story about a competition that changed everything."',
+            '"One morning Rangi woke up and felt something was different."',
+            '✦ Bonus: Write three possible opening sentences for the same story. Rate them yourself — weak, okay, strong. Explain what makes the strongest one work.',
+          ],
+        }
+      ),
+    },
+
+    9: {
+      Monday: lesson(
+        'Personification as a writing device',
+        'Use personification',
+        {
+          title: 'I Do — Giving the World Human Qualities',
+          instruction: 'Personification gives human actions, feelings, or qualities to non-human things. It\'s one of the most powerful tools in descriptive writing — it transforms the world around characters into something active and alive. Watch me use it deliberately.',
+          example: '"The wind <u>whispered</u> through the tī kōuka." | "The ocean <u>clawed</u> at the base of the cliff." | "The old pā <u>remembered</u> every footstep that had ever crossed its threshold."',
+          demonstration: '"The wind whispered" — wind doesn\'t whisper, but giving it a human voice creates intimacy and mood. "The ocean clawed" — attacking, aggressive, dangerous. "The pā remembered" — gives the place memory and history. Each example makes the natural world feel like a character.',
+          tip: 'Personification works best when the human quality matches the mood. Whispering wind = gentle/secretive. Clawing ocean = dangerous. Remember: the verb you choose carries the mood.',
+        },
+        {
+          title: 'We Do — Choose the Right Human Quality',
+          instruction: 'Add personification to each sentence by giving the underlined thing a human action that matches the mood.',
+          sentences: [
+            '"The <u>storm</u> ___ across the harbour." (mood: anger, violence)',
+            '"The <u>kōwhai blossoms</u> ___ in the spring breeze." (mood: joy, lightness)',
+            '"The <u>old totara</u> ___ over the clearing." (mood: protection, watchfulness)',
+          ],
+          prompt: 'Which human verb creates the right mood? Does it make the thing feel threatening, gentle, watchful, joyful?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence using personification for each subject and mood.',
+          tasks: [
+            'The sea — mood: hunger and danger.',
+            'The sun — mood: warmth and generosity.',
+            'A dark forest — mood: secrecy and watchfulness.',
+            '✦ Bonus: Write a descriptive paragraph of 5 sentences about a NZ landscape during a storm. Use personification at least three times — give the storm, the trees, and one other element human qualities. Underline each example.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Conjunctions review: narrative & informational',
+        'Transfer conjunction use',
+        {
+          title: 'I Do — The Right Conjunction for the Right Text Type',
+          instruction: 'We\'ve used conjunctions all year. Now we consolidate: how does the right conjunction change depending on text type? Narrative conjunctions create tension and flow. Informational conjunctions create logic and structure. Watch me demonstrate the difference.',
+          example: 'Narrative: "She ran <u>until</u> her legs gave way, <u>but</u> she didn\'t stop." | Informational: "Native birds declined <u>because</u> predators were introduced, <u>although</u> recent conservation efforts have helped."',
+          demonstration: '"Until" and "but" in narrative create tension and contrast — they push the story forward. "Because" and "although" in informational writing show cause-and-effect and qualification — they build argument and nuance. The conjunctions themselves aren\'t different; their purpose in context is.',
+          tip: 'Narrative conjunctions = create tension, time, contrast. Informational conjunctions = show cause, sequence, qualification. But all conjunctions can be used in both — what changes is WHY you choose them.',
+        },
+        {
+          title: 'We Do — Match the Conjunction to the Context',
+          instruction: 'Choose the best conjunction for each sentence and explain whether this is a narrative or informational use.',
+          sentences: [
+            'Kiwi numbers have increased ___ (because/but/until) intensive predator control was introduced.',
+            'She kept paddling ___ (although/because/until) she could no longer feel her arms.',
+            'The bridge was structurally sound ___ (although/so/before) engineers still recommended repairs.',
+          ],
+          prompt: 'What type of relationship is being created — cause, contrast, time, condition? Does this feel like narrative or informational writing?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write one sentence for each conjunction in both a narrative and an informational context.',
+          tasks: [
+            '"Although" — write one narrative sentence and one informational sentence.',
+            '"Until" — write one narrative sentence and one informational sentence.',
+            '"Because" — write one narrative sentence and one informational sentence.',
+            '✦ Bonus: Write a short paragraph (4 sentences) on a NZ conservation topic in an informational style. Then rewrite it as a narrative about a character experiencing that issue. Compare the conjunctions you used in each version.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Paragraph cohesion: time connectives as links',
+        'Use temporal cohesion',
+        {
+          title: 'I Do — Time Connectives That Move the Story Forward',
+          instruction: 'Time connectives show the sequence and pace of events in narrative writing. They tell the reader WHEN each event happens relative to the last one. Watch me use them to create a paragraph that flows through time clearly.',
+          example: '"<u>At first,</u> the waka moved slowly through the shallows. <u>As the water deepened,</u> the crew found their rhythm. <u>By the time</u> they cleared the harbour mouth, they were moving as one."',
+          demonstration: '"At first" sets up the beginning. "As the water deepened" links the next moment to a physical change. "By the time" shows that time has passed and something is complete. Each connective moves the paragraph forward in time while keeping the reader anchored in the sequence.',
+          tip: 'Time connective toolkit: At first / Then / As soon as / While / By the time / Eventually / Suddenly / Moments later / As the [time/situation] changed. Vary them — don\'t just use "then" repeatedly.',
+        },
+        {
+          title: 'We Do — Add the Time Connectives',
+          instruction: 'Add a different time connective to the start of each sentence to create a cohesive sequence.',
+          sentences: [
+            '"___ the karanga rang out. ___ the visitors began to move forward. ___ the groups had met in the middle of the marae. ___ hongi was exchanged and everyone moved inside."',
+          ],
+          prompt: 'Which connective works best for each moment? Does the sequence of events feel clear and smooth? Have you varied the connectives?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a 5-sentence narrative paragraph using a different time connective to begin each sentence.',
+          tasks: [
+            'Topic: a tense moment during a competition or performance.',
+            'Topic: a character arriving somewhere for the first time.',
+            'Topic: the moment a storm builds and breaks.',
+            '✦ Bonus: Write a paragraph then rewrite it without the time connectives. Compare the two. How much does the cohesion change? What else could you use to link the sentences?',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: cutting filler words for impact',
+        'Revise for economy',
+        {
+          title: 'I Do — Every Word Must Earn Its Place',
+          instruction: 'Filler words and phrases add length without adding meaning. Watch me identify them in a passage and cut them — making every remaining word do more work.',
+          example: '"In my opinion, I personally think that the ending of the story was really quite a good one in actual fact." → "The ending was powerful."',
+          demonstration: 'Cut list: "in my opinion," "I personally think," "the fact that," "in actual fact," "really quite," "kind of," "sort of," "basically," "literally," "at the end of the day." None of these add meaning. After cutting, the remaining words are stronger because they\'re not surrounded by padding.',
+          tip: 'Read each sentence aloud. For every word or phrase — ask: would removing this change the meaning? If no — cut it.',
+        },
+        {
+          title: 'We Do — Cut Together',
+          instruction: 'Cut every filler word and phrase from this passage without losing any actual meaning.',
+          sentences: [
+            '"In my personal opinion, I basically think that what happened was actually quite an interesting sort of event. The fact that it occurred at all was in actual fact rather surprising to everyone involved, who all basically agreed that it was literally the most unexpected thing that had kind of happened all year."',
+          ],
+          prompt: 'How many words can you cut? Does the meaning change? Is the passage stronger after the cuts?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence cutting every filler word.',
+          tasks: [
+            '"I personally think that kind of behaviour is basically not acceptable in actual fact."',
+            '"The fact that she won was actually quite surprising to sort of everyone."',
+            '"In my opinion, the really quite beautiful sunset was literally amazing."',
+            '✦ Bonus: Self-edit a piece of your own writing. Underline every filler word or phrase. Cut them all. Count the word reduction. Does the writing feel tighter and more confident?',
+          ],
+        }
+      ),
+    },
+
+    10: {
+      Monday: lesson(
+        'Review: punctuation marks covered in Term 3',
+        'Consolidate punctuation',
+        {
+          title: 'I Do — Term 3 Punctuation in One Passage',
+          instruction: 'Term 3 introduced and deepened several punctuation marks — all in the context of narrative writing. Watch me identify every mark in a passage and name the rule it follows.',
+          example: '"Although the path had disappeared, she kept moving — the sound of the stream, which she could hear but not yet see, was pulling her forward... Somewhere ahead, she told herself, was the clearing."',
+          demonstration: 'Comma after fronted "Although" clause ✓ | Dash for dramatic aside ✓ | Relative clause set off by commas ✓ | Ellipsis for trailing/suspense ✓ | Comma after fronted adverbial "Somewhere ahead" ✓. One passage — five rules, all from Term 3.',
+          tip: 'When reviewing punctuation for narrative: look especially for ellipsis, dashes, and commas around relative clauses — these are the marks that create the most effect in storytelling.',
+        },
+        {
+          title: 'We Do — Punctuation Audit',
+          instruction: 'Read this passage and name every punctuation mark. For each, state the rule it is following.',
+          sentences: [
+            '"Despite the rain — which had turned the track to mud — Rangi kept his pace. He had been walking since dawn; his legs ached but his mind was clear. At the ridge, finally, the clouds parted... and the whole valley opened below him."',
+          ],
+          prompt: 'Go mark by mark. What is each one doing? Can you name the specific rule for each?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add all missing punctuation to this passage.',
+          tasks: [
+            '"although the competition had been fierce Aroha felt calm the hours of preparation which had sometimes felt pointless had brought her here she reached for her pen and began to write at first slowly then faster and faster until the words seemed to come from somewhere beyond her"',
+            '✦ Bonus: Write your own paragraph of 5–6 narrative sentences that deliberately uses: a comma after a fronted adverbial, an ellipsis, a dash, a relative clause with commas, and a semicolon. Underline each and label it.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Review: grammar concepts from Term 3',
+        'Consolidate grammar',
+        {
+          title: 'I Do — Term 3 Grammar Recap',
+          instruction: 'Term 3 grammar built towards narrative sophistication. Let me recap each concept with one clear example.',
+          example: 'Modal verbs: "She must leave before dark." | Collective noun SVA: "The crew was exhausted." | Pronoun clarity: "Tama and Rangi argued — Rangi eventually backed down." | Irregular possessives: "the children\'s story." | Adjective placement: "exhausted and shaking, she collapsed." | Perfect tenses: "She had known the answer all along."',
+          demonstration: 'Find each in this passage: "The children\'s kapa haka group had performed beautifully. Each member should be proud — they, exhausted and elated, would remember this night forever. The crowd, which had grown throughout the performance, gave a standing ovation."',
+          tip: 'Grammar review: identify one example of each Term 3 grammar concept in a passage you have written. If you can\'t find one — write a sentence that demonstrates it.',
+        },
+        {
+          title: 'We Do — Grammar Hunt',
+          instruction: 'Find and label one example of each Term 3 grammar concept in this passage.',
+          sentences: [
+            '"Although everyone in the group had trained for months, each person could still feel nervous before a performance. The women\'s team had been particularly impressive — their synchronisation, which the judges commented on, was remarkable. By the time the results were announced, the crowd had fallen completely silent."',
+          ],
+          prompt: 'Can you find: modal verb, collective/irregular possessive, pronoun clarity, past perfect, relative clause, adjective placement?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence demonstrating each Term 3 grammar concept.',
+          tasks: [
+            'Write a sentence using a modal verb to show obligation in a narrative context.',
+            'Write a sentence using a collective noun with the correct singular verb.',
+            'Write a sentence with two same-gender characters where every pronoun is unambiguous.',
+            'Write a sentence using the past perfect to show something that happened before the main narrative.',
+            '✦ Bonus: Write a 6-sentence narrative paragraph that contains at least one example of every Term 3 grammar concept. Label each one in the margin.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Review: sentence structures from Term 3',
+        'Consolidate sentence skills',
+        {
+          title: 'I Do — The Term 3 Narrative Sentence Toolkit',
+          instruction: 'Term 3\'s sentence skills were all focused on narrative craft. Let me demonstrate one sentence of each type, showing how they work together in narrative writing.',
+          example: 'Show don\'t tell: "Her hands trembled as she reached for the door handle." | Varied length for effect: "She had been waiting for this moment for three years. It was over in seconds." | Adjectives after noun: "The path, narrow and overgrown, seemed to vanish into the bush." | Sensory detail: "The smell of wet earth and pine resin filled the air." | Personification: "The wind sighed through the rimu canopy."',
+          demonstration: 'Each sentence type serves the narrative. Show don\'t tell — creates character depth. Varied length — controls pace. Post-noun adjectives — creates emphasis. Sensory detail — immerses the reader. Personification — animates the world.',
+          tip: 'When reviewing narrative writing, look for opportunities to use these tools. Every "she was nervous" can be shown. Every "long, long, long, long sentence, short" sequence can control pace.',
+        },
+        {
+          title: 'We Do — Identify and Build',
+          instruction: 'Identify the sentence technique used in each example, then write your own using the same technique.',
+          sentences: [
+            '"The ruru called twice, then silence swallowed the forest."',
+            '"Mud-streaked and breathless, the runners crossed the line together."',
+            '"The tide came in slowly, then quickly, then all at once — and the sandcastle was gone."',
+          ],
+          prompt: 'What technique is being used? What effect does it create? Write your own sentence using the same tool.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write one sentence of each type as a showcase of your Term 3 narrative skills.',
+          tasks: [
+            'A show-don\'t-tell sentence that reveals a character\'s emotion without naming it.',
+            'A long sentence followed immediately by a short sentence for dramatic impact.',
+            'A sentence with adjectives placed after the noun (with commas).',
+            'A sentence using personification to give a natural feature human qualities.',
+            '✦ Bonus: Write the opening paragraph of a narrative (5 sentences) that uses at least four of the five Term 3 techniques. Label each one.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: full-passage edit using Term 3 checklist',
+        'Apply all Term 3 skills',
+        {
+          title: 'I Do — The Term 3 Editing Checklist',
+          instruction: 'Our Term 3 checklist focuses on the craft of narrative writing. Six passes, six skills — all working together to make a piece of writing genuinely powerful.',
+          example: 'Pass 1: Dialogue punctuation (5 rules) | Pass 2: Show don\'t tell (replace any "she was [emotion]") | Pass 3: Vague adjectives/adverbs (upgrade or cut) | Pass 4: Pronoun clarity (arrow test) | Pass 5: Sentence length variety (count openers — vary them) | Pass 6: At least one figurative language device (simile, metaphor, personification)',
+          demonstration: '"She was scared as she walked through the dark forest. The trees were big and it was very quiet. She thought she heard something. She stopped." → Pass 2: show fear, don\'t say it. Pass 3: "big" → towering, "very quiet" → silent. Pass 5: all short — vary. Pass 6: add personification. Revised: "Her heart hammered as she pushed through the forest. Towering rimu closed around her. The silence pressed in — watchful, waiting. She froze."',
+          tip: 'Six passes, six focuses. Go slowly. Each pass makes the writing stronger. The goal isn\'t perfection — it\'s deliberate craft.',
+        },
+        {
+          title: 'We Do — Checklist Pass Together',
+          instruction: 'Work through this passage using the Term 3 checklist. One pass at a time.',
+          sentences: [
+            '"aroha was nervous as she waited to perform. The hall was big and the lights were very bright. She thought the audience looked scary. she felt bad and wanted to leave. But then the music started and everything was okay."',
+          ],
+          prompt: 'Pass 1: dialogue needed? Pass 2: show the emotion. Pass 3: vague adjectives? Pass 4: pronouns clear? Pass 5: vary sentence openings. Pass 6: add one figurative device.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Apply the full Term 3 checklist to this passage. Use a different colour or symbol for each pass.',
+          tasks: [
+            '"tama felt excited as he paddled out. The waves were big and it was quite scary. He felt nervous. His friend was there too and he told him it would be fine. He paddled harder. A really good wave came. He rode it and it was amazing."',
+            '✦ Bonus: Self-edit a piece of your own narrative writing using the Term 3 checklist. Annotate every change you make and label which pass it belongs to. Write a one-paragraph reflection on what the checklist helped you notice.',
+          ],
+        }
+      ),
+    },
+
   },
 
   4: { 1: { Monday: lesson('Tier 2 vocabulary: words for argument & opinion','Use persuasive vocabulary',{title:'I Do',instruction:'Persuasive writing uses specific vocabulary to signal opinion, certainty, and importance. Watch me identify and use these words.',example:'"It is <u>crucial</u> that schools provide healthy lunches. <u>Evidently</u>, poor nutrition affects learning. <u>Furthermore</u>, it <u>significantly</u> impacts behaviour."',demonstration:'Crucial (strong importance), evidently (signals evidence), furthermore (adds a point), significantly (makes impact sound large). These words don\'t just fill space — they do persuasive work.',tip:'"Very important" → "crucial." "Also" → "furthermore." "Shows" → "demonstrates." Upgrade to the persuasive register.'},{title:'We Do',instruction:'Replace the plain words with persuasive vocabulary.',sentences:['It is <u>important</u> that we recycle more.','This <u>shows</u> that the problem is <u>big</u>.','<u>Also</u>, the research <u>proves</u> it works.'],prompt:'Which persuasive word fits best? Does it change how convincing the sentence sounds?'},{title:'You Do',instruction:'Rewrite each sentence using persuasive vocabulary.',tasks:['The problem of food waste is <u>bad</u>.','This <u>shows</u> that something needs to change.','It is <u>important</u> that everyone does their part.','✦ Bonus: Write a 3-sentence persuasive opening about a school rule you\'d like to change. Use at least 4 persuasive words.']}), Tuesday: lesson('Nouns: gerunds as subjects ("Swimming is…")','Identify gerund nouns',{title:'I Do',instruction:'A gerund is a verb form ending in -ing that works as a noun. It can be the subject of a sentence. Watch me identify and use gerunds.',example:'"<u>Swimming</u> is excellent exercise. <u>Writing</u> clearly is a valuable skill."',demonstration:'"Swimming" — looks like a verb, acts as a noun. It\'s the subject of the sentence. "Writing" — same: it\'s what the sentence is ABOUT. You can test it: replace with a regular noun — "Sport is excellent exercise." Still works. That means swimming IS a noun here.',tip:'Gerund as subject: can I replace it with a noun like "sport" or "skill"? If yes — it\'s a gerund.'},{title:'We Do',instruction:'Identify the gerund in each sentence and confirm it\'s acting as a noun.',sentences:['Reading every day improves vocabulary.','Travelling to new places broadens your mind.','Winning isn\'t everything.'],prompt:'What is the subject of each sentence? Is it a gerund? What noun could replace it?'},{title:'You Do',instruction:'Use each gerund as the subject of a sentence.',tasks:['Running → ___','Cooking → ___','Learning → ___','Painting → ___','✦ Bonus: Write 3 sentences about things you enjoy, each using a gerund as the subject.']}), Wednesday: lesson('Simple sentences: direct & concise statements','Apply in persuasive writing',{title:'I Do',instruction:'In persuasive writing, simple sentences land like punches. They state a fact or claim directly. Watch how I use short, direct sentences to drive a point home.',example:'"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',demonstration:'Four short sentences. No padding. No apology. Each one is a single, clear claim. This directness signals confidence and conviction — both essential in persuasive writing.',tip:'In persuasive writing, vary: long sentences to explain and argue, short sentences to make your key claim land hard.'},{title:'We Do',instruction:'Convert these wordy arguments into direct, punchy simple sentences.',sentences:['Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them.','The situation in which animals are kept in small cages for entertainment is something that is not acceptable and should not be allowed.'],prompt:'What is the core claim? Strip it back to the fewest words that still make the point.'},{title:'You Do',instruction:'Write a direct, concise simple sentence for each argument.',tasks:['Argument: school should start later because teenagers need more sleep.','Argument: fast food advertising should not be shown during children\'s programmes.','Argument: every student should learn a second language.','✦ Bonus: Write a persuasive paragraph. Use 3 short punchy sentences and 2 longer explanation sentences alternately.']}), Thursday: lesson('Proofreading: checking for consistency in a report','Edit informational text',{title:'I Do',instruction:'Reports need consistency: consistent tense (usually present), consistent formal register, consistent formatting of lists and headings. Watch me edit an inconsistent report excerpt.',example:'"Dolphins are marine mammals. They lived in oceans worldwide (wrong tense). Dolphins eat fish, squid and they also had crustaceans (inconsistent list)."',demonstration:'Fixed: "Dolphins are marine mammals. They <u>live</u> in oceans worldwide. Dolphins eat fish, squid<u>,</u> and crustaceans." Tense fixed to present. List restructured to parallel form.',tip:'Reports: present tense for facts. Parallel lists: all nouns, or all verbs — not mixed.'},{title:'We Do',instruction:'Find and fix inconsistencies in this science report paragraph.',sentences:['The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf. Then a caterpillar hatched and it ate the leaf. The caterpillar forms a chrysalis and then eventually it became a butterfly and emerged.'],prompt:'Tense errors? List inconsistencies? Register shifts?'},{title:'You Do',instruction:'Rewrite this passage making it consistent in tense, register, and structure.',tasks:['Kauri trees are one of the largest tree species in the world. They grew very slowly and can lived for over 2,000 years. The kauri forests were very important to Māori people. Kauri gum, the resin from these trees, were used for many purposes including it was used as a fire starter, and for making varnish, and people also chewed it.','✦ Bonus: Write 5 sentences about an animal of your choice in a consistent report style. Present tense, formal register, parallel lists.']}) }, },
