@@ -2384,7 +2384,510 @@ export const CURRICULUM = {
 
   },
 
-  3: { 1: { Monday: lesson('Tier 2 vocabulary: words for feelings & emotion','Select emotive vocabulary',{title:'I Do',instruction:'Precise emotion vocabulary moves readers. Watch me build an "emotion word ladder" — from mild to intense.',example:'sad → unhappy → miserable → devastated → heartbroken',demonstration:'Each word is more intense. A character who is "unhappy" about losing a game feels different from one who is "devastated." Choosing the right level signals to the reader how much this matters.',tip:'Match the emotion word to the story\'s stakes. Small disappointment → "disappointed." Life-changing loss → "devastated."'},{title:'We Do',instruction:'Build emotion ladders for these feelings together.',sentences:['angry → ___ → ___ → ___ → ___','happy → ___ → ___ → ___ → ___'],prompt:'Which word would you use in a funny story? Which in a dramatic one?'},{title:'You Do',instruction:'Replace each plain emotion word with one from the correct intensity level.',tasks:['She was <u>sad</u> when her goldfish died. (use devastated or heartbroken)','He was <u>happy</u> when his name was called. (mild — use pleased or delighted)','The crowd was <u>angry</u> at the decision. (intense — use furious or outraged)','✦ Bonus: Write an "emotion ladder" for "scared" with 6 levels from mild to extreme.']}), Tuesday: lesson('Nouns revisited: count vs. non-count nouns','Deepen noun understanding',{title:'I Do',instruction:'Count nouns can be counted and have plurals. Non-count (mass) nouns cannot be counted and have no plural form.',example:'Count: one book, two books ✓ | Non-count: one sand, two sands ✗',demonstration:'"Sand" — you can\'t say "two sands." You say "some sand," "a grain of sand." Other non-count: water, music, advice, furniture, information. With count nouns you use "a/an" or numbers. With non-count you use "some," "much," "a lot of."',tip:'"Much" = non-count ("much water"). "Many" = count ("many cups"). If you\'re unsure, try adding a number — if it sounds wrong, it\'s non-count.'},{title:'We Do',instruction:'Sort these nouns and choose the correct determiner (some/a/an/many/much).',sentences:['___ furniture | ___ chairs | ___ advice | ___ suggestions | ___ lightning'],prompt:'Count or non-count? Which determiner fits?'},{title:'You Do',instruction:'Correct the non-count noun errors in these sentences.',tasks:['She gave me a lot of advices about the exam.','We need two furnitures for the new room.','Can I have some informations about the trip?','There were many thunders during the storm.','✦ Bonus: Write 6 sentences — 3 using count nouns correctly, 3 using non-count nouns correctly.']}), Wednesday: lesson('Simple sentences: revisit in narrative context','Apply in narrative writing',{title:'I Do',instruction:'In narrative, simple sentences aren\'t just exercises — they\'re dramatic tools. Watch how a string of short simple sentences creates suspense.',example:'"She stopped. She listened. The floorboard creaked. Someone was there."',demonstration:'Each sentence is complete. Each ends with a full stop — a tiny pause. That rhythm creates tension. Compare: "She stopped and listened because a floorboard creaked and someone was there." — all the information, but none of the tension.',tip:'In action or suspense moments, break your writing into short simple sentences. Let the reader feel every beat.'},{title:'We Do',instruction:'Rewrite this rushed description as a series of short simple sentences to build suspense.',sentences:['The old house was dark and silent and the child walked slowly up the creaking staircase and then she heard a sound coming from behind the closed door at the end of the hall.'],prompt:'Where are the moments of tension? Break them apart.'},{title:'You Do',instruction:'Write a 5-sentence suspense sequence using only simple sentences. Then label the effect each creates.',tasks:['Scene: a character is alone in a forest at night and hears something.','Must use: 5 simple sentences, each 5–8 words. No conjunctions.','✦ Bonus: Now rewrite the same scene using one long complex sentence. Compare the effect.']}), Thursday: lesson('Proofreading: dialogue punctuation (speech marks)','Edit dialogue conventions',{title:'I Do',instruction:'Dialogue (speech) has its own punctuation rules. Watch me show the five key rules with examples.',example:'"I think we\'re lost," she whispered.\n"Lost?" said Tom. "Are you sure?"\n"Yes," she replied. "Completely."',demonstration:'Rule 1: Speech marks around the spoken words. Rule 2: Comma (not full stop) before the closing speech mark if a speech tag follows. Rule 3: The speech tag (she whispered) is NOT capitalised after the comma. Rule 4: New speaker = new line. Rule 5: Punctuation inside the speech marks.',tip:'Ask: is the full stop job done by the comma? If there\'s a speech tag, the period becomes a comma inside the speech marks.'},{title:'We Do',instruction:'Fix the dialogue punctuation in these exchanges.',sentences:['"We should go" said Marcus "before it gets dark."','Anna replied "but I havent finished yet"','"Look out screamed the driver'],prompt:'Apply the 5 rules one at a time. What is wrong with each line?'},{title:'You Do',instruction:'Rewrite this dialogue with correct punctuation throughout.',tasks:['"where are we going asked lily\n"to the market said dad I need to get some things\n"can I have a sausage she asked\n"if you\'re good he replied\n✦ Bonus: Write a 6-line dialogue between two characters. Apply all 5 dialogue punctuation rules perfectly.']}) }, },
+  3: { 1: { Monday: lesson('Tier 2 vocabulary: words for feelings & emotion','Select emotive vocabulary',{title:'I Do',instruction:'Precise emotion vocabulary moves readers. Watch me build an "emotion word ladder" — from mild to intense.',example:'sad → unhappy → miserable → devastated → heartbroken',demonstration:'Each word is more intense. A character who is "unhappy" about losing a game feels different from one who is "devastated." Choosing the right level signals to the reader how much this matters.',tip:'Match the emotion word to the story\'s stakes. Small disappointment → "disappointed." Life-changing loss → "devastated."'},{title:'We Do',instruction:'Build emotion ladders for these feelings together.',sentences:['angry → ___ → ___ → ___ → ___','happy → ___ → ___ → ___ → ___'],prompt:'Which word would you use in a funny story? Which in a dramatic one?'},{title:'You Do',instruction:'Replace each plain emotion word with one from the correct intensity level.',tasks:['She was <u>sad</u> when her goldfish died. (use devastated or heartbroken)','He was <u>happy</u> when his name was called. (mild — use pleased or delighted)','The crowd was <u>angry</u> at the decision. (intense — use furious or outraged)','✦ Bonus: Write an "emotion ladder" for "scared" with 6 levels from mild to extreme.']}), Tuesday: lesson('Nouns revisited: count vs. non-count nouns','Deepen noun understanding',{title:'I Do',instruction:'Count nouns can be counted and have plurals. Non-count (mass) nouns cannot be counted and have no plural form.',example:'Count: one book, two books ✓ | Non-count: one sand, two sands ✗',demonstration:'"Sand" — you can\'t say "two sands." You say "some sand," "a grain of sand." Other non-count: water, music, advice, furniture, information. With count nouns you use "a/an" or numbers. With non-count you use "some," "much," "a lot of."',tip:'"Much" = non-count ("much water"). "Many" = count ("many cups"). If you\'re unsure, try adding a number — if it sounds wrong, it\'s non-count.'},{title:'We Do',instruction:'Sort these nouns and choose the correct determiner (some/a/an/many/much).',sentences:['___ furniture | ___ chairs | ___ advice | ___ suggestions | ___ lightning'],prompt:'Count or non-count? Which determiner fits?'},{title:'You Do',instruction:'Correct the non-count noun errors in these sentences.',tasks:['She gave me a lot of advices about the exam.','We need two furnitures for the new room.','Can I have some informations about the trip?','There were many thunders during the storm.','✦ Bonus: Write 6 sentences — 3 using count nouns correctly, 3 using non-count nouns correctly.']}), Wednesday: lesson('Simple sentences: revisit in narrative context','Apply in narrative writing',{title:'I Do',instruction:'In narrative, simple sentences aren\'t just exercises — they\'re dramatic tools. Watch how a string of short simple sentences creates suspense.',example:'"She stopped. She listened. The floorboard creaked. Someone was there."',demonstration:'Each sentence is complete. Each ends with a full stop — a tiny pause. That rhythm creates tension. Compare: "She stopped and listened because a floorboard creaked and someone was there." — all the information, but none of the tension.',tip:'In action or suspense moments, break your writing into short simple sentences. Let the reader feel every beat.'},{title:'We Do',instruction:'Rewrite this rushed description as a series of short simple sentences to build suspense.',sentences:['The old house was dark and silent and the child walked slowly up the creaking staircase and then she heard a sound coming from behind the closed door at the end of the hall.'],prompt:'Where are the moments of tension? Break them apart.'},{title:'You Do',instruction:'Write a 5-sentence suspense sequence using only simple sentences. Then label the effect each creates.',tasks:['Scene: a character is alone in a forest at night and hears something.','Must use: 5 simple sentences, each 5–8 words. No conjunctions.','✦ Bonus: Now rewrite the same scene using one long complex sentence. Compare the effect.']}), Thursday: lesson('Proofreading: dialogue punctuation (speech marks)','Edit dialogue conventions',{title:'I Do',instruction:'Dialogue (speech) has its own punctuation rules. Watch me show the five key rules with examples.',example:'"I think we\'re lost," she whispered.\n"Lost?" said Tom. "Are you sure?"\n"Yes," she replied. "Completely."',demonstration:'Rule 1: Speech marks around the spoken words. Rule 2: Comma (not full stop) before the closing speech mark if a speech tag follows. Rule 3: The speech tag (she whispered) is NOT capitalised after the comma. Rule 4: New speaker = new line. Rule 5: Punctuation inside the speech marks.',tip:'Ask: is the full stop job done by the comma? If there\'s a speech tag, the period becomes a comma inside the speech marks.'},{title:'We Do',instruction:'Fix the dialogue punctuation in these exchanges.',sentences:['"We should go" said Marcus "before it gets dark."','Anna replied "but I havent finished yet"','"Look out screamed the driver'],prompt:'Apply the 5 rules one at a time. What is wrong with each line?'},{title:'You Do',instruction:'Rewrite this dialogue with correct punctuation throughout.',tasks:['"where are we going asked lily\n"to the market said dad I need to get some things\n"can I have a sausage she asked\n"if you\'re good he replied\n✦ Bonus: Write a 6-line dialogue between two characters. Apply all 5 dialogue punctuation rules perfectly.']}) },
+
+    2: {
+      Monday: lesson(
+        'Commas in complex sentences (before \'but\', \'although\')',
+        'Punctuate clauses correctly',
+        {
+          title: 'I Do — The Comma Before the Turn',
+          instruction: 'When we join two clauses with "but" or "although," a comma signals the turn in the sentence — the moment where the meaning shifts. Watch me show when the comma is needed and when it isn\'t.',
+          example: '"She trained hard every day<u>,</u> but she still felt unprepared." | "<u>Although</u> she trained hard every day<u>,</u> she still felt unprepared."',
+          demonstration: '"But" joining two complete clauses = comma before "but." "Although" at the start of a sentence = comma after the subordinate clause, before the main clause. If "although" is in the middle, no comma: "She still felt unprepared although she had trained hard."',
+          tip: 'Comma before "but" when both sides are complete clauses. Comma after a clause starting with "although" when it comes first.',
+        },
+        {
+          title: 'We Do — Add or Remove the Comma',
+          instruction: 'Decide whether each sentence needs a comma, already has one correctly, or has one in the wrong place.',
+          sentences: [
+            'The pōhutukawa was blooming but the bees had not yet arrived.',
+            'Although the water was cold she jumped in without hesitating.',
+            'He wanted to speak but, he couldn\'t find the right words.',
+          ],
+          prompt: 'Is the comma in the right place? Is there a complete clause on both sides of "but"? Does "although" come at the front or middle?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add commas where needed in each sentence.',
+          tasks: [
+            'The tāniko weaving was intricate but she finished it in two evenings.',
+            'Although the hīkoi had been going for three days the group showed no sign of stopping.',
+            'He was tired but determined to reach the hut before dark.',
+            'Although kiwi are nocturnal they are occasionally spotted during the day.',
+            '✦ Bonus: Write 4 sentences — two using "but" and two using "although." Make sure every comma is correct.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Verb types: modal verbs (\'might\', \'should\', \'could\')',
+        'Use modal verbs accurately',
+        {
+          title: 'I Do — Verbs That Signal Possibility and Obligation',
+          instruction: 'Modal verbs don\'t describe actions — they describe the writer\'s attitude toward an action: how certain it is, how necessary it is, how permitted it is. Watch me use each one deliberately.',
+          example: '"You <u>must</u> wear a life jacket." (obligation) | "You <u>should</u> bring water." (advice) | "It <u>might</u> rain." (possibility) | "You <u>could</u> take the shorter track." (option)',
+          demonstration: 'Must = obligation/certainty. Should = advice/expectation. Could/might/may = possibility. Would = conditional. Each choice signals a different level of authority or certainty. "You must" is a rule. "You should" is advice. "You might want to" is a gentle suggestion.',
+          tip: 'Ask: am I giving a rule, advice, or a possibility? Must → rule. Should → advice. Could/might → possibility.',
+        },
+        {
+          title: 'We Do — Choose the Right Modal',
+          instruction: 'Choose the modal verb that best fits the context and explain why.',
+          sentences: [
+            'Visitors to the kāinga ___ (must/should/might) remove their shoes before entering the wharenui.',
+            'The weather forecast says it ___ (must/could/should) be cloudy by afternoon.',
+            'Students ___ (might/should/must) proofread their work before submitting it.',
+          ],
+          prompt: 'Is this a rule, advice, or a possibility? Which modal signals that meaning most clearly?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence using the modal verb that fits the context.',
+          tasks: [
+            'It is obligatory to wear a helmet when cycling. (use "must")',
+            'It would be a good idea to drink plenty of water on the tramp. (use "should")',
+            'There is a chance the ferry will be cancelled due to rough seas. (use "might")',
+            '✦ Bonus: Write a short set of instructions or guidelines (5 sentences) using at least four different modal verbs. Label each one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Expanding sentences: show don\'t tell technique',
+        'Infer emotion through detail',
+        {
+          title: 'I Do — Don\'t Label, Demonstrate',
+          instruction: '"Show don\'t tell" means instead of labelling an emotion or quality, you describe the physical details that let the reader feel it themselves. Watch me transform a telling sentence into a showing one.',
+          example: '"She was nervous." (telling) → "Her fingers twisted the hem of her kākahu and she kept glancing at the door." (showing)',
+          demonstration: 'The first sentence names the emotion. The second shows physical evidence — we SEE the nervousness without being told it. The reader infers the feeling. That inference is what makes writing engaging. Telling is a shortcut. Showing is the journey.',
+          tip: 'Telling = naming the feeling. Showing = describing the physical symptoms of that feeling. What does the body do? What does the face do? What does the person notice?',
+        },
+        {
+          title: 'We Do — Transform Together',
+          instruction: 'Transform each "telling" sentence into a "showing" sentence with at least two physical details.',
+          sentences: [
+            '"He was excited about the game."',
+            '"The old whare felt lonely and forgotten."',
+            '"She was furious."',
+          ],
+          prompt: 'What physical signs show this emotion? What would you SEE if you were watching this person or place?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each telling sentence as a showing sentence.',
+          tasks: [
+            '"The boy was embarrassed."',
+            '"The classroom felt tense before the results were announced."',
+            '"She was proud of what she had made."',
+            '"The forest seemed threatening at night."',
+            '✦ Bonus: Write a paragraph of 5 sentences describing a character in a strong emotional state — without ever naming the emotion. See if a partner can identify the feeling from your description alone.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: fixing poorly punctuated dialogue',
+        'Revise dialogue errors',
+        {
+          title: 'I Do — The Five Dialogue Rules in Practice',
+          instruction: 'We covered dialogue rules in Term 3 Week 1. Now we apply them to editing — finding what\'s wrong and fixing it. Watch me work through a broken dialogue passage.',
+          example: '"Where are we going asked Rangi\n"I\'m not sure said Aroha. I think we\'re lost\n"Lost? she said. But I thought you knew the way."',
+          demonstration: 'Errors found: (1) Missing speech marks around "Where are we going" and "I\'m not sure." (2) Missing comma before closing speech mark — "going" needs a comma. (3) Missing capital on "she" after a new speech mark. (4) Missing question mark inside the speech marks. Fixed version: "\'Where are we going?\' asked Rangi. \'I\'m not sure,\' said Aroha. \'I think we\'re lost.\' \'Lost?\' she said. \'But I thought you knew the way.\'"',
+          tip: 'Five checks for every line of dialogue: (1) Speech marks? (2) Comma or ? before closing mark? (3) Speech tag lowercase? (4) New speaker, new line? (5) Punctuation inside the marks?',
+        },
+        {
+          title: 'We Do — Fix Together',
+          instruction: 'Fix all dialogue punctuation errors in this passage.',
+          sentences: [
+            '"Come on called Hemi Were going to miss the bus\n"I\'m coming She shouted back I just need my bag\n"Hurry up he said the driver wont wait"',
+          ],
+          prompt: 'Go through the five checks for each line. How many errors can you find? Are there any lines with more than one error?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this dialogue with all punctuation errors corrected.',
+          tasks: [
+            '"do you think they\'ll win asked Tia\n"It\'s hard to say said her dad. they\'ve been training really hard though\n"I hope so she said. they deserve it\n"whatever happens he replied, I\'m proud of them"',
+            '✦ Bonus: Write a 6-line dialogue between two characters about a decision they need to make together. Apply all five dialogue rules perfectly. Swap with a partner to check.',
+          ],
+        }
+      ),
+    },
+
+    3: {
+      Monday: lesson(
+        'Connotation: positive vs. negative word choice',
+        'Choose words for effect',
+        {
+          title: 'I Do — Words With Attitude',
+          instruction: 'Connotation is the feeling or association a word carries beyond its literal meaning. Two words can describe the same thing but make the reader feel very differently about it. Watch me show how connotation shapes a reader\'s response.',
+          example: '"The politician was <u>determined</u>." (positive) vs "The politician was <u>stubborn</u>." (negative) | "She was <u>thrifty</u>." vs "She was <u>cheap</u>."',
+          demonstration: '"Determined" and "stubborn" both describe someone who doesn\'t change their mind easily — but "determined" sounds admirable and "stubborn" sounds annoying. Same behaviour, opposite feeling. Word choice is never neutral. Every word carries a connotation.',
+          tip: 'Ask: does this word make the subject seem positive, negative, or neutral? What feeling do I want the reader to have? Choose accordingly.',
+        },
+        {
+          title: 'We Do — Flip the Connotation',
+          instruction: 'For each word, find a word with the opposite connotation that describes the same quality.',
+          sentences: [
+            '"slender" (positive) → ___ (negative)',
+            '"assertive" (positive) → ___ (negative)',
+            '"thrifty" (positive) → ___ (negative)',
+          ],
+          prompt: 'Can you find pairs where you\'d use each word? When would a writer deliberately choose the negative connotation?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence twice — once with positive connotation, once with negative.',
+          tasks: [
+            'Describe a person who talks a lot. (positive version / negative version)',
+            'Describe a person who takes charge in a group. (positive / negative)',
+            'Describe a place that is very old. (positive / negative)',
+            '✦ Bonus: Find a news headline or advertisement. Identify two words with strong positive or negative connotations. Rewrite the headline changing those words to shift the reader\'s response.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Subject-verb agreement: collective nouns',
+        'Apply agreement with collective nouns',
+        {
+          title: 'I Do — One Word, Many People',
+          instruction: 'Collective nouns name a group as a single unit. In New Zealand English, they\'re usually treated as singular — but some cases are genuinely tricky. Watch me work through the rules.',
+          example: '"The team <u>is</u> ready." (NZ English — team as one unit) | "The crew <u>were</u> exhausted." (British English — acceptable in NZ too) | "The jury <u>has</u> reached a verdict."',
+          demonstration: 'In formal NZ writing, treat collective nouns as singular: "The government has announced…" "The band is performing…" "The committee was divided…" But when you\'re emphasising individual members acting separately, plural can work: "The team were arguing among themselves."',
+          tip: 'Is the group acting as ONE unit? Singular verb. Are the members acting separately? Plural verb. When in doubt — singular is safer in formal writing.',
+        },
+        {
+          title: 'We Do — Choose the Verb',
+          instruction: 'Choose the correct verb for each sentence and explain whether the group is acting as one unit or separately.',
+          sentences: [
+            'The iwi ___ (has/have) agreed to a joint statement.',
+            'The flock of kākāpō ___ (was/were) relocated to a predator-free island.',
+            'The committee ___ (is/are) divided on the proposal.',
+          ],
+          prompt: 'Is the group acting as one? Or are individuals doing different things? That decides singular or plural.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write the correct form of the verb in brackets.',
+          tasks: [
+            'The school choir ___ (perform/performs) every Friday at assembly.',
+            'The pack of hunting dogs ___ (was/were) scattered across the hillside.',
+            'The fleet of waka ___ (has/have) left the harbour.',
+            'The audience ___ (was/were) on their feet by the end.',
+            '✦ Bonus: Write 5 sentences using different collective nouns (team, flock, pack, crew, mob). Decide whether each one takes a singular or plural verb and explain your choice.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Compound sentences in narrative: building tension',
+        'Use conjunctions for effect',
+        {
+          title: 'I Do — Conjunctions That Create Drama',
+          instruction: 'In narrative writing, the conjunction you choose doesn\'t just connect ideas — it controls tension and pace. Watch me use compound sentences deliberately to build and release tension.',
+          example: '"The door opened <u>and</u> she walked in." (neutral) | "The door opened <u>but</u> no one was there." (tension) | "The door opened <u>yet</u> the room was silent." (unease)',
+          demonstration: '"And" simply adds — the story moves forward. "But" creates contrast — something unexpected. "Yet" creates unease — the situation feels wrong. Same structure, very different effect. In narrative, "but" and "yet" are tension builders. "So" provides relief or resolution.',
+          tip: 'In tense narrative moments, reach for "but" or "yet" instead of "and." They create contrast and unease. Save "so" for resolution.',
+        },
+        {
+          title: 'We Do — Build Tension Together',
+          instruction: 'Rewrite each sentence using a different conjunction. How does the tension change?',
+          sentences: [
+            '"She called out and nobody answered." → rewrite with "but"',
+            '"He heard a sound and he kept walking." → rewrite with "yet"',
+            '"The light flickered and she grabbed her torch." → rewrite with "but"',
+          ],
+          prompt: 'How does changing the conjunction shift the feeling of the sentence? Which version creates more tension?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a compound sentence for each situation using the conjunction given to create the effect shown.',
+          tasks: [
+            'A character hears something in the dark. Use "but" to create tension.',
+            'A character reaches safety. Use "so" to show relief.',
+            'Something looks fine but feels wrong. Use "yet" to create unease.',
+            '✦ Bonus: Write a paragraph of 5–6 sentences describing the build-up to a tense moment in a narrative. Use at least three different FANBOYS conjunctions deliberately for effect. Label each one and explain the effect it creates.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: upgrading adjectives for atmosphere',
+        'Revise for mood',
+        {
+          title: 'I Do — Adjectives That Set the Mood',
+          instruction: 'In narrative, adjectives don\'t just describe — they create atmosphere. A "dark forest" is neutral. A "suffocating forest" creates dread. A "whispering forest" creates mystery. Watch me upgrade adjectives to match the mood of a scene.',
+          example: '"The <u>old</u> house stood at the end of the <u>quiet</u> road." (neutral) → "The <u>decrepit</u> house loomed at the end of the <u>forsaken</u> road." (dread)',
+          demonstration: '"Old" describes age. "Decrepit" implies age AND neglect AND threat. "Quiet" is neutral. "Forsaken" carries loneliness and abandonment. When editing for atmosphere, ask: does this adjective carry the mood I want? If not — upgrade it.',
+          tip: 'For each adjective: ask "what mood does this create?" If it\'s neutral when the scene needs tension — find an adjective that carries the mood.',
+        },
+        {
+          title: 'We Do — Match the Adjective to the Mood',
+          instruction: 'Upgrade the underlined adjectives to match the mood shown in brackets.',
+          sentences: [
+            '"A <u>big</u> wave hit the <u>old</u> boat." (mood: danger)',
+            '"The <u>nice</u> morning light came through the <u>small</u> window." (mood: peaceful/safe)',
+            '"She opened the <u>heavy</u> door to the <u>dark</u> room." (mood: dread)',
+          ],
+          prompt: 'What connotation does your upgraded adjective carry? Does it match the mood of the scene?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence, upgrading the adjectives to create the mood shown.',
+          tasks: [
+            '"The <u>big</u> storm hit the <u>small</u> town." → upgrade for dramatic impact.',
+            '"The <u>quiet</u> forest was full of <u>tall</u> trees." → upgrade for mystery.',
+            '"She walked into the <u>nice</u> garden on the <u>warm</u> day." → upgrade for peacefulness.',
+            '✦ Bonus: Write a paragraph describing a setting twice — once with neutral adjectives, once with adjectives that create a specific mood of your choice. Compare the two versions.',
+          ],
+        }
+      ),
+    },
+
+    4: {
+      Monday: lesson(
+        'Apostrophes revisited: tricky plurals (\'children\'s\')',
+        'Apply apostrophe rules to irregular plurals',
+        {
+          title: 'I Do — When the Plural Doesn\'t End in S',
+          instruction: 'We know the rule: plural + s → apostrophe after the s (dogs\'). But irregular plurals don\'t end in s — so they follow a different rule. Watch me show how possession works with irregular plurals.',
+          example: '"the toys belonging to the children" → "the <u>children\'s</u> toys" | "the rights of the people" → "the <u>people\'s</u> rights" | "the habitat of the mice" → "the <u>mice\'s</u> habitat"',
+          demonstration: 'Regular plural: dogs → dogs\' (apostrophe after the s). Irregular plural: children → children\'s (apostrophe + s, because "children" doesn\'t end in s). Rule: if the plural does NOT end in s, add apostrophe + s. If it DOES end in s, just add the apostrophe.',
+          tip: 'Check the plural form. Does it end in s? → apostrophe only (dogs\'). Doesn\'t end in s? → apostrophe + s (children\'s, women\'s, people\'s).',
+        },
+        {
+          title: 'We Do — Apply the Rule',
+          instruction: 'Write the possessive form of each irregular plural noun.',
+          sentences: [
+            'the books belonging to the children → ___',
+            'the decision made by the people → ___',
+            'the nests used by the geese → ___',
+          ],
+          prompt: 'Does the plural end in s or not? That determines where the apostrophe goes.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write the correct possessive form for each noun in brackets.',
+          tasks: [
+            'This is a school that respects ___ (children) voices.',
+            'The ___ (women) changing rooms are through that door.',
+            'We need to protect ___ (people) access to clean water.',
+            'The ___ (sheep) wool was thick from a cold winter.',
+            '✦ Bonus: Write 5 sentences using possessive apostrophes — two with regular plurals (dogs\', teachers\'), two with irregular plurals (children\'s, women\'s), and one singular possessive (the kaiako\'s). Label each one.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Pronoun reference: avoiding ambiguity',
+        'Revise for clarity',
+        {
+          title: 'I Do — When "He" Could Be Anyone',
+          instruction: 'A pronoun must refer clearly to one specific noun. When the pronoun could refer to more than one noun, the sentence becomes ambiguous. Watch me identify ambiguous pronouns and fix them.',
+          example: '"When Tama met Rangi, <u>he</u> was nervous." ✗ (Who was nervous — Tama or Rangi?) → "When Tama met Rangi, <u>Tama</u> was nervous." ✓',
+          demonstration: '"She told her mother that she had passed the test." — who passed? The daughter or the mother? Fix: "Maya told her mother, \'I passed the test.\'" Or: "Maya told her mother that Maya had passed the test." It feels clunky to repeat the name — but ambiguity is worse. Restructuring the sentence is often the best solution.',
+          tip: 'Point to each pronoun. Ask: could this refer to more than one noun in the sentence? If yes — rename or restructure.',
+        },
+        {
+          title: 'We Do — Diagnose and Fix',
+          instruction: 'Identify the ambiguous pronoun in each sentence and rewrite to make it clear.',
+          sentences: [
+            '"Hemi and his brother argued until he finally apologised."',
+            '"The kaiako handed the student her report and told her to read it carefully."',
+            '"When the cat chased the mouse, it ran behind the fridge."',
+          ],
+          prompt: 'Who does "he," "her," or "it" refer to? Is there more than one possible answer? How can you restructure to remove the ambiguity?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence to remove the ambiguous pronoun.',
+          tasks: [
+            '"Wiremu and his dad argued all the way to the marae. He eventually went quiet."',
+            '"The teacher told the student that she needed to redo her introduction."',
+            '"Aroha rang her nanny and told her about the award. She was delighted."',
+            '✦ Bonus: Write 3 deliberately ambiguous sentences using pronouns. Swap with a partner — they must rewrite each one to remove the ambiguity.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Topic sentences: narrative paragraph introductions',
+        'Apply to narrative writing',
+        {
+          title: 'I Do — The Topic Sentence in a Story',
+          instruction: 'We\'ve written topic sentences for information and persuasion. In narrative, a topic sentence sets the scene, introduces a character, or signals what this paragraph of the story will be about — without telling the reader everything at once.',
+          example: '"The clearing was the last place Hemi expected to feel afraid." | "From the moment she stepped off the plane, everything was different."',
+          demonstration: 'Both sentences are topic sentences that open a narrative paragraph. They: (1) hint at what\'s coming, (2) create immediate intrigue, (3) commit the paragraph to a specific focus — fear in the clearing, difference after the arrival. A strong narrative topic sentence makes the reader want to continue.',
+          tip: 'A narrative topic sentence should create a question in the reader\'s mind — "Why? What happened? What was different?" It promises the paragraph will answer that question.',
+        },
+        {
+          title: 'We Do — Rate and Improve',
+          instruction: 'Rate each topic sentence (weak/okay/strong) and explain why. Then improve the weak ones.',
+          sentences: [
+            '"This paragraph is about when Aroha got lost in the bush."',
+            '"The track disappeared beneath a mat of wet leaves."',
+            '"Then something happened that changed everything."',
+          ],
+          prompt: 'Does the sentence create intrigue? Does it hint without telling? Does it commit to a specific focus?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a narrative topic sentence for each paragraph focus.',
+          tasks: [
+            'A paragraph about a character arriving somewhere unfamiliar.',
+            'A paragraph about the moment a competition turns.',
+            'A paragraph about a place that feels threatening at night.',
+            '✦ Bonus: Write three narrative topic sentences for three consecutive paragraphs of a story. Each one should create intrigue AND signal what that paragraph will be about. Then write the first paragraph in full.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: pronoun clarity in a short narrative',
+        'Revise pronoun use',
+        {
+          title: 'I Do — The Pronoun Clarity Edit',
+          instruction: 'Narrative writing often has multiple characters — which makes pronoun clarity critical. Watch me edit a short passage where pronouns have become confusing, using rename-and-restructure strategies.',
+          example: '"Maia and Tui raced down the hill. She tripped and fell. She stopped to help her up. She said she was okay."',
+          demonstration: 'Four sentences. Every pronoun is "she" — but there are two characters. Which "she" is which? Edit: "Maia and Tui raced down the hill. Tui tripped and fell. Maia stopped to help her up. \'I\'m okay,\' Tui said." Now every pronoun has a clear referent. Direct speech also resolves ambiguity naturally.',
+          tip: 'When editing narrative with multiple characters: (1) Underline every pronoun. (2) Draw an arrow to the noun it refers to. (3) If any arrow is ambiguous — rename or restructure.',
+        },
+        {
+          title: 'We Do — Edit Together',
+          instruction: 'Underline every pronoun in this passage. Draw arrows to show what each one refers to. Fix any that are ambiguous.',
+          sentences: [
+            '"Rangi and his uncle walked down to the river. He carried the fishing rods and he carried the bait. When they reached the spot, he set up the lines while he gathered firewood. He said he had fished here since he was young."',
+          ],
+          prompt: 'Which pronouns are clear? Which could refer to more than one person? How would you fix each one?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this passage so every pronoun is unambiguous.',
+          tasks: [
+            '"Aroha and her nanny sat on the steps. She told her about the time she had walked the Tongariro Crossing. She said she had been exhausted but that she had never felt more proud. She listened carefully and said she wanted to do it too one day."',
+            '✦ Bonus: Write a 5-sentence narrative about two characters of the same gender. Make every pronoun 100% clear — use names, restructuring, and direct speech to achieve this.',
+          ],
+        }
+      ),
+    },
+
+    5: {
+      Monday: lesson(
+        'Ellipsis for suspense and trailing off',
+        'Use ellipsis for effect',
+        {
+          title: 'I Do — Three Dots, Two Jobs',
+          instruction: 'The ellipsis (...) has two main jobs in creative writing: building suspense (something is about to happen) and trailing off (a thought or sentence is left unfinished). Watch me use each deliberately.',
+          example: 'Suspense: "She reached for the handle... and the door swung open." | Trailing off: "I thought I knew what was on the other side... but I was wrong."',
+          demonstration: 'Suspense: the ellipsis forces the reader to pause — creating a micro-moment of tension before the reveal. Trailing off: the sentence is left incomplete, implying the speaker can\'t or won\'t finish the thought. Both effects depend on the reader\'s imagination filling the gap.',
+          tip: 'Suspense ellipsis = pause before a reveal. Trailing off = unfinished thought. Use sparingly — too many ellipses and the effect is lost.',
+        },
+        {
+          title: 'We Do — Identify the Effect',
+          instruction: 'Identify whether each ellipsis creates suspense or a trailing off, then discuss the effect.',
+          sentences: [
+            '"The footsteps grew louder... and then stopped."',
+            '"I always thought I\'d be brave in that situation, but..."',
+            '"She opened the box slowly, reached inside... and smiled."',
+          ],
+          prompt: 'What does the ellipsis make the reader feel? What are they imagining in the pause? Would the sentence be as effective without it?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence for each task using the ellipsis as directed.',
+          tasks: [
+            'Write a sentence using ellipsis for suspense before a surprising reveal.',
+            'Write a sentence using ellipsis to show a character trailing off mid-thought.',
+            'Rewrite without the ellipsis: "She thought she knew the answer... but she didn\'t." How does removing it change the effect?',
+            '✦ Bonus: Write a short paragraph (5 sentences) of narrative about a tense moment. Use ellipsis exactly twice — once for suspense, once for trailing off. Label each one.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Adjective placement: before & after nouns',
+        'Position adjectives correctly',
+        {
+          title: 'I Do — Before, After, and Both',
+          instruction: 'In English, adjectives usually come before the noun. But some adjectives must come after the noun, and skilled writers sometimes place adjectives after deliberately for effect. Watch me demonstrate each pattern.',
+          example: 'Before: "The <u>exhausted, trembling</u> climber reached the summit." | After: "The climber, <u>exhausted and trembling</u>, reached the summit." | Predicate: "The climber was <u>exhausted</u>."',
+          demonstration: 'Before the noun = standard placement, smooth flow. After the noun (set off by commas) = emphasis — the adjective feels separate and important. Predicate adjective (after a linking verb like "was" or "seemed") = describes state. Placing adjectives after the noun is a deliberate stylistic choice for effect.',
+          tip: 'Before = standard. After (with commas) = dramatic emphasis. Predicate (after "was/seemed") = describing state. Choose based on the effect you want.',
+        },
+        {
+          title: 'We Do — Move the Adjective',
+          instruction: 'Rewrite each sentence placing the adjective in a different position. Discuss how the effect changes.',
+          sentences: [
+            '"The frightened, silent child stood at the edge of the crowd." → move adjectives to after the noun.',
+            '"The waka, ancient and scarred, cut through the dark water." → move adjectives to before the noun.',
+            '"The kaiako seemed tired and distracted." → move to before the noun.',
+          ],
+          prompt: 'Does the sentence feel different with the adjective in a different position? Which version creates more emphasis?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write each sentence twice — once with the adjective(s) before the noun, once after (with commas).',
+          tasks: [
+            'Use the adjectives "tangled" and "overgrown" to describe a path.',
+            'Use the adjectives "calm" and "unreadable" to describe a character\'s expression.',
+            'Use the adjectives "hollow" and "echoing" to describe a cave.',
+            '✦ Bonus: Write a descriptive paragraph of 5 sentences. In at least two sentences, deliberately place adjectives AFTER the noun for dramatic effect. Underline them.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Varying sentence length for dramatic effect',
+        'Control pacing in writing',
+        {
+          title: 'I Do — Pace Is Power',
+          instruction: 'Long sentences create a slow, building, rolling rhythm. Short sentences hit hard. Knowing when to use which is one of the most powerful writing skills. Watch me control pace through sentence length.',
+          example: '"The storm had been building all day — dark clouds massing over the ranges, the wind stripping leaves from the trees, the sea turning from green to black. Then it hit."',
+          demonstration: 'Long sentence: creates a sense of accumulation, of things building towards breaking point — the reader is carried forward on a wave. Short sentence: hits like a full stop on the world. The contrast between long and short is what creates dramatic impact. Neither works as well alone.',
+          tip: 'Long sentence = build, accumulate, slow down. Short sentence = impact, shock, silence. Place a short sentence after a long one for maximum effect.',
+        },
+        {
+          title: 'We Do — Control the Pace',
+          instruction: 'Rewrite this passage to control the pace: use a long sentence to build tension, then a short sentence to deliver the impact.',
+          sentences: [
+            '"Something happened. A sound came. She looked. It was there."',
+          ],
+          prompt: 'Combine the first three sentences into one long, building sentence. Keep the last sentence short. How does the contrast change the impact?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write the combination of sentences shown for each scenario.',
+          tasks: [
+            'Write 2–3 long sentences building up to a match-winning moment. Then write 1 short sentence for the moment itself.',
+            'Write a long sentence describing a threatening environment. Follow it with a short sentence revealing a character\'s reaction.',
+            'Write a paragraph of 5 sentences about a race or competition. Vary sentence length deliberately — long, long, long, short for impact.',
+            '✦ Bonus: Take a passage from your writing folder and rewrite one paragraph, deliberately varying sentence length for effect. Write the original and revised versions side by side.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: peer edit narrative for punctuation effect',
+        'Collaborative editing',
+        {
+          title: 'I Do — Editing for Punctuation That Creates Effect',
+          instruction: 'In Term 2 Week 5 Thursday we peer-edited for punctuation variety. Today the focus is sharper: punctuation that creates a specific EFFECT in narrative. Watch me evaluate whether each piece of punctuation is earning its place.',
+          example: '"She ran. She ran faster. She kept running." vs "She ran — faster now, desperate — until her lungs gave out."',
+          demonstration: 'First version: three full stops, three short sentences. Repetitive, but that could be intentional for effect. Second version: the dash creates an aside — it slows the reader slightly inside the action. The dash earns its place because it adds the internal state "desperate" in a way that feels breathless. When editing, ask: does this punctuation mark DO something to the reader?',
+          tip: 'For each punctuation mark in narrative: ask "what effect does this create?" If the answer is "nothing special" — consider whether a different mark would work harder.',
+        },
+        {
+          title: 'We Do — Edit for Effect',
+          instruction: 'Read this passage and mark any punctuation that feels flat or missed. Suggest what could be changed and explain the effect.',
+          sentences: [
+            '"She walked into the room. She saw what was there. She could not move. She stood and looked at it for a long time. Then she left."',
+          ],
+          prompt: 'Where could a dash create an aside? Where could an ellipsis build suspense? Where would a longer sentence create a more effective contrast with the short ones?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Swap a piece of narrative writing with a partner. Edit it specifically for punctuation effect using these questions.',
+          tasks: [
+            '✦ Check: Is there an ellipsis where suspense would help? If not — could one be added?',
+            '✦ Check: Are dashes used for dramatic asides? If not — could one strengthen a key moment?',
+            '✦ Check: Does sentence length vary? Is there a short sentence after a long one for impact?',
+            '✦ Bonus: Rewrite your partner\'s weakest moment — the scene with the least punctuation effect — as a model of what it could look like with deliberate punctuation choices.',
+          ],
+        }
+      ),
+    },
+
+  },
+
   4: { 1: { Monday: lesson('Tier 2 vocabulary: words for argument & opinion','Use persuasive vocabulary',{title:'I Do',instruction:'Persuasive writing uses specific vocabulary to signal opinion, certainty, and importance. Watch me identify and use these words.',example:'"It is <u>crucial</u> that schools provide healthy lunches. <u>Evidently</u>, poor nutrition affects learning. <u>Furthermore</u>, it <u>significantly</u> impacts behaviour."',demonstration:'Crucial (strong importance), evidently (signals evidence), furthermore (adds a point), significantly (makes impact sound large). These words don\'t just fill space — they do persuasive work.',tip:'"Very important" → "crucial." "Also" → "furthermore." "Shows" → "demonstrates." Upgrade to the persuasive register.'},{title:'We Do',instruction:'Replace the plain words with persuasive vocabulary.',sentences:['It is <u>important</u> that we recycle more.','This <u>shows</u> that the problem is <u>big</u>.','<u>Also</u>, the research <u>proves</u> it works.'],prompt:'Which persuasive word fits best? Does it change how convincing the sentence sounds?'},{title:'You Do',instruction:'Rewrite each sentence using persuasive vocabulary.',tasks:['The problem of food waste is <u>bad</u>.','This <u>shows</u> that something needs to change.','It is <u>important</u> that everyone does their part.','✦ Bonus: Write a 3-sentence persuasive opening about a school rule you\'d like to change. Use at least 4 persuasive words.']}), Tuesday: lesson('Nouns: gerunds as subjects ("Swimming is…")','Identify gerund nouns',{title:'I Do',instruction:'A gerund is a verb form ending in -ing that works as a noun. It can be the subject of a sentence. Watch me identify and use gerunds.',example:'"<u>Swimming</u> is excellent exercise. <u>Writing</u> clearly is a valuable skill."',demonstration:'"Swimming" — looks like a verb, acts as a noun. It\'s the subject of the sentence. "Writing" — same: it\'s what the sentence is ABOUT. You can test it: replace with a regular noun — "Sport is excellent exercise." Still works. That means swimming IS a noun here.',tip:'Gerund as subject: can I replace it with a noun like "sport" or "skill"? If yes — it\'s a gerund.'},{title:'We Do',instruction:'Identify the gerund in each sentence and confirm it\'s acting as a noun.',sentences:['Reading every day improves vocabulary.','Travelling to new places broadens your mind.','Winning isn\'t everything.'],prompt:'What is the subject of each sentence? Is it a gerund? What noun could replace it?'},{title:'You Do',instruction:'Use each gerund as the subject of a sentence.',tasks:['Running → ___','Cooking → ___','Learning → ___','Painting → ___','✦ Bonus: Write 3 sentences about things you enjoy, each using a gerund as the subject.']}), Wednesday: lesson('Simple sentences: direct & concise statements','Apply in persuasive writing',{title:'I Do',instruction:'In persuasive writing, simple sentences land like punches. They state a fact or claim directly. Watch how I use short, direct sentences to drive a point home.',example:'"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',demonstration:'Four short sentences. No padding. No apology. Each one is a single, clear claim. This directness signals confidence and conviction — both essential in persuasive writing.',tip:'In persuasive writing, vary: long sentences to explain and argue, short sentences to make your key claim land hard.'},{title:'We Do',instruction:'Convert these wordy arguments into direct, punchy simple sentences.',sentences:['Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them.','The situation in which animals are kept in small cages for entertainment is something that is not acceptable and should not be allowed.'],prompt:'What is the core claim? Strip it back to the fewest words that still make the point.'},{title:'You Do',instruction:'Write a direct, concise simple sentence for each argument.',tasks:['Argument: school should start later because teenagers need more sleep.','Argument: fast food advertising should not be shown during children\'s programmes.','Argument: every student should learn a second language.','✦ Bonus: Write a persuasive paragraph. Use 3 short punchy sentences and 2 longer explanation sentences alternately.']}), Thursday: lesson('Proofreading: checking for consistency in a report','Edit informational text',{title:'I Do',instruction:'Reports need consistency: consistent tense (usually present), consistent formal register, consistent formatting of lists and headings. Watch me edit an inconsistent report excerpt.',example:'"Dolphins are marine mammals. They lived in oceans worldwide (wrong tense). Dolphins eat fish, squid and they also had crustaceans (inconsistent list)."',demonstration:'Fixed: "Dolphins are marine mammals. They <u>live</u> in oceans worldwide. Dolphins eat fish, squid<u>,</u> and crustaceans." Tense fixed to present. List restructured to parallel form.',tip:'Reports: present tense for facts. Parallel lists: all nouns, or all verbs — not mixed.'},{title:'We Do',instruction:'Find and fix inconsistencies in this science report paragraph.',sentences:['The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf. Then a caterpillar hatched and it ate the leaf. The caterpillar forms a chrysalis and then eventually it became a butterfly and emerged.'],prompt:'Tense errors? List inconsistencies? Register shifts?'},{title:'You Do',instruction:'Rewrite this passage making it consistent in tense, register, and structure.',tasks:['Kauri trees are one of the largest tree species in the world. They grew very slowly and can lived for over 2,000 years. The kauri forests were very important to Māori people. Kauri gum, the resin from these trees, were used for many purposes including it was used as a fire starter, and for making varnish, and people also chewed it.','✦ Bonus: Write 5 sentences about an animal of your choice in a consistent report style. Present tense, formal register, parallel lists.']}) }, },
 }
 
