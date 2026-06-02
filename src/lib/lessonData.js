@@ -1768,6 +1768,620 @@ export const CURRICULUM = {
         }
       ),
     },
+
+    6: {
+      Monday: lesson(
+        'Greek & Latin roots in everyday words',
+        'Decode unknown vocabulary',
+        {
+          title: 'I Do — Crack the Code',
+          instruction: 'Many English words are built from Greek and Latin roots. Once you know a root, you can work out the meaning of dozens of words you\'ve never seen before. Watch me use roots to decode unfamiliar vocabulary.',
+          example: '"tele" (far) → telescope, television, telepathy | "aqua" (water) → aquatic, aquarium, aqueduct | "bio" (life) → biology, biography, biodiversity',
+          demonstration: 'If you see "submarine," you might not know it — but "sub" means under and "marine" means sea. So submarine = under the sea. Same with "microphone" — "micro" (small) + "phone" (sound) = small sound. Roots unlock words like a key.',
+          tip: 'When you hit an unknown word, look for a root you recognise. Even a partial match gives you a clue.',
+        },
+        {
+          title: 'We Do — Decode Together',
+          instruction: 'Use the roots provided to work out what each word means. Then check by looking at the context sentence.',
+          sentences: [
+            '"geo" (earth): geology, geography, geothermal — what does "geothermal" likely mean?',
+            '"script/scribe" (write): manuscript, inscription, transcribe — what does "transcribe" likely mean?',
+            '"spec/spect" (look/see): inspect, spectator, spectacular — what does "spectator" likely mean?',
+          ],
+          prompt: 'Can you find other words that share these roots? How does knowing the root help you read unfamiliar texts?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Use your knowledge of roots to answer each question.',
+          tasks: [
+            'The root "port" means carry. What do these words mean: export, import, transport, portfolio?',
+            'The root "vis/vid" means see. Use it to work out: visible, invisible, vision, evidence.',
+            'The root "terra" means land/earth. What do: terrain, territory, terrarium, extraterrestrial mean?',
+            '✦ Bonus: Find 5 words in a book, magazine, or website that share a Greek or Latin root. List the root, its meaning, and the words that use it.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Adverbial phrases for time & manner',
+        'Enrich sentences with adverbials',
+        {
+          title: 'I Do — Beyond Single Adverbs',
+          instruction: 'A single adverb tells us how or when. An adverbial PHRASE does the same job but with more precision and colour. Watch me replace weak single adverbs with rich adverbial phrases.',
+          example: '"She spoke quietly." → "She spoke in a hushed, urgent whisper." | "He left quickly." → "He left before anyone could ask questions."',
+          demonstration: '"Quietly" tells us the manner. "In a hushed, urgent whisper" tells us manner AND gives texture — we can picture it. "Before anyone could ask questions" tells us time AND hints at motivation. Adverbial phrases carry more weight than single adverbs.',
+          tip: 'Spot a lone adverb. Ask: can I replace it with a phrase that tells the reader more? If yes — upgrade it.',
+        },
+        {
+          title: 'We Do — Upgrade Together',
+          instruction: 'Replace each underlined adverb with an adverbial phrase that adds more information.',
+          sentences: [
+            'The tūī sang <u>loudly</u> in the pōhutukawa.',
+            'The tamariki waited <u>nervously</u> for the results.',
+            'The boat left <u>early</u>.',
+          ],
+          prompt: 'What kind of adverbial phrase fits — one of manner, time, or place? Can you write one that adds detail and stays true to the context?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence by replacing the adverb in brackets with a precise adverbial phrase.',
+          tasks: [
+            'The kaitiaki worked [hard] to restore the wetland.',
+            'The team celebrated [happily] after the final whistle.',
+            'She finished her speech [suddenly].',
+            '✦ Bonus: Write a paragraph of 5 sentences about an event or journey. Use at least three different adverbial phrases — one of time, one of manner, one of place.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Who/where/when phrases: persuasive context',
+        'Transfer skills to persuasive text',
+        {
+          title: 'I Do — Detail That Persuades',
+          instruction: 'In Term 1 we used who/where/when phrases to add descriptive detail. This week we use the same technique in persuasive writing — where specific detail makes arguments more convincing. Watch me add detail to a persuasive sentence.',
+          example: '"Schools should have gardens." → "Schools across Aotearoa, from urban Auckland to rural Northland, should have gardens where students can grow and harvest their own kai."',
+          demonstration: 'The added phrases — "across Aotearoa, from urban Auckland to rural Northland" (where) and "where students can grow and harvest their own kai" (who/what) — make the claim feel specific and grounded. Vague arguments are easy to dismiss. Specific ones are harder to ignore.',
+          tip: 'In persuasion, specific detail builds credibility. WHO would benefit? WHERE would this happen? WHEN should it change? Answer those questions inside your sentences.',
+        },
+        {
+          title: 'We Do — Make It Specific',
+          instruction: 'Add who, where, or when detail to each persuasive sentence to make it more convincing.',
+          sentences: [
+            'Students should have access to nature.',
+            'Communities need to protect waterways.',
+            'Young people deserve to have their voices heard.',
+          ],
+          prompt: 'Which type of detail makes each argument stronger — who, where, or when? Can you add more than one?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Expand each bare persuasive claim using who/where/when phrases.',
+          tasks: [
+            'Claim: "Aotearoa needs more native tree planting." Add a where and a when phrase.',
+            'Claim: "Students learn better outdoors." Add a who and a where phrase.',
+            'Claim: "Schools should start later." Add a who and a when phrase.',
+            '✦ Bonus: Write a persuasive paragraph (5–6 sentences) on a topic you care about. Every sentence must include at least one who, where, or when detail.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: replacing overused words (\'nice\', \'good\')',
+        'Improve word choice',
+        {
+          title: 'I Do — The Vague Word Hunt',
+          instruction: 'Some words appear in almost every piece of student writing: nice, good, bad, big, little, went, got, said, things, stuff. They\'re not wrong — they\'re just empty. Watch me hunt them down and replace them with words that actually do a job.',
+          example: '"It was a nice day and we had a good time doing lots of fun things." → "The sun blazed over the harbour and we spent the afternoon kayaking, laughing until our arms gave out."',
+          demonstration: '"Nice day" → specific weather detail. "Good time" → specific activity. "Lots of fun things" → actual examples. The second version creates a picture. The first version creates nothing.',
+          tip: 'The vague word hit list: nice, good, bad, big, little, went, got, said, things, stuff, very, really. Highlight every one. Each is an upgrade opportunity.',
+        },
+        {
+          title: 'We Do — Upgrade Together',
+          instruction: 'Find every vague word in this passage and replace it with something precise.',
+          sentences: [
+            'We went to the nice beach and it was really good. We did lots of fun things and got really tired. The food was nice and everyone said it was a good day.',
+          ],
+          prompt: 'How many vague words can you find? What specific, precise word or phrase could replace each one?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence, replacing every vague word with a precise alternative.',
+          tasks: [
+            'The movie was really good and the things that happened were very exciting.',
+            'She is a nice person who always says good things to people.',
+            'It was a bad situation and lots of bad things went wrong.',
+            '✦ Bonus: Take a paragraph from a piece of your own writing. Highlight every word from the vague word hit list. Rewrite the paragraph with every vague word upgraded.',
+          ],
+        }
+      ),
+    },
+
+    7: {
+      Monday: lesson(
+        'Colons to introduce lists',
+        'Use colons purposefully',
+        {
+          title: 'I Do — The Colon That Sets Up a List',
+          instruction: 'We met colons in Term 1. This week we focus specifically on using them to introduce lists — and on the rule about what must come BEFORE the colon. Watch me demonstrate.',
+          example: '"The kete contained three items: a tī kōuka leaf, a piece of bone, and a carved pounamu." | ✗ "The kete contained: a tī kōuka leaf, a piece of bone, and a carved pounamu."',
+          demonstration: 'The colon introduces the list — but only when a complete sentence comes before it. "The kete contained three items" is a complete sentence ✓. "The kete contained" is NOT a complete sentence ✗ — so no colon. The rule: a complete sentence must precede the colon.',
+          tip: 'Before the colon = a complete sentence. After the colon = the list or explanation. Test: can the part before the colon stand alone? If not — remove the colon.',
+        },
+        {
+          title: 'We Do — Fix or Confirm',
+          instruction: 'Decide whether the colon is used correctly in each sentence. Fix those that aren\'t.',
+          sentences: [
+            'The scientist needed: a microscope, slides, and a sample jar.',
+            'The rescue team brought the following equipment: ropes, a first-aid kit, and torches.',
+            'To make rewena bread you will need: flour, potato water, sugar, and salt.',
+          ],
+          prompt: 'Is the part before the colon a complete sentence? If not, what needs to change?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add a colon in the correct place, or rewrite the sentence so the colon is used correctly.',
+          tasks: [
+            'The pā required three things to defend effectively high ground, a clear view, and strong palisades.',
+            'There are many native birds in the Waikato region including: tūī, kererū, and pīwakawaka.',
+            'She packed everything she would need for the tramp: food, a sleeping bag, a compass, and wet-weather gear.',
+            '✦ Bonus: Write five sentences, each using a colon to introduce a list. Make sure every sentence before the colon is grammatically complete.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Progressive tenses: past & present continuous',
+        'Use progressive tense accurately',
+        {
+          title: 'I Do — Actions in Progress',
+          instruction: 'The progressive (or continuous) tense shows an action that was happening over a period of time — not just a single completed event. Watch me form and use past and present progressive.',
+          example: 'Present progressive: "The kākāpō <u>is climbing</u> the tree right now." | Past progressive: "The kākāpō <u>was climbing</u> when we first spotted it."',
+          demonstration: 'Present progressive = is/are + verb-ing: "She is writing." Past progressive = was/were + verb-ing: "She was writing when the bell rang." The key use: past progressive sets a scene that another action interrupts. "He was reading when the power cut out."',
+          tip: 'Past progressive sets the background scene. Simple past is the event that interrupts it. Together they create: "She was sleeping when the earthquake struck."',
+        },
+        {
+          title: 'We Do — Form and Use',
+          instruction: 'Complete each sentence with the correct progressive form of the verb given.',
+          sentences: [
+            'The students ___ (prepare) their speeches when the fire alarm went off.',
+            'Look out the window — the kererū ___ (eat) all the berries!',
+            'While the waka ___ (cross) the harbour, the wind suddenly changed direction.',
+          ],
+          prompt: 'Is this happening right now (present) or was it in progress at a past moment (past)? That decides was/were vs is/are.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write sentences using the progressive tense as directed.',
+          tasks: [
+            'Write a sentence using the past progressive to set a scene, then use simple past for an interrupting event.',
+            'Describe what three different people are doing right now using present progressive.',
+            'Rewrite in past progressive: "The rangatira spoke to the crowd. The sun set behind the hills."',
+            '✦ Bonus: Write a short recount (5 sentences) of a real or imagined event. Use past progressive at least twice to set the scene before key moments.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Complex sentences: \'although\', \'unless\', \'while\'',
+        'Extend subordination',
+        {
+          title: 'I Do — Conjunctions That Add Tension',
+          instruction: '"Although," "unless," and "while" are subordinating conjunctions that add nuance — they create contrast, condition, and simultaneous action. Watch how each one changes the relationship between two ideas.',
+          example: '"<u>Although</u> it was raining, the match continued." | "The match will continue <u>unless</u> there is lightning." | "<u>While</u> the rain fell, the players kept their positions."',
+          demonstration: '"Although" = contrast (it happened despite something). "Unless" = condition (this won\'t happen IF something else does). "While" = at the same time. Each one creates a different relationship — choosing the right conjunction is part of a writer\'s craft.',
+          tip: '"Although" = despite this. "Unless" = except if. "While" = at the same time as. Choose based on the relationship between your two ideas.',
+        },
+        {
+          title: 'We Do — Choose the Right Conjunction',
+          instruction: 'Complete each sentence with although, unless, or while. Then discuss why the others don\'t fit.',
+          sentences: [
+            '___ the journey was exhausting, Mere never once complained.',
+            'The kiwi will remain endangered ___ habitat destruction is halted.',
+            '___ the haka was performed, the crowd stood completely still.',
+          ],
+          prompt: 'Is this a contrast, a condition, or something happening simultaneously? That tells you which conjunction to use.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a complex sentence for each prompt using the conjunction given.',
+          tasks: [
+            'Write about a challenge you faced using "although."',
+            'Write a condition for something you want to happen using "unless."',
+            'Describe two things happening at the same time using "while."',
+            '✦ Bonus: Write a paragraph of 5 sentences about a character facing a difficult situation. Use although, unless, and while at least once each.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: checking consistency of tense across a paragraph',
+        'Revise tense flow',
+        {
+          title: 'I Do — Tense Drift',
+          instruction: 'Tense drift happens when a piece of writing accidentally switches tense mid-way through. It\'s one of the most common errors in student writing. Watch me identify and fix it.',
+          example: '"The explorer reached the ridge and looked out over the valley. She can see the river far below. She felt a surge of relief and sits down to rest."',
+          demonstration: '"Reached," "looked," "felt" = past tense ✓. "Can see," "sits" = present tense ✗ — tense drift. Fixed: "She could see the river far below. She felt a surge of relief and sat down to rest." One tense throughout.',
+          tip: 'Read your paragraph and underline every verb. Do they all match? If you find a present tense hiding in a past-tense paragraph — fix it.',
+        },
+        {
+          title: 'We Do — Find the Drifters',
+          instruction: 'Underline every verb in this paragraph. Circle any that don\'t match the dominant tense, then fix them.',
+          sentences: [
+            'The waka left the shore just before dawn. The crew paddled in silence, their breathing steady and controlled. Suddenly the wind picks up and waves begin to slap against the hull. The navigator checked the stars and calls out a course correction. Everyone digs their paddle in harder.',
+          ],
+          prompt: 'What tense is the paragraph mainly in? Which verbs have drifted? What should they be?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this passage with consistent tense throughout. Choose either past OR present — not both.',
+          tasks: [
+            'The team arrives at the marae early in the morning. They were nervous but excited. The kaiako greeted them warmly and shows them to the wharenui. Everyone sits in rows and the pōwhiri begins. The rangatira spoke first, and his voice fills the whole room.',
+            '✦ Bonus: Write a recount of a real or imagined event in 5 sentences. Swap with a partner — they must underline every verb and confirm your tense is consistent throughout.',
+          ],
+        }
+      ),
+    },
+
+    8: {
+      Monday: lesson(
+        'Spelling strategies: tricky high-frequency words',
+        'Build spelling accuracy',
+        {
+          title: 'I Do — Strategies, Not Just Rules',
+          instruction: 'Some words break the rules — they\'re just tricky. But every tricky word can be cracked with the right strategy. Watch me use three strategies: Look-Say-Cover-Write-Check, finding a word inside the word, and a memory trick.',
+          example: '"because" → Because Elephants Can Always Use Some Eggs (first-letter mnemonic) | "necessary" → one Collar, two Socks (1 c, 2 s) | "separate" → there\'s "a rat" in sep<u>a rat</u>e',
+          demonstration: '"Necessary" trips people up with the c and ss. Memory trick: one collar, two socks = 1 c, 2 s. "Separate" — people write "seperate." But if you see "a rat" hiding inside the word, you\'ll never forget it: sep-a-rat-e.',
+          tip: 'For every word that trips you up, build a personal trick. Draw it, say it, find something hiding inside it. Own it.',
+        },
+        {
+          title: 'We Do — Crack These Together',
+          instruction: 'Use a spelling strategy to crack each word. Write the strategy next to the word.',
+          sentences: [
+            '"February" — it has a hidden "r" many people drop. Find a trick to remember it.',
+            '"environment" — break it into parts: en-viron-ment. What does each part sound like?',
+            '"parliament" — "I am in parlia-MENT." What trick helps you spell it correctly?',
+          ],
+          prompt: 'Which strategy works best for each word — mnemonics, words-within-words, or syllable breaking?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Create a spelling strategy for each word, then practise using Look-Say-Cover-Write-Check.',
+          tasks: [
+            '"Wednesday" — what trick helps you remember the silent d?',
+            '"rhythm" — no vowels! Find a mnemonic: Rhythm Has Your Two Hips Moving.',
+            '"beautiful" — Big Elephants Are Usually Tall, Intelligent, Full of Umbrella Love.',
+            '✦ Bonus: Make a personal "Tricky Words" card with 5 words you often misspell. Write a strategy for each. Test yourself at the end of the week.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Prepositions of direction & movement',
+        'Use directional prepositions accurately',
+        {
+          title: 'I Do — Prepositions That Show Movement',
+          instruction: 'In Term 1 we used prepositions to show place (on, in, under, beside). This week we focus on prepositions that show DIRECTION and MOVEMENT — words that tell us where something is going, not just where it is.',
+          example: '"The tuna swam <u>through</u> the narrow channel." | "The ball rolled <u>towards</u> the goal." | "She climbed <u>over</u> the fence and <u>along</u> the ridge."',
+          demonstration: '"Through" = moving inside and out the other side. "Towards" = moving in the direction of. "Over" = moving above and past. "Along" = moving beside and parallel to. Each preposition creates a different movement picture in the reader\'s mind.',
+          tip: 'Direction prepositions answer: WHERE is it going? Through, towards, over, under, across, along, past, into, out of, up, down.',
+        },
+        {
+          title: 'We Do — Precise Movement',
+          instruction: 'Choose the best directional preposition to complete each sentence.',
+          sentences: [
+            'The eel moved ___ (through/towards/past) the root system of the tree, disappearing into the dark water.',
+            'The hawk swooped ___ (over/along/into) the ridgeline and banked sharply.',
+            'The tamariki ran ___ (towards/through/along) the beach and ___ (into/over/past) the waves.',
+          ],
+          prompt: 'What movement is happening? Which preposition creates the most precise picture of that movement?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Complete each sentence with the most precise directional preposition you can.',
+          tasks: [
+            'The waka glided ___ the calm waters of the harbour and ___ the narrow inlet.',
+            'The pīwakawaka darted ___ the branches, ___ the clearing, and ___ a hollow in the old tōtara.',
+            'The river rushed ___ the gorge, ___ the boulders, and finally ___ the wide coastal plain.',
+            '✦ Bonus: Write a paragraph tracking the movement of an animal or person through a NZ landscape. Use at least six different directional prepositions.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Fronted adverbials: time & contrast openers',
+        'Vary writing with openers',
+        {
+          title: 'I Do — Two New Types of Opener',
+          instruction: 'We\'ve used fronted adverbials for place and manner. This week: TIME openers (when something happens) and CONTRAST openers (something unexpected). Watch how each type changes the feel of a sentence.',
+          example: 'Time: "<u>By the time the tide turned,</u> the stranded boat had begun to list badly." | Contrast: "<u>Despite the forecast,</u> the day turned out to be perfect for the regatta."',
+          demonstration: 'Time openers create urgency or suspense — they anchor the reader in a moment. Contrast openers create surprise — the reader expects one thing and gets another. Both are powerful tools for making writing feel dynamic rather than flat.',
+          tip: 'Time opener = when + something interesting about timing. Contrast opener = "despite / even though / in spite of" + something that makes the main clause surprising.',
+        },
+        {
+          title: 'We Do — Build Time and Contrast Openers',
+          instruction: 'Add a fronted adverbial of the type shown to each sentence.',
+          sentences: [
+            '"The announcement was made." (add a TIME opener)',
+            '"The team had barely trained all season." (add a CONTRAST opener)',
+            '"The wharenui fell silent." (add a TIME opener that builds suspense)',
+          ],
+          prompt: 'What time detail creates the most tension? What contrast makes the main clause most surprising?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence for each prompt using the fronted adverbial type shown.',
+          tasks: [
+            'Write about something finishing unexpectedly. Use a TIME opener: "By the time…"',
+            'Write about something succeeding despite difficulty. Use a CONTRAST opener: "Despite…"',
+            'Write about a dramatic moment. Use a TIME opener: "At the exact moment…"',
+            '✦ Bonus: Write a paragraph of 5 sentences about an event. Use at least two fronted adverbials — one time, one contrast. Underline each one.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: making vague sentences more specific',
+        'Elaborate through editing',
+        {
+          title: 'I Do — The Vagueness Test',
+          instruction: 'A vague sentence could apply to almost anything or anyone. A specific sentence creates a picture only this situation would create. Watch me test sentences for vagueness and make them specific.',
+          example: '"Something happened and it was interesting." ✗ (Vague — could be anything.) → "The kōwhai tree outside the classroom window had shed its flowers overnight, carpeting the path in yellow." ✓',
+          demonstration: 'How to make it specific: (1) Name the thing exactly. (2) Add a precise detail — colour, number, size, sound. (3) Ground it in a place or time. (4) Show, don\'t tell — describe what you observe, not just what you conclude.',
+          tip: 'Ask: could this sentence describe a hundred different situations? If yes — it\'s too vague. Add one precise detail to anchor it.',
+        },
+        {
+          title: 'We Do — Diagnose and Fix',
+          instruction: 'For each vague sentence, identify why it\'s vague, then rewrite it to be specific.',
+          sentences: [
+            '"The animal did something interesting near the water."',
+            '"The weather affected how the people felt."',
+            '"Something about the place made it special."',
+          ],
+          prompt: 'What question does the vague sentence fail to answer? What specific detail would answer it?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each vague sentence to be vivid and specific.',
+          tasks: [
+            '"It was a nice place with lots of things to see."',
+            '"The person did something impressive that everyone noticed."',
+            '"The event was interesting and people seemed to enjoy it."',
+            '✦ Bonus: Write 3 intentionally vague sentences about your day. Swap with a partner — they must make each one specific. Compare the two versions.',
+          ],
+        }
+      ),
+    },
+
+    9: {
+      Monday: lesson(
+        'Alliteration & assonance as writing tools',
+        'Use sound devices for effect',
+        {
+          title: 'I Do — The Music of Language',
+          instruction: 'Alliteration repeats consonant sounds at the start of nearby words. Assonance repeats vowel sounds within words. Both make writing sound richer — almost musical. Watch me use each deliberately.',
+          example: 'Alliteration: "The <u>w</u>ild <u>w</u>ind <u>w</u>histled through the <u>w</u>ires." | Assonance: "The r<u>ai</u>n f<u>ai</u>led to d<u>a</u>mpen their sp<u>i</u>rits." (ai/a sounds)',
+          demonstration: 'Alliteration draws attention to a group of words — it creates emphasis and memorability. Assonance creates a slower, more musical effect — it\'s subtler but powerful in descriptive writing. Both work best when used purposefully, not just crammed in.',
+          tip: 'Alliteration: same starting sound. Assonance: same vowel sound in the middle. Use them when you want a line to linger in the reader\'s ear.',
+        },
+        {
+          title: 'We Do — Spot and Create',
+          instruction: 'Identify the device used in each example, then write your own sentence using the same technique.',
+          sentences: [
+            '"Slowly, silently, the silver moon sailed across the sky." — What device? Write your own alliterative sentence.',
+            '"The pale lake lay in the late afternoon haze." — What device? Write your own sentence using assonance.',
+            '"The dark, dangerous dog darted down the driveway." — What device? Write one using the same starting sound.',
+          ],
+          prompt: 'What effect does each device create? Does alliteration feel different from assonance? When would you use each?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence for each task using the device specified.',
+          tasks: [
+            'Write an alliterative sentence about a NZ animal using the sound "k" (use kiwi, kererū, kākāpō, kārearea).',
+            'Write a sentence about the sea using assonance with the "ō" or "oo" sound.',
+            'Write a description of a storm using both alliteration and assonance in the same sentence.',
+            '✦ Bonus: Write a 4-line descriptive poem about a NZ landscape. Use alliteration in at least two lines and assonance in at least one.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Coordinating vs. subordinating conjunctions: review',
+        'Consolidate conjunction use',
+        {
+          title: 'I Do — Two Types, Two Jobs',
+          instruction: 'We\'ve studied both types of conjunction across Terms 1 and 2. Today we consolidate: coordinating conjunctions join equal clauses; subordinating conjunctions create a main clause and a dependent clause. Watch me demonstrate the difference clearly.',
+          example: 'Coordinating: "The hīkoi was long, <u>but</u> the marchers kept going." (two equal clauses) | Subordinating: "The marchers kept going <u>although</u> the hīkoi was exhausting." (one depends on the other)',
+          demonstration: 'FANBOYS (for, and, nor, but, or, yet, so) = coordinating. AAAWWUBBIS (after, although, as, when, while, until, because, before, if, since) = subordinating. Coordinating: both sides could stand alone. Subordinating: the dependent clause leans on the main clause.',
+          tip: 'Test: remove the conjunction and split the sentence in two. If both halves make sense alone — coordinating. If one half sounds incomplete — subordinating.',
+        },
+        {
+          title: 'We Do — Classify and Use',
+          instruction: 'Identify whether the underlined conjunction is coordinating or subordinating, then explain how you know.',
+          sentences: [
+            'The kaiako waited <u>until</u> the class was completely silent.',
+            'The experiment failed, <u>yet</u> the students learnt something important.',
+            '<u>Because</u> the tide was out, we could walk across to the island.',
+          ],
+          prompt: 'Could both sides stand alone? That\'s your test. What type of relationship does each conjunction create?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write sentences using the conjunction type shown.',
+          tasks: [
+            'Write a compound sentence using a coordinating conjunction that shows contrast.',
+            'Write a complex sentence using a subordinating conjunction that shows cause.',
+            'Write a complex sentence where the subordinate clause comes FIRST (with a comma after it).',
+            '✦ Bonus: Write a paragraph of 5 sentences about a place you know well. Use at least two coordinating and two subordinating conjunctions. Label each one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Paragraph cohesion: pronouns as linking devices',
+        'Connect ideas using pronouns',
+        {
+          title: 'I Do — Pronouns That Hold a Paragraph Together',
+          instruction: 'We used connective words in Week 9 Term 1. This week, we focus specifically on pronouns as cohesive devices — how "he," "she," "they," "it," "this," and "these" reach back to a previous sentence and pull ideas together.',
+          example: '"The tuatara is one of New Zealand\'s most ancient reptiles. <u>It</u> has barely changed in 200 million years. <u>This</u> makes <u>it</u> a living link to the age of the dinosaurs."',
+          demonstration: '"It" in sentence 2 refers back to "tuatara" — no need to repeat the noun. "This" in sentence 3 refers back to the whole idea of sentence 2. Each pronoun acts like a thread, stitching sentences together into a paragraph rather than a list.',
+          tip: 'After writing a paragraph, draw an arrow from each pronoun to what it refers to. Every pronoun should have a clear, unambiguous referent.',
+        },
+        {
+          title: 'We Do — Stitch It Together',
+          instruction: 'Replace the repeated nouns with appropriate pronouns to improve paragraph cohesion.',
+          sentences: [
+            'The pūkeko is a bold and territorial bird. The pūkeko will often chase away much larger animals. The pūkeko\'s bright red beak makes the pūkeko easy to spot in wetland areas. Despite the pūkeko\'s aggression, the pūkeko is a beloved part of the New Zealand landscape.',
+          ],
+          prompt: 'Which nouns can be replaced with pronouns? Are there any where replacing would cause confusion about what the pronoun refers to?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this paragraph so pronouns link the sentences together without causing ambiguity.',
+          tasks: [
+            'The kākāpō is a large, flightless parrot. The kākāpō is critically endangered. Conservation teams monitor every single kākāpō. Each kākāpō has a name and a tracking pack. The tracking pack helps conservation teams follow each kākāpō\'s movements across the island.',
+            '✦ Bonus: Write a paragraph of 5 sentences about a NZ animal or place. Use a different pronoun in at least three sentences to link back to the subject. Make sure every pronoun is unambiguous.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: identifying weak sentence openings',
+        'Revise sentence variety',
+        {
+          title: 'I Do — The Weak Opening Problem',
+          instruction: 'When every sentence starts the same way — especially with "The" or "I" — writing becomes monotonous. Watch me diagnose a passage with weak sentence openings and revise it.',
+          example: '"The sky was dark. The clouds gathered quickly. The wind picked up. The rain began to fall. The thunder rolled in from the south."',
+          demonstration: 'Five sentences. Every one starts with "The." The reader\'s eye glazes over. Revision: "Dark clouds gathered quickly. As the wind picked up, the first drops of rain began to fall. From the south, thunder rolled in — low and threatening." Varied openers: adjective, adverbial, fronted phrase.',
+          tip: 'List the first word of every sentence in your paragraph. If more than two start the same way — vary them. Use: adverbials, adjectives, conjunctions, or rearranged sentence order.',
+        },
+        {
+          title: 'We Do — Diagnose Together',
+          instruction: 'List the first word of each sentence in this passage. Identify the pattern. Then rewrite three sentences with different openers.',
+          sentences: [
+            'I arrived at school early. I put my bag in my locker. I went to find my friends. I sat down and waited for the bell. I felt nervous about the day ahead.',
+          ],
+          prompt: 'What pattern do you see? What three different ways could you begin these sentences instead?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this paragraph, varying the sentence openings so no two consecutive sentences start the same way.',
+          tasks: [
+            'The match started well. The team scored early. The crowd cheered loudly. The other team fought back. The score was level at half time. The players looked tired. The coach spoke to them firmly. The second half began.',
+            '✦ Bonus: Write a paragraph of 6 sentences about any topic. Make a rule: no two sentences may start with the same word. List the opening word of each sentence underneath.',
+          ],
+        }
+      ),
+    },
+
+    10: {
+      Monday: lesson(
+        'Review: punctuation marks covered in Term 2',
+        'Consolidate punctuation',
+        {
+          title: 'I Do — Term 2 Punctuation in One Passage',
+          instruction: 'Let\'s bring all of Term 2\'s punctuation skills together. Watch me read a passage and identify every punctuation mark, naming the rule it follows.',
+          example: '"Despite the rain (which had been falling since dawn), the market was busy: stalls selling honey, pottery, and bread lined both sides of the path. \"We\'ve never missed a Saturday,\" said the stallholder, smiling."',
+          demonstration: 'Comma after fronted adverbial ✓ | Brackets for extra info ✓ | Colon introducing a list ✓ | Commas in list ✓ | Speech marks and comma before closing mark ✓ | Capital at sentence start ✓. One passage — six rules.',
+          tip: 'When reviewing punctuation, go mark by mark: comma, colon, semicolon, dash, bracket, speech mark. Name the rule each one is following.',
+        },
+        {
+          title: 'We Do — Punctuation Audit',
+          instruction: 'Read this passage and name every punctuation mark you can find. For each one, state the rule it is following.',
+          sentences: [
+            '"Although the weather was cold, the crowd — several hundred people — had gathered on the waterfront. The mayor announced three things: free transport, extended opening hours, and a fireworks display. \'This is for everyone,\' she said, \'not just those who can afford it.\'"',
+          ],
+          prompt: 'Go through mark by mark. What is each one doing? Can you find one of every type from Term 2?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this unpunctuated passage, adding all correct punctuation marks.',
+          tasks: [
+            'although they had trained for months the team were nervous before the final the coach gave them three reminders breathe together trust each other and enjoy the moment its not just a game she said its a chance to show what youre made of',
+            '✦ Bonus: Write your own paragraph of 5–6 sentences that deliberately uses: a comma after a fronted adverbial, brackets, a colon, a semicolon, and speech marks. Underline each one and label it.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Review: grammar concepts from Term 2',
+        'Consolidate grammar',
+        {
+          title: 'I Do — Term 2 Grammar Recap',
+          instruction: 'We covered a lot of grammar this term. Let me recap the key concepts with one example of each, so we have them all in one place.',
+          example: '"Going to" vs "will" | Progressive tense: was/were + -ing | Relative pronouns: who, which, that | Tricky SVA: everyone was, each has | Collective/abstract nouns | Directional prepositions',
+          demonstration: '"Everyone was present when the kuia, who had travelled from Rotorua, finally arrived. The group had been waiting for over an hour. Despite the delay, they were going to make the most of the time that remained."  — find: tricky SVA (everyone was), relative pronoun (who), past progressive (had been waiting), contrast conjunction (despite), future tense (going to), relative pronoun (that).',
+          tip: 'When reviewing grammar, look at one sentence at a time. Identify: subject, verb, any clauses, any pronouns, any conjunctions.',
+        },
+        {
+          title: 'We Do — Grammar Hunt',
+          instruction: 'In the passage below, find and label one example of each grammar concept from Term 2.',
+          sentences: [
+            '"Although everyone in the group was exhausted, they were still paddling steadily towards the shore. The waka, which had been built by the students themselves, was holding up well. Each of the crew knew that unless they kept their rhythm, the current was going to push them off course."',
+          ],
+          prompt: 'Can you find: tricky SVA, progressive tense, relative pronoun, subordinating conjunction, directional preposition, future tense?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence that demonstrates each grammar concept from Term 2.',
+          tasks: [
+            'Write a sentence using "everyone" or "each" with the correct singular verb.',
+            'Write a sentence using the past progressive to set a scene.',
+            'Write a sentence with a relative clause using "which" (add commas).',
+            'Write a compound sentence using a FANBOYS conjunction and a complex sentence using "although."',
+            '✦ Bonus: Write a paragraph of 6 sentences that includes at least one example of every grammar concept from Term 2.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Review: sentence structures from Term 2',
+        'Consolidate sentence skills',
+        {
+          title: 'I Do — The Term 2 Sentence Toolkit',
+          instruction: 'This term we added several tools to our sentence-building toolkit. Watch me write one sentence of each type, showing what makes each one effective.',
+          example: 'Comma after fronted adverbial: "Before the tide turned, the waka was safely ashore." | When/because expansion: "The crowd fell silent because the rangatira had raised her hand." | Combined sentence: "The kārearea, a native falcon, is the fastest bird in Aotearoa." | Complex with although/unless/while: "Although the climb was steep, no one asked to stop."',
+          demonstration: 'Each sentence type serves a purpose. Fronted adverbials vary openers. When/because expansions explain. Combined sentences condense. Although/unless/while sentences show nuance. A skilled writer chooses the right type for the right moment.',
+          tip: 'Review your own writing. Can you spot sentences that could be upgraded to a more interesting type? Try converting a simple sentence into each type in turn.',
+        },
+        {
+          title: 'We Do — Identify and Build',
+          instruction: 'Identify the sentence type used in each example, then write your own sentence of that type.',
+          sentences: [
+            '"Despite the early start, the tamariki were wide awake and eager to begin."',
+            '"The river, which flows from the central plateau to the sea, is a taonga to the iwi of the region."',
+            '"While the bread was baking, the whānau set the table for the hākari."',
+          ],
+          prompt: 'What makes each sentence type distinctive? What job does it do that a simple sentence can\'t?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write one sentence of each type as a showcase of your Term 2 sentence skills.',
+          tasks: [
+            'A sentence with a fronted adverbial of contrast ("Despite…" or "Although…,").',
+            'A sentence expanded with a "because" clause at the back.',
+            'A combined sentence using an appositive (e.g. "The kiwi, a nocturnal bird,…").',
+            'A complex sentence using "unless" or "while."',
+            '✦ Bonus: Write a paragraph of 5–6 sentences about Aotearoa. Use a different sentence type from this list in each sentence. Label each type in the margin.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: full-passage edit using Term 2 checklist',
+        'Apply all Term 2 skills',
+        {
+          title: 'I Do — The Term 2 Editing Checklist',
+          instruction: 'Our Term 2 editing checklist has 6 passes — one for each key skill. Watch me work through a passage using the checklist systematically.',
+          example: 'Pass 1: Comma after every fronted adverbial | Pass 2: Apostrophes (contraction & possession) | Pass 3: Colon/semicolon usage | Pass 4: Vague words (nice, good, went, got) | Pass 5: Tense consistency | Pass 6: Sentence opener variety',
+          demonstration: '"Despite the forecast it was a nice day. The students went to the beach and got really tired. everyone was happy said the teacher." | Pass 1: add comma after "forecast" ✓ | Pass 4: "nice" → vivid, "went" → walked, "got" → grew ✓ | Pass 5: consistent past ✓ | Pass 6: vary "Everyone" opener ✓',
+          tip: 'Six passes, six focuses. Don\'t try to catch everything in one read — you\'ll miss things. One pass, one rule.',
+        },
+        {
+          title: 'We Do — Checklist Pass Together',
+          instruction: 'Work through this passage using the Term 2 checklist. Do one pass at a time.',
+          sentences: [
+            '"although it was getting late the students was still working on their projects. Each of them were determined to finish. The work was really good and everyone said nice things about it. While the kaiako was watching she seen how hard they worked and felt proud."',
+          ],
+          prompt: 'Pass 1: fronted adverbial comma? Pass 2: apostrophes? Pass 3: colons/semicolons needed? Pass 4: vague words? Pass 5: tense consistent? Pass 6: opener variety?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Apply the full Term 2 checklist to this passage. Mark each error type with a different colour or symbol.',
+          tasks: [
+            '"After the long weekend the class shared what they done. Some students went on trips others stayed home. everyone had a good time doing things they like. The kaiako said it was really nice to hear their stories and that it was a good way to start the week. despite the tiredness everyone was glad to be back."',
+            '✦ Bonus: Self-edit a piece of your own writing using the Term 2 checklist. Annotate it: mark every change you make and label which pass it belongs to.',
+          ],
+        }
+      ),
+    },
+
   },
 
   3: { 1: { Monday: lesson('Tier 2 vocabulary: words for feelings & emotion','Select emotive vocabulary',{title:'I Do',instruction:'Precise emotion vocabulary moves readers. Watch me build an "emotion word ladder" — from mild to intense.',example:'sad → unhappy → miserable → devastated → heartbroken',demonstration:'Each word is more intense. A character who is "unhappy" about losing a game feels different from one who is "devastated." Choosing the right level signals to the reader how much this matters.',tip:'Match the emotion word to the story\'s stakes. Small disappointment → "disappointed." Life-changing loss → "devastated."'},{title:'We Do',instruction:'Build emotion ladders for these feelings together.',sentences:['angry → ___ → ___ → ___ → ___','happy → ___ → ___ → ___ → ___'],prompt:'Which word would you use in a funny story? Which in a dramatic one?'},{title:'You Do',instruction:'Replace each plain emotion word with one from the correct intensity level.',tasks:['She was <u>sad</u> when her goldfish died. (use devastated or heartbroken)','He was <u>happy</u> when his name was called. (mild — use pleased or delighted)','The crowd was <u>angry</u> at the decision. (intense — use furious or outraged)','✦ Bonus: Write an "emotion ladder" for "scared" with 6 levels from mild to extreme.']}), Tuesday: lesson('Nouns revisited: count vs. non-count nouns','Deepen noun understanding',{title:'I Do',instruction:'Count nouns can be counted and have plurals. Non-count (mass) nouns cannot be counted and have no plural form.',example:'Count: one book, two books ✓ | Non-count: one sand, two sands ✗',demonstration:'"Sand" — you can\'t say "two sands." You say "some sand," "a grain of sand." Other non-count: water, music, advice, furniture, information. With count nouns you use "a/an" or numbers. With non-count you use "some," "much," "a lot of."',tip:'"Much" = non-count ("much water"). "Many" = count ("many cups"). If you\'re unsure, try adding a number — if it sounds wrong, it\'s non-count.'},{title:'We Do',instruction:'Sort these nouns and choose the correct determiner (some/a/an/many/much).',sentences:['___ furniture | ___ chairs | ___ advice | ___ suggestions | ___ lightning'],prompt:'Count or non-count? Which determiner fits?'},{title:'You Do',instruction:'Correct the non-count noun errors in these sentences.',tasks:['She gave me a lot of advices about the exam.','We need two furnitures for the new room.','Can I have some informations about the trip?','There were many thunders during the storm.','✦ Bonus: Write 6 sentences — 3 using count nouns correctly, 3 using non-count nouns correctly.']}), Wednesday: lesson('Simple sentences: revisit in narrative context','Apply in narrative writing',{title:'I Do',instruction:'In narrative, simple sentences aren\'t just exercises — they\'re dramatic tools. Watch how a string of short simple sentences creates suspense.',example:'"She stopped. She listened. The floorboard creaked. Someone was there."',demonstration:'Each sentence is complete. Each ends with a full stop — a tiny pause. That rhythm creates tension. Compare: "She stopped and listened because a floorboard creaked and someone was there." — all the information, but none of the tension.',tip:'In action or suspense moments, break your writing into short simple sentences. Let the reader feel every beat.'},{title:'We Do',instruction:'Rewrite this rushed description as a series of short simple sentences to build suspense.',sentences:['The old house was dark and silent and the child walked slowly up the creaking staircase and then she heard a sound coming from behind the closed door at the end of the hall.'],prompt:'Where are the moments of tension? Break them apart.'},{title:'You Do',instruction:'Write a 5-sentence suspense sequence using only simple sentences. Then label the effect each creates.',tasks:['Scene: a character is alone in a forest at night and hears something.','Must use: 5 simple sentences, each 5–8 words. No conjunctions.','✦ Bonus: Now rewrite the same scene using one long complex sentence. Compare the effect.']}), Thursday: lesson('Proofreading: dialogue punctuation (speech marks)','Edit dialogue conventions',{title:'I Do',instruction:'Dialogue (speech) has its own punctuation rules. Watch me show the five key rules with examples.',example:'"I think we\'re lost," she whispered.\n"Lost?" said Tom. "Are you sure?"\n"Yes," she replied. "Completely."',demonstration:'Rule 1: Speech marks around the spoken words. Rule 2: Comma (not full stop) before the closing speech mark if a speech tag follows. Rule 3: The speech tag (she whispered) is NOT capitalised after the comma. Rule 4: New speaker = new line. Rule 5: Punctuation inside the speech marks.',tip:'Ask: is the full stop job done by the comma? If there\'s a speech tag, the period becomes a comma inside the speech marks.'},{title:'We Do',instruction:'Fix the dialogue punctuation in these exchanges.',sentences:['"We should go" said Marcus "before it gets dark."','Anna replied "but I havent finished yet"','"Look out screamed the driver'],prompt:'Apply the 5 rules one at a time. What is wrong with each line?'},{title:'You Do',instruction:'Rewrite this dialogue with correct punctuation throughout.',tasks:['"where are we going asked lily\n"to the market said dad I need to get some things\n"can I have a sausage she asked\n"if you\'re good he replied\n✦ Bonus: Write a 6-line dialogue between two characters. Apply all 5 dialogue punctuation rules perfectly.']}) }, },
