@@ -32,6 +32,345 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '2-5': [
+    {
+      q: '"The tuatara (New Zealand\'s ancient living fossil) can live for over 100 years." How do you know the brackets are used correctly here?',
+      options: [
+        'Because the information inside adds an opinion about the tuatara',
+        'Because removing the bracketed section still leaves a complete, sensible sentence',
+        'Because the information inside is the most important part of the sentence',
+        'Because brackets are always used around facts from a textbook',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The tuatara — New Zealand\'s ancient living fossil — can live for over 100 years." What is the main difference between using dashes here instead of brackets?',
+      options: [
+        'Dashes make the sentence more formal and suitable for reports',
+        'Dashes signal that the extra information should be ignored',
+        'Dashes draw more attention to the aside — making it feel dramatic rather than like a footnote',
+        'Dashes show the reader that the extra information is incorrect',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The kākāpō is the ___ of all New Zealand parrots." Which adjective correctly completes this superlative sentence?',
+      options: ['more heavy', 'heaviest', 'most heaviest', 'heavier'],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Wellington is ___ than Auckland." Which comparative form of "windy" is correct?',
+      options: ['more windier', 'windiest', 'windier', 'most windy'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Choppy: "The kārearea is a falcon. It is native to New Zealand. It is the fastest bird. It hunts other birds." — Which combined version is best?',
+      options: [
+        '"The kārearea is a falcon and it is native to New Zealand and it is the fastest bird and it hunts other birds."',
+        '"The kārearea, a falcon native to New Zealand, is the country\'s fastest bird and hunts other birds in mid-air."',
+        '"The kārearea is a native New Zealand falcon. It is the fastest and it hunts birds."',
+        '"Because the kārearea is a falcon it is native and fast and it hunts other birds too."',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip says: "Ask: which two sentences share a subject? Can one become a clause inside the other?" Which technique is used in: "The pā, built on a steep hill, had a clear view of the harbour."?',
+      options: [
+        'A conjunction joining two equal sentences',
+        'A relative clause introduced by "which"',
+        'An appositive phrase embedded after the subject',
+        'A fronted adverbial at the start of the sentence',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The trip was great. We saw lots of things. It was sunny. We had lunch by the river." — Which edit best improves punctuation variety?',
+      options: [
+        '"The trip was great! We saw lots of things! It was sunny! We had lunch by the river!"',
+        '"The trip was great; we saw more than we expected. The sun blazed — perfect conditions. By the river, we ate lunch: sandwiches, fruit, and cold water."',
+        '"The trip was great, we saw lots of things, it was sunny, we had lunch by the river."',
+        '"The trip was great. We saw lots of things, it was sunny, we had lunch by the river."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s editor\'s checklist asks: "At least one colon or semicolon? Any dashes? Any brackets?" Why is this a useful check?',
+      options: [
+        'Because colons, semicolons, and dashes are always better than full stops',
+        'Because writing that uses only full stops and commas is missing chances to create variety and effect',
+        'Because examiners award marks specifically for colons and semicolons',
+        'Because full stops should only appear at the end of a paragraph',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-4': [
+    {
+      q: '"do not" → "don\'t" — where exactly does the apostrophe go, and why?',
+      options: [
+        'Between "do" and "n\'t" — because it separates the two original words',
+        'At the very end — because contractions always close with an apostrophe',
+        'Where the missing letter "o" was removed — replacing the missing letter',
+        'Before the "t" — because the "t" is the last letter added',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"They\'re dog isnt allowed inside but its a cold night." How many apostrophe errors are in this sentence?',
+      options: ['One — only "isnt" is wrong', 'Two — "isnt" and "its" are wrong', 'Three — "They\'re," "isnt," and "its" are all wrong', 'Four — every word with an apostrophe is wrong'],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The woman ___ won the award is our neighbour." Which relative pronoun is correct?',
+      options: ['which', 'that', 'who', 'whom'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The bridge, ___ was built in 1902, is being restored." Which relative pronoun fits — and why does it need commas?',
+      options: [
+        '"that" — because it defines which bridge we mean, no commas needed',
+        '"who" — because the bridge is being treated as a person, commas optional',
+        '"which" — because it adds non-essential extra information, set off by commas',
+        '"what" — because it introduces an explanation, commas always follow',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Recycling reduces waste sent to landfill." Is this a persuasive or informational topic sentence — and how can you tell?',
+      options: [
+        'Persuasive — because it mentions recycling, which is a controversial topic',
+        'Informational — because it states a fact that most people would agree with',
+        'Persuasive — because it uses formal vocabulary like "landfill"',
+        'Informational — because it begins with a noun rather than a verb',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "If someone could disagree with it — it\'s persuasive." Which of these is the strongest PERSUASIVE topic sentence?',
+      options: [
+        '"Schools have canteens that sell food to students."',
+        '"Exercise has some effects on health."',
+        '"Schools must ban junk food from their canteens immediately."',
+        '"Many students eat at school each day."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The shop sold apple\'s, pear\'s and mango\'s." What is wrong with all three apostrophes?',
+      options: [
+        'They are in the wrong position — they should come before the final letter',
+        'These are just plurals — they are not possessives or contractions, so no apostrophe is needed',
+        'The apostrophes should be replaced with commas to separate the items',
+        'Only "mango\'s" is wrong — the others are possessives so they need apostrophes',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s two-question test for apostrophes: (1) Is something being owned? (2) Are letters missing? Apply it to "students." Which sentence uses it correctly?',
+      options: [
+        '"The student\'s walked to class." — the students own the walking',
+        '"Several student\'s raised their hands." — apostrophe shows there are many',
+        '"The student\'s bag was left on the bus." — one student owns the bag',
+        '"All the student\'s agreed with the decision." — the apostrophe shows agreement',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-3': [
+    {
+      q: '"cold ←→ hot" — but between them sit: freezing, icy, cool, warm, scorching, boiling. What does this spectrum show about word choice?',
+      options: [
+        'That longer words are always more precise than shorter ones',
+        'That meaning is a sliding scale — the right word sits at exactly the right point for the context',
+        'That antonyms should never be used in the same paragraph',
+        'That all words between two antonyms mean roughly the same thing',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "The most powerful word sits at exactly the right point on that scale for your sentence." The explorer is crossing the Antarctic plateau. Which word best replaces "cold"?',
+      options: ['chilly', 'cool', 'glacial', 'slightly cold'],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"Everyone in the kapa haka group ___ the words." Which verb is correct — and why?',
+      options: [
+        '"know" — because there are many people in the group',
+        '"knows" — because "everyone" is singular, like "every single person"',
+        '"know" — because "kapa haka group" is a plural noun',
+        '"knows" — because the sentence is in the present tense',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Neither of the referees ___ happy with the decision." Which verb is correct?',
+      options: [
+        '"were" — because there are two referees',
+        '"was" — because "neither" is singular, like "not one of them"',
+        '"were" — because "referees" is a plural noun',
+        '"was" — because the sentence describes a past event',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The hīkoi had been going for three days. The marchers showed no sign of stopping." Which FANBOYS conjunction best joins these two ideas?',
+      options: [
+        '"and" — the second sentence simply adds to the first',
+        '"or" — it gives the marchers an alternative to stopping',
+        '"yet" — it creates contrast: exhaustion expected, but no sign of stopping',
+        '"for" — it explains why the hīkoi had been going for three days',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "Before picking a conjunction, decide: am I adding, contrasting, showing a result, or giving a reason?" "The experiment failed the first time. The team learnt something valuable." Which conjunction shows a surprising contrast?',
+      options: [
+        '"so" — the result of failing was learning something',
+        '"and" — the learning simply followed the failure',
+        '"yet" — failure and learning seem contradictory, creating contrast',
+        '"for" — the failure gave the reason for the learning',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The kererū went from branch to branch, getting the ripest berries." Thursday\'s lesson said to upgrade "went" and "getting." Which version is best?',
+      options: [
+        '"The kererū moved from branch to branch, finding the ripest berries."',
+        '"The kererū hopped from branch to branch, plucking the ripest berries."',
+        '"The kererū went quickly from branch to branch, getting many berries."',
+        '"The kererū did the action of going branch to branch, getting berries."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Highlight every \'went,\' \'got,\' \'said,\' \'did,\' \'made,\' \'was\' — each is an upgrade opportunity." Which sentence has the MOST bland verbs still needing upgrading?',
+      options: [
+        '"The hawk plummeted from the ridge and snatched the prey mid-flight."',
+        '"She sprinted across the field and hurled herself at the finish line."',
+        '"The children went to the beach, got into the water and said it was cold."',
+        '"The storm battered the coast and tore branches from the pines."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-2': [
+    {
+      q: '"Before the sun had risen the fishing boats left the harbour." Where does the comma go — and why?',
+      options: [
+        'After "harbour" — because the sentence ends with a place name',
+        'After "risen" — because the fronted adverbial ends there and the main clause begins',
+        'After "boats" — because "fishing boats" is the subject of the sentence',
+        'After "Before" — because conjunctions are always followed by a comma',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "Read aloud — if you naturally pause after the opening phrase before the subject arrives, that pause is your comma." Which sentence is correctly punctuated?',
+      options: [
+        '"Despite the heavy rain, the game continued without a break."',
+        '"Despite, the heavy rain the game continued without a break."',
+        '"Despite the heavy rain the game, continued without a break."',
+        '"Despite the heavy rain the game continued, without a break."',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"Mum already bought the tickets — we ___ see the kapa haka performance on Friday." Which future form is correct — and why?',
+      options: [
+        '"will" — because it is a spontaneous decision made right now',
+        '"are going to" — because the tickets are already bought, so it is a made plan',
+        '"will" — because predictions always use "will" not "going to"',
+        '"are going to" — because "going to" is always more polite than "will"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The phone is ringing. Don\'t worry, I ___ get it!" Which future form fits — and why?',
+      options: [
+        '"am going to" — because answering the phone is already planned',
+        '"will" — because this is a spontaneous decision made in the moment',
+        '"am going to" — because the phone ringing is evidence it will happen',
+        '"will" — because predictions about the near future always use "will"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The crowd cheered." → "When the final whistle blew, the crowd cheered." What does adding the "when" clause do to the sentence?',
+      options: [
+        'It tells us WHY the crowd cheered — it gives the reason',
+        'It tells us WHO was in the crowd — it identifies the subject',
+        'It tells us WHEN it happened — it adds a time trigger for the action',
+        'It tells us WHERE the crowd was — it adds a location detail',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "Front = comma after the clause. Back = no comma needed." Which sentence is correctly punctuated?',
+      options: [
+        '"The crowd cheered, because the All Blacks had scored."',
+        '"Because the All Blacks had scored the crowd cheered."',
+        '"Because the All Blacks had scored, the crowd cheered."',
+        '"The crowd cheered because, the All Blacks had scored."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"It was raining heavily, the match was cancelled." What is wrong with this sentence?',
+      options: [
+        'It has a missing capital letter at the start of the second clause',
+        'It is a comma splice — two complete sentences joined by only a comma',
+        'It uses the wrong tense — "was cancelled" should be "is cancelled"',
+        'It needs a colon before "the match was cancelled" to introduce the result',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"The kiwi is nocturnal, it comes out to feed after dark." Thursday\'s lesson gives three ways to fix a comma splice. Which fix is NOT one of them?',
+      options: [
+        'Use a full stop: "The kiwi is nocturnal. It comes out to feed after dark."',
+        'Use a conjunction: "The kiwi is nocturnal, so it comes out to feed after dark."',
+        'Use a semicolon: "The kiwi is nocturnal; it comes out to feed after dark."',
+        'Use a colon: "The kiwi is nocturnal: it comes out to feed after dark."',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+  ],
+
   '2-1': [
     {
       q: '"The man went down the street." → "The man strode down the street." What extra information does "strode" give us that "went" does not?',
