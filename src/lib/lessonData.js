@@ -3503,7 +3503,1122 @@ export const CURRICULUM = {
 
   },
 
-  4: { 1: { Monday: lesson('Tier 2 vocabulary: words for argument & opinion','Use persuasive vocabulary',{title:'I Do',instruction:'Persuasive writing uses specific vocabulary to signal opinion, certainty, and importance. Watch me identify and use these words.',example:'"It is <u>crucial</u> that schools provide healthy lunches. <u>Evidently</u>, poor nutrition affects learning. <u>Furthermore</u>, it <u>significantly</u> impacts behaviour."',demonstration:'Crucial (strong importance), evidently (signals evidence), furthermore (adds a point), significantly (makes impact sound large). These words don\'t just fill space — they do persuasive work.',tip:'"Very important" → "crucial." "Also" → "furthermore." "Shows" → "demonstrates." Upgrade to the persuasive register.'},{title:'We Do',instruction:'Replace the plain words with persuasive vocabulary.',sentences:['It is <u>important</u> that we recycle more.','This <u>shows</u> that the problem is <u>big</u>.','<u>Also</u>, the research <u>proves</u> it works.'],prompt:'Which persuasive word fits best? Does it change how convincing the sentence sounds?'},{title:'You Do',instruction:'Rewrite each sentence using persuasive vocabulary.',tasks:['The problem of food waste is <u>bad</u>.','This <u>shows</u> that something needs to change.','It is <u>important</u> that everyone does their part.','✦ Bonus: Write a 3-sentence persuasive opening about a school rule you\'d like to change. Use at least 4 persuasive words.']}), Tuesday: lesson('Nouns: gerunds as subjects ("Swimming is…")','Identify gerund nouns',{title:'I Do',instruction:'A gerund is a verb form ending in -ing that works as a noun. It can be the subject of a sentence. Watch me identify and use gerunds.',example:'"<u>Swimming</u> is excellent exercise. <u>Writing</u> clearly is a valuable skill."',demonstration:'"Swimming" — looks like a verb, acts as a noun. It\'s the subject of the sentence. "Writing" — same: it\'s what the sentence is ABOUT. You can test it: replace with a regular noun — "Sport is excellent exercise." Still works. That means swimming IS a noun here.',tip:'Gerund as subject: can I replace it with a noun like "sport" or "skill"? If yes — it\'s a gerund.'},{title:'We Do',instruction:'Identify the gerund in each sentence and confirm it\'s acting as a noun.',sentences:['Reading every day improves vocabulary.','Travelling to new places broadens your mind.','Winning isn\'t everything.'],prompt:'What is the subject of each sentence? Is it a gerund? What noun could replace it?'},{title:'You Do',instruction:'Use each gerund as the subject of a sentence.',tasks:['Running → ___','Cooking → ___','Learning → ___','Painting → ___','✦ Bonus: Write 3 sentences about things you enjoy, each using a gerund as the subject.']}), Wednesday: lesson('Simple sentences: direct & concise statements','Apply in persuasive writing',{title:'I Do',instruction:'In persuasive writing, simple sentences land like punches. They state a fact or claim directly. Watch how I use short, direct sentences to drive a point home.',example:'"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',demonstration:'Four short sentences. No padding. No apology. Each one is a single, clear claim. This directness signals confidence and conviction — both essential in persuasive writing.',tip:'In persuasive writing, vary: long sentences to explain and argue, short sentences to make your key claim land hard.'},{title:'We Do',instruction:'Convert these wordy arguments into direct, punchy simple sentences.',sentences:['Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them.','The situation in which animals are kept in small cages for entertainment is something that is not acceptable and should not be allowed.'],prompt:'What is the core claim? Strip it back to the fewest words that still make the point.'},{title:'You Do',instruction:'Write a direct, concise simple sentence for each argument.',tasks:['Argument: school should start later because teenagers need more sleep.','Argument: fast food advertising should not be shown during children\'s programmes.','Argument: every student should learn a second language.','✦ Bonus: Write a persuasive paragraph. Use 3 short punchy sentences and 2 longer explanation sentences alternately.']}), Thursday: lesson('Proofreading: checking for consistency in a report','Edit informational text',{title:'I Do',instruction:'Reports need consistency: consistent tense (usually present), consistent formal register, consistent formatting of lists and headings. Watch me edit an inconsistent report excerpt.',example:'"Dolphins are marine mammals. They lived in oceans worldwide (wrong tense). Dolphins eat fish, squid and they also had crustaceans (inconsistent list)."',demonstration:'Fixed: "Dolphins are marine mammals. They <u>live</u> in oceans worldwide. Dolphins eat fish, squid<u>,</u> and crustaceans." Tense fixed to present. List restructured to parallel form.',tip:'Reports: present tense for facts. Parallel lists: all nouns, or all verbs — not mixed.'},{title:'We Do',instruction:'Find and fix inconsistencies in this science report paragraph.',sentences:['The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf. Then a caterpillar hatched and it ate the leaf. The caterpillar forms a chrysalis and then eventually it became a butterfly and emerged.'],prompt:'Tense errors? List inconsistencies? Register shifts?'},{title:'You Do',instruction:'Rewrite this passage making it consistent in tense, register, and structure.',tasks:['Kauri trees are one of the largest tree species in the world. They grew very slowly and can lived for over 2,000 years. The kauri forests were very important to Māori people. Kauri gum, the resin from these trees, were used for many purposes including it was used as a fire starter, and for making varnish, and people also chewed it.','✦ Bonus: Write 5 sentences about an animal of your choice in a consistent report style. Present tense, formal register, parallel lists.']}) }, },
+  4: { 1: { Monday: lesson('Tier 2 vocabulary: words for argument & opinion','Use persuasive vocabulary',{title:'I Do',instruction:'Persuasive writing uses specific vocabulary to signal opinion, certainty, and importance. Watch me identify and use these words.',example:'"It is <u>crucial</u> that schools provide healthy lunches. <u>Evidently</u>, poor nutrition affects learning. <u>Furthermore</u>, it <u>significantly</u> impacts behaviour."',demonstration:'Crucial (strong importance), evidently (signals evidence), furthermore (adds a point), significantly (makes impact sound large). These words don\'t just fill space — they do persuasive work.',tip:'"Very important" → "crucial." "Also" → "furthermore." "Shows" → "demonstrates." Upgrade to the persuasive register.'},{title:'We Do',instruction:'Replace the plain words with persuasive vocabulary.',sentences:['It is <u>important</u> that we recycle more.','This <u>shows</u> that the problem is <u>big</u>.','<u>Also</u>, the research <u>proves</u> it works.'],prompt:'Which persuasive word fits best? Does it change how convincing the sentence sounds?'},{title:'You Do',instruction:'Rewrite each sentence using persuasive vocabulary.',tasks:['The problem of food waste is <u>bad</u>.','This <u>shows</u> that something needs to change.','It is <u>important</u> that everyone does their part.','✦ Bonus: Write a 3-sentence persuasive opening about a school rule you\'d like to change. Use at least 4 persuasive words.']}), Tuesday: lesson('Nouns: gerunds as subjects ("Swimming is…")','Identify gerund nouns',{title:'I Do',instruction:'A gerund is a verb form ending in -ing that works as a noun. It can be the subject of a sentence. Watch me identify and use gerunds.',example:'"<u>Swimming</u> is excellent exercise. <u>Writing</u> clearly is a valuable skill."',demonstration:'"Swimming" — looks like a verb, acts as a noun. It\'s the subject of the sentence. "Writing" — same: it\'s what the sentence is ABOUT. You can test it: replace with a regular noun — "Sport is excellent exercise." Still works. That means swimming IS a noun here.',tip:'Gerund as subject: can I replace it with a noun like "sport" or "skill"? If yes — it\'s a gerund.'},{title:'We Do',instruction:'Identify the gerund in each sentence and confirm it\'s acting as a noun.',sentences:['Reading every day improves vocabulary.','Travelling to new places broadens your mind.','Winning isn\'t everything.'],prompt:'What is the subject of each sentence? Is it a gerund? What noun could replace it?'},{title:'You Do',instruction:'Use each gerund as the subject of a sentence.',tasks:['Running → ___','Cooking → ___','Learning → ___','Painting → ___','✦ Bonus: Write 3 sentences about things you enjoy, each using a gerund as the subject.']}), Wednesday: lesson('Simple sentences: direct & concise statements','Apply in persuasive writing',{title:'I Do',instruction:'In persuasive writing, simple sentences land like punches. They state a fact or claim directly. Watch how I use short, direct sentences to drive a point home.',example:'"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',demonstration:'Four short sentences. No padding. No apology. Each one is a single, clear claim. This directness signals confidence and conviction — both essential in persuasive writing.',tip:'In persuasive writing, vary: long sentences to explain and argue, short sentences to make your key claim land hard.'},{title:'We Do',instruction:'Convert these wordy arguments into direct, punchy simple sentences.',sentences:['Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them.','The situation in which animals are kept in small cages for entertainment is something that is not acceptable and should not be allowed.'],prompt:'What is the core claim? Strip it back to the fewest words that still make the point.'},{title:'You Do',instruction:'Write a direct, concise simple sentence for each argument.',tasks:['Argument: school should start later because teenagers need more sleep.','Argument: fast food advertising should not be shown during children\'s programmes.','Argument: every student should learn a second language.','✦ Bonus: Write a persuasive paragraph. Use 3 short punchy sentences and 2 longer explanation sentences alternately.']}), Thursday: lesson('Proofreading: checking for consistency in a report','Edit informational text',{title:'I Do',instruction:'Reports need consistency: consistent tense (usually present), consistent formal register, consistent formatting of lists and headings. Watch me edit an inconsistent report excerpt.',example:'"Dolphins are marine mammals. They lived in oceans worldwide (wrong tense). Dolphins eat fish, squid and they also had crustaceans (inconsistent list)."',demonstration:'Fixed: "Dolphins are marine mammals. They <u>live</u> in oceans worldwide. Dolphins eat fish, squid<u>,</u> and crustaceans." Tense fixed to present. List restructured to parallel form.',tip:'Reports: present tense for facts. Parallel lists: all nouns, or all verbs — not mixed.'},{title:'We Do',instruction:'Find and fix inconsistencies in this science report paragraph.',sentences:['The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf. Then a caterpillar hatched and it ate the leaf. The caterpillar forms a chrysalis and then eventually it became a butterfly and emerged.'],prompt:'Tense errors? List inconsistencies? Register shifts?'},{title:'You Do',instruction:'Rewrite this passage making it consistent in tense, register, and structure.',tasks:['Kauri trees are one of the largest tree species in the world. They grew very slowly and can lived for over 2,000 years. The kauri forests were very important to Māori people. Kauri gum, the resin from these trees, were used for many purposes including it was used as a fire starter, and for making varnish, and people also chewed it.','✦ Bonus: Write 5 sentences about an animal of your choice in a consistent report style. Present tense, formal register, parallel lists.']}) },
+
+    2: {
+      Monday: lesson(
+        'Commas in lists: advanced & embedded lists',
+        'Punctuate complex lists',
+        {
+          title: 'I Do — Lists Within Sentences and Lists Within Lists',
+          instruction: 'We know commas separate items in a simple list. This week we tackle advanced cases: lists embedded inside sentences, and what happens when a list item already contains a comma. Watch me navigate both.',
+          example: '"The report covered three areas: funding, which had been reduced significantly; staffing, particularly in rural schools; and curriculum changes." (semicolons replace commas when items contain their own commas)',
+          demonstration: 'When list items are long or contain internal commas, use semicolons instead of commas to avoid confusion. "We invited the mayor, John Smith, the principal, and the board" is ambiguous — is the mayor John Smith? "We invited the mayor; John Smith, our chair; and the principal" is clear.',
+          tip: 'Simple list items = commas. List items that already contain commas = semicolons instead. This is called a "semicolon list."',
+        },
+        {
+          title: 'We Do — Comma or Semicolon List?',
+          instruction: 'Decide whether each list needs commas or semicolons. Add the correct punctuation.',
+          sentences: [
+            '"The kete contained a tī kōuka leaf a piece of pounamu a carved bone hook and a small bundle of harakeke."',
+            '"The judges were Dr Hana Tūhoe chair of the panel Professor James Rāwiri linguistics expert and Mere Ngata award-winning author."',
+            '"She packed her notebook three pens which she always kept together her laptop and her phone charger."',
+          ],
+          prompt: 'Do any of the list items contain their own commas? If yes — switch to semicolons for the whole list.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Punctuate each list correctly, choosing commas or semicolons as needed.',
+          tasks: [
+            'The panel included Tama Tūhoe a marine biologist Aroha Ngāti a conservation lawyer and Rangi Pōhatu an iwi representative.',
+            'For the hāngi we needed potatoes which needed to be scrubbed first kūmara chicken and cabbage.',
+            'The report identified four priorities reducing emissions protecting biodiversity supporting rural communities and improving public transport.',
+            '✦ Bonus: Write two sentences — one with a simple comma list and one with a semicolon list where items contain their own commas. Explain in one sentence why you chose semicolons for the second.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Passive voice: introduction and purpose',
+        'Use passive voice intentionally',
+        {
+          title: 'I Do — Active vs Passive: A Tool, Not a Mistake',
+          instruction: 'In the active voice, the subject does the action. In the passive voice, the subject receives the action. Passive isn\'t wrong — it has specific, powerful uses. Watch me demonstrate both and show when passive is the better choice.',
+          example: 'Active: "Scientists discovered a new species of gecko near Fiordland." | Passive: "A new species of gecko was discovered near Fiordland."',
+          demonstration: 'Active: we know who did it (scientists). Passive: the discovery itself is the focus — who did it is less important or unknown. In formal and informational writing, passive is often preferred: "The treaty was signed in 1840." "Mistakes were made." "The results were recorded." The agent (who did it) is removed or moved to a "by" phrase.',
+          tip: 'Passive = be + past participle. Use passive when: (1) the agent is unknown, (2) the agent is obvious/unimportant, (3) you want to focus on the action or result rather than who did it.',
+        },
+        {
+          title: 'We Do — Active or Passive? Why?',
+          instruction: 'Identify whether each sentence is active or passive. Then discuss whether the choice suits the context.',
+          sentences: [
+            '"The kaitiaki planted three hundred native trees along the riverbank last autumn."',
+            '"The resource consent was declined by the regional council."',
+            '"Errors were found in the original survey."',
+          ],
+          prompt: 'Is the agent (who did it) important in this context? Does active or passive better suit the purpose of the sentence?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each active sentence in the passive voice, then decide which version is better for the context given.',
+          tasks: [
+            '"Workers built the new bridge in 2019." (context: a report about the bridge)',
+            '"Someone left the gate open and the sheep escaped." (context: a formal incident report)',
+            '"Scientists are studying the effects of warming on alpine plants." (context: a magazine article focused on the plants, not the scientists)',
+            '✦ Bonus: Find one paragraph in a newspaper or textbook. Identify any passive voice sentences. Rewrite them in the active voice. Which version is better for each — and why?',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Expanding sentences: evidence + explanation',
+        'Support claims with detail',
+        {
+          title: 'I Do — The Claim Isn\'t Enough',
+          instruction: 'In persuasive writing, a claim alone doesn\'t convince anyone. The structure that does is: CLAIM → EVIDENCE → EXPLANATION (CEE). Watch me build a fully supported argument sentence by sentence.',
+          example: 'Claim: "Aotearoa should invest more in public transport." | Evidence: "Auckland\'s rail network currently carries only 4% of commuters, compared to 40% in comparable cities." | Explanation: "This gap shows that the infrastructure exists but lacks the investment needed to make it a genuine option for most people."',
+          demonstration: 'Claim = what you believe. Evidence = a fact, statistic, or example that supports it. Explanation = why the evidence proves the claim. Without the explanation, the reader has to make the logical leap themselves — and they might not. The explanation is where the argument lives.',
+          tip: 'After every piece of evidence, ask: "So what?" The answer to "so what?" is your explanation.',
+        },
+        {
+          title: 'We Do — Build the CEE',
+          instruction: 'Add evidence and explanation to each bare claim.',
+          sentences: [
+            'Claim: "Students need more time outdoors during the school day."',
+            'Claim: "Aotearoa\'s native forests are under serious threat."',
+            'Claim: "Young people should have more say in decisions that affect them."',
+          ],
+          prompt: 'What evidence supports this claim? Then: what does the evidence actually prove? That\'s your explanation.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a full CEE sequence for each topic.',
+          tasks: [
+            'Topic: whether schools should ban single-use plastic.',
+            'Topic: whether students should choose their own learning projects.',
+            'Topic: whether more NZ history should be taught in schools.',
+            '✦ Bonus: Write a persuasive paragraph of 5–6 sentences on a topic you care about. Structure it: topic sentence → CEE → CEE → concluding sentence. Label each part.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: converting passive to active (or vice versa)',
+        'Revise for voice choice',
+        {
+          title: 'I Do — Making Voice Choices Count',
+          instruction: 'Today we edit not just for correctness but for intention — deciding whether active or passive better serves each sentence in context. Watch me read a passage and question each voice choice.',
+          example: '"The submission was written by the iwi. It was lodged with the council. The decision was made two months later." → "The iwi wrote the submission and lodged it with the council. Two months later, the council announced its decision."',
+          demonstration: 'The original uses passive throughout — the iwi\'s agency is hidden. In a piece arguing for the iwi\'s active role, this is a poor choice. Converting to active gives the iwi back their agency: "The iwi wrote… and lodged…" The final sentence stays passive because the focus is the council\'s decision, not the council as agent.',
+          tip: 'Edit for voice: ask "who is the focus here?" If the doer matters — use active. If the result or receiver matters more — use passive.',
+        },
+        {
+          title: 'We Do — Voice Edit Together',
+          instruction: 'Read this passage. Convert any passive sentences that would be stronger in the active, and leave any that are correctly passive for context.',
+          sentences: [
+            '"The native planting project was established by local students three years ago. Over 500 trees have been planted. The site is visited regularly by the kaiako. Several species of native bird have been recorded there for the first time."',
+          ],
+          prompt: 'Which sentences should be active to show agency? Which are better passive because the agent is unimportant or unknown?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence in the voice indicated, then decide which version better suits the context.',
+          tasks: [
+            '"The new policy was announced by the principal." → rewrite as active. (context: a newsletter about the principal\'s initiative)',
+            '"Students completed the survey in under ten minutes." → rewrite as passive. (context: a research report focused on the survey data)',
+            '"The error was discovered during the audit." → rewrite as active. (context: a story where the auditor is the hero)',
+            '✦ Bonus: Write a paragraph about a community project in the passive voice. Then rewrite it in the active voice. Which is more engaging? Which is more appropriate for a formal report?',
+          ],
+        }
+      ),
+    },
+
+    3: {
+      Monday: lesson(
+        'Formal vs. informal vocabulary choices',
+        'Adapt vocabulary for audience',
+        {
+          title: 'I Do — Reading the Room',
+          instruction: 'The same idea can be expressed formally or informally depending on audience and purpose. Watch me show how vocabulary shifts between the two registers — and when each is appropriate.',
+          example: 'Informal: "The council totally stuffed up the rubbish collection." | Formal: "The council\'s waste management procedures were significantly inadequate."',
+          demonstration: '"Stuffed up" = informal — conversational, emotive, imprecise. "Significantly inadequate" = formal — measured, precise, appropriate for a report or letter of complaint. Same meaning, completely different register. Formal writing: Latinate vocabulary, precise nouns, measured tone. Informal: everyday words, contractions, emotional directness.',
+          tip: 'Formal = longer, Latinate words (commence, obtain, utilise). Informal = shorter, Saxon words (start, get, use). Match your register to your audience and purpose.',
+        },
+        {
+          title: 'We Do — Shift the Register',
+          instruction: 'Rewrite each sentence in the opposite register.',
+          sentences: [
+            '"We need to sort out the bus timetable — it\'s a total mess." → formal',
+            '"The government has initiated a comprehensive review of infrastructure funding." → informal',
+            '"Heaps of kids don\'t get enough to eat at school." → formal',
+          ],
+          prompt: 'What words need to change? What about sentence structure — does formal writing tend to be longer or shorter?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write the same idea in both registers.',
+          tasks: [
+            'The idea: "Local rivers are polluted and something needs to be done." Write one formal version and one informal version.',
+            'The idea: "Students work harder when they enjoy what they\'re learning." Write one formal version and one informal version.',
+            'The idea: "The new sports facility is great for the community." Write one formal version and one informal version.',
+            '✦ Bonus: Find a formal text (news article, report, letter) and an informal text (social media, conversation transcript) on the same topic. List five vocabulary differences between them.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Subject-verb agreement: final tricky cases',
+        'Master agreement rules',
+        {
+          title: 'I Do — The Last Hard Cases',
+          instruction: 'We\'ve covered most SVA rules across three terms. Now we tackle the final tricky cases that appear most in persuasive and formal writing: "none of," "a number of," "the number of," and compound subjects.',
+          example: '"<u>None</u> of the arguments <u>was</u> convincing." (none = singular) | "<u>A number of</u> students <u>have</u> raised concerns." (a number of = plural) | "<u>The number of</u> complaints <u>is</u> rising." (the number = singular)',
+          demonstration: '"None" is singular — replace with "not one" to feel it. "A number of" = plural (it means "several"). "The number of" = singular (it\'s a count — one number). "The team and the coach" = plural (two subjects joined by "and"). "Either the team or the coach" = singular (one or the other).',
+          tip: '"None" = singular. "A number of" = plural. "The number of" = singular. Two subjects joined by "and" = plural. "Either/or, neither/nor" = match the nearest subject.',
+        },
+        {
+          title: 'We Do — Choose the Verb',
+          instruction: 'Choose the correct verb for each sentence.',
+          sentences: [
+            '"None of the proposed solutions ___ (address/addresses) the root cause."',
+            '"A number of researchers ___ (has/have) challenged this finding."',
+            '"The number of native species at risk ___ (is/are) increasing."',
+          ],
+          prompt: 'Replace the subject with the test word. "None" → "not one." "A number of" → "several." Does the right verb become obvious?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write the correct form of the verb.',
+          tasks: [
+            '"None of the evidence ___ (support/supports) this conclusion."',
+            '"A number of iwi ___ (has/have) expressed concern about the proposal."',
+            '"The number of students participating in kapa haka ___ (has/have) doubled."',
+            '"Neither the principal nor the board members ___ (was/were) available for comment."',
+            '✦ Bonus: Write 5 sentences for a formal persuasive piece using: none of, a number of, the number of, a compound "and" subject, and an either/or subject. Check every verb agrees.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Compound sentences: building an argument',
+        'Use conjunctions persuasively',
+        {
+          title: 'I Do — FANBOYS in Persuasion',
+          instruction: 'In Term 2 we used FANBOYS in recount and report contexts. Now we use them to build arguments — where the conjunction choice signals the logical relationship between two claims. Watch how each one does a different argumentative job.',
+          example: '"Renewable energy is cost-effective, <u>yet</u> investment remains low." | "The evidence is clear, <u>so</u> policy must change." | "We can continue as we are, <u>or</u> we can act now."',
+          demonstration: '"Yet" = the contrast creates tension — something surprising or frustrating. "So" = logical result — the argument has momentum. "Or" = binary choice — creates urgency by implying the alternative is unacceptable. In persuasion, conjunction choice isn\'t just grammar — it\'s rhetoric.',
+          tip: '"Yet" = surprising contrast (good for highlighting hypocrisy or gaps). "So" = logical result (good for driving towards a conclusion). "Or" = binary choice (good for creating urgency).',
+        },
+        {
+          title: 'We Do — Choose for Persuasive Effect',
+          instruction: 'Join each pair of sentences with the FANBOYS conjunction that creates the strongest persuasive effect. Explain your choice.',
+          sentences: [
+            '"The science is settled. Governments continue to delay action."',
+            '"The data is compelling. The policy must be updated."',
+            '"We invest in prevention now. We pay far more for the consequences later."',
+          ],
+          prompt: 'What rhetorical effect do you want — contrast, logical result, or urgent choice? Which conjunction creates that effect?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a compound sentence for each argumentative purpose.',
+          tasks: [
+            'Highlight a surprising contrast in an argument about school lunches. Use "yet."',
+            'Drive towards a conclusion in an argument about recycling. Use "so."',
+            'Create an urgent binary choice in an argument about screen time. Use "or."',
+            '✦ Bonus: Write a persuasive paragraph of 5 sentences about a topic you care about. Use at least three different FANBOYS conjunctions. For each one, write a margin note explaining the rhetorical effect you intended.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: adjusting formality in a paragraph',
+        'Revise for audience',
+        {
+          title: 'I Do — The Formality Edit',
+          instruction: 'A piece of writing that mixes formal and informal registers feels inconsistent and unpolished. Watch me identify register inconsistency in a passage and bring it to a consistent formal level.',
+          example: '"The government\'s environmental policy has been totally useless. Significant biodiversity loss has occurred over the past decade, and it\'s basically the government\'s fault for not doing enough."',
+          demonstration: '"Totally useless" = informal ✗ → "demonstrably ineffective." "It\'s basically the government\'s fault" = informal ✗ → "responsibility lies primarily with government inaction." "Has occurred" and "significant biodiversity loss" = already formal ✓. One pass: replace every informal word or phrase with a formal equivalent.',
+          tip: 'Formality checklist: (1) No contractions. (2) No slang or colloquialisms. (3) No "I think/I feel" (use "evidence suggests" or "this demonstrates"). (4) Precise, Latinate vocabulary. (5) Full sentences, no fragments.',
+        },
+        {
+          title: 'We Do — Formality Edit Together',
+          instruction: 'Identify every informal word or phrase in this passage and replace it with a formal equivalent.',
+          sentences: [
+            '"Kids today are spending heaps of time on screens and it\'s really messing with their sleep. Loads of research shows this is a problem but parents just kind of ignore it. The government should totally do something about this before it gets worse."',
+          ],
+          prompt: 'Which words are informal? What formal alternatives would you use? Does the sentence structure also need adjusting?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this paragraph at a formal register suitable for a letter to the school board.',
+          tasks: [
+            '"We reckon the school should get better sports gear because the stuff we have now is totally falling apart. Heaps of students want to do more sport but can\'t because there\'s not enough equipment. It would be really great if the board could sort this out."',
+            '✦ Bonus: Write the same idea as two paragraphs — one informal (as if texting a friend) and one formal (as if writing to a council committee). List five specific vocabulary changes between the two versions.',
+          ],
+        }
+      ),
+    },
+
+    4: {
+      Monday: lesson(
+        'All apostrophe types: consolidation',
+        'Consolidate apostrophe use',
+        {
+          title: 'I Do — Three Types, One Mark',
+          instruction: 'The apostrophe does three different jobs and the rules for each are distinct. Watch me demonstrate all three in one lesson — contraction, singular possession, and plural possession — and show the test for each.',
+          example: 'Contraction: "it\'s" = it is | Singular possession: "the kaiako\'s feedback" | Regular plural possession: "the students\' work" | Irregular plural possession: "the children\'s project"',
+          demonstration: 'Test 1 — Is it a contraction? Expand it: "it\'s" → "it is" ✓. Test 2 — Is it possession? Find the owner: "the kaiako\'s" — one kaiako owns it → \'s. "the students\'" — multiple students own it → s\'. "the children\'s" — irregular plural, no s → \'s. Test 3 — Is it just a plural? No apostrophe ever.',
+          tip: 'Three tests in order: (1) Can I expand it to two words? → contraction. (2) Does someone own something? → possessive (singular \'s, regular plural s\', irregular plural \'s). (3) Is it just "more than one"? → NO apostrophe.',
+        },
+        {
+          title: 'We Do — Three Types in One Passage',
+          instruction: 'Add apostrophes where needed in this passage. Some words need them, some don\'t.',
+          sentences: [
+            '"The schools new policy means that students books must be covered. Its the boards decision, and the teachers have agreed its a good idea. The childrens reaction has been mixed — some students havent complained but others have.",',
+          ],
+          prompt: 'For each potential apostrophe: run the three tests. Contraction? Possessive (who owns it)? Or just a plural?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Correct all apostrophe errors in these sentences — some are missing, some are wrong.',
+          tasks: [
+            '"The iwis representatives met with the councils planning team to discuss the rivers future."',
+            '"Its not the students fault that the schools computers arent working."',
+            '"The womens team won three trophys, but the mens team didnt win any."',
+            '"Everyones invited to the principals farewell — its on at the staffrooms usual time."',
+            '✦ Bonus: Write a paragraph of 6 sentences about a school event. Use all three apostrophe types at least once each. Label each apostrophe with its type: C (contraction), SP (singular possession), PP (plural possession).',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Pronouns in formal writing: avoiding first person',
+        'Use appropriate pronouns',
+        {
+          title: 'I Do — Writing Without "I"',
+          instruction: 'Formal persuasive writing — reports, essays, letters — typically avoids first person ("I think," "In my opinion") because it sounds personal rather than evidential. Watch me show how to make strong arguments without using "I" once.',
+          example: '"I think the government should act on climate change." → "The evidence demands that the government act on climate change." | "In my opinion, this policy is flawed." → "This policy is demonstrably flawed on three counts."',
+          demonstration: '"I think" signals that this is just one person\'s view. "The evidence suggests" signals that reality supports the claim. The argument becomes stronger when it\'s grounded in evidence rather than personal opinion. Alternatives to "I": "the evidence shows / this demonstrates / research indicates / it is clear that / one might argue."',
+          tip: 'Replace "I think/believe/feel" with: "the evidence suggests / this demonstrates / research indicates / it is apparent that." Remove the person — let the argument stand on its own.',
+        },
+        {
+          title: 'We Do — Remove the "I"',
+          instruction: 'Rewrite each sentence removing the first person without losing the argument.',
+          sentences: [
+            '"I think schools should provide free lunches for all students."',
+            '"In my opinion, the current transport system is failing rural communities."',
+            '"I believe that young people are more environmentally aware than older generations."',
+          ],
+          prompt: 'What replaces "I think"? Does the argument feel stronger or weaker without the personal framing? Why?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each first-person sentence in formal, evidential language.',
+          tasks: [
+            '"I feel that the amount of homework students get is too much."',
+            '"We think our school needs a better library."',
+            '"I personally believe that sport should be compulsory in schools."',
+            '"In my view, the government isn\'t doing enough about housing."',
+            '✦ Bonus: Write a persuasive paragraph of 5 sentences on any topic — without using "I," "we," "my," or "our" once. Read it aloud. Does it sound more authoritative?',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Topic sentences: concluding arguments',
+        'Write effective conclusions',
+        {
+          title: 'I Do — The Sentence That Closes the Argument',
+          instruction: 'A concluding topic sentence does something different from an opening one — it synthesises rather than introduces. Watch me write strong conclusions that don\'t just repeat the argument but land it.',
+          example: 'Weak conclusion: "In conclusion, I have shown that schools should invest in gardens." | Strong conclusion: "When schools invest in gardens, they invest in food literacy, environmental responsibility, and student wellbeing — a return on investment no budget line can fully capture."',
+          demonstration: 'The weak conclusion just restates. The strong conclusion synthesises — it gathers the argument\'s threads and lands them in a way that feels final and resonant. Techniques: (1) broaden to the bigger picture, (2) use a metaphor or image, (3) pose an implicit challenge to the reader, (4) echo the opening with a twist.',
+          tip: 'Don\'t start a conclusion with "In conclusion" or "To summarise." Instead, synthesise: what is the bigger truth the argument has revealed? Say that.',
+        },
+        {
+          title: 'We Do — Strengthen the Conclusions',
+          instruction: 'Rewrite each weak conclusion using one of the synthesis techniques.',
+          sentences: [
+            '"In conclusion, I have argued that native trees should be planted in all urban areas."',
+            '"To summarise, we have seen that students need more sleep and schools should start later."',
+            '"In conclusion, young people should have a vote in local elections."',
+          ],
+          prompt: 'Which technique works best for each argument — bigger picture, metaphor, implicit challenge, or echo with a twist?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a strong concluding sentence for each argument.',
+          tasks: [
+            'Argument: more funding should go to mental health services in schools.',
+            'Argument: Aotearoa should plant a billion native trees in the next ten years.',
+            'Argument: competitive sport should not be compulsory in secondary school.',
+            '✦ Bonus: Write a full persuasive paragraph (6 sentences): strong opening topic sentence, two CEE sequences, strong concluding sentence. Make the conclusion synthesise rather than repeat.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: strengthening topic & concluding sentences',
+        'Revise structural sentences',
+        {
+          title: 'I Do — The Skeleton of the Argument',
+          instruction: 'In a persuasive piece, topic and concluding sentences are the skeleton — every other sentence depends on them. Watch me edit a passage by focusing only on the first and last sentence of each paragraph.',
+          example: 'Weak opening: "This paragraph will talk about funding." | Strong opening: "Chronic underfunding has left Aotearoa\'s public libraries unable to serve the communities that need them most." | Weak close: "So funding is important." | Strong close: "Without urgent reinvestment, we risk losing the last truly free public space most New Zealanders have access to."',
+          demonstration: 'The weak versions are vague and passive. The strong versions are specific, urgent, and tell the reader exactly why this matters. When editing, read only the first and last sentence of each paragraph. Do they carry the argument on their own?',
+          tip: 'The "skeleton test": read only the first and last sentence of every paragraph. Does the argument still make sense? Are those sentences doing the heavy lifting?',
+        },
+        {
+          title: 'We Do — Skeleton Edit',
+          instruction: 'Read only the first and last sentence of this paragraph. Rate them (weak/okay/strong) and rewrite the weak ones.',
+          sentences: [
+            '"This paragraph is about how screens affect young people. Research from several countries shows that teenagers who use screens for more than two hours a day outside school have significantly worse sleep quality than those who do not. A study by the University of Otago found that reduced sleep leads to lower academic performance and increased anxiety. So screens are bad for young people."',
+          ],
+          prompt: 'Does the opening sentence carry the argument? Does the closing sentence synthesise or just restate? What would make each stronger?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite the topic and concluding sentences of each paragraph extract to make them carry the full weight of the argument.',
+          tasks: [
+            'Opening: "I am going to talk about the environment." Closing: "The environment is very important." → rewrite both.',
+            'Opening: "Homework is something that students have to do." Closing: "That is why homework should be limited." → rewrite both.',
+            'Opening: "Sport is good for people." Closing: "So sport should be in schools." → rewrite both.',
+            '✦ Bonus: Apply the skeleton test to a piece of your own persuasive writing. Read only first and last sentences of each paragraph. Rate each one. Rewrite any that are weak.',
+          ],
+        }
+      ),
+    },
+
+    5: {
+      Monday: lesson(
+        'Hyphen, dash, ellipsis – full review',
+        'Consolidate advanced punctuation',
+        {
+          title: 'I Do — Three Marks, Three Jobs',
+          instruction: 'The hyphen, dash, and ellipsis look similar but do completely different things. Watch me demonstrate each clearly and show the common errors that arise when writers confuse them.',
+          example: 'Hyphen: "a well-known author" (joins compound adjective before noun) | Dash: "The answer — if there was one — lay somewhere in the archive." (parenthetical aside) | Ellipsis: "She reached for it... and missed." (suspense pause)',
+          demonstration: 'Hyphen: joins words that work together as one modifier before a noun ("well-known," "long-awaited," "three-year-old"). Dash: creates an aside — can replace brackets, adds drama. Ellipsis: creates a pause — suspense, trailing thought, or omission. Common errors: using a hyphen where a dash is needed; over-using ellipsis until it loses impact.',
+          tip: 'Hyphen = joining (compound modifier). Dash = aside or emphasis. Ellipsis = pause, suspense, or trailing thought. If you can replace it with brackets — it\'s a dash. If it joins two words before a noun — it\'s a hyphen.',
+        },
+        {
+          title: 'We Do — Choose the Right Mark',
+          instruction: 'Choose hyphen, dash, or ellipsis for each blank. Explain your choice.',
+          sentences: [
+            '"The long_awaited announcement finally came at noon."',
+            '"She opened the envelope_her hands trembling_and pulled out the letter."',
+            '"He thought he knew the answer_ but now he wasn\'t so sure."',
+          ],
+          prompt: 'Is this joining two words as a modifier? Creating a dramatic aside? Or creating a suspense pause?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add the correct mark (hyphen, dash, or ellipsis) to each sentence.',
+          tasks: [
+            '"The once_in_a_lifetime opportunity had arrived and she wasn\'t ready."',
+            '"The evidence_though incomplete_pointed clearly in one direction."',
+            '"She reached the top of the ridge_ and caught her breath."',
+            '"The award_winning writer gave a short but moving speech."',
+            '✦ Bonus: Write a paragraph of 5 sentences that uses all three marks at least once each. Label each one and write one sentence explaining why you used it there.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Verb forms: infinitive, gerund, participle',
+        'Understand verb forms',
+        {
+          title: 'I Do — Verbs That Don\'t Act Like Verbs',
+          instruction: 'Some verb forms are used as nouns, adjectives, or adverbs — not as the main verb of a sentence. Watch me demonstrate the infinitive, gerund, and participle and show how each is used.',
+          example: 'Infinitive (to + verb): "<u>To write</u> well takes practice." (used as subject) | Gerund (verb + -ing as noun): "<u>Writing</u> well takes practice." | Participle (verb + -ing or past form as adjective): "She handed back the <u>marked</u> essays." "The <u>writing</u> student paused."',
+          demonstration: 'Infinitive = "to + verb." Can be a subject ("To err is human"), an object ("She wanted to leave"), or an adverb ("She trained to compete"). Gerund = "-ing form used as a noun." "Swimming is good for you." Participle = "-ing or -ed form used as an adjective." "The exhausted runner. The running water."',
+          tip: 'Infinitive = to + verb (often a goal or purpose). Gerund = -ing form as a noun (the thing itself). Participle = -ing or -ed form describing a noun.',
+        },
+        {
+          title: 'We Do — Identify the Form',
+          instruction: 'Identify whether the underlined verb form is an infinitive, gerund, or participle.',
+          sentences: [
+            '"<u>Competing</u> at national level requires years of dedication."',
+            '"She paused <u>to consider</u> her options."',
+            '"The <u>carved</u> pounamu hung at the entrance to the wharenui."',
+          ],
+          prompt: 'Is it used as a noun? As a modifier for another noun? Or showing purpose? That tells you which form it is.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Use the verb form shown to complete or write each sentence.',
+          tasks: [
+            'Use the infinitive of "persuade" as the subject of a sentence about debate.',
+            'Use the gerund form of "advocate" as the object of a sentence about change.',
+            'Use the past participle of "inspire" as an adjective before a noun.',
+            'Use the present participle of "argue" as an adjective in a sentence about a speaker.',
+            '✦ Bonus: Write a paragraph of 5 sentences using at least one infinitive, one gerund, and one participle. Underline each and label its form.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Sentence variety: combining all types learned',
+        'Demonstrate sentence variety',
+        {
+          title: 'I Do — The Full Toolkit on Display',
+          instruction: 'Over four terms we\'ve built a complete sentence toolkit. This week we bring it all together — using every sentence type deliberately in persuasive writing. Watch me write a paragraph that uses the full range.',
+          example: '"Every child in Aotearoa deserves access to nutritious food at school. [Simple — direct claim] Hunger, which affects concentration and mood, makes learning almost impossible. [Complex with relative clause] Schools cannot teach and students cannot learn when basic needs go unmet. [Complex with "when"] Invest in school lunches, and you invest in the future of every community in this country. [Compound — imperative + result] Do it now." [Short for impact]',
+          demonstration: 'Notice: simple sentence for the bold claim. Relative clause for embedded evidence. Complex sentence for the logical condition. Compound sentence for the call to action. Short sentence for impact. Five sentence types, one paragraph. The variety keeps the reader engaged and creates rhetorical rhythm.',
+          tip: 'Before writing a persuasive paragraph, plan your sentence types. Where will you use a short punchy sentence? Where does a complex sentence with evidence belong? Variety is a deliberate choice.',
+        },
+        {
+          title: 'We Do — Plan and Build',
+          instruction: 'Plan a paragraph on the topic given, deciding which sentence type to use for each sentence before writing.',
+          sentences: [
+            'Topic: "More time should be given to creative arts in schools."',
+            'Plan: (1) Simple claim, (2) Complex with relative clause for evidence, (3) Complex with "because," (4) Compound for contrast, (5) Short for impact.',
+          ],
+          prompt: 'Write the paragraph following your plan. Does each sentence type do its intended job?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a persuasive paragraph on each topic using the sentence structure plan shown.',
+          tasks: [
+            'Topic: "Aotearoa should protect more marine reserves." Plan: simple claim → relative clause → because → compound → short.',
+            'Topic: "Schools should reduce the amount of testing." Plan: fronted adverbial → simple → complex → compound → short.',
+            '✦ Bonus: Write a full persuasive paragraph of 6–7 sentences on a topic you care about. Use at least five different sentence types. In the margin, label each sentence type and write one sentence explaining why you chose it for that moment in the argument.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: full peer edit for voice & clarity',
+        'Collaborative editing',
+        {
+          title: 'I Do — Editing for Voice and Clarity Together',
+          instruction: 'Today\'s edit has two focuses working together: voice (is the register consistent and appropriate?) and clarity (is the argument easy to follow?). Watch me edit a passage with both lenses at once.',
+          example: '"I think schools should totally invest in better libraries. Research shows that students who use libraries regularly do heaps better academically. The evidence is clear, so the government needs to sort this out."',
+          demonstration: 'Voice issues: "I think" → "evidence indicates"; "totally" → delete; "heaps better" → "significantly higher achievement"; "sort this out" → "prioritise this investment." Clarity issues: "regularly" is vague — how regularly? "The evidence is clear" — what evidence? Each fix improves both voice and clarity simultaneously.',
+          tip: 'Voice + clarity checklist: (1) No informal register in formal writing. (2) No "I think/feel/believe." (3) Every claim followed by evidence or explanation. (4) No vague words (heaps, sort of, totally). (5) Each paragraph has a clear topic sentence.',
+        },
+        {
+          title: 'We Do — Voice and Clarity Edit',
+          instruction: 'Edit this passage for both voice consistency and argument clarity.',
+          sentences: [
+            '"Young people today are really stressed about their futures. Loads of research shows that anxiety is getting worse in teenagers. I think schools should do more about this. Mental health support is kind of important and the government should put more money into it because it would help heaps of students."',
+          ],
+          prompt: 'Voice: which words/phrases break formal register? Clarity: where is the argument vague or unsupported? Fix both in your revision.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Swap a piece of persuasive writing with a partner. Edit it using the voice and clarity checklist.',
+          tasks: [
+            '✦ Voice check: Highlight every informal word or phrase. Suggest a formal alternative for each.',
+            '✦ Voice check: Circle every "I think/believe/feel." Suggest an evidential alternative.',
+            '✦ Clarity check: Underline every claim that has no evidence or explanation following it.',
+            '✦ Bonus: Rewrite your partner\'s weakest paragraph — the one with the most voice and clarity issues — as a model of formal, evidence-based persuasive writing.',
+          ],
+        }
+      ),
+    },
+
+    6: {
+      Monday: lesson(
+        'Vocabulary: evaluative language (\'significant\', \'crucial\')',
+        'Use academic vocabulary',
+        {
+          title: 'I Do — Words That Carry Weight',
+          instruction: 'Evaluative language expresses judgement and importance. In formal persuasive writing, these words signal to the reader that a claim or piece of evidence matters — and how much. Watch me use evaluative vocabulary to strengthen an argument.',
+          example: '"This is a <u>significant</u> problem." | "Access to clean water is <u>fundamental</u> to human dignity." | "The consequences of inaction are <u>profound</u> and <u>far-reaching</u>."',
+          demonstration: '"Significant" = more than ordinary, worth attention. "Crucial/critical" = absolutely necessary. "Fundamental" = at the very base of something. "Profound" = deep and serious. "Substantial" = large in size or importance. These words do more work than "big" or "important" — they carry authority and academic weight.',
+          tip: 'Evaluative vocabulary hierarchy: important → significant → crucial → fundamental. Each step up signals higher stakes. Choose the level that matches your argument — overusing "crucial" weakens it.',
+        },
+        {
+          title: 'We Do — Upgrade the Evaluative Language',
+          instruction: 'Replace the underlined word with a more precise evaluative alternative.',
+          sentences: [
+            '"The loss of native biodiversity is a <u>big</u> problem for Aotearoa\'s ecosystems."',
+            '"Access to quality education is <u>really important</u> for reducing inequality."',
+            '"The government\'s response has been <u>pretty inadequate</u> given the scale of the crisis."',
+          ],
+          prompt: 'What level of importance does the context demand? Which evaluative word best signals that to the reader?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Use the evaluative word given in a formal sentence on the topic shown.',
+          tasks: [
+            'Use "fundamental" in a sentence about te reo Māori in schools.',
+            'Use "profound" in a sentence about the effects of poverty on children.',
+            'Use "crucial" in a sentence about biodiversity protection.',
+            'Use "substantial" in a sentence about the cost of mental health support.',
+            '✦ Bonus: Write a persuasive paragraph of 5 sentences on a topic you care about. Use at least three different evaluative words. Underline each one — then check: is each one earning its place, or is one overused?',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Adverbs: linking adverbs (\'furthermore\', \'however\')',
+        'Use cohesive adverbs',
+        {
+          title: 'I Do — Adverbs That Build Argument Logic',
+          instruction: 'Linking adverbs (also called conjunctive adverbs) connect ideas between sentences and paragraphs in formal writing. They signal the logical relationship between points. Watch me use them to create a well-structured argument.',
+          example: '"The evidence is clear. <u>Furthermore</u>, the cost of inaction is rising. <u>However</u>, the government has yet to respond. <u>Nevertheless</u>, momentum is building."',
+          demonstration: '"Furthermore / Moreover / In addition" = adds supporting evidence. "However / Nevertheless / Nonetheless" = introduces contrast or qualification. "Therefore / Consequently / As a result" = signals logical conclusion. "For instance / For example" = introduces evidence. Each signals a different relationship between ideas.',
+          tip: 'Linking adverbs come at the start of a sentence (or after a semicolon), followed by a comma: "However, the data shows…" or "The data is clear; however, interpretation varies."',
+        },
+        {
+          title: 'We Do — Choose the Right Linking Adverb',
+          instruction: 'Choose the linking adverb that correctly signals the relationship between the sentences.',
+          sentences: [
+            '"Studies show that students who eat breakfast perform significantly better academically. ___, many students arrive at school without having eaten." (contrast)',
+            '"Native bird populations have declined sharply over the past century. ___, predator control has begun to reverse this trend in some regions." (addition of positive evidence)',
+            '"The policy has broad public support. ___, its implementation will require careful planning." (qualification)',
+          ],
+          prompt: 'What is the logical relationship — addition, contrast, result, or qualification? Which linking adverb signals that most precisely?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Connect each pair of sentences using the linking adverb shown.',
+          tasks: [
+            '"The current system is failing rural students." + "Furthermore" + (add a supporting point)',
+            '"The evidence for intervention is overwhelming." + "Nevertheless" + (add a contrasting point)',
+            '"Schools have reduced single-use plastic significantly." + "Consequently" + (add the result)',
+            '✦ Bonus: Write a persuasive paragraph of 5–6 sentences on any topic. Use a different linking adverb between each pair of sentences. Label each one and identify the relationship it signals.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Varied sentence openings: full technique review',
+        'Apply all opener techniques',
+        {
+          title: 'I Do — The Complete Opener Toolkit',
+          instruction: 'Over four terms we\'ve built a full repertoire of sentence openers. Today we review all of them in the context of persuasive writing and show how varied openers create rhetorical rhythm. Watch me open six sentences six different ways.',
+          example: '"<u>Across Aotearoa,</u> thousands of students lack access to adequate learning resources. [fronted adverbial — place] | <u>Despite significant investment,</u> outcomes have not improved. [fronted adverbial — contrast] | <u>When schools are underfunded,</u> everyone suffers. [subordinate clause first] | <u>Research consistently shows</u> that the gap is widening. [subject + adverb] | <u>Investing now</u> costs far less than managing the consequences later. [gerund as subject] | <u>Act.</u> [imperative — one word for impact]"',
+          demonstration: 'Each opener type creates a different effect: place openers ground us, contrast openers create tension, subordinate-first openers create condition, adverb openers add precision, gerund openers emphasise the action, imperatives create urgency. Varying them keeps the reader engaged.',
+          tip: 'Before writing, plan your openers. Avoid starting more than one sentence the same way. The most powerful opener in persuasion? A short imperative after a long sentence.',
+        },
+        {
+          title: 'We Do — Six Openers, One Topic',
+          instruction: 'Write a sentence about school mental health support using each opener type.',
+          sentences: [
+            '(1) Fronted adverbial of place | (2) Fronted adverbial of contrast ("Despite…") | (3) Subordinate clause first ("When…") | (4) Linking adverb ("Furthermore,…") | (5) Gerund as subject | (6) Short imperative',
+          ],
+          prompt: 'Which opener feels most powerful for the argument? Which creates the most urgency? Which would you use as a concluding sentence?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence using each opener type for a persuasive piece on the given topic.',
+          tasks: [
+            'Topic: more funding for public libraries. Write one sentence with each opener type from the lesson.',
+            'Topic: compulsory te reo Māori in all schools. Write one sentence with each opener type.',
+            '✦ Bonus: Write a full persuasive paragraph of 6 sentences on a topic you care about. Use a different opener type for every sentence. In the margin, label each opener type and write one sentence explaining the effect you intended.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: replacing weak vocabulary in an argument',
+        'Revise for impact',
+        {
+          title: 'I Do — Vocabulary That Carries the Argument',
+          instruction: 'In persuasive writing, every word is a choice. Weak vocabulary makes arguments feel uncertain and unconvincing. Watch me audit a persuasive passage for weak vocabulary and replace every word that isn\'t earning its place.',
+          example: '"This is a big problem that affects lots of people and the government should do something about it." → "This is a <u>systemic failure</u> that affects <u>over a million New Zealanders</u> and demands <u>urgent legislative intervention</u>."',
+          demonstration: '"Big problem" → "systemic failure" (names the nature of the problem). "Lots of people" → "over a million New Zealanders" (specific, grounded). "Do something about it" → "demands urgent legislative intervention" (specific action, appropriate register). Three swaps — completely different impact.',
+          tip: 'Weak vocabulary audit for persuasion: (1) Vague nouns ("thing," "issue," "problem") — name them precisely. (2) Weak verbs ("do," "make," "get") — use action verbs with intent. (3) Vague quantity ("lots," "many," "some") — use specific figures or "significant" + noun.',
+        },
+        {
+          title: 'We Do — Audit and Upgrade',
+          instruction: 'Audit this passage for weak vocabulary. List every weak word, then rewrite the passage.',
+          sentences: [
+            '"There are lots of problems with the way things are done at the moment. Many people are affected and it is getting worse. The government needs to do something soon or things will get really bad. This is an important issue and people need to know about it."',
+          ],
+          prompt: 'List every vague noun, weak verb, and imprecise quantity. What specific, formal alternatives could replace each one?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each sentence replacing all weak vocabulary with precise, formal alternatives.',
+          tasks: [
+            '"There are lots of issues with how the school does things."',
+            '"Many kids are affected by this and it is a big deal."',
+            '"The government should do something about the bad stuff that is happening."',
+            '"Things need to change soon or it will get worse."',
+            '✦ Bonus: Apply the three-part vocabulary audit to a piece of your own persuasive writing: (1) vague nouns, (2) weak verbs, (3) imprecise quantities. Replace every one. Count the upgrades.',
+          ],
+        }
+      ),
+    },
+
+    7: {
+      Monday: lesson(
+        'All colons & semicolons: final practice',
+        'Consolidate high-level punctuation',
+        {
+          title: 'I Do — Colons and Semicolons Side by Side',
+          instruction: 'We\'ve used colons and semicolons across three terms. Today we consolidate both in one lesson — showing the difference, reviewing the rules, and practising in formal persuasive contexts.',
+          example: 'Semicolon: "The evidence is compelling; the case for change is clear." | Colon (list): "Three changes are needed: increased funding, better training, and clearer accountability." | Colon (explanation): "The reason is simple: underfunded schools cannot deliver equity."',
+          demonstration: 'Semicolon = joins two complete, closely related sentences. Colon (list) = complete sentence before it, list after it. Colon (explanation) = complete sentence before it, explanation or elaboration after it. Key test: both sides of a semicolon must be complete sentences. Before a colon must be a complete sentence.',
+          tip: 'Semicolon = two equal complete sentences, closely related. Colon = complete sentence → then a list OR an explanation/elaboration. Never use a colon after "is" or a verb if it breaks the sentence.',
+        },
+        {
+          title: 'We Do — Semicolon or Colon?',
+          instruction: 'Choose the correct mark for each sentence and explain why.',
+          sentences: [
+            '"The report identified one overriding concern ___ a lack of qualified teachers in rural areas."',
+            '"Funding has increased significantly ___ outcomes have not improved at the same rate."',
+            '"Three factors contribute to the problem ___ poverty, geographic isolation, and inconsistent policy."',
+          ],
+          prompt: 'Is the second part a list, an explanation, or a complete equal sentence? That tells you which mark to use.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Add either a semicolon or colon to each sentence and explain your choice.',
+          tasks: [
+            '"The argument rests on one fundamental principle ___ all children deserve equal access to education."',
+            '"Biodiversity loss is accelerating ___ half of Aotearoa\'s native species are now threatened."',
+            '"The solution requires four things ___ political will, sustained funding, community engagement, and time."',
+            '"The evidence is not ambiguous ___ the current approach is failing."',
+            '✦ Bonus: Write 6 sentences for a persuasive piece — two using semicolons, two using colons for lists, two using colons for explanation. Label each one.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Tense: maintaining consistency across text types',
+        'Apply tense across genres',
+        {
+          title: 'I Do — Which Tense for Which Text Type',
+          instruction: 'Different text types use different tenses — and staying consistent within each is essential. Watch me show the conventions for four text types and demonstrate how tense drift weakens writing.',
+          example: 'Recount (past): "The team <u>competed</u> in Wellington and <u>won</u> the regional title." | Argument (present): "The evidence <u>shows</u> that investment <u>works</u>." | Instructions (present/imperative): "<u>Begin</u> with a topic sentence." | Narrative (past): "She <u>reached</u> the summit as the sun <u>set</u>."',
+          demonstration: 'Recounts = simple past (narrating events that happened). Arguments/essays = simple present (evidence and claims exist now). Instructions = present or imperative (timeless advice). Narrative = past (story events). The error: writing an argument in past tense ("the evidence showed") or a recount in present tense ("she runs to the bus").',
+          tip: 'Match tense to text type: Argument = present. Recount = past. Instructions = present/imperative. Narrative = past. Check every verb in a paragraph matches.',
+        },
+        {
+          title: 'We Do — Identify the Tense Drift',
+          instruction: 'Read each passage. Identify the dominant tense and find any verbs that have drifted.',
+          sentences: [
+            '"Research consistently shows that students perform better when they ate breakfast. Studies have confirmed this link, and the evidence suggested that schools should respond."',
+            '"Last week, the team travels to Wellington for the regional competition. They competed in three events and won two. Everyone was proud of what they achieve."',
+          ],
+          prompt: 'What is the dominant tense? Which verbs have drifted? What should they be?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite each passage with consistent tense throughout.',
+          tasks: [
+            '"The policy was introduced in 2019. It aims to reduce emissions by 30%. Early results showed it was working but critics argued the targets were not ambitious enough."',
+            '"She walked to the podium. The audience goes quiet. She begins her speech and her voice is steady. She spoke for ten minutes."',
+            '✦ Bonus: Write one paragraph in each of these text types: argument (present tense), recount (past tense), and instructions (imperative). Underline every verb and confirm the tense is consistent throughout each.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Complex sentences: full subordination toolkit',
+        'Demonstrate subordination mastery',
+        {
+          title: 'I Do — Every Subordinating Conjunction in One Place',
+          instruction: 'Over four terms we\'ve used many subordinating conjunctions. Today we bring them all together and show how each one creates a different logical relationship in persuasive writing.',
+          example: '"<u>Although</u> progress has been made, significant challenges remain. [contrast] | <u>Unless</u> funding increases, the gap will widen. [condition] | <u>Because</u> the evidence is clear, action is overdue. [cause] | <u>While</u> some argue for delay, every year of inaction has a cost. [simultaneous contrast]"',
+          demonstration: 'AAAWWUBBIS as a reminder: Although, As, After, While, When, Until, Because, Before, If, Since. Each creates a different relationship: contrast (although/while), condition (unless/if/until), cause (because/since), time (when/after/before/as). In persuasion, choosing the right subordinating conjunction shapes the logic of the argument.',
+          tip: 'Persuasion toolkit: "Although" = acknowledge and dismiss the counter-argument. "Unless" = conditional urgency. "Because" = causal logic. "While" = simultaneous contrast. These are your four most powerful subordinating conjunctions in formal argument.',
+        },
+        {
+          title: 'We Do — Build the Complex Argument',
+          instruction: 'Write a complex sentence for each argumentative purpose using the conjunction shown.',
+          sentences: [
+            'Acknowledge a counter-argument and dismiss it. Use "Although."',
+            'Create conditional urgency about inaction. Use "Unless."',
+            'Provide a causal link between evidence and conclusion. Use "Because."',
+            'Create a simultaneous contrast between two groups. Use "While."',
+          ],
+          prompt: 'Does your complex sentence advance the argument? Does the subordinate clause earn its place?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a complex sentence using each conjunction for a persuasive piece on the given topic.',
+          tasks: [
+            'Topic: "Schools should teach financial literacy." Write one complex sentence using although, unless, because, and while.',
+            'Topic: "Aotearoa should become carbon neutral by 2040." Write one complex sentence using although, unless, because, and while.',
+            '✦ Bonus: Write a persuasive paragraph of 6 sentences about a topic you care about. Use at least four different subordinating conjunctions. Label each one and write a margin note explaining the argumentative job it is doing.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: improving argument cohesion',
+        'Revise for logical flow',
+        {
+          title: 'I Do — Does the Argument Flow?',
+          instruction: 'A persuasive piece can have strong individual sentences but still feel disconnected — if there are no logical bridges between them. Watch me edit a passage for argument cohesion: making each sentence build on the last.',
+          example: '"Screen time is increasing. Children are sleeping less. Academic performance is declining. Something must be done."',
+          demonstration: 'Each sentence is correct but the argument lurches — there are no connections. Revision: "Screen time among children is increasing at an alarming rate; as a result, sleep quality has declined significantly. Consequently, academic performance is suffering — a direct cost that falls on schools and families alike. The link is clear: action can no longer be delayed." Now each sentence builds on the last through linking adverbs, pronouns, and echoed ideas.',
+          tip: 'Cohesion checklist for arguments: (1) Does each sentence refer back to the last? (2) Are linking adverbs signalling the logic? (3) Are key terms echoed (not just repeated) across sentences? (4) Does the paragraph have momentum — does it build towards something?',
+        },
+        {
+          title: 'We Do — Repair the Cohesion',
+          instruction: 'Rewrite this disconnected passage so each sentence builds logically on the last.',
+          sentences: [
+            '"Native species are declining. Predators are a problem. The government has a pest control programme. Many areas are not covered. Communities are doing their own work. Funding is limited."',
+          ],
+          prompt: 'Which sentences can be linked with a semicolon or linking adverb? Where does a pronoun pull ideas together? What is the argument building towards?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Rewrite this passage so the argument flows with clear logical connections between every sentence.',
+          tasks: [
+            '"Young people have good ideas. Adults don\'t always listen. This is a problem. Young people know about the issues. They should have more say. Things would be better."',
+            '✦ Bonus: Write a cohesive persuasive paragraph of 5–6 sentences on any topic. Every sentence must connect to the previous one through at least one cohesive device (linking adverb, pronoun, echoed key term, or logical connector). Label each device.',
+          ],
+        }
+      ),
+    },
+
+    8: {
+      Monday: lesson(
+        'Spelling: consolidation of year\'s tricky words',
+        'Review year\'s spelling patterns',
+        {
+          title: 'I Do — The Year\'s Trickiest Words in One Place',
+          instruction: 'Across four terms we\'ve worked on spelling strategies. Today we bring together the year\'s trickiest words and apply our full toolkit: roots, suffixes, mnemonics, and Look-Say-Cover-Write-Check.',
+          example: '"necessary" (one c, two s) | "separate" (a rat inside) | "environment" (en-viron-ment) | "government" (govern + ment) | "Parliament" (I AM in parlia-MENT) | "rhythm" (Rhythm Has Your Two Hips Moving)',
+          demonstration: 'Every tricky word can be cracked with the right strategy. The key is owning your personal list — the words YOU always misspell. For each: (1) identify the tricky part, (2) create a strategy (mnemonic, root, break-into-parts), (3) test yourself repeatedly. Knowing the trick is only the first step — the repetition is what makes it stick.',
+          tip: 'After today, keep a personal spelling list. Every time you misspell a word in your own writing — add it to the list. Review it every Friday.',
+        },
+        {
+          title: 'We Do — Crack These Together',
+          instruction: 'Create a spelling strategy for each word, then use Look-Say-Cover-Write-Check.',
+          sentences: [
+            '"Necessary" — one collar, two socks (1 c, 2 s). Write it 5 times.',
+            '"Argument" — people often add an "e": argu-ment, not argue-ment. Write it 5 times.',
+            '"Definitely" — contains "finite." It is de-FINITE-ly. Write it 5 times.',
+          ],
+          prompt: 'Can you invent a better strategy for any of these? What\'s the trickiest part of each word?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Create a personal strategy for each word and test yourself.',
+          tasks: [
+            '"conscience" — think: con-SCIENCE. Create a strategy and write it 5 times.',
+            '"privilege" — no "d": privi-LEGE. Create a strategy and write it 5 times.',
+            '"occurrence" — double c, double r: oc-cur-rence. Write it 5 times.',
+            '"perseverance" — per-SEVERE-ance (you have to be severe to persevere). Write it 5 times.',
+            '✦ Bonus: Create your own "Top 10 Trickiest Words" list from across the year. For each word, write the strategy that will help you remember it. Test yourself on all 10 without looking.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Prepositional phrases: review all uses',
+        'Consolidate prepositional use',
+        {
+          title: 'I Do — Everything Prepositions Can Do',
+          instruction: 'Over four terms we\'ve used prepositional phrases for place, time, direction, manner, and atmosphere. Today we review all their uses and show how they work across text types — narrative, informational, and persuasive.',
+          example: 'Place: "<u>At the centre of the debate</u> lies a fundamental question of equity." | Time: "<u>Over the past decade,</u> investment has declined." | Direction: "Resources flow <u>away from</u> rural communities." | Manner: "The policy was introduced <u>without consultation.</u>" | Atmosphere: "<u>In the shadow of indifference,</u> communities are struggling."',
+          demonstration: 'Notice how prepositional phrases work in persuasive writing — they\'re not just describing setting. "At the centre of the debate" frames the argument. "Over the past decade" establishes the timeframe for evidence. "Without consultation" implies criticism through precision. In formal writing, prepositional phrases carry argument as much as description.',
+          tip: 'In persuasive writing, use prepositional phrases to: anchor evidence in time ("over the past decade"), frame the debate ("at the heart of this issue"), and imply criticism through precision ("without adequate funding").',
+        },
+        {
+          title: 'We Do — Prepositional Phrases Across Contexts',
+          instruction: 'Write a prepositional phrase that does each job in the context given.',
+          sentences: [
+            'Anchor an argument about education in time. ("Over…" or "In the past…")',
+            'Frame what is at stake in a debate about te reo Māori. ("At the heart of…")',
+            'Imply criticism of a government policy through a precise prepositional phrase.',
+          ],
+          prompt: 'Does the prepositional phrase do more than describe — does it carry part of the argument?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence using a prepositional phrase for each purpose.',
+          tasks: [
+            'Use a time prepositional phrase to establish urgency in an argument about climate change.',
+            'Use a place prepositional phrase to frame a debate about rural education.',
+            'Use a manner prepositional phrase to imply criticism in an argument about housing policy.',
+            '✦ Bonus: Write a persuasive paragraph of 5 sentences on a topic you care about. Use a different type of prepositional phrase in at least four sentences. Label each type.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Fronted adverbials: full repertoire review',
+        'Demonstrate opener variety',
+        {
+          title: 'I Do — Every Opener Type in Persuasion',
+          instruction: 'Fronted adverbials open sentences with a clause or phrase that comes before the subject. In persuasive writing, they create structure, rhythm, and emphasis. Watch me demonstrate all the types we\'ve learned and show how each one serves a different persuasive purpose.',
+          example: 'Time: "<u>Over the past two decades,</u> the evidence has been building." | Contrast: "<u>Despite widespread concern,</u> action has been slow." | Place: "<u>Across Aotearoa,</u> communities are calling for change." | Condition: "<u>Without urgent intervention,</u> the situation will worsen." | Manner: "<u>By prioritising prevention over cure,</u> we can reduce long-term costs."',
+          demonstration: '"Over the past two decades" = time, establishes evidence base. "Despite widespread concern" = contrast, creates tension. "Across Aotearoa" = place, broadens scope. "Without urgent intervention" = condition, creates urgency. "By prioritising prevention" = manner, suggests solution. In persuasion, each type does a specific argumentative job.',
+          tip: 'In persuasion, the most powerful fronted adverbials are: contrast ("Despite…") for tension, condition ("Without…") for urgency, and time ("Over the past…") for establishing evidence.',
+        },
+        {
+          title: 'We Do — Match the Opener to the Purpose',
+          instruction: 'Write a fronted adverbial of the type shown for each persuasive purpose.',
+          sentences: [
+            'Create tension by acknowledging that concern exists but action hasn\'t followed. (contrast opener)',
+            'Create urgency by showing what will happen if nothing changes. (condition opener)',
+            'Establish an evidence base by anchoring your argument in time. (time opener)',
+          ],
+          prompt: 'Does your fronted adverbial do the argumentative job it\'s supposed to? Is the comma in the right place?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence for each opener type on the topic of protecting Aotearoa\'s natural environment.',
+          tasks: [
+            'A time opener that anchors the argument in recent history.',
+            'A contrast opener that acknowledges progress but highlights a gap.',
+            'A condition opener that creates urgency about inaction.',
+            'A manner opener that suggests a solution.',
+            '✦ Bonus: Write a persuasive paragraph of 6 sentences on a topic you care about. Use a different fronted adverbial type to open at least four sentences. Label each type and write a margin note explaining the persuasive purpose.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: applying a full editing checklist',
+        'Self-edit systematically',
+        {
+          title: 'I Do — The Complete Year Editing Checklist',
+          instruction: 'Across four terms we\'ve built a comprehensive editing toolkit. Today we bring together the full checklist and apply it systematically. Watch me work through a piece using every layer.',
+          example: 'Pass 1: Capitals & full stops | Pass 2: Apostrophes (all 3 types) | Pass 3: Commas (lists, fronted adverbials, complex sentences) | Pass 4: Colons & semicolons | Pass 5: Voice (register, no first person, no vague vocabulary) | Pass 6: Sentence variety (opener types, length variation) | Pass 7: Cohesion (linking adverbs, pronouns, logical flow)',
+          demonstration: '"its important that student\'s learn financial literacy at school. lots of young people dont know how to manage money and this causes problems later." Seven passes: Pass 1 — capital I, full stop. Pass 2 — it\'s, students (no apostrophe). Pass 3 — comma after fronted. Pass 5 — "lots of," "causes problems" → formal register. Pass 7 — needs a linking adverb between sentences.',
+          tip: 'Seven passes, seven focuses. Print your work. Use a different colour for each pass. Don\'t try to do them all at once — you will miss things. One pass, one rule, every time.',
+        },
+        {
+          title: 'We Do — Full Checklist Together',
+          instruction: 'Work through this passage using every pass of the full checklist.',
+          sentences: [
+            '"in New Zealand lots of kids dont get enough physical activity at school its really important for their health and wellbeing. research shows that student\'s who are active do better academically. the government should do something about this. schools need better facilities and more time for sport and this would help heaps of children."',
+          ],
+          prompt: 'Go through all seven passes. How many errors can you find across all passes? Which passes find the most issues in this passage?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Apply the complete seven-pass checklist to this passage.',
+          tasks: [
+            '"aotearoa\'s rivers are in serious trouble. farming and urban runoff has caused major damage to many of our most important waterways. scientist\'s have found that water quality has declined significantly over the past 20 year\'s. its really worrying and the government needs to do more to protect these taonga. we all have a responsibility to look after our environment and if we dont act now things will get much worse."',
+            '✦ Bonus: Self-edit a substantial piece of your own persuasive writing using the complete seven-pass checklist. Annotate every change you make and label which pass it belongs to.',
+          ],
+        }
+      ),
+    },
+
+    9: {
+      Monday: lesson(
+        'Language devices: full year review',
+        'Identify and apply techniques',
+        {
+          title: 'I Do — The Full Year Language Device Toolkit',
+          instruction: 'Across four terms we\'ve studied vocabulary and language devices for description, narrative, and persuasion. Today we review all of them in one lesson — and show how they work across text types.',
+          example: 'Alliteration: "bold, brilliant, and brave" | Onomatopoeia: "the waves crashed and hissed" | Personification: "the river mourned its lost clarity" | Simile: "as clear as conscience" | Metaphor: "Our rivers are the arteries of the land" | Evaluative vocab: "fundamental, crucial, profound"',
+          demonstration: '"Our rivers are the arteries of the land — and right now, they are bleeding." Metaphor + personification working together. The same techniques we used in narrative (Term 3) work in persuasion (Term 4) — but the purpose shifts from creating atmosphere to creating conviction. Figurative language in argument makes abstract claims concrete and memorable.',
+          tip: 'The most powerful figurative device in persuasion? Metaphor — because it reframes the debate. "Rivers as arteries" makes cutting pollution funding feel like refusing medical treatment.',
+        },
+        {
+          title: 'We Do — Devices in Persuasion',
+          instruction: 'Write a persuasive sentence using the language device shown.',
+          sentences: [
+            'Use a metaphor to reframe the argument about school funding.',
+            'Use personification to give native forests agency in an environmental argument.',
+            'Use alliteration to make a persuasive claim more memorable.',
+          ],
+          prompt: 'Does the device strengthen the argument — or just decorate it? A good figurative device in persuasion makes the argument feel inevitable.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence using each device for a persuasive piece about protecting te taiao (the natural world).',
+          tasks: [
+            'A metaphor that reframes the cost of environmental inaction.',
+            'Personification that gives a natural feature (river, forest, mountain) a human voice.',
+            'Alliteration in a memorable call to action.',
+            'A simile that makes the scale of biodiversity loss concrete.',
+            '✦ Bonus: Write a persuasive paragraph of 5 sentences that uses at least three different language devices. Underline each device and label it. Write a one-sentence explanation of the persuasive effect each one creates.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Grammar: year review game / quiz',
+        'Consolidate all grammar',
+        {
+          title: 'I Do — Year Grammar Challenge',
+          instruction: 'Across four terms we\'ve covered every major grammar concept in the NZ Years 5–6 curriculum. Today we review all of them through challenge sentences — find the rule, apply it, explain it.',
+          example: '"Everyone in both classes have submitted their work." (error: SVA — "everyone" is singular → "has submitted") | "The team\'s trophy, which had been missing for a week, was finally found." (relative clause with "which" — comma rules correct) | "She was going to present, but the projector had already been packed away." (past progressive + passive voice)',
+          demonstration: 'Grammar review challenge: identify errors AND explain the rule. Not just "this is wrong" but "this is wrong because [rule]." Knowing the reason means you can apply it in new contexts — not just correct examples you\'ve seen before.',
+          tip: 'Year grammar toolkit: SVA, pronouns, collective nouns, tenses (simple, progressive, perfect), passive voice, modal verbs, relative clauses, gerunds, conjunctions (coordinating + subordinating). If you can\'t name the rule — look it up and write it in your own words.',
+        },
+        {
+          title: 'We Do — Grammar Challenge Passage',
+          instruction: 'Find and name every grammar feature (correct or incorrect) in this passage.',
+          sentences: [
+            '"Although everyone in the group were keen to start, neither the kaiako nor the students was ready. The equipment, which had been packed the previous evening, needed to be unpacked and set up. By the time everything were in place, an hour had past."',
+          ],
+          prompt: 'Find: SVA errors, tense issues, relative clause punctuation, passive voice, modal verbs. Name the rule for each error and explain the correct form.',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence that demonstrates each grammar concept, then label it.',
+          tasks: [
+            'A sentence using the past perfect to show something that happened before the main event.',
+            'A sentence using a relative clause with "which" (with commas) and one with "that" (without commas).',
+            'A sentence using passive voice where the agent is intentionally hidden.',
+            'A sentence using a modal verb to show obligation and one to show possibility.',
+            '✦ Bonus: Write a paragraph of 6 sentences that contains at least one example of each of these: past perfect, relative clause, passive voice, modal verb, collective noun, and subordinating conjunction. Label each one.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Sentences: showcase & celebrate best work',
+        'Reflect on progress',
+        {
+          title: 'I Do — What a Year of Sentences Looks Like',
+          instruction: 'Today we celebrate the sentence toolkit you\'ve built across the year. Watch me write a paragraph that demonstrates every major sentence type — and show how far a writer can go when they own their tools.',
+          example: '"Access to quality education is not a privilege; it is a right. [semicolon joining equals] Although progress has been made, significant gaps remain — particularly in rural and low-income communities. [contrast + dash aside] When schools are adequately resourced, students thrive. [complex — condition] The evidence, which spans four decades of research, is unambiguous. [relative clause] Act now. [short imperative for impact]"',
+          demonstration: 'Five sentences. Five types. Every one chosen deliberately. This is what a writer\'s toolkit looks like in action. You have learned every one of these this year. Today you showcase that.',
+          tip: 'Showcasing isn\'t showing off — it\'s demonstrating mastery. When you write a sentence using a technique deliberately and it works, that\'s evidence of growth. Celebrate it.',
+        },
+        {
+          title: 'We Do — Our Best Sentences',
+          instruction: 'Each student shares their best sentence from the year — one they\'re proud of. Discuss what makes it effective.',
+          sentences: [
+            'What technique does the sentence use? What effect does it create? What would the sentence look like without the technique?',
+          ],
+          prompt: 'What makes a sentence something to be proud of? Is it the technique, the effect, the vocabulary — or something else?',
+        },
+        {
+          title: 'You Do — Your Showcase Paragraph',
+          instruction: 'Write a showcase paragraph that demonstrates the breadth of your sentence toolkit.',
+          tasks: [
+            'Write a paragraph of 6–7 sentences on any topic you care about. Use as many different sentence types from across the year as you can.',
+            'Label every sentence type in the margin.',
+            'Underline the technique you\'re most proud of.',
+            '✦ Bonus: Write a one-paragraph reflection: what is the most valuable thing you\'ve learned about writing sentences this year? Be specific — name a technique, explain what it does, and give an example from your own writing.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: student portfolio self-edit',
+        'Reflect and revise own writing',
+        {
+          title: 'I Do — Editing as Evidence of Growth',
+          instruction: 'A self-edit of portfolio writing is both an editing task and a reflection. Watch me demonstrate how to approach a portfolio piece: not just fixing errors but asking what this piece shows about your growth as a writer — and what one more edit could do to it.',
+          example: 'Portfolio edit questions: (1) What is the strongest sentence — and why? (2) What is the weakest sentence — and what would improve it? (3) What technique do you now know that you didn\'t use here — and where could it go? (4) What errors from earlier in the year are you no longer making?',
+          demonstration: 'Growth as a writer isn\'t just about getting things right — it\'s about noticing more. The writer you are now can see things in your earlier work that you couldn\'t see when you wrote it. That\'s growth. Editing your portfolio is evidence of it.',
+          tip: 'Portfolio edit: (1) fix the obvious errors first, (2) then ask "what could be better?" — not just "what is wrong." Upgrade one sentence type. Add one language device. Sharpen one piece of vocabulary. Three targeted upgrades per piece.',
+        },
+        {
+          title: 'We Do — Model Portfolio Edit',
+          instruction: 'Read this early-year passage. Edit it using the full year\'s toolkit and discuss what has been learned since it was written.',
+          sentences: [
+            '"I think the beach is a nice place. The waves are big and it is very fun. Lots of people go there. I like it because it is good. The sand is nice and white."',
+          ],
+          prompt: 'What is every specific technique from the year that could improve this passage? Upgrade it fully. Then write one sentence saying what the edit reveals about growth.',
+        },
+        {
+          title: 'You Do — Portfolio Self-Edit',
+          instruction: 'Choose a piece of writing from earlier in the year. Apply the portfolio edit process.',
+          tasks: [
+            'Step 1: Apply the complete seven-pass editing checklist.',
+            'Step 2: Identify the strongest sentence. Label it and explain why it works.',
+            'Step 3: Identify the weakest sentence. Rewrite it using a technique from later in the year.',
+            'Step 4: Add one language device that wasn\'t in the original.',
+            '✦ Bonus: Write a short reflection (one paragraph) on your development as a writer this year. Name three specific things you can now do that you couldn\'t do in Term 1. Use evidence from your portfolio.',
+          ],
+        }
+      ),
+    },
+
+    10: {
+      Monday: lesson(
+        'Review: punctuation – year overview',
+        'Year consolidation',
+        {
+          title: 'I Do — Every Punctuation Mark in One Passage',
+          instruction: 'This passage uses every punctuation mark we\'ve studied across the year. Watch me identify each one, name its rule, and explain the effect it creates.',
+          example: '"Although Aotearoa\'s rivers were once clear and cold — a taonga in the truest sense — decades of poor land use have left many of them degraded. The facts are stark: 76% of native freshwater fish species are threatened, and the number of swimming-safe rivers is declining. Nevertheless, it\'s not too late; communities across the country are already doing the work."',
+          demonstration: 'Comma after "Although" clause ✓ | Dash aside ✓ | Colon introducing evidence ✓ | Commas in list ✓ | Hyphen in compound modifier ✓ | Linking adverb + comma ✓ | Contraction apostrophe ✓ | Semicolon joining equal sentences ✓. Eight marks — every one earning its place.',
+          tip: 'Year punctuation toolkit: . , ! ? \' " : ; - — … ( ). Know the rule for each. Know when each one is the best choice. That\'s mastery.',
+        },
+        {
+          title: 'We Do — Full Punctuation Audit',
+          instruction: 'Read this passage and name every punctuation mark. For each one, state the rule and the effect.',
+          sentences: [
+            '"Despite decades of conservation work — some of it extraordinary — Aotearoa\'s biodiversity crisis continues. Three facts tell the story: we have the highest proportion of threatened species in the world; we\'ve lost over 50% of our native bush; and we continue to introduce predators by accident. It\'s not inevitable, however; with sustained commitment, it\'s reversible."',
+          ],
+          prompt: 'Go mark by mark. Rule and effect for every one. Can you find all eight types?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Punctuate this passage using every mark studied across the year.',
+          tasks: [
+            '"aotearoas young people face a challenging future rising costs climate change mental health pressures and a housing crisis that has locked out a generation nevertheless they are also the most environmentally aware socially conscious and civically engaged generation in our history the choice the choice that rests with us is whether we invest in them now or pay far greater costs later"',
+            '✦ Bonus: Write your own passage of 5–6 sentences that deliberately uses every punctuation mark from the year. Underline each one and label it.',
+          ],
+        }
+      ),
+      Tuesday: lesson(
+        'Review: grammar – year overview',
+        'Year consolidation',
+        {
+          title: 'I Do — Every Grammar Concept in One Passage',
+          instruction: 'This passage contains one example of every major grammar concept from across the year. Watch me find them all and name the rule each one demonstrates.',
+          example: '"Everyone in the group has a role to play. The iwi, which has managed this land for generations, knows its rhythms better than anyone. Although experts have been consulted, local knowledge remains fundamental. The restoration project had already begun when the funding was finally approved."',
+          demonstration: 'SVA (everyone has) ✓ | Relative clause with "which" + commas ✓ | Irregular possessive (iwi\'s — singular) ✓ | Subordinating conjunction "although" ✓ | Evaluative vocabulary "fundamental" ✓ | Past perfect (had already begun) ✓ | Passive voice (was finally approved) ✓.',
+          tip: 'Year grammar toolkit: nouns (proper, collective, abstract, count/non-count), verbs (action/state, tenses, modal, passive, gerund, participle), adjectives (comparison, placement), adverbs (type, degree, linking), pronouns (personal, possessive, relative), conjunctions (coordinating, subordinating), SVA (all cases).',
+        },
+        {
+          title: 'We Do — Full Grammar Hunt',
+          instruction: 'Find and label one example of every grammar concept from the year in this passage.',
+          sentences: [
+            '"Although a number of submissions were received, none of them addressed the fundamental issue. The committee, which had been deliberating for weeks, had already reached a preliminary conclusion by the time the final report arrived. Nevertheless, the evidence suggests that further consultation is crucial."',
+          ],
+          prompt: 'How many different grammar concepts can you identify? Can you find: SVA, relative clause, passive, perfect tense, linking adverb, modal, evaluative vocabulary, subordinating conjunction?',
+        },
+        {
+          title: 'You Do — Your Turn',
+          instruction: 'Write a sentence demonstrating each grammar concept.',
+          tasks: [
+            'One sentence using a collective noun as subject with the correct verb.',
+            'One sentence using the past perfect to show sequence.',
+            'One sentence using a relative clause with "which" (commas) and "that" (no commas).',
+            'One sentence using passive voice with the agent in a "by" phrase.',
+            '✦ Bonus: Write a paragraph of 7 sentences that contains at least one example of every grammar concept from the year overview above. Label each one in the margin.',
+          ],
+        }
+      ),
+      Wednesday: lesson(
+        'Review: sentence mastery – year showcase',
+        'Year consolidation',
+        {
+          title: 'I Do — The Year\'s Sentence Toolkit Complete',
+          instruction: 'Today we celebrate sentence mastery. This is the complete toolkit you\'ve built over four terms. Watch me write one sentence of each type and explain the effect each creates.',
+          example: '"Aotearoa\'s rivers need our protection." [Simple — direct claim] | "The rivers, which have sustained life for millennia, are now under threat." [Complex — relative clause] | "The science is clear, yet the policy response has been inadequate." [Compound — "yet" for contrast] | "Although progress has been made, the pace must accelerate." [Complex — contrast opener] | "Act now." [Short — imperative for impact]',
+          demonstration: 'Each type: simple (claim), compound (connection), complex (condition/cause/contrast), relative clause (embedded evidence), fronted adverbial (opener variety), short sentence (impact). Together, they create writing that is clear, varied, persuasive, and alive.',
+          tip: 'Sentence mastery = knowing what each type does AND choosing it deliberately for effect. You\'ve been building this toolkit all year. Today — use all of it.',
+        },
+        {
+          title: 'We Do — Year Showcase',
+          instruction: 'Write a paragraph that uses every major sentence type from the year. Topic: something Aotearoa should protect or celebrate.',
+          sentences: [
+            'Use: simple, compound, complex (relative clause), complex (subordinating conjunction), fronted adverbial, short sentence for impact. Label every sentence type.',
+          ],
+          prompt: 'Which sentence type creates the most impact in your paragraph? Is the variety helping the argument?',
+        },
+        {
+          title: 'You Do — Year Showcase Paragraph',
+          instruction: 'Write your best paragraph of the year.',
+          tasks: [
+            'Topic: your choice. Purpose: your choice (narrative, persuasive, or descriptive).',
+            'Requirements: use at least six different sentence types; use at least two language devices; use at least three different sentence openers.',
+            'Label every technique in the margin.',
+            '✦ Bonus: Write a one-paragraph reflection on your journey as a writer this year. Identify: the technique you are most proud of mastering; the moment you noticed your writing improving; and one thing you still want to work on.',
+          ],
+        }
+      ),
+      Thursday: lesson(
+        'Editing: end-of-year celebration edit',
+        'Celebrate writing growth',
+        {
+          title: 'I Do — Editing as Celebration',
+          instruction: 'The final editing lesson of the year. Today we don\'t just fix — we celebrate what we can now see and do. Watch me take a piece of writing from the start of the year and edit it with everything we\'ve learned — turning it into something its author couldn\'t have written in Term 1.',
+          example: 'Term 1 version: "The beach was nice and there were lots of people there. The waves were big. I had a good time." | End-of-year version: "The beach hummed with summer — families spread across the sand, waves crashing in rhythmic arcs. Despite the crowds, there was space enough to breathe. It was, without question, exactly where I needed to be."',
+          demonstration: 'Every technique from the year: vocabulary upgrade, sentence variety, figurative language (personification — "beach hummed"), fronted adverbial contrast, evaluative vocabulary, short sentence for landing impact. One paragraph. Everything we\'ve learned. This is what growth looks like.',
+          tip: 'Growth as a writer is not just about what you write — it\'s about what you can now see. If you can see what needs improving, you have already grown. Edit with confidence.',
+        },
+        {
+          title: 'We Do — Class Celebration Edit',
+          instruction: 'As a class, take a piece of writing from Week 1 Term 1 and edit it together — applying everything from the full year toolkit.',
+          sentences: [
+            '"It was a sunny day. We went to the park. There were lots of things to do. I played on the swings. My friend came too. We had a good time and then went home."',
+          ],
+          prompt: 'Go through every layer: vocabulary, sentence variety, figurative language, punctuation, cohesion. How far can this piece go?',
+        },
+        {
+          title: 'You Do — Your Celebration Edit',
+          instruction: 'Choose your favourite piece of writing from across the year. Apply the complete editing toolkit one final time.',
+          tasks: [
+            'Step 1: Apply the full seven-pass checklist.',
+            'Step 2: Upgrade three pieces of vocabulary using what you\'ve learned.',
+            'Step 3: Add one language device that strengthens the piece.',
+            'Step 4: Vary two sentence openers using the full repertoire.',
+            '✦ Final reflection: Write one paragraph about your growth as a writer this year. Name three techniques you\'ve mastered, give an example of each from your own writing, and describe what you want to continue developing.',
+          ],
+        }
+      ),
+    },
+
+  },
 }
 
 // Utility: get a lesson by term/week/day
