@@ -32,6 +32,1336 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '3-10': [
+    {
+      q: '"Although the path had disappeared, she kept moving — the sound of the stream, which she could hear but not yet see, was pulling her forward..." Which punctuation mark creates a trailing-off suspense effect here?',
+      options: [
+        'The dash — it creates a dramatic pause before the main action',
+        'The ellipsis — it creates a pause that leaves the reader\'s imagination to fill the gap',
+        'The comma after "disappeared" — it separates the two clauses',
+        'The commas around "which she could hear but not yet see" — they set off the relative clause',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Despite the rain — which had turned the track to mud — Rangi kept his pace." What job do the dashes do here?',
+      options: [
+        'They replace a colon to introduce an explanation',
+        'They create a parenthetical aside — adding detail that could be removed without breaking the sentence',
+        'They signal a tense change from past to present',
+        'They replace speech marks around Rangi\'s thought',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The children\'s kapa haka group had performed beautifully." Which TWO grammar features appear in this sentence?',
+      options: [
+        'Present perfect tense and a relative clause',
+        'Irregular plural possessive ("children\'s") and past perfect tense ("had performed")',
+        'Collective noun and a modal verb',
+        'Fronted adverbial and subject-verb agreement',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"They, exhausted and elated, would remember this night forever." Where are the adjectives placed — and what effect does this create?',
+      options: [
+        'Before the noun — standard placement for smooth flow',
+        'After the linking verb — describing the state of the subject',
+        'After the pronoun, set off by commas — dramatic emphasis making the exhaustion and elation feel significant',
+        'At the end of the sentence — creating a trailing conclusion',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The ruru called twice, then silence swallowed the forest." Which Term 3 sentence technique is "silence swallowed the forest"?',
+      options: [
+        'Show don\'t tell — describing a physical symptom of an emotion',
+        'Personification — giving silence a human action (swallowing)',
+        'Simile — comparing silence to something that swallows',
+        'Sensory detail — appealing to the sense of hearing',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"She had been waiting for this moment for three years. It was over in seconds." What technique is used — and why is it effective?',
+      options: [
+        'Show don\'t tell — the waiting is shown through physical detail',
+        'Varied sentence length — the long sentence builds anticipation, the short sentence delivers the impact of how fast it ended',
+        'Past perfect — the waiting happened before another past moment',
+        'Fronted adverbial — the time phrase comes before the main clause',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Thursday\'s Term 3 checklist: Pass 2 says "Replace any \'she was [emotion]\'." Apply it to "Aroha was nervous as she waited to perform." Which revision correctly shows rather than tells?',
+      options: [
+        '"Aroha felt very nervous as she waited to perform on stage."',
+        '"Aroha was extremely nervous — she had never felt this nervous before."',
+        '"Aroha\'s hands twisted in her lap; she kept her eyes fixed on the door."',
+        '"Aroha, who was nervous, waited to perform for the audience."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s Pass 6: "At least one figurative language device." Apply it to: "The hall was big and the lights were very bright." Which revision adds a figurative device?',
+      options: [
+        '"The hall was enormous and the lights were extremely bright."',
+        '"The hall was large, and the lights were very, very bright."',
+        '"The hall stretched away like a held breath, and the lights blazed overhead."',
+        '"The very big hall had lights that were quite bright above her."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-9': [
+    {
+      q: '"The wind whispered through the tī kōuka." Monday\'s lesson says: "The verb you choose carries the mood." What mood does "whispered" create?',
+      options: [
+        'Danger and threat — whispering signals something sinister',
+        'Gentleness and secrecy — a hushed, intimate atmosphere',
+        'Joy and lightness — the wind is playful and cheerful',
+        'Power and violence — whispering shows restrained force',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The ocean clawed at the base of the cliff." Which human quality does "clawed" give the ocean — and what mood does it create?',
+      options: [
+        'Hunger and aggression — the ocean is attacking, dangerous, relentless',
+        'Sadness and longing — the ocean is reaching for something it cannot have',
+        'Playfulness and curiosity — the ocean is exploring the cliff face',
+        'Exhaustion — the ocean is weakly scraping at the cliff',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"Kiwi numbers have increased ___ intensive predator control was introduced." Is this a narrative or informational use — and which conjunction fits?',
+      options: [
+        'Narrative — "until" creates tension about when the increase will stop',
+        'Informational — "because" shows a cause-and-effect relationship',
+        'Narrative — "but" creates contrast between the numbers and the control',
+        'Informational — "although" qualifies the increase with a condition',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She kept paddling ___ she could no longer feel her arms." Is this narrative or informational — and which conjunction fits?',
+      options: [
+        'Informational — "because" explains why she stopped paddling',
+        'Narrative — "although" creates contrast but feels less urgent',
+        'Narrative — "until" shows her pushing to an extreme limit, creating tension',
+        'Informational — "before" sets up the sequence of events',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"At first, the waka moved slowly through the shallows. As the water deepened, the crew found their rhythm. By the time they cleared the harbour mouth, they were moving as one." What do the three underlined phrases do?',
+      options: [
+        'They are fronted adverbials of place — they show where the waka was at each point',
+        'They are time connectives — they move the paragraph forward in sequence and anchor each moment in time',
+        'They are subordinate clauses — each one depends on the main clause for meaning',
+        'They are relative clauses — each one adds extra information about the waka',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip says to vary time connectives — "don\'t just use \'then\' repeatedly." Why does repeating "then" weaken a paragraph?',
+      options: [
+        'Because "then" is grammatically incorrect as a connective',
+        'Because it makes every event feel equally important with no variation in pace or emphasis',
+        'Because "then" is only correct at the start of the final sentence',
+        'Because "then" signals past tense and can cause tense drift',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"In my opinion, I personally think that the ending was really quite a good one in actual fact." Thursday\'s lesson cuts this to "The ending was powerful." How many words were removed?',
+      options: ['Six words', 'Eight words', 'Ten words', 'Fourteen words'],
+      correct: 3,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Would removing this change the meaning? If no — cut it." Apply it to "I personally think." What is wrong with this phrase?',
+      options: [
+        '"Think" is a weak verb that should be replaced with "believe"',
+        '"I personally" is redundant — thinking is always personal, so "personally" adds nothing',
+        '"I think" should always be replaced with "in my opinion" in formal writing',
+        '"Personally" is informal and should be replaced with "in my view"',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-8': [
+    {
+      q: '"celebrate" + "-tion" = "celebration." Monday\'s tip says to drop the silent e before a vowel suffix. Which word correctly applies this rule?',
+      options: [
+        '"managment" — from "manage" + "-ment"',
+        '"laziness" — from "lazy" + "-ness"',
+        '"celebrattion" — from "celebrate" + "-tion"',
+        '"creation" — from "create" + "-tion" (e dropped before vowel suffix)',
+      ],
+      correct: 3,
+      day: 'Monday',
+    },
+    {
+      q: '"happy" + "-ness" = "happiness." Monday\'s tip says change y to i before a suffix. Which word correctly applies this rule?',
+      options: [
+        '"laziness" — from "lazy" (y → i) + "-ness"',
+        '"lazness" — from "lazy" + "-ness" with y dropped',
+        '"lazyness" — from "lazy" + "-ness" with no change',
+        '"lazieness" — from "lazy" (y → ie) + "-ness"',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"Beneath the canopy of ancient rimu, the forest floor was deep in shadow." Tuesday\'s lesson says prepositional phrases in setting do two jobs. What are they?',
+      options: [
+        'They name the setting and introduce the characters',
+        'They locate us precisely AND contribute to atmosphere',
+        'They tell us the time and the weather conditions',
+        'They replace adverbs and add length to descriptions',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Between the roots of the largest tree, something moved." Tuesday\'s tip: "Choose prepositions that carry the mood you want." What mood does "between" create here?',
+      options: [
+        'Openness and freedom — between suggests space and possibility',
+        'Height and perspective — between implies a view from above',
+        'Unease and enclosure — something hiding in a tight, dark space',
+        'Distance and isolation — between suggests the thing is far away',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"High above the valley, the kārearea surveyed its territory." Wednesday\'s lesson says "High above the valley" is a fronted adverbial of place. What atmosphere does it create before the main clause begins?',
+      options: [
+        'Danger — the height suggests the kārearea is about to fall',
+        'Height and distance — a sense of elevation and wide perspective before we know what\'s there',
+        'Warmth — the high position suggests the kārearea is close to the sun',
+        'Mystery — we don\'t know what is high above the valley yet',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Somewhere in the darkness, a branch snapped." Why does "Somewhere in the darkness" create suspense more effectively than "In the forest"?',
+      options: [
+        'Because "darkness" is a more formal word than "forest"',
+        'Because vagueness ("somewhere") means the reader doesn\'t know exactly where, making it feel closer and more threatening',
+        'Because "in the darkness" is a longer phrase and longer openers create more tension',
+        'Because "somewhere" is an adverb, not a preposition, which makes it more powerful',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"One day a girl went for a walk in the bush." vs "The path ended without warning — just a wall of ferns and, somewhere beyond them, a sound that shouldn\'t have been there." Thursday\'s lesson says the strong version creates three elements. Which three?',
+      options: [
+        'A character, a setting, and a conflict',
+        'A visual (wall of ferns), a mystery (sound that shouldn\'t be there), and a question (what is it?)',
+        'A simile, a metaphor, and personification',
+        'A fronted adverbial, a dash aside, and an ellipsis',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s strong opening checklist: "(1) Does it create a question? (2) Does it start in the middle of something? (3) Does it avoid \'One day…\'?" Which opening passes all three checks?',
+      options: [
+        '"It was a sunny day and Tia decided to explore the old part of town."',
+        '"This story is about a boy who finds something strange at the beach."',
+        '"One day Rangi discovered something that would change everything."',
+        '"The box had been buried under the ngaio tree for longer than anyone could remember."',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-7': [
+    {
+      q: '"The tide was going out; the beach grew wider by the minute." Monday\'s tip: "Replace the semicolon with a full stop — if both halves stand alone, the semicolon is correct." Does it work here?',
+      options: [
+        'No — "the beach grew wider by the minute" cannot stand alone as a sentence',
+        'Yes — both "The tide was going out" and "the beach grew wider by the minute" are complete sentences',
+        'No — semicolons can only join sentences that share the same subject',
+        'Yes — but only because both sentences are in the same tense',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"She loved writing. Her brother preferred maths." Should these be joined with a semicolon? Why or why not?',
+      options: [
+        'Yes — they are both complete sentences so a semicolon is always correct',
+        'No — the connection between them is not obvious enough; a full stop is clearer here',
+        'Yes — semicolons replace all full stops between short sentences',
+        'No — semicolons can only join sentences about the same person',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"By the time the rescue team arrived, the group ___ in the cave for two days." Which form correctly completes this past perfect sentence?',
+      options: [
+        '"has sheltered" — present perfect, still relevant now',
+        '"sheltered" — simple past, the action completed',
+        '"had sheltered" — past perfect, the action happened before the rescue team arrived',
+        '"was sheltering" — past progressive, the action was in progress',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The kaitiaki ___ to restore this wetland for over a decade." The restoration is still ongoing now. Which tense is correct?',
+      options: [
+        '"had worked" — past perfect, before another past moment',
+        '"has worked" — present perfect, past action still relevant/ongoing now',
+        '"worked" — simple past, the action completed in the past',
+        '"was working" — past progressive, the action was in progress at a past moment',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Before the pōwhiri began, the visitors gathered outside the gate." The "before" clause comes at the FRONT. What punctuation rule applies?',
+      options: [
+        'No comma needed — "before" clauses never take a comma',
+        'Comma after the "before" clause — fronted subordinate clauses take a comma before the main clause',
+        'Comma before "before" — conjunctions always have a comma before them',
+        'Semicolon after the "before" clause — time clauses use semicolons not commas',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"She prepared the hangi before the guests arrived." The "before" clause comes at the BACK. What punctuation rule applies?',
+      options: [
+        'Comma before "before" — conjunctions always need a comma',
+        'No comma needed — when the subordinate clause comes after the main clause, no comma is required',
+        'Semicolon before "before" — equal clauses need a semicolon',
+        'Comma after "hangi" AND before "before" — two commas frame the main clause',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Kiri was nervous. The hall was full. The judges sat at a long table. The performance started at two o\'clock. She had practised for months." Thursday\'s lesson says these sentences don\'t connect. What is missing?',
+      options: [
+        'Longer sentences — each idea needs to be expanded with more detail',
+        'Cohesive devices — each sentence needs to reach back to the previous one through a pronoun, connective, or echoed idea',
+        'Figurative language — each sentence needs a simile or metaphor',
+        'Varied vocabulary — the same words are used too many times',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s revision: "Kiri was nervous — the hall was fuller than she had expected." What cohesive device connects these two ideas?',
+      options: [
+        'A time connective — "than she had expected" shows when she arrived',
+        'A pronoun — "she" refers back to Kiri without repeating her name',
+        'An echoed idea — "fuller than she had expected" directly connects back to her nervousness',
+        'A relative clause — "than she had expected" adds extra information about the hall',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-6': [
+    {
+      q: '"The pohutukawa tree was an old warrior — scarred but undefeated." Is this a simile or a metaphor — and how can you tell?',
+      options: [
+        'Simile — because "warrior" is compared to the tree using descriptive language',
+        'Metaphor — because the tree IS described as a warrior, with no "like" or "as"',
+        'Simile — because "scarred but undefeated" uses contrasting adjectives',
+        'Metaphor — because the sentence contains a dash which signals figurative language',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Her voice was like a tui calling across a still morning." Is this a simile or a metaphor — and what is the effect?',
+      options: [
+        'Metaphor — her voice IS a tui, creating an immediate and powerful image',
+        'Simile — "like a tui" signals comparison, creating a considered, musical image with some distance',
+        'Personification — the tui is given a human voice',
+        'Simile — "still morning" shows the comparison is gentle and quiet',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The kākāpō is extremely rare." Tuesday\'s lesson says this degree adverb earns its place. Why?',
+      options: [
+        'Because "extremely" is a longer word than "very" and therefore more precise',
+        'Because "extremely" emphasises a fact that genuinely matters — the kākāpō\'s rarity is a serious conservation concern',
+        'Because "extremely" always earns its place before any adjective',
+        'Because "rare" is a weak adjective that needs "extremely" to do the work',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She was very sad about what had happened." Tuesday\'s tip: "Is there one word that says this better?" Which single word best replaces "very sad"?',
+      options: ['upset', 'unhappy', 'devastated', 'quite sad'],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The beach was wide and flat. The waves were small. The sun was bright and the sand was pale." Wednesday\'s lesson says this uses only one sense. Which sense is missing from all three sentences?',
+      options: [
+        'Smell — there is no mention of the scent of salt or seaweed',
+        'Sight — the colours and shapes are not described in detail',
+        'Taste — the writer has not described the taste of the sea air',
+        'Touch — the temperature of the sand under bare feet is not mentioned',
+      ],
+      correct: 0,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "Add one non-visual sense detail per paragraph." Which sentence adds the best SOUND detail to the beach passage?',
+      options: [
+        '"The sea was a bright, vivid blue stretching to the horizon."',
+        '"The waves were cool and refreshing against her ankles."',
+        '"Gulls shrieked overhead and the waves hissed across the wet sand."',
+        '"The beach was beautiful and she felt relaxed standing there."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Very slowly" → "crept." "Very quiet" → "hushed." "Very scared" → "terrified." Thursday\'s audit replaces degree adverb + weak adjective with one strong word. Which replacement is INCORRECT?',
+      options: [
+        '"very tired" → "exhausted"',
+        '"very happy" → "elated"',
+        '"very big" → "enormous"',
+        '"very quickly" → "more quickly"',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s revised waka passage: "The crossing had been gruelling." Which audit rule does this apply — and what was "gruelling" replacing?',
+      options: [
+        'Rule 1 (delete it) — "gruelling" replaces an unnecessary adverb',
+        'Rule 2 (replace adverb + adjective with one strong word) — "gruelling" replaces "fairly difficult"',
+        'Rule 1 (delete it) — "fairly difficult" was removed entirely and nothing replaced it',
+        'Rule 2 (replace adverb + adjective with one strong word) — "gruelling" replaces "quite exhausting"',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-5': [
+    {
+      q: '"The footsteps grew louder... and then stopped." Which effect does the ellipsis create here?',
+      options: [
+        'Trailing off — the narrator cannot finish the thought',
+        'Suspense — a pause before the reveal that forces the reader to wait',
+        'Humour — the sudden stop is meant to be surprising and funny',
+        'Contrast — the loud footsteps are contrasted with the silence',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"I always thought I\'d be brave in that situation, but..." Which effect does the ellipsis create here?',
+      options: [
+        'Suspense — something dramatic is about to happen',
+        'Trailing off — the thought is left unfinished, implying the speaker cannot or will not complete it',
+        'Emphasis — the ellipsis makes "but" feel more important',
+        'Contrast — the bravery and the reality are being compared',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The exhausted, trembling climber reached the summit." → "The climber, exhausted and trembling, reached the summit." What changes when the adjectives move after the noun?',
+      options: [
+        'The meaning changes — "exhausted and trembling" after the noun means something different',
+        'The adjectives gain dramatic emphasis — set off by commas, they feel separate and important',
+        'The sentence becomes incorrect — adjectives must always come before the noun',
+        'The sentence becomes shorter and easier to read',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Tuesday\'s tip: "Before = standard. After (with commas) = dramatic emphasis." Rewrite "The ancient, scarred waka cut through the dark water" with adjectives after the noun. Which version is correct?',
+      options: [
+        '"The waka ancient and scarred cut through the dark water."',
+        '"The waka, ancient and scarred, cut through the dark water."',
+        '"The waka — ancient and scarred — cut through the dark water."',
+        '"The waka (ancient and scarred) cut through the dark water."',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The storm had been building all day — dark clouds massing, the wind stripping leaves, the sea turning black. Then it hit." Why is "Then it hit" so effective after the long sentence?',
+      options: [
+        'Because it uses a pronoun instead of a noun, which is more formal',
+        'Because the contrast between the long accumulating sentence and the short impact sentence creates dramatic force',
+        'Because "Then" is a time connective that links the two sentences logically',
+        'Because short sentences are always more dramatic than long sentences',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s weDo passage: "Something happened. A sound came. She looked. It was there." What is the problem with all four sentences being this short?',
+      options: [
+        'They are all grammatically incomplete — each needs a subordinate clause',
+        'There is no variety — four short sentences in a row loses the impact that contrast would create',
+        'Short sentences cannot be used in narrative writing — only in lists',
+        'They all start with different words, which makes the paragraph feel disconnected',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"She ran. She ran faster. She kept running." → "She ran — faster now, desperate — until her lungs gave out." What does the dash aside add that the original does not have?',
+      options: [
+        'A time sequence — we now know the exact order of events',
+        'Her internal state ("desperate") in a way that feels breathless and immediate',
+        'A contrast between running fast and running slow',
+        'A speech tag showing that she is thinking these words aloud',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "For each punctuation mark in narrative, ask: what effect does this create?" Which version of this sentence has punctuation that is working hardest?',
+      options: [
+        '"She walked into the room. She saw what was there."',
+        '"She walked into the room and she saw what was there."',
+        '"She walked into the room — and stopped."',
+        '"She walked into the room, she saw what was there."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-4': [
+    {
+      q: '"the toys belonging to the children" → "the children\'s toys." Why is it "children\'s" and not "childrens\'"?',
+      options: [
+        'Because "children" ends in "en" not "s," so you add apostrophe + s rather than just an apostrophe',
+        'Because possession of toys always uses apostrophe + s regardless of the plural',
+        'Because "children" is a singular noun and singular nouns always take apostrophe + s',
+        'Because the apostrophe goes before the final letter of any possessive noun',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "Does the plural end in s? → apostrophe only. Doesn\'t end in s? → apostrophe + s." Which possessive form is correct for "the rights belonging to the people"?',
+      options: [
+        '"peoples\' rights" — regular plural ending in s, apostrophe after',
+        '"people\'s rights" — irregular plural not ending in s, apostrophe + s',
+        '"peoples rights" — no apostrophe needed for plurals',
+        '"people\'s\' rights" — double apostrophe for irregular plural possession',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"When Tama met Rangi, he was nervous." Why is this sentence ambiguous?',
+      options: [
+        'Because "nervous" is an adjective and adjectives cannot follow a comma',
+        'Because "he" could refer to either Tama or Rangi — the reader cannot tell who was nervous',
+        'Because the comma after "Rangi" is in the wrong position',
+        'Because the sentence is in the wrong tense — it should be "he is nervous"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"When the cat chased the mouse, it ran behind the fridge." Tuesday\'s lesson says this is ambiguous. What is the best fix?',
+      options: [
+        '"When the cat chased the mouse, the cat ran behind the fridge."',
+        '"When the cat chased the mouse, the mouse fled behind the fridge."',
+        '"When the cat chased the mouse, they ran behind the fridge."',
+        '"The cat chased the mouse and it ran behind the fridge."',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"This paragraph is about when Aroha got lost in the bush." Wednesday\'s lesson rates this as a weak narrative topic sentence. Why?',
+      options: [
+        'Because it uses past tense — narrative topic sentences must be in present tense',
+        'Because it announces what it will cover rather than creating intrigue or a question in the reader\'s mind',
+        'Because it names a character — narrative topic sentences should never begin with a name',
+        'Because it is too short — narrative topic sentences must be at least two clauses',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The track disappeared beneath a mat of wet leaves." Why is this a strong narrative topic sentence?',
+      options: [
+        'Because it uses a simile — "like a mat of wet leaves" creates a vivid comparison',
+        'Because it creates immediate intrigue — the reader wonders where the track went and what happens next',
+        'Because it states a clear fact that sets the informational context for the paragraph',
+        'Because it introduces all the main characters who will appear in the paragraph',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Maia and Tui raced down the hill. She tripped and fell. She stopped to help her up. She said she was okay." What is the core problem with this passage?',
+      options: [
+        'The tense is inconsistent — "raced" is past but "is" is present tense',
+        'Every pronoun "she" could refer to either Maia or Tui — the reader cannot follow who is doing what',
+        'There are no commas in the passage — each sentence needs internal punctuation',
+        'The sentences are all the same length — there is no variety for effect',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s edit: "\'I\'m okay,\' Tui said." Why does using direct speech help fix the pronoun ambiguity?',
+      options: [
+        'Because speech marks remove the need for pronouns entirely',
+        'Because "I" in direct speech clearly identifies the speaker, removing any uncertainty',
+        'Because direct speech always follows a comma, which signals a new character',
+        'Because speech marks signal that the pronoun inside them is a possessive',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-3': [
+    {
+      q: '"The politician was determined." vs "The politician was stubborn." Both describe the same quality. What is different about them?',
+      options: [
+        '"Determined" is formal and "stubborn" is informal — the register is different',
+        '"Determined" carries a positive connotation and "stubborn" carries a negative one — same behaviour, opposite feeling',
+        '"Determined" describes an action and "stubborn" describes a state',
+        '"Stubborn" is more precise because it describes exactly how the politician behaves',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "Ask: what feeling do I want the reader to have? Choose accordingly." A journalist wants readers to admire a community leader who refuses to give up. Which word should they choose?',
+      options: ['obstinate', 'pigheaded', 'inflexible', 'tenacious'],
+      correct: 3,
+      day: 'Monday',
+    },
+    {
+      q: '"The iwi ___ agreed to a joint statement." The iwi is acting as one unit making a single decision. Which verb is correct?',
+      options: [
+        '"have" — because "iwi" sounds like a plural noun',
+        '"has" — because the iwi is acting as one unit, so it takes a singular verb',
+        '"have" — because formal writing prefers plural verbs with group nouns',
+        '"has" — because agreement verbs always take singular form',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The committee ___ divided on the proposal." The members hold different individual views. Which verb fits — and why?',
+      options: [
+        '"is" — because collective nouns always take singular verbs in formal writing',
+        '"are" — because the members are acting separately, each holding a different view',
+        '"is" — because "divided" already signals that individuals disagree',
+        '"are" — because "committee" ends in "ee" which signals a plural',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The door opened and she walked in." → "The door opened but no one was there." What does changing "and" to "but" do to the sentence?',
+      options: [
+        'It makes the sentence longer and more complex',
+        'It creates tension — the reader expected someone to be there, so the empty room is unsettling',
+        'It changes the tense of the sentence from present to past',
+        'It signals that the door opening and walking in are simultaneous events',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "Save \'so\' for resolution." In a tense narrative, a character finally escapes danger. Which conjunction creates the best sense of relief?',
+      options: [
+        '"but" — to contrast the danger with the escape',
+        '"yet" — to create ongoing unease even after the escape',
+        '"so" — to signal that the danger caused the escape, providing resolution',
+        '"and" — to simply add the escape to what came before',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The old house stood at the end of the quiet road." → "The decrepit house loomed at the end of the forsaken road." What does "loomed" add that "stood" does not?',
+      options: [
+        '"Loomed" is a more formal verb appropriate for written narrative',
+        '"Loomed" carries threat and menace — it suggests the house is oppressive and dangerous',
+        '"Loomed" tells us the house is tall, which "stood" does not indicate',
+        '"Loomed" is the past tense equivalent of "stands" for inanimate objects',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Ask: what mood does this adjective create?" Upgrade "big" and "old" in "A big wave hit the old boat" for a mood of danger. Which version is best?',
+      options: [
+        '"A very big wave hit the very old boat."',
+        '"A large wave hit the ancient boat."',
+        '"A mountainous wave obliterated the battered boat."',
+        '"A huge wave hit the really old boat."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-2': [
+    {
+      q: '"She trained hard every day, but she still felt unprepared." Where is the comma and why is it correct?',
+      options: [
+        'Before "but" — because "but" joins two complete clauses and needs a comma before it',
+        'After "but" — because conjunctions are always followed by a comma',
+        'Before "still" — because adverbs need to be separated from the rest of the sentence',
+        'After "day" — because fronted adverbials always take a comma',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"He wanted to speak but, he couldn\'t find the right words." What is wrong with the comma placement?',
+      options: [
+        'The comma should be before "but," not after it — "He wanted to speak, but he couldn\'t find the right words."',
+        'There should be no comma at all — "but" never takes a comma',
+        'The comma should be after "speak" AND after "but" — two commas are required',
+        'The comma is in the right place — conjunctions are followed by commas',
+      ],
+      correct: 0,
+      day: 'Monday',
+    },
+    {
+      q: '"Visitors to the kāinga ___ remove their shoes before entering the wharenui." This is a rule with no exceptions. Which modal verb is correct?',
+      options: [
+        '"might" — because there is a chance visitors will remove their shoes',
+        '"should" — because it is good advice but not compulsory',
+        '"must" — because this is an obligation, a rule with no exceptions',
+        '"could" — because removing shoes is an option visitors can choose',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Students ___ proofread their work before submitting it." This is advice, not a strict rule. Which modal verb fits?',
+      options: [
+        '"must" — because proofreading is always obligatory',
+        '"should" — because this is advice about good practice',
+        '"might" — because there is a possibility students will proofread',
+        '"could" — because proofreading is just one option among many',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She was nervous." (telling) → "Her fingers twisted the hem of her kākahu and she kept glancing at the door." (showing). What does the showing version do that telling does not?',
+      options: [
+        'It names the emotion so the reader understands it immediately',
+        'It uses more words, which signals to the reader that the moment is important',
+        'It shows physical evidence of nervousness so the reader infers the feeling themselves',
+        'It uses a simile to compare her behaviour to something familiar',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "What does the body do? What does the face do? What does the person notice?" Which version best SHOWS rather than tells the emotion "He was excited"?',
+      options: [
+        '"He felt very excited and happy about the game."',
+        '"He was obviously extremely excited about the upcoming game."',
+        '"He kept checking the clock, bouncing on his heels, already wearing his boots an hour before kick-off."',
+        '"The game made him feel excited in a way he had never experienced before."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Come on called Hemi Were going to miss the bus." How many dialogue punctuation errors are in this sentence?',
+      options: [
+        'Two — missing speech marks and missing comma before the speech tag',
+        'Three — missing speech marks, missing comma, and "Were" should be "We\'re"',
+        'Four — missing speech marks, missing comma, "Were" needs an apostrophe, and "Hemi" should be lowercase',
+        'One — only the speech marks are missing',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s five-check rule. "\'I\'m coming,\' she shouted back." Which check confirms the comma before the closing speech mark is correct?',
+      options: [
+        'Check 4 — new speaker, new line',
+        'Check 2 — comma or question mark before the closing speech mark when a speech tag follows',
+        'Check 3 — the speech tag is not capitalised',
+        'Check 5 — punctuation is inside the speech marks',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '3-1': [
+    {
+      q: '"sad → unhappy → miserable → devastated → heartbroken." Monday\'s lesson says: "Match the emotion word to the story\'s stakes." A character loses a game of cards. Which word is most appropriate?',
+      options: ['heartbroken', 'devastated', 'miserable', 'disappointed'],
+      correct: 3,
+      day: 'Monday',
+    },
+    {
+      q: 'A character\'s best friend moves away forever. Monday\'s tip: "Life-changing loss → \'devastated.\'" Which word on the scale is most appropriate?',
+      options: ['unhappy', 'sad', 'heartbroken', 'disappointed'],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"You can\'t say \'two sands\' — sand is non-count." Using Tuesday\'s number test, which of these is a NON-COUNT noun?',
+      options: [
+        '"chair" — you cannot say "two chairs"',
+        '"advice" — you cannot say "three advices"',
+        '"book" — you cannot say "four books"',
+        '"suggestion" — you cannot say "five suggestions"',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Tuesday\'s tip: "\'Much\' = non-count. \'Many\' = count." Which sentence is correct?',
+      options: [
+        '"She gave me many good advices about the trip."',
+        '"She gave me much good advice about the trip."',
+        '"She gave me many good advice about the trip."',
+        '"She gave me much good advices about the trip."',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"She stopped. She listened. The floorboard creaked. Someone was there." Wednesday\'s lesson says this rhythm creates tension. What technique achieves this?',
+      options: [
+        'Using four different verbs to show a sequence of actions',
+        'Breaking the action into short simple sentences so the reader feels every beat as a separate pause',
+        'Using alliteration across the four sentences for a musical effect',
+        'Avoiding adjectives so the reader focuses entirely on the verbs',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s demonstration: "She stopped and listened because a floorboard creaked and someone was there." Why does this longer version lose the tension?',
+      options: [
+        'Because it uses "because" which is a weak conjunction in narrative',
+        'Because it uses past tense — tense consistency is lost',
+        'Because all the information is crammed into one sentence — the reader rushes through without pausing at each beat',
+        'Because "and" is repeated twice, which sounds informal',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"\'I think we\'re lost,\' she whispered." Thursday\'s Rule 3 says the speech tag is NOT capitalised. Which sentence correctly follows this rule?',
+      options: [
+        '\'We should go,\' Said Marcus, \'before it gets dark.\'',
+        '\'We should go,\' said Marcus, \'before it gets dark.\'',
+        '\'We should go,\' Said marcus, \'before it gets dark.\'',
+        '\'We should go.\' said Marcus. \'Before it gets dark.\'',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s Rule 2: "Comma (not full stop) before the closing speech mark if a speech tag follows." Which sentence applies this correctly?',
+      options: [
+        '"I think we\'re lost." she whispered.',
+        '"I think we\'re lost", she whispered.',
+        '"I think we\'re lost," she whispered.',
+        '"I think we\'re lost" she whispered.',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-10': [
+    {
+      q: '"Despite the rain (which had been falling since dawn), the market was busy." What job do the brackets do here?',
+      options: [
+        'They introduce the most important information in the sentence',
+        'They add extra detail that could be removed without breaking the sentence',
+        'They replace a colon that would otherwise introduce the detail',
+        'They signal that the information inside is incorrect or uncertain',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s review passage uses six punctuation marks in one paragraph. Which mark is used to introduce the list "free transport, extended opening hours, and a fireworks display"?',
+      options: [
+        'A semicolon — because it joins two related ideas',
+        'A dash — because it creates a dramatic pause before the list',
+        'A colon — because a complete sentence comes before it and a list follows',
+        'A comma — because lists always use a comma before the first item',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"Everyone was present when the kuia, who had travelled from Rotorua, finally arrived." What grammar feature is "who had travelled from Rotorua"?',
+      options: [
+        'A fronted adverbial — it comes before the main verb',
+        'A relative clause — it gives extra information about the kuia',
+        'A past progressive — it shows an action in progress',
+        'A compound sentence — it joins two equal clauses',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The group had been waiting for over an hour." What tense is "had been waiting" — and what does it tell us?',
+      options: [
+        'Past progressive — it shows the waiting was happening at a specific moment',
+        'Present perfect — it shows the waiting is still happening now',
+        'Past perfect progressive — it shows the waiting was in progress before another past moment',
+        'Simple past — it shows the waiting happened and finished',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Before the tide turned, the waka was safely ashore." What type of sentence is this?',
+      options: [
+        'A compound sentence — two equal clauses joined by a conjunction',
+        'A complex sentence with a fronted adverbial — the subordinate clause comes first with a comma',
+        'A simple sentence with a prepositional phrase at the start',
+        'A compound-complex sentence — it has both a relative clause and a conjunction',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The kārearea, a native falcon, is the fastest bird in Aotearoa." What technique is used in "a native falcon"?',
+      options: [
+        'A relative clause introduced by "which"',
+        'A fronted adverbial giving extra detail',
+        'An appositive — an embedded noun phrase that renames the subject',
+        'A participial phrase describing what the kārearea is doing',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Thursday\'s Term 2 checklist has six passes. Pass 4 targets vague words. Which sentence most needs a Pass 4 edit?',
+      options: [
+        '"The kererū plunged into the pōhutukawa and devoured the ripest berries."',
+        '"The work was really good and everyone said nice things about it."',
+        '"Despite the rain, the hīkoi continued throughout the afternoon."',
+        '"The waka, which had been built by students, held up well in the swell."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Six passes, six focuses. One pass, one rule." Why is this better than trying to catch everything in one read?',
+      options: [
+        'Because each rule applies to different letters of the alphabet',
+        'Because you can only fix one type of error — fixing two at once is grammatically impossible',
+        'Because focusing on one rule at a time means you are less likely to miss errors of that type',
+        'Because six passes always takes exactly the same amount of time as one pass',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-9': [
+    {
+      q: '"Slowly, silently, the silver moon sailed across the sky." Which device is used — and what is the effect?',
+      options: [
+        'Assonance — the repeated vowel sounds create a musical, lingering quality',
+        'Alliteration — the repeated "s" sound creates emphasis and a hushed atmosphere',
+        'Onomatopoeia — "sailed" sounds like the action it describes',
+        'Personification — the moon is given the human action of sailing',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The pale lake lay in the late afternoon haze." Which device is used?',
+      options: [
+        'Alliteration — "pale," "lake," "late" all start with the same sound',
+        'Personification — the lake is given human qualities',
+        'Assonance — the repeated "a" vowel sound in "pale," "lake," "late," "haze" creates a slow musical effect',
+        'Onomatopoeia — "haze" sounds like the feeling it describes',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The kaiako waited until the class was completely silent." Is "until" coordinating or subordinating — and how do you know?',
+      options: [
+        'Coordinating — because both sides of "until" could stand alone as sentences',
+        'Subordinating — because "until the class was completely silent" cannot stand alone',
+        'Coordinating — because "until" is part of the FANBOYS group',
+        'Subordinating — because "until" always comes at the end of a sentence',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The experiment failed, yet the students learnt something important." Remove "yet" and split into two sentences. What does this tell you about "yet"?',
+      options: [
+        '"Yet" is subordinating — one half cannot stand alone without it',
+        '"Yet" is coordinating — both halves stand alone, so it joins two equal clauses',
+        '"Yet" is a linking adverb — it must always be followed by a semicolon',
+        '"Yet" is subordinating — the second half depends on the first for its meaning',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The tuatara is one of New Zealand\'s most ancient reptiles. It has barely changed in 200 million years." What does "It" do in the second sentence?',
+      options: [
+        'It introduces a new subject — a different animal being compared to the tuatara',
+        'It refers back to "tuatara" — avoiding repetition and stitching the sentences together',
+        'It signals that the sentence is in the passive voice',
+        'It is an indefinite pronoun that could refer to any reptile',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"This makes it a living link to the age of the dinosaurs." In this sentence, what does "This" refer back to?',
+      options: [
+        'The tuatara specifically — "This tuatara"',
+        'New Zealand — "This country"',
+        'The whole idea of the previous sentence — that the tuatara has barely changed in 200 million years',
+        'The age of the dinosaurs — "This age"',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The sky was dark. The clouds gathered quickly. The wind picked up. The rain began to fall." What is the problem with all four sentence openings?',
+      options: [
+        'They all use the past tense, which is incorrect for descriptive writing',
+        'They are all too short — each sentence needs at least two clauses',
+        'Every sentence starts with "The" — the repeated opener makes the writing monotonous',
+        'They all describe weather, which is a cliché opening for a story',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s revised version: "Dark clouds gathered quickly. As the wind picked up, the first drops of rain began to fall. From the south, thunder rolled in." What THREE different opener types are used?',
+      options: [
+        'Adjective opener, subordinate clause, fronted adverbial of place',
+        'Adverb opener, relative clause, compound sentence',
+        'Noun opener, coordinating conjunction, prepositional phrase',
+        'Verb opener, fronted adverbial of time, linking adverb',
+      ],
+      correct: 0,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-8': [
+    {
+      q: '"Separate" — people often write "seperate." Monday\'s lesson hides a word inside it to fix this. What is the hidden word?',
+      options: ['"pare" — sep-PARE-te', '"a rat" — sep-A-RAT-e', '"par" — SEPAR-ate', '"rate" — sepa-RATE'],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Necessary" — one Collar, two Socks. What does this mnemonic mean for the spelling?',
+      options: [
+        'The word has two c\'s and one s',
+        'The word has one c and two s\'s — "neCeSSary"',
+        'The word has one collar (full stop) and two socks (commas)',
+        'The word has two syllables and one silent letter',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The eel moved ___ the root system of the tree, disappearing into the dark water." Which directional preposition is correct?',
+      options: [
+        '"towards" — the eel is moving in the direction of the roots',
+        '"past" — the eel is moving alongside the roots without entering them',
+        '"through" — the eel is moving inside and out the other side of the root system',
+        '"over" — the eel is moving above the roots',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The tamariki ran ___ the beach and ___ the waves." Which pair of directional prepositions best completes the sentence?',
+      options: [
+        '"along / past" — running beside the beach then past the waves',
+        '"towards / into" — running in the direction of the beach then entering the waves',
+        '"through / over" — running through the beach then above the waves',
+        '"past / along" — running past the beach then beside the waves',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"By the time the tide turned, the stranded boat had begun to list badly." What TYPE of fronted adverbial opener is "By the time the tide turned"?',
+      options: [
+        'A contrast opener — it shows something unexpected happened',
+        'A place opener — it tells us where the boat was',
+        'A time opener — it anchors the reader in a specific moment',
+        'A manner opener — it tells us how the boat was moving',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Despite the forecast, the day turned out to be perfect for the regatta." What does the contrast opener "Despite the forecast" create?',
+      options: [
+        'Urgency — the reader feels the situation is about to get worse',
+        'Surprise — the reader expected the forecast to be right, so the perfect day is unexpected',
+        'Suspense — the reader doesn\'t know what the forecast predicted',
+        'Sadness — the contrast between forecast and reality feels disappointing',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Something happened and it was interesting." Thursday\'s lesson says this is vague. Which revision best applies the four-step fix?',
+      options: [
+        '"Something very interesting happened near the water yesterday."',
+        '"The kōwhai tree outside the classroom window had shed its flowers overnight, carpeting the path in yellow."',
+        '"An interesting event occurred which was notable and worth writing about."',
+        '"Something happened that was quite interesting and everyone noticed it."',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Could this sentence describe a hundred different situations? If yes — it\'s too vague." Which sentence passes this test — it could NOT describe a hundred situations?',
+      options: [
+        '"The animal did something near the water."',
+        '"Something about the place made it feel special."',
+        '"The weather affected how the people felt."',
+        '"A kōtuku stood motionless in the shallows, its white plumage brilliant against the dark water."',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-7': [
+    {
+      q: '"The kete contained: a tī kōuka leaf, a piece of bone, and a carved pounamu." Why is the colon wrong here?',
+      options: [
+        'Because "tī kōuka" needs a capital letter before a colon can be used',
+        'Because "The kete contained" is not a complete sentence — the colon needs a complete sentence before it',
+        'Because colons can only introduce two items, not three',
+        'Because the list items should be separated by semicolons, not commas',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The rescue team brought the following equipment: ropes, a first-aid kit, and torches." Why is the colon correct here?',
+      options: [
+        'Because "following" is a signal word that always requires a colon',
+        'Because "The rescue team brought the following equipment" is a complete sentence before the colon',
+        'Because there are three items in the list — colons are only correct with three or more items',
+        'Because the list contains specific nouns, which always follow a colon',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"The students ___ their speeches when the fire alarm went off." Which verb form correctly completes this past progressive sentence?',
+      options: [
+        '"prepared" — simple past, the action was completed',
+        '"have prepared" — present perfect, still relevant now',
+        '"were preparing" — past progressive, the action was in progress when interrupted',
+        '"had prepared" — past perfect, the action finished before another past moment',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Tuesday\'s tip: "Past progressive sets the background scene. Simple past is the event that interrupts it." Which sentence uses this pattern correctly?',
+      options: [
+        '"She was reading her book and then she finished it."',
+        '"She read her book when the power cut out."',
+        '"She was reading her book when the power cut out."',
+        '"She had read her book when the power cut out."',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"___ the journey was exhausting, Mere never once complained." Which conjunction fits — and why?',
+      options: [
+        '"Unless" — the exhaustion is a condition for the complaining',
+        '"While" — the exhaustion and the not-complaining happened at the same time',
+        '"Although" — there is a contrast: exhaustion expected complaining, but she didn\'t',
+        '"Because" — the exhaustion caused her not to complain',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The kiwi will remain endangered ___ habitat destruction is halted." Which conjunction fits — and why?',
+      options: [
+        '"although" — halting destruction would be a surprising contrast to the endangerment',
+        '"while" — the endangerment and the halting happen at the same time',
+        '"unless" — the endangerment will continue EXCEPT IF destruction is halted',
+        '"because" — halting destruction is the reason the kiwi will remain endangered',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The waka left the shore just before dawn. The crew paddled in silence. Suddenly the wind picks up and waves begin to slap against the hull." What is wrong with the last sentence?',
+      options: [
+        'It uses passive voice — "picks up" and "slap" should be in the passive',
+        'It switches to present tense — "picks up" and "begin to slap" should be "picked up" and "began to slap"',
+        'It uses too many conjunctions — "and" should be removed',
+        'It has a comma splice — "the wind picks up" and "waves begin to slap" need a full stop between them',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Read your paragraph and underline every verb. Do they all match?" In a past-tense paragraph, which verb is the odd one out?',
+      options: [
+        '"paddled" — this is simple past',
+        '"left" — this is simple past',
+        '"calls out" — this is present tense, drifting from past',
+        '"checked" — this is simple past',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '2-6': [
+    {
+      q: '"micro" (small) + "phone" (sound) = microphone. Using the same logic, what does "microscope" most likely mean?',
+      options: [
+        'An instrument for measuring small distances',
+        'An instrument for looking at very small things',
+        'An instrument for recording tiny sounds',
+        'An instrument for magnifying photographs',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "When you hit an unknown word, look for a root you recognise." The root "terra" means land. What does "extraterrestrial" most likely mean?',
+      options: [
+        'Relating to extreme conditions on land',
+        'Belonging to a territory outside your own country',
+        'Existing or coming from outside the Earth',
+        'A very large area of flat terrain',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"She spoke quietly." → "She spoke in a hushed, urgent whisper." What does the adverbial phrase add that the single adverb "quietly" cannot?',
+      options: [
+        'It tells us the exact volume in decibels',
+        'It adds texture and mood — we can picture the manner AND feel the urgency',
+        'It tells us who she was speaking to',
+        'It changes the tense of the sentence to make it more vivid',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"He left quickly." → "He left before anyone could ask questions." What does the adverbial phrase add that "quickly" does not?',
+      options: [
+        'It adds time detail — we know exactly when he left',
+        'It adds time AND hints at motivation — he was avoiding questions',
+        'It tells us where he went after leaving',
+        'It tells us how fast he was walking',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Schools should have gardens." → "Schools across Aotearoa, from urban Auckland to rural Northland, should have gardens where students can grow and harvest their own kai." What do the added phrases do to the argument?',
+      options: [
+        'They make the sentence longer so it seems more authoritative',
+        'They add WHERE detail (across Aotearoa) and WHO detail (students growing kai), making the claim specific and harder to dismiss',
+        'They replace the original claim with a new, stronger claim about kai',
+        'They add contrast — urban schools versus rural schools',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "In persuasion, specific detail builds credibility." Which version of this claim is most persuasive?',
+      options: [
+        '"Young people should be heard on important matters."',
+        '"Young people deserve a voice."',
+        '"Young people aged 10–18, who will inherit every consequence of today\'s decisions, deserve a formal voice in policy that affects their future."',
+        '"Young people have good ideas that adults should listen to."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"It was a nice day and we had a good time doing lots of fun things." Thursday\'s lesson says every underlined word is an upgrade opportunity. How many vague words are in this sentence?',
+      options: ['Two — "nice" and "good"', 'Three — "nice," "good," and "fun"', 'Four — "nice," "good," "fun," and "lots"', 'Five — "nice," "good," "fun," "lots," and "things"'],
+      correct: 4,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s example upgrade: "The sun blazed over the harbour and we spent the afternoon kayaking, laughing until our arms gave out." Which technique was NOT used in this upgrade?',
+      options: [
+        'Replacing "nice day" with specific weather detail',
+        'Replacing "good time" with a specific activity',
+        'Replacing "lots of fun things" with a concrete example',
+        'Adding speech marks to show what someone said about the day',
+      ],
+      correct: 3,
+      day: 'Thursday',
+    },
+  ],
+
   '2-5': [
     {
       q: '"The tuatara (New Zealand\'s ancient living fossil) can live for over 100 years." How do you know the brackets are used correctly here?',
