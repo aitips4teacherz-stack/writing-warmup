@@ -32,6 +32,456 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '4-5': [
+    {
+      q: '"a well-known author" — which mark correctly joins "well" and "known" here, and why?',
+      options: [
+        'A dash — because it creates emphasis between the two words',
+        'A hyphen — because "well" and "known" work together as one compound modifier before the noun',
+        'An ellipsis — because there is a pause between the two descriptive words',
+        'No mark — compound modifiers never need punctuation between them',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"She opened the envelope — her hands trembling — and pulled out the letter." What does the dash aside add that brackets would not?',
+      options: [
+        'Brackets would be grammatically incorrect here — dashes are the only option',
+        'Dashes add a more dramatic, breathless quality — the trembling feels urgent, not parenthetical',
+        'Dashes change the tense of "trembling" to make it more vivid',
+        'Nothing — dashes and brackets always create exactly the same effect',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Competing at national level requires years of dedication." What verb form is "Competing" — and how can you tell?',
+      options: [
+        'An infinitive — it acts as the purpose of the sentence',
+        'A participle — it describes the subject of the sentence',
+        'A gerund — it is the "-ing" form used as the noun subject of the sentence',
+        'A progressive verb — it shows an action in progress',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The carved pounamu hung at the entrance to the wharenui." What verb form is "carved" — and what job does it do?',
+      options: [
+        'A gerund — it is the noun subject of the sentence',
+        'An infinitive — it shows the purpose of hanging the pounamu',
+        'A past participle used as an adjective — it describes the pounamu',
+        'A past tense verb — it tells us when the pounamu was carved',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Wednesday\'s model paragraph uses five sentence types. "Hunger, which affects concentration and mood, makes learning almost impossible." What type is this?',
+      options: [
+        'A simple sentence — it has one subject and one verb',
+        'A compound sentence — two equal clauses joined by a conjunction',
+        'A complex sentence with an embedded relative clause',
+        'A fronted adverbial sentence — the opener comes before the subject',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s model ends with "Do it now." Why is a short imperative the best final sentence here?',
+      options: [
+        'Because imperatives are always the most formal way to end an argument',
+        'Because the contrast between the long argument and the short command creates maximum impact and urgency',
+        'Because "Do it now" summarises all the evidence that came before it',
+        'Because short sentences are always more persuasive than long sentences',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"I think schools should totally invest in better libraries." Thursday\'s voice checklist finds two problems. What are they?',
+      options: [
+        '"totally" is misspelt and "better" is too informal',
+        '"I think" is first-person opinion and "totally" is informal/vague — both break formal register',
+        '"should" is a weak modal and "better" should be replaced with "superior"',
+        '"I think" is too short a phrase and "totally" needs a comma after it',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"The evidence is clear, so the government needs to sort this out." Thursday\'s clarity check finds a problem. What is it?',
+      options: [
+        '"so" is a coordinating conjunction and should be replaced with "therefore"',
+        '"The evidence is clear" doesn\'t say what evidence — it is vague; and "sort this out" is informal',
+        '"clear" is an adjective and adjectives cannot follow linking verbs in formal writing',
+        'The comma before "so" is incorrect — compound sentences never need a comma',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-4': [
+    {
+      q: '"Its the boards decision" — how many apostrophe errors are in this phrase?',
+      options: [
+        'One — only "Its" needs an apostrophe (it\'s)',
+        'Two — "Its" needs an apostrophe (it\'s) and "boards" needs a possessive apostrophe (board\'s)',
+        'Three — "Its," "boards," and "teachers" all need apostrophes',
+        'None — "its" is a possessive pronoun and never takes an apostrophe',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s three-test rule. Apply it to "students" in "students books." Which test applies — and what is the correct form?',
+      options: [
+        'Test 1 (contraction): "students" = "stud + ents" → "student\'s books"',
+        'Test 2 (possession): multiple students own the books → "students\' books" (apostrophe after the s)',
+        'Test 3 (just a plural): no apostrophe needed — "students books" is correct',
+        'Test 2 (possession): one student owns the books → "student\'s books"',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"I think schools should provide free lunches for all students." Rewrite without first person. Which version is strongest?',
+      options: [
+        '"We think schools should provide free lunches for all students."',
+        '"One thinks schools should provide free lunches."',
+        '"The evidence indicates that schools should provide free lunches for all students."',
+        '"It is my belief that schools should provide free lunches."',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Tuesday\'s tip: "Remove the person — let the argument stand on its own." Why is "the evidence suggests" stronger than "I think"?',
+      options: [
+        'Because "the evidence suggests" uses more words and longer arguments are always more convincing',
+        'Because "I think" admits uncertainty while "the evidence suggests" grounds the claim in reality rather than personal opinion',
+        'Because "suggests" is a more formal verb than "think"',
+        'Because removing "I" makes the sentence shorter and easier to read',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"In conclusion, I have shown that native trees should be planted in all urban areas." Wednesday\'s lesson calls this weak. Why?',
+      options: [
+        'Because it uses first person ("I have shown") and starts with the banned phrase "In conclusion"',
+        'Because it is too short — conclusions must be at least two sentences',
+        'Because "native trees" is too specific — conclusions should be general',
+        'Because it restates rather than synthesises — it just repeats the claim without revealing a bigger truth',
+      ],
+      correct: 3,
+      day: 'Wednesday',
+    },
+    {
+      q: '"When schools invest in gardens, they invest in food literacy, environmental responsibility, and student wellbeing — a return on investment no budget line can fully capture." Which synthesis technique does this use?',
+      options: [
+        'Echo the opening with a twist — it returns to the original claim but reframes it',
+        'Broaden to the bigger picture — gathering threads into a larger resonant truth about value',
+        'Pose an implicit challenge — daring the reader to disagree',
+        'Use a statistic — the "return on investment" phrase grounds the conclusion in data',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"This paragraph will talk about funding." Thursday\'s skeleton test calls this weak. What makes the strong version — "Chronic underfunding has left Aotearoa\'s public libraries unable to serve the communities that need them most" — stronger?',
+      options: [
+        'It is longer, which signals the paragraph will have more content',
+        'It is specific, urgent, and tells the reader exactly what the problem is and who it affects',
+        'It uses passive voice, which is more appropriate for formal writing',
+        'It avoids mentioning libraries directly, which creates intrigue',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"So screens are bad for young people." Thursday\'s lesson calls this a weak closing sentence. Apply the skeleton test — what should a strong closing sentence do instead?',
+      options: [
+        'Start with "In conclusion" to signal the paragraph is ending',
+        'Repeat the topic sentence word for word to create a circular structure',
+        'Synthesise — reveal the bigger truth or implication the evidence has established, not just restate the claim',
+        'Use the shortest possible sentence so the paragraph ends with impact',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-3': [
+    {
+      q: '"The council totally stuffed up the rubbish collection." → "The council\'s waste management procedures were significantly inadequate." What is the main difference?',
+      options: [
+        'The formal version uses passive voice and the informal version uses active voice',
+        'The formal version uses measured, precise Latinate vocabulary; the informal uses emotional everyday language',
+        'The formal version is longer and informal writing must always be shorter',
+        'The formal version avoids mentioning the council while the informal version names them directly',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "Formal = Latinate words (commence, obtain, utilise). Informal = Saxon words (start, get, use)." Which word is the formal equivalent of "get"?',
+      options: ['grab', 'obtain', 'take', 'receive'],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"None of the proposed solutions ___ the root cause." Which verb is correct — and why?',
+      options: [
+        '"address" — because "solutions" is plural',
+        '"addresses" — because "none" means "not one" and takes a singular verb',
+        '"address" — because formal writing prefers plural verbs with "none"',
+        '"addresses" — because "root cause" is singular',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"A number of researchers ___ challenged this finding." vs "The number of complaints ___ rising." Which pair of verbs is correct?',
+      options: [
+        '"has / are" — a number takes singular, the number takes plural',
+        '"have / is" — a number of = several (plural), the number of = one count (singular)',
+        '"has / is" — both phrases are singular because they both refer to a single group',
+        '"have / are" — both phrases are plural because researchers and complaints are plural nouns',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Renewable energy is cost-effective, yet investment remains low." Wednesday\'s lesson says "yet" highlights a gap or hypocrisy. What is the implied message of using "yet" here?',
+      options: [
+        'That renewable energy is not actually cost-effective despite what people say',
+        'That there is a frustrating contradiction — the evidence supports investment, but it still isn\'t happening',
+        'That investment in renewable energy is about to increase significantly',
+        'That "yet" signals the argument is still being developed',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"We invest in prevention now. We pay far more for the consequences later." Which FANBOYS conjunction best joins these for maximum persuasive urgency?',
+      options: [
+        '"and" — adding a supporting point to strengthen the argument',
+        '"but" — contrasting the two options to show they are different',
+        '"or" — creating a binary choice that makes inaction feel unacceptable',
+        '"yet" — showing a surprising contrast between prevention and consequences',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Kids today are spending heaps of time on screens." Thursday\'s formality checklist finds two problems. What are they?',
+      options: [
+        '"Kids" is informal (use "young people" or "children") and "heaps of" is informal (use "significant amounts of")',
+        '"today" is informal and "spending" should be in the passive voice',
+        '"Kids" needs a capital letter and "heaps" should be replaced with "very much"',
+        '"screens" is too vague and "heaps" should be replaced with a specific statistic',
+      ],
+      correct: 0,
+      day: 'Thursday',
+    },
+    {
+      q: '"The government should totally do something about this before it gets worse." Thursday\'s checklist says this breaks three formality rules. Which THREE?',
+      options: [
+        '"totally" is informal, "something" is vague, and "gets worse" is informal — none is formal register',
+        '"should" is a weak modal, "this" is a vague pronoun, and "worse" needs a comparison',
+        '"totally" is a colloquialism, "do something" is informal and vague, "gets worse" is informal — replace all three',
+        '"The government" should be replaced, "totally" is informal, and "before" is a subordinating conjunction that should be removed',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-2': [
+    {
+      q: '"The judges were Dr Hana Tūhoe chair of the panel Professor James Rāwiri linguistics expert and Mere Ngata award-winning author." Why should this use semicolons instead of commas?',
+      options: [
+        'Because there are more than three items in the list',
+        'Because each list item already contains its own descriptive phrase — commas would create confusion about what belongs to whom',
+        'Because the items are proper nouns and proper nouns always take semicolons in lists',
+        'Because semicolons are always preferred in formal writing over commas',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"We invited the mayor, John Smith, the principal, and the board." Monday\'s lesson says this is ambiguous. What is unclear?',
+      options: [
+        'Whether the board is also called John Smith',
+        'Whether John Smith is the mayor or a separate person — the commas don\'t make this clear',
+        'Whether the principal and the board are the same person',
+        'Whether "we" includes the mayor or not',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Scientists discovered a new species of gecko near Fiordland." → "A new species of gecko was discovered near Fiordland." What changed — and why might the passive version be better here?',
+      options: [
+        'The subject changed from "scientists" to "gecko" — the passive is better because scientists are unimportant',
+        'The verb changed to passive — better when the discovery itself (not who made it) is the focus',
+        'The sentence became shorter — passive voice is preferred because it saves words',
+        'The tense changed to past — passive voice always uses simple past',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The treaty was signed in 1840." Tuesday\'s lesson says this passive sentence is appropriate. Why?',
+      options: [
+        'Because 1840 is a historical date and historical events always use passive voice',
+        'Because the agent (who signed it) is either obvious, unimportant in this context, or the focus is the event itself',
+        'Because "signed" is an irregular past participle and must follow "was"',
+        'Because passive voice is always required in informational writing',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Wednesday\'s CEE structure: Claim → Evidence → Explanation. After every piece of evidence, ask "So what?" What does the "So what?" answer become?',
+      options: [
+        'The next claim in the argument',
+        'The explanation — why the evidence actually proves the claim',
+        'The topic sentence of the next paragraph',
+        'A rhetorical question to engage the reader',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Auckland\'s rail network carries only 4% of commuters, compared to 40% in comparable cities." In the CEE structure, what role does this sentence play?',
+      options: [
+        'Claim — it states the writer\'s position on public transport',
+        'Explanation — it tells the reader why the evidence matters',
+        'Evidence — it provides a specific, grounded fact that supports the claim',
+        'Conclusion — it summarises the argument about public transport',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The submission was written by the iwi. It was lodged with the council." Thursday\'s lesson says these passive sentences are a poor choice in a piece arguing for the iwi\'s role. Why?',
+      options: [
+        'Because passive voice is grammatically incorrect when a "by" phrase is used',
+        'Because passive voice hides the iwi\'s agency — the iwi become recipients rather than actors in their own story',
+        'Because "was written" and "was lodged" are in the wrong tense for a report',
+        'Because the "by" phrase at the end creates a dangling modifier',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"Two months later, the council announced its decision." Thursday\'s lesson says this final sentence is correctly left in passive. But actually it\'s active — "the council announced." Why does it stay in active voice?',
+      options: [
+        'Because "announced" is an irregular verb that cannot be made passive',
+        'Because the council is the doer and in this sentence the council\'s action (announcing) is the important thing',
+        'Because active voice is always required when a time fronted adverbial opens the sentence',
+        'Because "its decision" is a possessive pronoun that prevents passive construction',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-1': [
+    {
+      q: '"It is important that we recycle more." → What is the persuasive register upgrade for "important"?',
+      options: [
+        '"very important" — adding emphasis',
+        '"crucial" or "essential" — a more authoritative, persuasive register word',
+        '"quite important" — a measured, formal tone',
+        '"really important" — a natural upgrade for formal writing',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Also, the research proves it works." Monday\'s tip: "\'Also\' → \'furthermore.\'" Why is "furthermore" stronger in persuasive writing?',
+      options: [
+        'Because "furthermore" is longer and longer words always sound more authoritative',
+        'Because "furthermore" signals an additional supporting point in a formal argument, while "also" sounds conversational',
+        'Because "furthermore" is always placed at the start of a sentence, making it more visible',
+        'Because "proves" needs a formal linking adverb to function correctly',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Reading every day improves vocabulary." What verb form is "Reading" in this sentence?',
+      options: [
+        'A present progressive — it shows reading happening right now',
+        'A participle — it describes the subject of the sentence',
+        'A gerund — the "-ing" form acting as the noun subject of the sentence',
+        'An infinitive — it shows the purpose of improving vocabulary',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: 'Tuesday\'s tip: "Can I replace it with a noun like \'sport\' or \'skill\'?" Apply this to "Winning isn\'t everything." Replace "Winning" with a noun. Which test result confirms it is a gerund?',
+      options: [
+        '"Scoring isn\'t everything" — replacing with another gerund confirms it',
+        '"Victory isn\'t everything" — replacing with a regular noun still makes sense, confirming "Winning" is a noun here',
+        '"To win isn\'t everything" — replacing with an infinitive confirms it is a verb form',
+        '"Winners aren\'t everything" — replacing with a plural noun confirms the gerund',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Due to the fact that plastic bags cause a great deal of harm to sea life, it would be a good idea to consider banning them." Wednesday\'s lesson says this needs to be cut. Which version is the best direct, concise rewrite?',
+      options: [
+        '"Plastic bags cause harm to sea life and it would be good to think about banning them."',
+        '"Plastic bags harm sea life. Ban them."',
+        '"Due to plastic bags causing harm to sea life, banning them is something to consider."',
+        '"Plastic bags cause a lot of harm to sea life and therefore should possibly be banned."',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Wednesday\'s tip: "In persuasive writing, short sentences make your key claim land hard." Which version delivers the claim with most impact?',
+      options: [
+        '"We must act now due to the fact that litter is causing significant problems."',
+        '"It would be beneficial if we were to act now on the issue of litter."',
+        '"Litter harms wildlife. It pollutes waterways. It costs millions to clean up. We must act now."',
+        '"Acting now is something we should consider given the problems caused by litter."',
+      ],
+      correct: 2,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The monarch butterfly undergoes four stages of metamorphosis. First, the egg was laid on a milkweed leaf." What is wrong with the second sentence?',
+      options: [
+        '"was laid" is passive voice and reports should use active voice',
+        '"was laid" is past tense — Thursday\'s lesson says reports use present tense for facts',
+        '"milkweed" should be capitalised as it is a specific plant name',
+        '"First" should be followed by a comma and then a full sentence, not a dependent clause',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: '"Dolphins eat fish, squid and they also had crustaceans." Thursday\'s lesson fixes this to "Dolphins eat fish, squid, and crustaceans." What TWO errors were corrected?',
+      options: [
+        'Tense inconsistency ("had" → "eat") and non-parallel list structure ("they also had crustaceans" → "crustaceans")',
+        'Missing Oxford comma and incorrect verb form',
+        'Passive voice and incorrect pronoun reference',
+        'Tense inconsistency and a missing comma after "squid"',
+      ],
+      correct: 0,
+      day: 'Thursday',
+    },
+  ],
+
   '3-10': [
     {
       q: '"Although the path had disappeared, she kept moving — the sound of the stream, which she could hear but not yet see, was pulling her forward..." Which punctuation mark creates a trailing-off suspense effect here?',
