@@ -32,6 +32,461 @@ function mcq(question, correctAnswer, distractors, day) {
 // All four options are similar in length/style so the answer can't be spotted visually.
 
 const HARDCODED_QUIZZES = {
+  '4-10': [
+    {
+      q: '"Although Aotearoa\'s rivers were once clear and cold — a taonga in the truest sense — decades of poor land use have left many of them degraded." What is "a taonga in the truest sense"?',
+      options: [
+        'A relative clause introduced by "which" — it adds defining information',
+        'A fronted adverbial — it sets the scene before the main clause',
+        'A dash aside — parenthetical information that could be removed and still leave a complete sentence',
+        'An appositive phrase that renames "Aotearoa\'s rivers"',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: '"The facts are stark: 76% of native freshwater fish species are threatened, and the number of swimming-safe rivers is declining." Which punctuation rule applies to the colon here?',
+      options: [
+        'The colon introduces a list of exactly two items',
+        'The colon follows a complete sentence and introduces an explanation or elaboration',
+        'The colon replaces a semicolon because both sides are complete sentences',
+        'The colon is used because a statistic always follows a colon',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Everyone in the group has a role to play." Which year-long grammar rule does this demonstrate?',
+      options: [
+        'Collective noun agreement — "group" takes a plural verb',
+        'SVA with "everyone" — "everyone" is singular so takes "has" not "have"',
+        'Present perfect tense — "has" + past participle',
+        'Modal verb — "has" signals obligation to play a role',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The restoration project had already begun when the funding was finally approved." Which TWO grammar features appear in this sentence?',
+      options: [
+        'Present progressive and active voice',
+        'Past perfect ("had already begun") and passive voice ("was finally approved")',
+        'Simple past and a relative clause',
+        'Modal verb and a fronted adverbial',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Aotearoa\'s rivers need our protection." [Simple] → "The rivers, which have sustained life for millennia, are now under threat." [Complex — relative clause]. What does the relative clause add that the simple sentence cannot?',
+      options: [
+        'A time reference — "millennia" tells us how long the rivers have existed',
+        'Embedded evidence — it adds the reason why the rivers deserve protection, strengthening the claim',
+        'A contrast — it shows the rivers were once safe but are now under threat',
+        'A persuasive conclusion — it wraps up the argument about rivers',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Act now." Wednesday\'s showcase uses this as the final sentence. What makes a single two-word imperative the most powerful way to end a persuasive argument?',
+      options: [
+        'Imperatives are always the most formal register in persuasive writing',
+        'The extreme contrast between the long, evidence-filled sentences before it and the short command creates maximum urgency and impact',
+        'Two-word sentences always end arguments because they are grammatically complete',
+        'The present tense of the imperative signals urgency more than any other tense',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Thursday\'s celebration edit: "The beach was nice and there were lots of people there." → "The beach hummed with summer — families spread across the sand, waves crashing in rhythmic arcs." Which technique turns "nice" into something specific?',
+      options: [
+        'A simile — "like summer" compares the beach to the season',
+        'Personification — "hummed" gives the beach a human quality, replacing the vague "was nice"',
+        'An adverbial phrase — "with summer" adds the time of year',
+        'A relative clause — "waves crashing" adds extra information about the beach',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Growth as a writer is not just about what you write — it\'s about what you can now see." What does this mean?',
+      options: [
+        'Writers who read a lot can spot errors more quickly than writers who don\'t',
+        'The ability to notice what needs improving in your own writing is itself evidence of development',
+        'Seeing your writing on paper is always better than reading it on a screen',
+        'Writers grow by observing other writers rather than by editing their own work',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-9': [
+    {
+      q: '"Our rivers are the arteries of the land — and right now, they are bleeding." Monday\'s lesson says this is metaphor + personification. Which part is the personification?',
+      options: [
+        '"Our rivers" — rivers are given the possessive "our," a human relationship',
+        '"the arteries of the land" — comparing rivers to body parts',
+        '"they are bleeding" — giving the rivers a human bodily function to show damage',
+        '"the land" — the land is treated as a living body',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "The most powerful figurative device in persuasion is metaphor — because it reframes the debate." How does "Rivers as arteries" reframe the pollution debate?',
+      options: [
+        'It makes rivers sound more scientific and therefore more credible',
+        'It makes cutting pollution funding feel like refusing medical treatment — the reader cannot dismiss it',
+        'It compares rivers to something familiar so readers can picture them more easily',
+        'It uses alliteration to make the argument more memorable',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Although everyone in the group were keen to start, neither the kaiako nor the students was ready." How many SVA errors are in this sentence?',
+      options: [
+        'One — only "were" is wrong ("everyone" takes singular "was")',
+        'Two — "everyone…were" should be "everyone…was" AND "neither…nor…was" should match the nearest subject "students" → "were"',
+        'Two — "everyone…were" and "students…was" are both wrong',
+        'None — both verb forms are correct in informal spoken English',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"By the time everything were in place, an hour had past." Two errors are in this sentence. What are they?',
+      options: [
+        '"were" should be "was" (everything = singular) and "past" should be "passed" (verb, not adjective)',
+        '"By the time" needs a comma after it and "had past" should be "has passed"',
+        '"everything" should be "all things" and "past" should be "elapsed"',
+        '"were" should be "was" and "had past" should be "had went"',
+      ],
+      correct: 0,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Access to quality education is not a privilege; it is a right." Wednesday\'s showcase uses a semicolon here. What relationship does the semicolon signal between the two clauses?',
+      options: [
+        'The second clause contradicts the first — "not a privilege" is corrected by "it is a right"',
+        'The two clauses are closely related equal sentences — the semicolon makes the contrast feel immediate and powerful',
+        'The second clause is a subordinate clause that depends on the first for its meaning',
+        'The semicolon replaces a colon that would otherwise introduce a list',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"The evidence, which spans four decades of research, is unambiguous." What does the relative clause add to the argument?',
+      options: [
+        'It introduces new evidence about the research methodology',
+        'It embeds credibility — the breadth of evidence (four decades) is woven into the sentence without interrupting the claim',
+        'It creates a contrast between old and new research',
+        'It defines which evidence is being referred to — there is only one piece of evidence',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: 'Thursday\'s portfolio edit asks: "What technique do you now know that you didn\'t use here — and where could it go?" Apply this to "The waves are big and it is very fun." Which technique would most improve this sentence?',
+      options: [
+        'Adding a fronted adverbial of time before "The waves"',
+        'Replacing "big and very fun" — upgrading vague adjectives/adverbs with precise vocabulary and a figurative device',
+        'Converting it to passive voice — "The waves were enjoyed by everyone"',
+        'Splitting it into two sentences with a semicolon',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s three targeted upgrades per piece are: upgrade a sentence type, add a language device, sharpen vocabulary. In "I like it because it is good," which upgrade addresses all three at once?',
+      options: [
+        '"I like it because it is very good indeed."',
+        '"It is good."',
+        '"The salt air and the rhythm of the waves were, I realised, exactly what I had needed."',
+        '"I liked it and it was good."',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-8': [
+    {
+      q: '"Argument" — people often misspell it as "arguement." Monday\'s lesson gives the rule. What is the correct explanation?',
+      options: [
+        'The silent "e" in "argue" is kept because "-ment" starts with a consonant',
+        'The "e" in "argue" is dropped because "-ment" starts with a consonant — but wait, "argue-ment" drops the e → "argument"',
+        'The "e" is dropped before adding "-ment" because the suffix starts with a vowel',
+        'No letters change — "arguement" is the original correct spelling',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Definitely" contains the word "finite." Monday\'s mnemonic is "de-FINITE-ly." Which tricky spelling problem does this mnemonic solve?',
+      options: [
+        'People add an extra "l" — "definitly" instead of "definitely"',
+        'People write "defenitely" or "definately" — the mnemonic anchors the "i" from "finite"',
+        'People forget the capital D at the start of the word',
+        'People confuse "definitely" with "defiantly" — the mnemonic shows the difference',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"At the centre of the debate lies a fundamental question of equity." Tuesday\'s lesson says this prepositional phrase does two jobs. What are they?',
+      options: [
+        'It names the topic and introduces the characters in the argument',
+        'It frames the argument (tells us what the debate is about) AND carries evaluative weight ("fundamental")',
+        'It creates a fronted adverbial opener AND introduces a relative clause',
+        'It replaces a topic sentence AND acts as a contrast opener',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The policy was introduced without consultation." Tuesday\'s tip says this prepositional phrase "implies criticism through precision." How?',
+      options: [
+        'Because "without" is a negative preposition that always sounds critical',
+        'Because naming the exact absence ("consultation") makes the failure specific and damning without needing an adjective like "badly"',
+        'Because prepositional phrases of manner are always more critical than other types',
+        'Because "consultation" is an evaluative noun that signals the writer\'s disapproval',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Despite widespread concern, action has been slow." Wednesday\'s lesson says this contrast opener creates tension. What specific tension does it create?',
+      options: [
+        'The reader wonders what the widespread concern is about',
+        'The reader feels the frustration of a gap — concern exists but action has not followed, suggesting a failure of will or leadership',
+        'The reader is surprised that action has happened at all given the concern',
+        'The reader expects the sentence to end with a solution rather than "slow"',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Without urgent intervention, the situation will worsen." Wednesday\'s lesson calls this a condition opener. What argumentative job does it do?',
+      options: [
+        'It acknowledges the counter-argument before dismissing it',
+        'It creates urgency by making inaction feel like a choice with a clear and stated consequence',
+        'It anchors the argument in a specific timeframe for the evidence',
+        'It broadens the argument to suggest the problem is global, not local',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"in New Zealand lots of kids dont get enough physical activity at school its really important for their health and wellbeing." Thursday\'s seven-pass checklist — which passes find errors here?',
+      options: [
+        'Pass 1 only — capital letters and full stops are missing',
+        'Pass 1 (capitals/full stops), Pass 2 (apostrophe in "dont"), Pass 3 (comma after fronted adverbial), Pass 5 (informal vocabulary: "lots of kids," "really important")',
+        'Pass 5 and Pass 7 only — register and cohesion',
+        'Pass 2 and Pass 4 only — apostrophes and colons/semicolons',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s tip: "Seven passes, seven focuses. One pass, one rule, every time." In the model passage, Pass 7 (cohesion) suggests adding a linking adverb between sentences. Which linking adverb best connects "research shows that active students do better academically" to the next sentence about what the government should do?',
+      options: [
+        '"However" — to contrast the research with the government\'s response',
+        '"Nevertheless" — to qualify the research finding',
+        '"Consequently" or "Therefore" — to signal that the evidence leads logically to the policy recommendation',
+        '"Furthermore" — to add another supporting point about activity',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-7': [
+    {
+      q: '"The reason is simple: underfunded schools cannot deliver equity." Monday\'s lesson: is the colon correct here — and why?',
+      options: [
+        'No — "The reason is simple" ends with an adjective, so a colon cannot follow',
+        'Yes — "The reason is simple" is a complete sentence, and the colon introduces an explanation',
+        'No — colons can only introduce lists, not single explanatory clauses',
+        'Yes — "simple" is an evaluative word that always signals a colon will follow',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Funding has increased significantly ___ outcomes have not improved at the same rate." Which mark fits — and why?',
+      options: [
+        'Colon — it introduces an explanation of why funding increased',
+        'Semicolon — both halves are complete, closely related sentences showing a contrast',
+        'Comma — the two ideas need only a light pause between them',
+        'Dash — it creates a dramatic aside about the outcomes',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Research consistently shows that students perform better when they ate breakfast." Tuesday\'s lesson identifies a tense drift. What is it — and what should it be?',
+      options: [
+        '"shows" should be "showed" — argument tense should be past',
+        '"ate" should be "eat" — argument tense is present, so the subordinate clause must also be present',
+        '"consistently" should be removed — adverbs cause tense confusion',
+        '"perform" should be "performed" — the research happened in the past',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Last week, the team travels to Wellington for the regional competition." Tuesday\'s tense rule: recounts use simple past. What is the error?',
+      options: [
+        '"travels" is present tense — it should be "travelled" to match recount (past) tense',
+        '"Last week" is the wrong time marker — recounts use "recently" not "last week"',
+        '"to Wellington" should be "in Wellington" — preposition error',
+        '"travels" is correct — present tense is acceptable in informal recounts',
+      ],
+      correct: 0,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Although progress has been made, significant challenges remain." Wednesday\'s lesson says "although" is used to acknowledge and dismiss a counter-argument. What counter-argument is being acknowledged here?',
+      options: [
+        'That progress is happening too slowly',
+        'The implicit claim that things are getting better — "although" acknowledges this but immediately qualifies it with "significant challenges remain"',
+        'That no progress has been made at all',
+        'That the challenges are not actually significant',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"While some argue for delay, every year of inaction has a cost." Wednesday\'s lesson says "while" creates simultaneous contrast. What two things are happening simultaneously?',
+      options: [
+        'Arguing and delaying — both are happening at the same time',
+        'The argument for delay is ongoing AND the costs of inaction are accumulating at the same time — both are happening now',
+        'Writing and reading — the writer argues while the reader reads',
+        'The cost is rising while the argument is being made — a time contrast',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Screen time is increasing. Children are sleeping less. Academic performance is declining. Something must be done." Thursday\'s lesson calls this disconnected. What is the core problem?',
+      options: [
+        'The sentences are in the wrong order — evidence should come before the claim',
+        'Each sentence is a standalone statement — no linking adverbs, pronouns, or echoed ideas connect them into a flowing argument',
+        'The sentences are too short — each needs to be expanded with evidence',
+        'The verbs are all in present tense — arguments need more variety',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+    {
+      q: 'Thursday\'s revision: "Screen time among children is increasing at an alarming rate; as a result, sleep quality has declined significantly." Which TWO cohesive devices connect the sentences?',
+      options: [
+        'A pronoun and a fronted adverbial',
+        'A semicolon joining the related ideas AND the linking adverb "as a result" signalling the logical consequence',
+        'A relative clause and a dash aside',
+        'An echoed key term and a coordinating conjunction',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
+  '4-6': [
+    {
+      q: 'Monday\'s evaluative hierarchy: important → significant → crucial → fundamental. "Access to clean water is ___ to human dignity." Which word best fills the blank — and why?',
+      options: [
+        '"important" — water is a basic need worth noting',
+        '"significant" — water access is more than ordinary and deserves attention',
+        '"fundamental" — water is at the very base of human dignity; nothing is more essential',
+        '"crucial" — water access is absolutely necessary for most situations',
+      ],
+      correct: 2,
+      day: 'Monday',
+    },
+    {
+      q: 'Monday\'s tip: "Overusing \'crucial\' weakens it." Why does using "crucial" for everything reduce its persuasive power?',
+      options: [
+        'Because "crucial" is too short to carry weight in formal writing',
+        'Because if everything is crucial, nothing stands out — the word loses the urgency it is meant to signal',
+        'Because "crucial" is informal and should only appear once per piece',
+        'Because readers stop reading after they see "crucial" for the first time',
+      ],
+      correct: 1,
+      day: 'Monday',
+    },
+    {
+      q: '"Studies show that students who eat breakfast perform significantly better academically. ___, many students arrive at school without having eaten." Which linking adverb signals CONTRAST?',
+      options: [
+        '"Furthermore" — adds a supporting point',
+        '"Consequently" — shows the logical result',
+        '"However" — introduces contrast or qualification',
+        '"Therefore" — signals a conclusion',
+      ],
+      correct: 2,
+      day: 'Tuesday',
+    },
+    {
+      q: '"The policy has broad public support. ___, its implementation will require careful planning." Which linking adverb signals QUALIFICATION?',
+      options: [
+        '"Furthermore" — adds an additional supporting point about the policy',
+        '"Nevertheless" — introduces a qualification that complicates the positive picture',
+        '"Consequently" — shows that support leads logically to implementation',
+        '"Therefore" — draws a conclusion from the broad public support',
+      ],
+      correct: 1,
+      day: 'Tuesday',
+    },
+    {
+      q: '"Investing now costs far less than managing the consequences later." Wednesday\'s lesson identifies this as a gerund opener. What is the gerund — and what effect does it create?',
+      options: [
+        '"now" — an adverb of time used as the opener',
+        '"Investing" — the "-ing" form as a noun subject, emphasising the action itself as the focus of the argument',
+        '"costs" — the main verb used as a noun to frame the financial argument',
+        '"managing" — the second "-ing" form creating a parallel structure',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"Act." Wednesday\'s lesson calls a single-word imperative "the most powerful opener in persuasion after a long sentence." Why?',
+      options: [
+        'Because imperatives are the only verb form that addresses the reader directly',
+        'Because the extreme length contrast — after a long complex sentence, one word hits like a hammer',
+        'Because single-word sentences are always the most memorable in any writing',
+        'Because "Act" is an irregular verb that carries more weight than regular verbs',
+      ],
+      correct: 1,
+      day: 'Wednesday',
+    },
+    {
+      q: '"This is a big problem that affects lots of people and the government should do something about it." Thursday\'s audit identifies three weak vocabulary categories. "Lots of people" falls under which category?',
+      options: [
+        'Vague noun — "people" should be named precisely',
+        'Weak verb — "affects" should be replaced with a stronger verb',
+        'Vague quantity — "lots of" should be replaced with a specific figure or "significant" + noun',
+        'Informal register — "lots" is colloquial and should be removed entirely',
+      ],
+      correct: 2,
+      day: 'Thursday',
+    },
+    {
+      q: '"Do something about it" → "demands urgent legislative intervention." Thursday\'s audit replaces a weak verb phrase with a precise one. What THREE things does the replacement do that "do something" does not?',
+      options: [
+        'It is longer, more formal, and uses Latin-derived vocabulary',
+        'It names the type of action (legislative), signals urgency (urgent), and uses an active verb with intent (demands)',
+        'It removes the pronoun "it," uses passive voice, and adds an adjective',
+        'It creates alliteration, uses a modal verb, and avoids first person',
+      ],
+      correct: 1,
+      day: 'Thursday',
+    },
+  ],
+
   '4-5': [
     {
       q: '"a well-known author" — which mark correctly joins "well" and "known" here, and why?',
