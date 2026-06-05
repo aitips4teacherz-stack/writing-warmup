@@ -3,7 +3,7 @@ import { CURRICULUM, TERM_COLOURS } from '../lib/lessonData.js'
 import { fetchLesson, saveLesson } from '../lib/lessonService.js'
 
 // ── Simple password gate ─────────────────────────────────────────────────────
-const ADMIN_PASSWORD = 'warmup2024'
+const ADMIN_PASSWORD = 'LDBBaura1007~'
 
 function PasswordGate({ onUnlock }) {
   const [val, setVal] = useState('')
