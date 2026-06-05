@@ -16,22 +16,25 @@ export default function App() {
   const [activeMeta, setActiveMeta] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const [fridayKey, setFridayKey] = useState(0)
 
   const handleGo = useCallback(async () => {
-    setLoading(true)
     setError(null)
-    setActiveLesson(null)
 
+    if (day === 'Friday') {
+      setActiveMeta({ term, week, day })
+      setActiveLesson('friday')
+      setFridayKey(k => k + 1)
+      return
+    }
+
+    setLoading(true)
+    setActiveLesson(null)
     try {
-      if (day === 'Friday') {
-        setActiveMeta({ term, week, day })
-        setActiveLesson('friday')
-      } else {
-        const lesson = await fetchLesson(term, week, day)
-        if (!lesson) throw new Error(`No lesson found for Term ${term}, Week ${week}, ${day}.`)
-        setActiveMeta({ term, week, day })
-        setActiveLesson(lesson)
-      }
+      const lesson = await fetchLesson(term, week, day)
+      if (!lesson) throw new Error(`No lesson found for Term ${term}, Week ${week}, ${day}.`)
+      setActiveMeta({ term, week, day })
+      setActiveLesson(lesson)
     } catch (e) {
       setError(e.message)
     } finally {
@@ -51,6 +54,42 @@ export default function App() {
         <div className="site-header__sub">
           NZ Curriculum · Years 5–6 · Phase 2
         </div>
+        <a
+          href="/WritingWarmUp_Showcase.pdf"
+          download="WritingWarmUp_Showcase.pdf"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            marginLeft: 'auto',
+            padding: '0.35rem 0.85rem',
+            borderRadius: '6px',
+            background: 'rgba(255,255,255,0.08)',
+            border: '1px solid rgba(255,255,255,0.18)',
+            color: 'rgba(255,255,255,0.85)',
+            fontSize: '0.72rem',
+            fontWeight: 600,
+            letterSpacing: '0.04em',
+            textDecoration: 'none',
+            whiteSpace: 'nowrap',
+            transition: 'background 0.15s, border-color 0.15s',
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.background = 'rgba(255,255,255,0.15)'
+            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.35)'
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.background = 'rgba(255,255,255,0.08)'
+            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.18)'
+          }}
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Programme Guide
+        </a>
       </header>
 
       {/* ── Selector bar ── */}
@@ -88,7 +127,7 @@ export default function App() {
         )}
 
         {!loading && !error && activeLesson === 'friday' && activeMeta && (
-          <FridayAssessment term={activeMeta.term} week={activeMeta.week} />
+        <FridayAssessment key={fridayKey} term={activeMeta.term} week={activeMeta.week} />
         )}
 
         {!loading && !error && activeLesson && activeLesson !== 'friday' && activeMeta && (
